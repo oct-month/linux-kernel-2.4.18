@@ -1,0 +1,10 @@
+Well, there are probably just thousands to squash, but these are the
+ones I think of as bugs.
+
+There is a problem with speakup interrogating LiteTalks with rom
+versions of at least 3.22 and earlier. (kirk)
+
+I define bugs as things which aren't working correctly although
+they've been implemented.  NOT features which haven't been added yet.
+
+  Kirk

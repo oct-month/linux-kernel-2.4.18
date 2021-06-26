@@ -1,0 +1,155 @@
+call.o: call.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/rxrpc.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/transport.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/peer.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/connection.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/call.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/message.h \
+   /usr/src/linux-2.4.18-14/net/rxrpc/internal.h
+connection.o: connection.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/rxrpc.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/transport.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/peer.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/connection.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/call.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/message.h \
+   /usr/src/linux-2.4.18-14/include/linux/udp.h \
+   /usr/src/linux-2.4.18-14/include/linux/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/net/rxrpc/internal.h
+internal.h: \
+   /usr/src/linux-2.4.18-14/include/linux/compiler.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h)
+	@touch internal.h
+krxiod.o: krxiod.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/krxiod.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/transport.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/peer.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/call.h \
+   /usr/src/linux-2.4.18-14/net/rxrpc/internal.h
+krxsecd.o: krxsecd.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/krxsecd.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/transport.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/connection.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/message.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/peer.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/call.h \
+   /usr/src/linux-2.4.18-14/include/linux/udp.h \
+   /usr/src/linux-2.4.18-14/include/linux/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/net/rxrpc/internal.h
+krxtimod.o: krxtimod.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/rxrpc.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/krxtimod.h \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14/net/rxrpc/internal.h
+main.o: main.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/rxrpc.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/krxiod.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/krxsecd.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/krxtimod.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/transport.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/connection.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/call.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/message.h \
+   /usr/src/linux-2.4.18-14/net/rxrpc/internal.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sysctl.h)
+peer.o: peer.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/rxrpc.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/transport.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/peer.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/connection.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/call.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/message.h \
+   /usr/src/linux-2.4.18-14/include/linux/udp.h \
+   /usr/src/linux-2.4.18-14/include/linux/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/div64.h \
+   /usr/src/linux-2.4.18-14/net/rxrpc/internal.h
+proc.o: proc.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/seq_file.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/rxrpc.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/transport.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/peer.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/connection.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/call.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/message.h \
+   /usr/src/linux-2.4.18-14/net/rxrpc/internal.h
+rxrpc_syms.o: rxrpc_syms.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/transport.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/connection.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/call.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/krxiod.h
+sysctl.o: sysctl.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/types.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/rxrpc.h \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14/net/rxrpc/internal.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sysctl.h)
+transport.o: transport.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/transport.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/peer.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/connection.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/call.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/message.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/krxiod.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/krxsecd.h \
+   /usr/src/linux-2.4.18-14/include/linux/udp.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/in6.h \
+   /usr/src/linux-2.4.18-14/include/linux/icmp.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ipv6.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ipv6/module.h) \
+   /usr/src/linux-2.4.18-14/include/linux/ipv6.h \
+   /usr/src/linux-2.4.18-14/include/linux/errqueue.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/checksum.h \
+   /usr/src/linux-2.4.18-14/net/rxrpc/internal.h
+.PRECIOUS:	internal.h \
+

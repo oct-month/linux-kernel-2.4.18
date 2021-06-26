@@ -1,0 +1,8 @@
+#define __ver_sis_malloc	_ver_str(a3329ed5)
+#define sis_malloc _set_ver(sis_malloc)
+#define __ver_sis_free	_ver_str(ced25333)
+#define sis_free _set_ver(sis_free)
+#define __ver_ivideo	_ver_str(5ea9bc13)
+#define ivideo _set_ver(ivideo)
+#define __ver_sis_dispinfo	_ver_str(601b25a5)
+#define sis_dispinfo _set_ver(sis_dispinfo)

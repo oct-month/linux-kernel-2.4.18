@@ -1,0 +1,28 @@
+mkdir /dev/ost
+chmod 755 /dev/ost
+mknod -m 0666 /dev/ost/video0  c 250  0
+mknod -m 0666 /dev/ost/audio0  c 250  1
+mknod -m 0666 /dev/ost/sec0    c 250  2
+mknod -m 0666 /dev/ost/qpskfe0 c 250  3
+mknod -m 0666 /dev/ost/qamfe0  c 250  7
+mknod -m 0666 /dev/ost/demux0  c 250  4
+mknod -m 0666 /dev/ost/dvr0    c 250  5
+mknod -m 0666 /dev/ost/ca0     c 250  6
+
+mknod -m 0666 /dev/ost/video1  c 250  64
+mknod -m 0666 /dev/ost/audio1  c 250  65
+mknod -m 0666 /dev/ost/sec1    c 250  66
+mknod -m 0666 /dev/ost/qpskfe1 c 250  67
+mknod -m 0666 /dev/ost/qamfe1  c 250  71
+mknod -m 0666 /dev/ost/demux1  c 250  68
+mknod -m 0666 /dev/ost/dvr1    c 250  69
+mknod -m 0666 /dev/ost/ca1     c 250  70
+
+cd /dev/ost
+ln -sf ca0      ca
+ln -sf video0   video
+ln -sf sec0       sec
+ln -sf audio0   audio
+ln -sf qpskfe0 qpskfe
+ln -sf demux0   demux
+ln -sf dvr0       dvr

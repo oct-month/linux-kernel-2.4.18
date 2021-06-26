@@ -1,0 +1,4 @@
+#define __ver_mtrr_del	_ver_str(272d394e)
+#define mtrr_del _set_ver(mtrr_del)
+#define __ver_mtrr_add	_ver_str(56179c5f)
+#define mtrr_add _set_ver(mtrr_add)

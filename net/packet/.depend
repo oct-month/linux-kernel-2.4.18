@@ -1,0 +1,40 @@
+af_packet.o: af_packet.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_packet.h \
+   /usr/src/linux-2.4.18-14/include/linux/wireless.h \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/ioctls.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_bridge.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net/divert.h) \
+   /usr/src/linux-2.4.18-14/include/linux/divert.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/inet.h) \
+   /usr/src/linux-2.4.18-14/include/net/inet_common.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/dlci.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/packet/multicast.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/packet/mmap.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sock/packet.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/filter.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/bridge.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/bridge/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/kmod.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net/radio.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h)

@@ -1,0 +1,61 @@
+utalloc.o: utalloc.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acglobal.h
+utcopy.o: utcopy.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h
+utdebug.o: utdebug.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h
+utdelete.o: utdelete.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/actables.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h
+uteval.o: uteval.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h
+utglobal.o: utglobal.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h
+utinit.o: utinit.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h
+utmath.o: utmath.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h
+utmisc.o: utmisc.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdebug.h
+utobject.o: utobject.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/actables.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h
+utxface.o: utxface.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdebug.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acexcep.h

@@ -1,0 +1,49 @@
+evevent.o: evevent.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h
+evmisc.o: evmisc.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h
+evregion.o: evregion.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h
+evrgnini.o: evrgnini.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h
+evsci.o: evsci.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h
+evxface.o: evxface.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h
+evxfevnt.o: evxfevnt.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h
+evxfregn.o: evxfregn.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h

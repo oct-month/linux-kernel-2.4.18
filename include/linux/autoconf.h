@@ -1,0 +1,3511 @@
+#include <linux/rhconfig.h>
+/*
+ * Automatically generated C config: don't edit
+ */
+#define AUTOCONF_INCLUDED
+#define CONFIG_X86 1
+#define CONFIG_ISA 1
+#undef  CONFIG_SBUS
+#define CONFIG_UID16 1
+
+/*
+ * Code maturity level options
+ */
+#define CONFIG_EXPERIMENTAL 1
+
+/*
+ * Loadable module support
+ */
+#define CONFIG_MODULES 1
+#define CONFIG_MODVERSIONS 1
+#if  defined(__module__BOOT)
+#undef  CONFIG_KMOD
+#else
+#define CONFIG_KMOD 1
+#endif
+
+/*
+ * Processor type and features
+ */
+#define CONFIG_LOLAT 1
+#undef  CONFIG_LOLAT_SYSCTL
+#if  defined(__module__BOOT)
+#define CONFIG_M386 1
+#else
+#undef  CONFIG_M386
+#endif
+#undef  CONFIG_M486
+#if  defined(__module__i586)
+#define CONFIG_M586 1
+#else
+#undef  CONFIG_M586
+#endif
+#undef  CONFIG_M586TSC
+#undef  CONFIG_M586MMX
+#if  !defined(__module__i686) || defined(__module__bigmem)
+#undef  CONFIG_M686
+#else
+#define CONFIG_M686 1
+#endif
+#if  defined(__module__bigmem)
+#define CONFIG_MPENTIUMIII 1
+#else
+#undef  CONFIG_MPENTIUMIII
+#endif
+#undef  CONFIG_MPENTIUM4
+#undef  CONFIG_MK6
+#if  defined(__module__athlon)
+#define CONFIG_MK7 1
+#else
+#undef  CONFIG_MK7
+#endif
+#undef  CONFIG_MELAN
+#undef  CONFIG_MCRUSOE
+#undef  CONFIG_MWINCHIPC6
+#undef  CONFIG_MWINCHIP2
+#undef  CONFIG_MWINCHIP3D
+#undef  CONFIG_MCYRIXIII
+#if  !defined(__module__BOOT)
+#define CONFIG_X86_WP_WORKS_OK 1
+#define CONFIG_X86_INVLPG 1
+#endif
+#if  defined(__module__BOOT)
+#undef  CONFIG_X86_CMPXCHG
+#undef  CONFIG_X86_XADD
+#else
+#define CONFIG_X86_CMPXCHG 1
+#define CONFIG_X86_XADD 1
+#endif
+#if  defined(__module__BOOT)
+#define CONFIG_X86_L1_CACHE_SHIFT (4)
+#elif  defined(__module__athlon)
+#define CONFIG_X86_L1_CACHE_SHIFT (6)
+#elif  defined(__module__bigmem)
+#define CONFIG_X86_L1_CACHE_SHIFT (7)
+#else
+#define CONFIG_X86_L1_CACHE_SHIFT (5)
+#endif
+#if  !defined(__module__BOOT)
+#define CONFIG_X86_BSWAP 1
+#define CONFIG_X86_POPAD_OK 1
+#endif
+#if  defined(__module__BOOT)
+#define CONFIG_RWSEM_GENERIC_SPINLOCK 1
+#undef  CONFIG_RWSEM_XCHGADD_ALGORITHM
+#else
+#undef  CONFIG_RWSEM_GENERIC_SPINLOCK
+#define CONFIG_RWSEM_XCHGADD_ALGORITHM 1
+#endif
+#if  defined(__module__i586)
+#define CONFIG_X86_USE_STRING_486 1
+#define CONFIG_X86_ALIGNMENT_16 1
+#endif
+#if  defined(__module__athlon) || defined(__module__i686)
+#define CONFIG_X86_TSC 1
+#define CONFIG_X86_GOOD_APIC 1
+#endif
+#if  defined(__module__athlon)
+#define CONFIG_X86_USE_3DNOW 1
+#endif
+#if  defined(__module__i686_up)
+#undef  CONFIG_X86_PGE
+#elif  defined(__module__debug) || defined(__module__bigmem) || defined(__module__athlon) || defined(__module__i686_smp)
+#define CONFIG_X86_PGE 1
+#endif
+#if  defined(__module__athlon) || defined(__module__i686)
+#define CONFIG_X86_USE_PPRO_CHECKSUM 1
+#endif
+#if  defined(__module__debug) || defined(__module__BOOT) || defined(__module__i586) || defined(__module__i686_up) || defined(__module__i686_smp)
+#define CONFIG_X86_PPRO_FENCE 1
+#endif
+#define CONFIG_X86_MCE 1
+#if  defined(__module__i686_up)
+#define CONFIG_CPU_FREQ 1
+#undef  CONFIG_X86_POWERNOW_K6
+#define CONFIG_X86_POWERNOW_K6_MODULE 1
+#undef  CONFIG_X86_LONGHAUL
+#define CONFIG_X86_LONGHAUL_MODULE 1
+#undef  CONFIG_X86_LONGHAUL_SCALE_VOLTAGE
+#undef  CONFIG_X86_SPEEDSTEP
+#define CONFIG_X86_SPEEDSTEP_MODULE 1
+#undef  CONFIG_X86_P4_CLOCKMOD
+#define CONFIG_X86_P4_CLOCKMOD_MODULE 1
+#else
+#undef  CONFIG_CPU_FREQ
+#endif
+#undef  CONFIG_TOSHIBA
+#if  !defined(__module__BOOT)
+#define CONFIG_TOSHIBA_MODULE 1
+#endif
+#undef  CONFIG_I8K
+#define CONFIG_I8K_MODULE 1
+#undef  CONFIG_MICROCODE
+#if  defined(__module__athlon) || defined(__module__i686)
+#define CONFIG_MICROCODE_MODULE 1
+#endif
+#undef  CONFIG_X86_MSR
+#if  !defined(__module__BOOT)
+#define CONFIG_X86_MSR_MODULE 1
+#endif
+#undef  CONFIG_X86_CPUID
+#if  !defined(__module__BOOT)
+#define CONFIG_X86_CPUID_MODULE 1
+#endif
+#if  defined(__module__BOOT)
+#define CONFIG_E820_PROC 1
+#else
+#undef  CONFIG_E820_PROC
+#endif
+#if  defined(__module__BOOT) || defined(__module__i586)
+#define CONFIG_NOHIGHMEM 1
+#else
+#undef  CONFIG_NOHIGHMEM
+#endif
+#if  defined(__module__bigmem) || defined(__module__BOOT) || defined(__module__i586)
+#undef  CONFIG_HIGHMEM4G
+#else
+#define CONFIG_HIGHMEM4G 1
+#endif
+#if  defined(__module__bigmem)
+#define CONFIG_HIGHMEM64G 1
+#else
+#undef  CONFIG_HIGHMEM64G
+#endif
+#if  defined(__module__athlon) || defined(__module__i686)
+#define CONFIG_HIGHMEM 1
+#endif
+#if  defined(__module__bigmem)
+#define CONFIG_X86_PAE 1
+#endif
+#define CONFIG_HIGHIO 1
+#undef  CONFIG_MATH_EMULATION
+#define CONFIG_MTRR 1
+#if  defined(__module__bigmem) || defined(__module__smp)
+#define CONFIG_SMP 1
+#else
+#undef  CONFIG_SMP
+#endif
+#if  defined(__module__debug) || defined(__module__BOOT)
+#define CONFIG_X86_UP_APIC 1
+#define CONFIG_X86_UP_IOAPIC 1
+#elif  defined(__module__up)
+#undef  CONFIG_X86_UP_APIC
+#undef  CONFIG_X86_UP_IOAPIC
+#endif
+#if  !defined(__module__up)
+#define CONFIG_X86_LOCAL_APIC 1
+#define CONFIG_X86_IO_APIC 1
+#endif
+#if  defined(__module__bigmem) || defined(__module__smp)
+#undef  CONFIG_MULTIQUAD
+#define CONFIG_HAVE_DEC_LOCK 1
+#endif
+
+/*
+ * General setup
+ */
+#if  defined(__module__BOOT) || defined(__module__i586)
+#define CONFIG_HZ (100)
+#else
+#define CONFIG_HZ (512)
+#endif
+#define CONFIG_NET 1
+#define CONFIG_PCI 1
+#undef  CONFIG_PCI_GOBIOS
+#undef  CONFIG_PCI_GODIRECT
+#define CONFIG_PCI_GOANY 1
+#define CONFIG_PCI_BIOS 1
+#define CONFIG_PCI_DIRECT 1
+#if  defined(__module__BOOT)
+#undef  CONFIG_PCI_NAMES
+#else
+#define CONFIG_PCI_NAMES 1
+#endif
+#define CONFIG_EISA 1
+#undef  CONFIG_MCA
+#define CONFIG_HOTPLUG 1
+
+/*
+ * PCMCIA/CardBus support
+ */
+#undef  CONFIG_PCMCIA
+#define CONFIG_PCMCIA_MODULE 1
+#define CONFIG_CARDBUS 1
+#define CONFIG_TCIC 1
+#define CONFIG_I82092 1
+#define CONFIG_I82365 1
+
+/*
+ * PCI Hotplug Support
+ */
+#if  defined(__module__bigmem) || defined(__module__i686_smp)
+#define CONFIG_HOTPLUG_PCI 1
+#else
+#undef  CONFIG_HOTPLUG_PCI
+#endif
+#undef  CONFIG_HOTPLUG_PCI_COMPAQ
+#if  defined(__module__bigmem) || defined(__module__i686_smp)
+#define CONFIG_HOTPLUG_PCI_COMPAQ_MODULE 1
+#endif
+#undef  CONFIG_HOTPLUG_PCI_COMPAQ_NVRAM
+#if  !defined(__module__up)
+#undef  CONFIG_HOTPLUG_PCI_IBM
+#endif
+#if  defined(__module__bigmem) || defined(__module__i686_smp)
+#define CONFIG_HOTPLUG_PCI_IBM_MODULE 1
+#endif
+#undef  CONFIG_HOTPLUG_PCI_ACPI
+#define CONFIG_SYSVIPC 1
+#if  defined(__module__BOOT)
+#undef  CONFIG_BSD_PROCESS_ACCT
+#else
+#define CONFIG_BSD_PROCESS_ACCT 1
+#endif
+#define CONFIG_SYSCTL 1
+#define CONFIG_KCORE_ELF 1
+#undef  CONFIG_KCORE_AOUT
+#undef  CONFIG_BINFMT_AOUT
+#if  !defined(__module__BOOT)
+#define CONFIG_BINFMT_AOUT_MODULE 1
+#endif
+#define CONFIG_BINFMT_ELF 1
+#undef  CONFIG_BINFMT_MISC
+#if  !defined(__module__BOOT)
+#define CONFIG_BINFMT_MISC_MODULE 1
+#endif
+#undef  CONFIG_IKCONFIG
+#if  defined(__module__BOOT)
+#undef  CONFIG_PM
+#else
+#define CONFIG_PM 1
+#endif
+
+/*
+ * Additional device driver support
+ */
+#undef  CONFIG_NET_BROADCOM
+#define CONFIG_NET_BROADCOM_MODULE 1
+#undef  CONFIG_CIPE
+#if  !defined(__module__BOOT)
+#define CONFIG_CIPE_MODULE 1
+#endif
+#undef  CONFIG_CRYPTO_AEP
+#define CONFIG_CRYPTO_AEP_MODULE 1
+#undef  CONFIG_MEGARAC
+#define CONFIG_MEGARAC_MODULE 1
+#undef  CONFIG_FC_QLA2200
+#define CONFIG_FC_QLA2200_MODULE 1
+#undef  CONFIG_FC_QLA2300
+#define CONFIG_FC_QLA2300_MODULE 1
+#undef  CONFIG_SCSI_ISCSI
+#define CONFIG_SCSI_ISCSI_MODULE 1
+#undef  CONFIG_ACPI
+#if  defined(__module__BOOT)
+#undef  CONFIG_APM
+#else
+#define CONFIG_APM 1
+#undef  CONFIG_APM_IGNORE_USER_SUSPEND
+#undef  CONFIG_APM_DO_ENABLE
+#define CONFIG_APM_CPU_IDLE 1
+#undef  CONFIG_APM_DISPLAY_BLANK
+#define CONFIG_APM_RTC_IS_GMT 1
+#undef  CONFIG_APM_ALLOW_INTS
+#undef  CONFIG_APM_REAL_MODE_POWER_OFF
+#endif
+
+/*
+ * Binary emulation of other systems
+ */
+#undef  CONFIG_ABI
+#if  !defined(__module__BOOT)
+#define CONFIG_ABI_MODULE 1
+#endif
+#undef  CONFIG_ABI_SVR4
+#if  !defined(__module__BOOT)
+#define CONFIG_ABI_SVR4_MODULE 1
+#endif
+
+/*
+ * Support for foreign binary formats
+ */
+#undef  CONFIG_BINFMT_COFF
+#if  !defined(__module__BOOT)
+#define CONFIG_BINFMT_COFF_MODULE 1
+#endif
+#undef  CONFIG_BINFMT_XOUT
+#if  !defined(__module__BOOT)
+#define CONFIG_BINFMT_XOUT_MODULE 1
+#endif
+#undef  CONFIG_BINFMT_XOUT_X286
+#if  !defined(__module__BOOT)
+#define CONFIG_ABI_SPX 1
+#define CONFIG_ABI_XTI 1
+#define CONFIG_ABI_TLI_OPTMGMT 1
+#undef  CONFIG_ABI_XTI_OPTMGMT
+#endif
+
+/*
+ * Memory Technology Devices (MTD)
+ */
+#undef  CONFIG_MTD
+
+/*
+ * Parallel port support
+ */
+#undef  CONFIG_PARPORT
+#define CONFIG_PARPORT_MODULE 1
+#undef  CONFIG_PARPORT_PC
+#define CONFIG_PARPORT_PC_MODULE 1
+#undef  CONFIG_PARPORT_PC_CML1
+#define CONFIG_PARPORT_PC_CML1_MODULE 1
+#undef  CONFIG_PARPORT_SERIAL
+#define CONFIG_PARPORT_SERIAL_MODULE 1
+#undef  CONFIG_PARPORT_PC_FIFO
+#undef  CONFIG_PARPORT_PC_SUPERIO
+#undef  CONFIG_PARPORT_PC_PCMCIA
+#define CONFIG_PARPORT_PC_PCMCIA_MODULE 1
+#undef  CONFIG_PARPORT_AMIGA
+#undef  CONFIG_PARPORT_MFC3
+#undef  CONFIG_PARPORT_ATARI
+#undef  CONFIG_PARPORT_GSC
+#undef  CONFIG_PARPORT_SUNBPP
+#undef  CONFIG_PARPORT_OTHER
+#if  defined(__module__BOOT)
+#undef  CONFIG_PARPORT_1284
+#else
+#define CONFIG_PARPORT_1284 1
+#endif
+
+/*
+ * Plug and Play configuration
+ */
+#if  defined(__module__BOOT)
+#undef  CONFIG_PNP
+#undef  CONFIG_ISAPNP
+#else
+#define CONFIG_PNP 1
+#define CONFIG_ISAPNP 1
+#endif
+#undef  CONFIG_PNPBIOS
+
+/*
+ * Block devices
+ */
+#define CONFIG_BLK_DEV_FD 1
+#undef  CONFIG_BLK_DEV_XD
+#if  !defined(__module__BOOT)
+#define CONFIG_BLK_DEV_XD_MODULE 1
+#endif
+#undef  CONFIG_PARIDE
+#define CONFIG_PARIDE_MODULE 1
+#undef  CONFIG_PARIDE_PARPORT
+#define CONFIG_PARIDE_PARPORT_MODULE 1
+
+/*
+ * Parallel IDE high-level drivers
+ */
+#undef  CONFIG_PARIDE_PD
+#if  !defined(__module__BOOT)
+#define CONFIG_PARIDE_PD_MODULE 1
+#endif
+#undef  CONFIG_PARIDE_PCD
+#define CONFIG_PARIDE_PCD_MODULE 1
+#undef  CONFIG_PARIDE_PF
+#if  !defined(__module__BOOT)
+#define CONFIG_PARIDE_PF_MODULE 1
+#endif
+#undef  CONFIG_PARIDE_PT
+#if  !defined(__module__BOOT)
+#define CONFIG_PARIDE_PT_MODULE 1
+#endif
+#undef  CONFIG_PARIDE_PG
+#if  !defined(__module__BOOT)
+#define CONFIG_PARIDE_PG_MODULE 1
+#endif
+
+/*
+ * Parallel IDE protocol modules
+ */
+#undef  CONFIG_PARIDE_ATEN
+#define CONFIG_PARIDE_ATEN_MODULE 1
+#undef  CONFIG_PARIDE_BPCK
+#define CONFIG_PARIDE_BPCK_MODULE 1
+#undef  CONFIG_PARIDE_BPCK6
+#define CONFIG_PARIDE_BPCK6_MODULE 1
+#undef  CONFIG_PARIDE_COMM
+#define CONFIG_PARIDE_COMM_MODULE 1
+#undef  CONFIG_PARIDE_DSTR
+#define CONFIG_PARIDE_DSTR_MODULE 1
+#undef  CONFIG_PARIDE_FIT2
+#define CONFIG_PARIDE_FIT2_MODULE 1
+#undef  CONFIG_PARIDE_FIT3
+#define CONFIG_PARIDE_FIT3_MODULE 1
+#undef  CONFIG_PARIDE_EPAT
+#define CONFIG_PARIDE_EPAT_MODULE 1
+#define CONFIG_PARIDE_EPATC8 1
+#undef  CONFIG_PARIDE_EPIA
+#define CONFIG_PARIDE_EPIA_MODULE 1
+#undef  CONFIG_PARIDE_FRIQ
+#define CONFIG_PARIDE_FRIQ_MODULE 1
+#undef  CONFIG_PARIDE_FRPW
+#define CONFIG_PARIDE_FRPW_MODULE 1
+#undef  CONFIG_PARIDE_KBIC
+#define CONFIG_PARIDE_KBIC_MODULE 1
+#undef  CONFIG_PARIDE_KTTI
+#define CONFIG_PARIDE_KTTI_MODULE 1
+#undef  CONFIG_PARIDE_ON20
+#define CONFIG_PARIDE_ON20_MODULE 1
+#undef  CONFIG_PARIDE_ON26
+#define CONFIG_PARIDE_ON26_MODULE 1
+#undef  CONFIG_BLK_CPQ_DA
+#define CONFIG_BLK_CPQ_DA_MODULE 1
+#undef  CONFIG_BLK_CPQ_CISS_DA
+#define CONFIG_BLK_CPQ_CISS_DA_MODULE 1
+#define CONFIG_CISS_SCSI_TAPE 1
+#undef  CONFIG_BLK_DEV_DAC960
+#define CONFIG_BLK_DEV_DAC960_MODULE 1
+#undef  CONFIG_BLK_DEV_UMEM
+#define CONFIG_BLK_DEV_UMEM_MODULE 1
+#if  defined(__module__BOOT)
+#define CONFIG_BLK_DEV_LOOP 1
+#else
+#undef  CONFIG_BLK_DEV_LOOP
+#define CONFIG_BLK_DEV_LOOP_MODULE 1
+#endif
+#undef  CONFIG_BLK_DEV_NBD
+#if  !defined(__module__BOOT)
+#define CONFIG_BLK_DEV_NBD_MODULE 1
+#endif
+#define CONFIG_BLK_DEV_RAM 1
+#if  defined(__module__BOOT)
+#define CONFIG_BLK_DEV_RAM_SIZE (8192)
+#else
+#define CONFIG_BLK_DEV_RAM_SIZE (4096)
+#endif
+#define CONFIG_BLK_DEV_INITRD 1
+
+/*
+ * Multi-device support (RAID and LVM)
+ */
+#define CONFIG_MD 1
+#define CONFIG_BLK_DEV_MD 1
+#undef  CONFIG_MD_LINEAR
+#define CONFIG_MD_LINEAR_MODULE 1
+#undef  CONFIG_MD_RAID0
+#define CONFIG_MD_RAID0_MODULE 1
+#undef  CONFIG_MD_RAID1
+#define CONFIG_MD_RAID1_MODULE 1
+#undef  CONFIG_MD_RAID5
+#define CONFIG_MD_RAID5_MODULE 1
+#undef  CONFIG_MD_MULTIPATH
+#define CONFIG_MD_MULTIPATH_MODULE 1
+#undef  CONFIG_BLK_DEV_LVM
+#define CONFIG_BLK_DEV_LVM_MODULE 1
+
+/*
+ * Cryptography support (CryptoAPI)
+ */
+#undef  CONFIG_CRYPTO
+#define CONFIG_CRYPTO_MODULE 1
+#undef  CONFIG_CIPHERS
+#define CONFIG_CIPHERS_MODULE 1
+
+/*
+ * 128 bit blocksize
+ */
+#undef  CONFIG_CIPHER_AES
+#define CONFIG_CIPHER_AES_MODULE 1
+#undef  CONFIG_CIPHER_IDENTITY
+#define CONFIG_CIPHER_IDENTITY_MODULE 1
+#undef  CONFIG_CRYPTODEV
+#define CONFIG_CRYPTODEV_MODULE 1
+#undef  CONFIG_CRYPTOLOOP
+#define CONFIG_CRYPTOLOOP_MODULE 1
+
+/*
+ * Networking options
+ */
+#define CONFIG_PACKET 1
+#if  defined(__module__BOOT)
+#undef  CONFIG_PACKET_MMAP
+#else
+#define CONFIG_PACKET_MMAP 1
+#endif
+#define CONFIG_NETLINK_DEV 1
+#if  defined(__module__BOOT)
+#undef  CONFIG_NETFILTER
+#undef  CONFIG_FILTER
+#else
+#define CONFIG_NETFILTER 1
+#undef  CONFIG_NETFILTER_DEBUG
+#define CONFIG_FILTER 1
+#endif
+#define CONFIG_UNIX 1
+#define CONFIG_INET 1
+#undef  CONFIG_TUX
+#if  !defined(__module__BOOT)
+#define CONFIG_TUX_MODULE 1
+#define CONFIG_TUX_EXTCGI 1
+#undef  CONFIG_TUX_EXTENDED_LOG
+#undef  CONFIG_TUX_DEBUG
+#endif
+#if  defined(__module__BOOT)
+#undef  CONFIG_IP_MULTICAST
+#undef  CONFIG_IP_ADVANCED_ROUTER
+#else
+#define CONFIG_IP_MULTICAST 1
+#define CONFIG_IP_ADVANCED_ROUTER 1
+#define CONFIG_IP_MULTIPLE_TABLES 1
+#define CONFIG_IP_ROUTE_FWMARK 1
+#define CONFIG_IP_ROUTE_NAT 1
+#define CONFIG_IP_ROUTE_MULTIPATH 1
+#define CONFIG_IP_ROUTE_TOS 1
+#define CONFIG_IP_ROUTE_VERBOSE 1
+#define CONFIG_IP_ROUTE_LARGE_TABLES 1
+#endif
+#undef  CONFIG_IP_PNP
+#undef  CONFIG_NET_IPIP
+#if  !defined(__module__BOOT)
+#define CONFIG_NET_IPIP_MODULE 1
+#endif
+#undef  CONFIG_NET_IPGRE
+#if  !defined(__module__BOOT)
+#define CONFIG_NET_IPGRE_MODULE 1
+#define CONFIG_NET_IPGRE_BROADCAST 1
+#define CONFIG_IP_MROUTE 1
+#define CONFIG_IP_PIMSM_V1 1
+#define CONFIG_IP_PIMSM_V2 1
+#endif
+#undef  CONFIG_ARPD
+#undef  CONFIG_INET_ECN
+#if  defined(__module__BOOT)
+#undef  CONFIG_SYN_COOKIES
+#else
+#define CONFIG_SYN_COOKIES 1
+#endif
+#undef  CONFIG_IPV6
+#undef  CONFIG_KHTTPD
+#if  defined(__module__BOOT)
+#undef  CONFIG_ATM
+#else
+#define CONFIG_ATM 1
+#endif
+#undef  CONFIG_VLAN_8021Q
+#define CONFIG_VLAN_8021Q_MODULE 1
+
+/*
+ *  
+ */
+#undef  CONFIG_IPX
+#if  !defined(__module__BOOT)
+#define CONFIG_IPX_MODULE 1
+#undef  CONFIG_IPX_INTERN
+#endif
+#undef  CONFIG_ATALK
+#if  !defined(__module__BOOT)
+#define CONFIG_ATALK_MODULE 1
+#endif
+
+/*
+ * Appletalk devices
+ */
+#if  defined(__module__BOOT)
+#undef  CONFIG_DEV_APPLETALK
+#else
+#define CONFIG_DEV_APPLETALK 1
+#undef  CONFIG_LTPC
+#define CONFIG_LTPC_MODULE 1
+#undef  CONFIG_COPS
+#define CONFIG_COPS_MODULE 1
+#define CONFIG_COPS_DAYNA 1
+#define CONFIG_COPS_TANGENT 1
+#undef  CONFIG_IPDDP
+#define CONFIG_IPDDP_MODULE 1
+#define CONFIG_IPDDP_ENCAP 1
+#define CONFIG_IPDDP_DECAP 1
+#endif
+#undef  CONFIG_DECNET
+#if  !defined(__module__BOOT)
+#define CONFIG_DECNET_MODULE 1
+#define CONFIG_DECNET_SIOCGIFCONF 1
+#define CONFIG_DECNET_ROUTER 1
+#define CONFIG_DECNET_ROUTE_FWMARK 1
+#endif
+#undef  CONFIG_BRIDGE
+#if  !defined(__module__BOOT)
+#define CONFIG_BRIDGE_MODULE 1
+#endif
+#undef  CONFIG_X25
+#undef  CONFIG_LAPB
+#undef  CONFIG_LLC
+#define CONFIG_NET_DIVERT 1
+#undef  CONFIG_ECONET
+#undef  CONFIG_WAN_ROUTER
+#if  !defined(__module__BOOT)
+#define CONFIG_WAN_ROUTER_MODULE 1
+#endif
+#undef  CONFIG_NET_FASTROUTE
+#undef  CONFIG_NET_HW_FLOWCONTROL
+
+/*
+ * QoS and/or fair queueing
+ */
+#if  defined(__module__BOOT)
+#undef  CONFIG_NET_SCHED
+#else
+#define CONFIG_NET_SCHED 1
+#undef  CONFIG_NET_SCH_CBQ
+#define CONFIG_NET_SCH_CBQ_MODULE 1
+#undef  CONFIG_NET_SCH_HTB
+#define CONFIG_NET_SCH_HTB_MODULE 1
+#undef  CONFIG_NET_SCH_CSZ
+#define CONFIG_NET_SCH_CSZ_MODULE 1
+#undef  CONFIG_NET_SCH_ATM
+#undef  CONFIG_NET_SCH_PRIO
+#define CONFIG_NET_SCH_PRIO_MODULE 1
+#undef  CONFIG_NET_SCH_RED
+#define CONFIG_NET_SCH_RED_MODULE 1
+#undef  CONFIG_NET_SCH_SFQ
+#define CONFIG_NET_SCH_SFQ_MODULE 1
+#undef  CONFIG_NET_SCH_TEQL
+#define CONFIG_NET_SCH_TEQL_MODULE 1
+#undef  CONFIG_NET_SCH_TBF
+#define CONFIG_NET_SCH_TBF_MODULE 1
+#undef  CONFIG_NET_SCH_GRED
+#define CONFIG_NET_SCH_GRED_MODULE 1
+#undef  CONFIG_NET_SCH_DSMARK
+#define CONFIG_NET_SCH_DSMARK_MODULE 1
+#undef  CONFIG_NET_SCH_INGRESS
+#define CONFIG_NET_SCH_INGRESS_MODULE 1
+#define CONFIG_NET_QOS 1
+#define CONFIG_NET_ESTIMATOR 1
+#define CONFIG_NET_CLS 1
+#undef  CONFIG_NET_CLS_TCINDEX
+#define CONFIG_NET_CLS_TCINDEX_MODULE 1
+#undef  CONFIG_NET_CLS_ROUTE4
+#define CONFIG_NET_CLS_ROUTE4_MODULE 1
+#define CONFIG_NET_CLS_ROUTE 1
+#undef  CONFIG_NET_CLS_FW
+#define CONFIG_NET_CLS_FW_MODULE 1
+#undef  CONFIG_NET_CLS_U32
+#define CONFIG_NET_CLS_U32_MODULE 1
+#undef  CONFIG_NET_CLS_RSVP
+#define CONFIG_NET_CLS_RSVP_MODULE 1
+#undef  CONFIG_NET_CLS_RSVP6
+#define CONFIG_NET_CLS_RSVP6_MODULE 1
+#define CONFIG_NET_CLS_POLICE 1
+#endif
+
+/*
+ * Network testing
+ */
+#undef  CONFIG_NET_PKTGEN
+
+/*
+ * Telephony Support
+ */
+#undef  CONFIG_PHONE
+#if  !defined(__module__BOOT)
+#define CONFIG_PHONE_MODULE 1
+#endif
+#undef  CONFIG_PHONE_IXJ
+#if  !defined(__module__BOOT)
+#define CONFIG_PHONE_IXJ_MODULE 1
+#endif
+#undef  CONFIG_PHONE_IXJ_PCMCIA
+#if  !defined(__module__BOOT)
+#define CONFIG_PHONE_IXJ_PCMCIA_MODULE 1
+#endif
+
+/*
+ * ATA/IDE/MFM/RLL support
+ */
+#define CONFIG_IDE 1
+
+/*
+ * IDE, ATA and ATAPI Block devices
+ */
+#define CONFIG_BLK_DEV_IDE 1
+
+/*
+ * Please see Documentation/ide.txt for help/info on IDE drives
+ */
+#undef  CONFIG_BLK_DEV_HD_IDE
+#undef  CONFIG_BLK_DEV_HD
+#define CONFIG_BLK_DEV_IDEDISK 1
+#define CONFIG_IDEDISK_MULTI_MODE 1
+#undef  CONFIG_IDEDISK_STROKE
+#undef  CONFIG_BLK_DEV_IDEDISK_VENDOR
+#undef  CONFIG_BLK_DEV_IDEDISK_FUJITSU
+#undef  CONFIG_BLK_DEV_IDEDISK_IBM
+#undef  CONFIG_BLK_DEV_IDEDISK_MAXTOR
+#undef  CONFIG_BLK_DEV_IDEDISK_QUANTUM
+#undef  CONFIG_BLK_DEV_IDEDISK_SEAGATE
+#undef  CONFIG_BLK_DEV_IDEDISK_WD
+#undef  CONFIG_BLK_DEV_COMMERIAL
+#undef  CONFIG_BLK_DEV_TIVO
+#undef  CONFIG_BLK_DEV_IDECS
+#define CONFIG_BLK_DEV_IDECS_MODULE 1
+#if  defined(__module__BOOT)
+#define CONFIG_BLK_DEV_IDECD 1
+#else
+#undef  CONFIG_BLK_DEV_IDECD
+#define CONFIG_BLK_DEV_IDECD_MODULE 1
+#endif
+#undef  CONFIG_BLK_DEV_IDETAPE
+#if  !defined(__module__BOOT)
+#define CONFIG_BLK_DEV_IDETAPE_MODULE 1
+#endif
+#define CONFIG_BLK_DEV_IDEFLOPPY 1
+#undef  CONFIG_BLK_DEV_IDESCSI
+#define CONFIG_BLK_DEV_IDESCSI_MODULE 1
+#undef  CONFIG_IDE_TASK_IOCTL
+
+/*
+ * IDE chipset support/bugfixes
+ */
+#define CONFIG_BLK_DEV_CMD640 1
+#undef  CONFIG_BLK_DEV_CMD640_ENHANCED
+#if  defined(__module__BOOT)
+#undef  CONFIG_BLK_DEV_ISAPNP
+#else
+#define CONFIG_BLK_DEV_ISAPNP 1
+#endif
+#define CONFIG_BLK_DEV_RZ1000 1
+#define CONFIG_BLK_DEV_IDEPCI 1
+#define CONFIG_IDEPCI_SHARE_IRQ 1
+#define CONFIG_BLK_DEV_IDEDMA_PCI 1
+#undef  CONFIG_BLK_DEV_OFFBOARD
+#undef  CONFIG_BLK_DEV_IDEDMA_FORCED
+#define CONFIG_IDEDMA_PCI_AUTO 1
+#if  defined(__module__BOOT)
+#define CONFIG_IDEDMA_ONLYDISK 1
+#else
+#undef  CONFIG_IDEDMA_ONLYDISK
+#endif
+#define CONFIG_BLK_DEV_IDEDMA 1
+#undef  CONFIG_IDEDMA_PCI_WIP
+#undef  CONFIG_BLK_DEV_IDEDMA_TIMEOUT
+#undef  CONFIG_IDEDMA_NEW_DRIVE_LISTINGS
+#define CONFIG_BLK_DEV_ADMA 1
+#define CONFIG_BLK_DEV_AEC62XX 1
+#define CONFIG_AEC62XX_TUNING 1
+#define CONFIG_BLK_DEV_ALI15X3 1
+#undef  CONFIG_WDC_ALI15X3
+#define CONFIG_BLK_DEV_AMD74XX 1
+#undef  CONFIG_AMD74XX_OVERRIDE
+#define CONFIG_BLK_DEV_CMD64X 1
+#define CONFIG_BLK_DEV_CMD680 1
+#define CONFIG_BLK_DEV_CY82C693 1
+#define CONFIG_BLK_DEV_CS5530 1
+#define CONFIG_BLK_DEV_HPT34X 1
+#undef  CONFIG_HPT34X_AUTODMA
+#define CONFIG_BLK_DEV_HPT366 1
+#define CONFIG_BLK_DEV_PIIX 1
+#define CONFIG_PIIX_TUNING 1
+#undef  CONFIG_BLK_DEV_NS87415
+#undef  CONFIG_BLK_DEV_OPTI621
+#define CONFIG_BLK_DEV_ADMA100 1
+#define CONFIG_BLK_DEV_PDC202XX 1
+#undef  CONFIG_PDC202XX_BURST
+#define CONFIG_PDC202XX_FORCE 1
+#define CONFIG_BLK_DEV_SVWKS 1
+#define CONFIG_BLK_DEV_SIS5513 1
+#define CONFIG_BLK_DEV_SLC90E66 1
+#undef  CONFIG_BLK_DEV_TRM290
+#define CONFIG_BLK_DEV_VIA82CXXX 1
+#define CONFIG_BLK_DEV_CENATEK 1
+#undef  CONFIG_IDE_CHIPSETS
+#undef  CONFIG_BLK_DEV_ELEVATOR_NOOP
+#define CONFIG_IDEDMA_AUTO 1
+#undef  CONFIG_IDEDMA_IVB
+#undef  CONFIG_DMA_NONPCI
+#define CONFIG_BLK_DEV_IDE_MODES 1
+#undef  CONFIG_BLK_DEV_ATARAID
+#define CONFIG_BLK_DEV_ATARAID_MODULE 1
+#undef  CONFIG_BLK_DEV_ATARAID_PDC
+#define CONFIG_BLK_DEV_ATARAID_PDC_MODULE 1
+#undef  CONFIG_BLK_DEV_ATARAID_HPT
+#define CONFIG_BLK_DEV_ATARAID_HPT_MODULE 1
+
+/*
+ * SCSI support
+ */
+#undef  CONFIG_SCSI
+#define CONFIG_SCSI_MODULE 1
+
+/*
+ * SCSI support type (disk, tape, CD-ROM)
+ */
+#undef  CONFIG_BLK_DEV_SD
+#define CONFIG_BLK_DEV_SD_MODULE 1
+#define CONFIG_SD_EXTRA_DEVS (40)
+#undef  CONFIG_CHR_DEV_ST
+#define CONFIG_CHR_DEV_ST_MODULE 1
+#undef  CONFIG_CHR_DEV_OSST
+#define CONFIG_CHR_DEV_OSST_MODULE 1
+#undef  CONFIG_BLK_DEV_SR
+#define CONFIG_BLK_DEV_SR_MODULE 1
+#define CONFIG_BLK_DEV_SR_VENDOR 1
+#define CONFIG_SR_EXTRA_DEVS (4)
+#undef  CONFIG_CHR_DEV_SG
+#define CONFIG_CHR_DEV_SG_MODULE 1
+
+/*
+ * Some SCSI devices (e.g. CD jukebox) support multiple LUNs
+ */
+#undef  CONFIG_SCSI_DEBUG_QUEUES
+#undef  CONFIG_SCSI_MULTI_LUN
+#if  defined(__module__BOOT)
+#undef  CONFIG_SCSI_CONSTANTS
+#undef  CONFIG_SCSI_LOGGING
+#else
+#define CONFIG_SCSI_CONSTANTS 1
+#define CONFIG_SCSI_LOGGING 1
+#endif
+
+/*
+ * SCSI low-level drivers
+ */
+#undef  CONFIG_BLK_DEV_3W_XXXX_RAID
+#define CONFIG_BLK_DEV_3W_XXXX_RAID_MODULE 1
+#undef  CONFIG_SCSI_7000FASST
+#define CONFIG_SCSI_7000FASST_MODULE 1
+#undef  CONFIG_SCSI_ACARD
+#define CONFIG_SCSI_ACARD_MODULE 1
+#undef  CONFIG_SCSI_AHA152X
+#define CONFIG_SCSI_AHA152X_MODULE 1
+#undef  CONFIG_SCSI_AHA1542
+#define CONFIG_SCSI_AHA1542_MODULE 1
+#undef  CONFIG_SCSI_AHA1740
+#define CONFIG_SCSI_AHA1740_MODULE 1
+#undef  CONFIG_SCSI_AACRAID
+#define CONFIG_SCSI_AACRAID_MODULE 1
+#undef  CONFIG_SCSI_AIC7XXX
+#define CONFIG_SCSI_AIC7XXX_MODULE 1
+#define CONFIG_AIC7XXX_CMDS_PER_DEVICE (253)
+#define CONFIG_AIC7XXX_RESET_DELAY_MS (15000)
+#undef  CONFIG_AIC7XXX_PROBE_EISA_VL
+#undef  CONFIG_AIC7XXX_BUILD_FIRMWARE
+#undef  CONFIG_SCSI_AIC79XX
+#define CONFIG_SCSI_AIC79XX_MODULE 1
+#define CONFIG_AIC79XX_CMDS_PER_DEVICE (253)
+#define CONFIG_AIC79XX_RESET_DELAY_MS (15000)
+#undef  CONFIG_AIC79XX_BUILD_FIRMWARE
+#define CONFIG_AIC79XX_ENABLE_RD_STRM 1
+#undef  CONFIG_AIC79XX_DEBUG_ENABLE
+#define CONFIG_AIC79XX_DEBUG_MASK (0)
+#undef  CONFIG_SCSI_AIC7XXX_OLD
+#define CONFIG_SCSI_AIC7XXX_OLD_MODULE 1
+#define CONFIG_AIC7XXX_OLD_TCQ_ON_BY_DEFAULT 1
+#define CONFIG_AIC7XXX_OLD_CMDS_PER_DEVICE (32)
+#define CONFIG_AIC7XXX_OLD_PROC_STATS 1
+#undef  CONFIG_SCSI_DPT_I2O
+#define CONFIG_SCSI_DPT_I2O_MODULE 1
+#undef  CONFIG_SCSI_ADVANSYS
+#define CONFIG_SCSI_ADVANSYS_MODULE 1
+#undef  CONFIG_SCSI_IN2000
+#define CONFIG_SCSI_IN2000_MODULE 1
+#undef  CONFIG_SCSI_AM53C974
+#define CONFIG_SCSI_AM53C974_MODULE 1
+#undef  CONFIG_SCSI_MEGARAID
+#define CONFIG_SCSI_MEGARAID_MODULE 1
+#undef  CONFIG_SCSI_BUSLOGIC
+#define CONFIG_SCSI_BUSLOGIC_MODULE 1
+#undef  CONFIG_SCSI_OMIT_FLASHPOINT
+#undef  CONFIG_SCSI_CPQFCTS
+#define CONFIG_SCSI_CPQFCTS_MODULE 1
+#undef  CONFIG_SCSI_DMX3191D
+#define CONFIG_SCSI_DMX3191D_MODULE 1
+#undef  CONFIG_SCSI_DTC3280
+#define CONFIG_SCSI_DTC3280_MODULE 1
+#undef  CONFIG_SCSI_EATA
+#define CONFIG_SCSI_EATA_MODULE 1
+#define CONFIG_SCSI_EATA_TAGGED_QUEUE 1
+#undef  CONFIG_SCSI_EATA_LINKED_COMMANDS
+#define CONFIG_SCSI_EATA_MAX_TAGS (16)
+#undef  CONFIG_SCSI_EATA_DMA
+#define CONFIG_SCSI_EATA_DMA_MODULE 1
+#undef  CONFIG_SCSI_EATA_PIO
+#define CONFIG_SCSI_EATA_PIO_MODULE 1
+#undef  CONFIG_SCSI_FUTURE_DOMAIN
+#define CONFIG_SCSI_FUTURE_DOMAIN_MODULE 1
+#undef  CONFIG_SCSI_GDTH
+#define CONFIG_SCSI_GDTH_MODULE 1
+#undef  CONFIG_SCSI_GENERIC_NCR5380
+#define CONFIG_SCSI_GENERIC_NCR5380_MODULE 1
+#undef  CONFIG_SCSI_GENERIC_NCR53C400
+#define CONFIG_SCSI_G_NCR5380_PORT 1
+#undef  CONFIG_SCSI_G_NCR5380_MEM
+#undef  CONFIG_SCSI_IPS
+#define CONFIG_SCSI_IPS_MODULE 1
+#undef  CONFIG_SCSI_INITIO
+#define CONFIG_SCSI_INITIO_MODULE 1
+#undef  CONFIG_SCSI_INIA100
+#define CONFIG_SCSI_INIA100_MODULE 1
+#undef  CONFIG_SCSI_PPA
+#define CONFIG_SCSI_PPA_MODULE 1
+#undef  CONFIG_SCSI_IMM
+#define CONFIG_SCSI_IMM_MODULE 1
+#undef  CONFIG_SCSI_IZIP_EPP16
+#undef  CONFIG_SCSI_IZIP_SLOW_CTR
+#undef  CONFIG_SCSI_NCR53C406A
+#define CONFIG_SCSI_NCR53C406A_MODULE 1
+#undef  CONFIG_SCSI_NCR53C7xx
+#define CONFIG_SCSI_NCR53C7xx_MODULE 1
+#undef  CONFIG_SCSI_NCR53C7xx_sync
+#define CONFIG_SCSI_NCR53C7xx_FAST 1
+#define CONFIG_SCSI_NCR53C7xx_DISCONNECT 1
+#undef  CONFIG_SCSI_SYM53C8XX_2
+#define CONFIG_SCSI_SYM53C8XX_2_MODULE 1
+#define CONFIG_SCSI_SYM53C8XX_DMA_ADDRESSING_MODE (1)
+#define CONFIG_SCSI_SYM53C8XX_DEFAULT_TAGS (16)
+#define CONFIG_SCSI_SYM53C8XX_MAX_TAGS (64)
+#undef  CONFIG_SCSI_SYM53C8XX_IOMAPPED
+#undef  CONFIG_SCSI_NCR53C8XX
+#define CONFIG_SCSI_NCR53C8XX_MODULE 1
+#undef  CONFIG_SCSI_SYM53C8XX
+#define CONFIG_SCSI_SYM53C8XX_MODULE 1
+#define CONFIG_SCSI_NCR53C8XX_DEFAULT_TAGS (8)
+#define CONFIG_SCSI_NCR53C8XX_MAX_TAGS (32)
+#define CONFIG_SCSI_NCR53C8XX_SYNC (40)
+#undef  CONFIG_SCSI_NCR53C8XX_PROFILE
+#undef  CONFIG_SCSI_NCR53C8XX_IOMAPPED
+#undef  CONFIG_SCSI_NCR53C8XX_PQS_PDS
+#undef  CONFIG_SCSI_NCR53C8XX_SYMBIOS_COMPAT
+#undef  CONFIG_SCSI_PAS16
+#define CONFIG_SCSI_PAS16_MODULE 1
+#undef  CONFIG_SCSI_PCI2000
+#define CONFIG_SCSI_PCI2000_MODULE 1
+#undef  CONFIG_SCSI_PCI2220I
+#define CONFIG_SCSI_PCI2220I_MODULE 1
+#undef  CONFIG_SCSI_PSI240I
+#define CONFIG_SCSI_PSI240I_MODULE 1
+#undef  CONFIG_SCSI_QLOGIC_FAS
+#define CONFIG_SCSI_QLOGIC_FAS_MODULE 1
+#undef  CONFIG_SCSI_QLOGIC_ISP
+#define CONFIG_SCSI_QLOGIC_ISP_MODULE 1
+#undef  CONFIG_SCSI_QLOGIC_FC
+#define CONFIG_SCSI_QLOGIC_FC_MODULE 1
+#undef  CONFIG_SCSI_QLOGIC_FC_FIRMWARE
+#undef  CONFIG_SCSI_QLOGIC_1280
+#define CONFIG_SCSI_QLOGIC_1280_MODULE 1
+#undef  CONFIG_SCSI_NEWISP
+#define CONFIG_SCSI_NEWISP_MODULE 1
+#undef  CONFIG_SCSI_SEAGATE
+#define CONFIG_SCSI_SEAGATE_MODULE 1
+#undef  CONFIG_SCSI_SIM710
+#define CONFIG_SCSI_SIM710_MODULE 1
+#undef  CONFIG_SCSI_SYM53C416
+#define CONFIG_SCSI_SYM53C416_MODULE 1
+#undef  CONFIG_SCSI_DC390T
+#define CONFIG_SCSI_DC390T_MODULE 1
+#undef  CONFIG_SCSI_DC390T_NOGENSUPP
+#undef  CONFIG_SCSI_T128
+#define CONFIG_SCSI_T128_MODULE 1
+#undef  CONFIG_SCSI_U14_34F
+#define CONFIG_SCSI_U14_34F_MODULE 1
+#undef  CONFIG_SCSI_U14_34F_LINKED_COMMANDS
+#define CONFIG_SCSI_U14_34F_MAX_TAGS (8)
+#undef  CONFIG_SCSI_ULTRASTOR
+#define CONFIG_SCSI_ULTRASTOR_MODULE 1
+#undef  CONFIG_SCSI_DEBUG
+#if  !defined(__module__BOOT)
+#define CONFIG_SCSI_DEBUG_MODULE 1
+#endif
+
+/*
+ * PCMCIA SCSI adapter support
+ */
+#define CONFIG_SCSI_PCMCIA 1
+#undef  CONFIG_PCMCIA_AHA152X
+#define CONFIG_PCMCIA_AHA152X_MODULE 1
+#undef  CONFIG_PCMCIA_FDOMAIN
+#define CONFIG_PCMCIA_FDOMAIN_MODULE 1
+#undef  CONFIG_PCMCIA_NINJA_SCSI
+#define CONFIG_PCMCIA_NINJA_SCSI_MODULE 1
+#undef  CONFIG_PCMCIA_QLOGIC
+#define CONFIG_PCMCIA_QLOGIC_MODULE 1
+
+/*
+ * Fusion MPT device support
+ */
+#undef  CONFIG_FUSION
+#define CONFIG_FUSION_MODULE 1
+#undef  CONFIG_FUSION_BOOT
+#undef  CONFIG_FUSION_ISENSE
+#undef  CONFIG_FUSION_CTL
+#define CONFIG_FUSION_CTL_MODULE 1
+#undef  CONFIG_FUSION_LAN
+#define CONFIG_FUSION_LAN_MODULE 1
+#define CONFIG_NET_FC 1
+
+/*
+ * IEEE 1394 (FireWire) support (EXPERIMENTAL)
+ */
+#undef  CONFIG_IEEE1394
+#define CONFIG_IEEE1394_MODULE 1
+
+/*
+ * Device Drivers
+ */
+#undef  CONFIG_IEEE1394_PCILYNX
+#undef  CONFIG_IEEE1394_OHCI1394
+#define CONFIG_IEEE1394_OHCI1394_MODULE 1
+
+/*
+ * Protocol Drivers
+ */
+#undef  CONFIG_IEEE1394_VIDEO1394
+#define CONFIG_IEEE1394_VIDEO1394_MODULE 1
+#undef  CONFIG_IEEE1394_SBP2
+#define CONFIG_IEEE1394_SBP2_MODULE 1
+#undef  CONFIG_IEEE1394_ETH1394
+#define CONFIG_IEEE1394_ETH1394_MODULE 1
+#undef  CONFIG_IEEE1394_DV1394
+#define CONFIG_IEEE1394_DV1394_MODULE 1
+#undef  CONFIG_IEEE1394_RAWIO
+#define CONFIG_IEEE1394_RAWIO_MODULE 1
+#undef  CONFIG_IEEE1394_CMP
+#define CONFIG_IEEE1394_CMP_MODULE 1
+#undef  CONFIG_IEEE1394_VERBOSEDEBUG
+
+/*
+ * I2O device support
+ */
+#undef  CONFIG_I2O
+#define CONFIG_I2O_MODULE 1
+#undef  CONFIG_I2O_PCI
+#define CONFIG_I2O_PCI_MODULE 1
+#undef  CONFIG_I2O_BLOCK
+#define CONFIG_I2O_BLOCK_MODULE 1
+#undef  CONFIG_I2O_LAN
+#define CONFIG_I2O_LAN_MODULE 1
+#undef  CONFIG_I2O_SCSI
+#define CONFIG_I2O_SCSI_MODULE 1
+#undef  CONFIG_I2O_PROC
+#define CONFIG_I2O_PROC_MODULE 1
+
+/*
+ * Network device support
+ */
+#define CONFIG_NETDEVICES 1
+
+/*
+ * ARCnet devices
+ */
+#undef  CONFIG_ARCNET
+#undef  CONFIG_DUMMY
+#if  !defined(__module__BOOT)
+#define CONFIG_DUMMY_MODULE 1
+#endif
+#undef  CONFIG_BONDING
+#if  !defined(__module__BOOT)
+#define CONFIG_BONDING_MODULE 1
+#endif
+#undef  CONFIG_EQUALIZER
+#if  !defined(__module__BOOT)
+#define CONFIG_EQUALIZER_MODULE 1
+#endif
+#undef  CONFIG_TUN
+#if  !defined(__module__BOOT)
+#define CONFIG_TUN_MODULE 1
+#endif
+#undef  CONFIG_ETHERTAP
+#define CONFIG_ETHERTAP_MODULE 1
+#if  !defined(__module__BOOT)
+#undef  CONFIG_NET_SB1000
+#define CONFIG_NET_SB1000_MODULE 1
+#endif
+
+/*
+ * Ethernet (10 or 100Mbit)
+ */
+#define CONFIG_NET_ETHERNET 1
+#undef  CONFIG_SUNLANCE
+#undef  CONFIG_HAPPYMEAL
+#define CONFIG_HAPPYMEAL_MODULE 1
+#undef  CONFIG_SUNBMAC
+#undef  CONFIG_SUNQE
+#undef  CONFIG_SUNGEM
+#define CONFIG_SUNGEM_MODULE 1
+#define CONFIG_NET_VENDOR_3COM 1
+#undef  CONFIG_EL1
+#define CONFIG_EL1_MODULE 1
+#undef  CONFIG_EL2
+#define CONFIG_EL2_MODULE 1
+#undef  CONFIG_ELPLUS
+#define CONFIG_ELPLUS_MODULE 1
+#undef  CONFIG_EL16
+#define CONFIG_EL16_MODULE 1
+#undef  CONFIG_EL3
+#define CONFIG_EL3_MODULE 1
+#undef  CONFIG_3C515
+#define CONFIG_3C515_MODULE 1
+#undef  CONFIG_ELMC
+#undef  CONFIG_ELMC_II
+#undef  CONFIG_VORTEX
+#define CONFIG_VORTEX_MODULE 1
+#undef  CONFIG_LANCE
+#define CONFIG_LANCE_MODULE 1
+#define CONFIG_NET_VENDOR_SMC 1
+#undef  CONFIG_WD80x3
+#define CONFIG_WD80x3_MODULE 1
+#undef  CONFIG_ULTRAMCA
+#undef  CONFIG_ULTRA
+#define CONFIG_ULTRA_MODULE 1
+#undef  CONFIG_ULTRA32
+#define CONFIG_ULTRA32_MODULE 1
+#undef  CONFIG_SMC9194
+#define CONFIG_SMC9194_MODULE 1
+#define CONFIG_NET_VENDOR_RACAL 1
+#undef  CONFIG_NI5010
+#define CONFIG_NI5010_MODULE 1
+#undef  CONFIG_NI52
+#define CONFIG_NI52_MODULE 1
+#undef  CONFIG_NI65
+#define CONFIG_NI65_MODULE 1
+#undef  CONFIG_AT1700
+#define CONFIG_AT1700_MODULE 1
+#undef  CONFIG_DEPCA
+#define CONFIG_DEPCA_MODULE 1
+#undef  CONFIG_HP100
+#define CONFIG_HP100_MODULE 1
+#define CONFIG_NET_ISA 1
+#undef  CONFIG_E2100
+#define CONFIG_E2100_MODULE 1
+#undef  CONFIG_EWRK3
+#if  defined(__module__up) || defined(__module__BOOT)
+#define CONFIG_EWRK3_MODULE 1
+#endif
+#undef  CONFIG_EEXPRESS
+#define CONFIG_EEXPRESS_MODULE 1
+#undef  CONFIG_EEXPRESS_PRO
+#define CONFIG_EEXPRESS_PRO_MODULE 1
+#undef  CONFIG_HPLAN_PLUS
+#define CONFIG_HPLAN_PLUS_MODULE 1
+#undef  CONFIG_HPLAN
+#define CONFIG_HPLAN_MODULE 1
+#undef  CONFIG_LP486E
+#define CONFIG_LP486E_MODULE 1
+#undef  CONFIG_ETH16I
+#define CONFIG_ETH16I_MODULE 1
+#undef  CONFIG_NE2000
+#define CONFIG_NE2000_MODULE 1
+#define CONFIG_NET_PCI 1
+#undef  CONFIG_PCNET32
+#define CONFIG_PCNET32_MODULE 1
+#undef  CONFIG_ADAPTEC_STARFIRE
+#define CONFIG_ADAPTEC_STARFIRE_MODULE 1
+#undef  CONFIG_AC3200
+#define CONFIG_AC3200_MODULE 1
+#undef  CONFIG_APRICOT
+#define CONFIG_APRICOT_MODULE 1
+#undef  CONFIG_CS89x0
+#define CONFIG_CS89x0_MODULE 1
+#undef  CONFIG_TULIP
+#define CONFIG_TULIP_MODULE 1
+#undef  CONFIG_TC35815
+#define CONFIG_TC35815_MODULE 1
+#undef  CONFIG_TULIP_MWI
+#define CONFIG_TULIP_MMIO 1
+#undef  CONFIG_DE4X5
+#define CONFIG_DE4X5_MODULE 1
+#undef  CONFIG_DGRS
+#define CONFIG_DGRS_MODULE 1
+#undef  CONFIG_DM9102
+#define CONFIG_DM9102_MODULE 1
+#undef  CONFIG_EEPRO100
+#define CONFIG_EEPRO100_MODULE 1
+#undef  CONFIG_NET_E100
+#define CONFIG_NET_E100_MODULE 1
+#undef  CONFIG_LNE390
+#define CONFIG_LNE390_MODULE 1
+#undef  CONFIG_FEALNX
+#undef  CONFIG_NATSEMI
+#define CONFIG_NATSEMI_MODULE 1
+#undef  CONFIG_NATSEMI_CABLE_MAGIC
+#undef  CONFIG_NE2K_PCI
+#define CONFIG_NE2K_PCI_MODULE 1
+#undef  CONFIG_NE3210
+#define CONFIG_NE3210_MODULE 1
+#undef  CONFIG_ES3210
+#define CONFIG_ES3210_MODULE 1
+#undef  CONFIG_8139CP
+#define CONFIG_8139CP_MODULE 1
+#undef  CONFIG_8139TOO
+#define CONFIG_8139TOO_MODULE 1
+#undef  CONFIG_8139TOO_PIO
+#undef  CONFIG_8139TOO_TUNE_TWISTER
+#define CONFIG_8139TOO_8129 1
+#undef  CONFIG_8139_NEW_RX_RESET
+#undef  CONFIG_SIS900
+#define CONFIG_SIS900_MODULE 1
+#undef  CONFIG_SIS900_OLD
+#define CONFIG_SIS900_OLD_MODULE 1
+#undef  CONFIG_EPIC100
+#define CONFIG_EPIC100_MODULE 1
+#undef  CONFIG_SUNDANCE
+#define CONFIG_SUNDANCE_MODULE 1
+#undef  CONFIG_TLAN
+#define CONFIG_TLAN_MODULE 1
+#undef  CONFIG_VIA_RHINE
+#define CONFIG_VIA_RHINE_MODULE 1
+#undef  CONFIG_VIA_RHINE_MMIO
+#undef  CONFIG_WINBOND_840
+#define CONFIG_WINBOND_840_MODULE 1
+#define CONFIG_NET_POCKET 1
+#undef  CONFIG_ATP
+#define CONFIG_ATP_MODULE 1
+#undef  CONFIG_DE600
+#define CONFIG_DE600_MODULE 1
+#undef  CONFIG_DE620
+#define CONFIG_DE620_MODULE 1
+
+/*
+ * Ethernet (1000 Mbit)
+ */
+#undef  CONFIG_ACENIC
+#define CONFIG_ACENIC_MODULE 1
+#undef  CONFIG_ACENIC_OMIT_TIGON_I
+#undef  CONFIG_DL2K
+#define CONFIG_DL2K_MODULE 1
+#undef  CONFIG_MYRI_SBUS
+#undef  CONFIG_NS83820
+#define CONFIG_NS83820_MODULE 1
+#undef  CONFIG_HAMACHI
+#define CONFIG_HAMACHI_MODULE 1
+#undef  CONFIG_YELLOWFIN
+#define CONFIG_YELLOWFIN_MODULE 1
+#undef  CONFIG_SK98LIN
+#define CONFIG_SK98LIN_MODULE 1
+#undef  CONFIG_TIGON3
+#define CONFIG_TIGON3_MODULE 1
+#undef  CONFIG_NET_E1000
+#define CONFIG_NET_E1000_MODULE 1
+#if  defined(__module__BOOT)
+#undef  CONFIG_FDDI
+#else
+#define CONFIG_FDDI 1
+#undef  CONFIG_DEFXX
+#define CONFIG_DEFXX_MODULE 1
+#undef  CONFIG_SKFP
+#define CONFIG_SKFP_MODULE 1
+#endif
+#undef  CONFIG_NETCONSOLE
+#define CONFIG_NETCONSOLE_MODULE 1
+#undef  CONFIG_HIPPI
+#undef  CONFIG_PLIP
+#define CONFIG_PLIP_MODULE 1
+#undef  CONFIG_PPP
+#if  !defined(__module__BOOT)
+#define CONFIG_PPP_MODULE 1
+#define CONFIG_PPP_MULTILINK 1
+#define CONFIG_PPP_FILTER 1
+#undef  CONFIG_PPP_ASYNC
+#define CONFIG_PPP_ASYNC_MODULE 1
+#undef  CONFIG_PPP_SYNC_TTY
+#define CONFIG_PPP_SYNC_TTY_MODULE 1
+#undef  CONFIG_PPP_DEFLATE
+#define CONFIG_PPP_DEFLATE_MODULE 1
+#undef  CONFIG_PPP_BSDCOMP
+#undef  CONFIG_PPPOE
+#undef  CONFIG_PPPOATM
+#define CONFIG_PPPOATM_MODULE 1
+#endif
+#undef  CONFIG_SLIP
+#if  !defined(__module__BOOT)
+#define CONFIG_SLIP_MODULE 1
+#define CONFIG_SLIP_COMPRESSED 1
+#define CONFIG_SLIP_SMART 1
+#define CONFIG_SLIP_MODE_SLIP6 1
+#endif
+
+/*
+ * Wireless LAN (non-hamradio)
+ */
+#define CONFIG_NET_RADIO 1
+#undef  CONFIG_STRIP
+#define CONFIG_STRIP_MODULE 1
+#undef  CONFIG_WAVELAN
+#define CONFIG_WAVELAN_MODULE 1
+#undef  CONFIG_ARLAN
+#define CONFIG_ARLAN_MODULE 1
+#undef  CONFIG_AIRONET4500
+#define CONFIG_AIRONET4500_MODULE 1
+#undef  CONFIG_AIRONET4500_NONCS
+#define CONFIG_AIRONET4500_NONCS_MODULE 1
+#define CONFIG_AIRONET4500_PNP 1
+#define CONFIG_AIRONET4500_PCI 1
+#define CONFIG_AIRONET4500_ISA 1
+#define CONFIG_AIRONET4500_I365 1
+#undef  CONFIG_AIRONET4500_PROC
+#define CONFIG_AIRONET4500_PROC_MODULE 1
+#undef  CONFIG_AIRO
+#define CONFIG_AIRO_MODULE 1
+#undef  CONFIG_HERMES
+#define CONFIG_HERMES_MODULE 1
+#undef  CONFIG_PLX_HERMES
+#define CONFIG_PLX_HERMES_MODULE 1
+#undef  CONFIG_PCI_HERMES
+#define CONFIG_PCI_HERMES_MODULE 1
+
+/*
+ * Wireless Pcmcia cards support
+ */
+#undef  CONFIG_PCMCIA_HERMES
+#define CONFIG_PCMCIA_HERMES_MODULE 1
+#undef  CONFIG_AIRO_CS
+#define CONFIG_AIRO_CS_MODULE 1
+#define CONFIG_NET_WIRELESS 1
+#undef  CONFIG_PCMCIA_HERMES_OLD
+#define CONFIG_PCMCIA_HERMES_OLD_MODULE 1
+
+/*
+ * Token Ring devices
+ */
+#define CONFIG_TR 1
+#undef  CONFIG_IBMTR
+#define CONFIG_IBMTR_MODULE 1
+#undef  CONFIG_IBMOL
+#define CONFIG_IBMOL_MODULE 1
+#undef  CONFIG_IBMLS
+#define CONFIG_IBMLS_MODULE 1
+#undef  CONFIG_3C359
+#define CONFIG_3C359_MODULE 1
+#undef  CONFIG_TMS380TR
+#define CONFIG_TMS380TR_MODULE 1
+#undef  CONFIG_TMSPCI
+#define CONFIG_TMSPCI_MODULE 1
+#undef  CONFIG_TMSISA
+#define CONFIG_TMSISA_MODULE 1
+#undef  CONFIG_ABYSS
+#define CONFIG_ABYSS_MODULE 1
+#undef  CONFIG_MADGEMC
+#undef  CONFIG_SMCTR
+#define CONFIG_SMCTR_MODULE 1
+#undef  CONFIG_IPHASE5526
+#define CONFIG_IPHASE5526_MODULE 1
+#undef  CONFIG_RCPCI
+#if  !defined(__module__BOOT)
+#define CONFIG_RCPCI_MODULE 1
+#endif
+#undef  CONFIG_SHAPER
+#if  !defined(__module__BOOT)
+#define CONFIG_SHAPER_MODULE 1
+#endif
+
+/*
+ * Wan interfaces
+ */
+#if  defined(__module__BOOT)
+#undef  CONFIG_WAN
+#else
+#define CONFIG_WAN 1
+#undef  CONFIG_HOSTESS_SV11
+#define CONFIG_HOSTESS_SV11_MODULE 1
+#undef  CONFIG_COSA
+#define CONFIG_COSA_MODULE 1
+#undef  CONFIG_COMX
+#undef  CONFIG_DSCC4
+#undef  CONFIG_FARSYNC
+#define CONFIG_FARSYNC_MODULE 1
+#undef  CONFIG_LANMEDIA
+#undef  CONFIG_ATI_XX20
+#define CONFIG_ATI_XX20_MODULE 1
+#undef  CONFIG_SEALEVEL_4021
+#define CONFIG_SEALEVEL_4021_MODULE 1
+#undef  CONFIG_SYNCLINK_SYNCPPP
+#undef  CONFIG_HDLC
+#undef  CONFIG_DLCI
+#define CONFIG_DLCI_MODULE 1
+#define CONFIG_DLCI_COUNT (24)
+#define CONFIG_DLCI_MAX (8)
+#undef  CONFIG_SDLA
+#define CONFIG_SDLA_MODULE 1
+#define CONFIG_WAN_ROUTER_DRIVERS 1
+#undef  CONFIG_VENDOR_SANGOMA
+#define CONFIG_VENDOR_SANGOMA_MODULE 1
+#define CONFIG_WANPIPE_CHDLC 1
+#define CONFIG_WANPIPE_FR 1
+#define CONFIG_WANPIPE_X25 1
+#define CONFIG_WANPIPE_PPP 1
+#define CONFIG_WANPIPE_MULTPPP 1
+#undef  CONFIG_CYCLADES_SYNC
+#define CONFIG_CYCLADES_SYNC_MODULE 1
+#define CONFIG_CYCLOMX_X25 1
+#undef  CONFIG_LAPBETHER
+#undef  CONFIG_X25_ASY
+#undef  CONFIG_SBNI
+#define CONFIG_SBNI_MODULE 1
+#define CONFIG_SBNI_MULTILINE 1
+#endif
+
+/*
+ * PCMCIA network device support
+ */
+#define CONFIG_NET_PCMCIA 1
+#undef  CONFIG_PCMCIA_3C589
+#define CONFIG_PCMCIA_3C589_MODULE 1
+#undef  CONFIG_PCMCIA_3C574
+#define CONFIG_PCMCIA_3C574_MODULE 1
+#undef  CONFIG_PCMCIA_FMVJ18X
+#define CONFIG_PCMCIA_FMVJ18X_MODULE 1
+#undef  CONFIG_PCMCIA_PCNET
+#define CONFIG_PCMCIA_PCNET_MODULE 1
+#undef  CONFIG_PCMCIA_AXNET
+#define CONFIG_PCMCIA_AXNET_MODULE 1
+#undef  CONFIG_PCMCIA_NMCLAN
+#define CONFIG_PCMCIA_NMCLAN_MODULE 1
+#undef  CONFIG_PCMCIA_SMC91C92
+#define CONFIG_PCMCIA_SMC91C92_MODULE 1
+#undef  CONFIG_PCMCIA_XIRC2PS
+#define CONFIG_PCMCIA_XIRC2PS_MODULE 1
+#undef  CONFIG_ARCNET_COM20020_CS
+#undef  CONFIG_PCMCIA_IBMTR
+#define CONFIG_PCMCIA_IBMTR_MODULE 1
+#undef  CONFIG_PCMCIA_XIRCOM
+#define CONFIG_PCMCIA_XIRCOM_MODULE 1
+#undef  CONFIG_PCMCIA_XIRTULIP
+#define CONFIG_PCMCIA_XIRTULIP_MODULE 1
+#define CONFIG_NET_PCMCIA_RADIO 1
+#undef  CONFIG_PCMCIA_RAYCS
+#define CONFIG_PCMCIA_RAYCS_MODULE 1
+#undef  CONFIG_PCMCIA_NETWAVE
+#define CONFIG_PCMCIA_NETWAVE_MODULE 1
+#undef  CONFIG_PCMCIA_WAVELAN
+#define CONFIG_PCMCIA_WAVELAN_MODULE 1
+#undef  CONFIG_PCMCIA_WVLAN
+#define CONFIG_PCMCIA_WVLAN_MODULE 1
+#undef  CONFIG_AIRONET4500_CS
+#define CONFIG_AIRONET4500_CS_MODULE 1
+
+/*
+ * Amateur Radio support
+ */
+#define CONFIG_HAMRADIO 1
+
+/*
+ * Packet Radio protocols
+ */
+#undef  CONFIG_AX25
+#define CONFIG_AX25_MODULE 1
+#undef  CONFIG_AX25_DAMA_SLAVE
+#undef  CONFIG_NETROM
+#define CONFIG_NETROM_MODULE 1
+#undef  CONFIG_ROSE
+#define CONFIG_ROSE_MODULE 1
+
+/*
+ * AX.25 network device drivers
+ */
+#undef  CONFIG_MKISS
+#undef  CONFIG_6PACK
+#undef  CONFIG_BPQETHER
+#undef  CONFIG_DMASCC
+#undef  CONFIG_SCC
+#undef  CONFIG_BAYCOM_SER_FDX
+#undef  CONFIG_BAYCOM_SER_HDX
+#undef  CONFIG_BAYCOM_PAR
+#undef  CONFIG_BAYCOM_EPP
+#undef  CONFIG_SOUNDMODEM
+#define CONFIG_SOUNDMODEM_MODULE 1
+#define CONFIG_SOUNDMODEM_SBC 1
+#define CONFIG_SOUNDMODEM_WSS 1
+#define CONFIG_SOUNDMODEM_AFSK1200 1
+#define CONFIG_SOUNDMODEM_AFSK2400_7 1
+#define CONFIG_SOUNDMODEM_AFSK2400_8 1
+#define CONFIG_SOUNDMODEM_AFSK2666 1
+#define CONFIG_SOUNDMODEM_HAPN4800 1
+#define CONFIG_SOUNDMODEM_PSK4800 1
+#define CONFIG_SOUNDMODEM_FSK9600 1
+#undef  CONFIG_YAM
+
+/*
+ * IrDA (infrared) support
+ */
+#undef  CONFIG_IRDA
+#if  !defined(__module__BOOT)
+#define CONFIG_IRDA_MODULE 1
+#endif
+
+/*
+ * ISDN subsystem
+ */
+#undef  CONFIG_ISDN
+#if  defined(__module__BOOT)
+#undef  CONFIG_KALLSYMS
+#else
+#define CONFIG_KALLSYMS 1
+#define CONFIG_ISDN_MODULE 1
+#define CONFIG_ISDN_BOOL 1
+#define CONFIG_ISDN_PPP 1
+#define CONFIG_ISDN_PPP_VJ 1
+#define CONFIG_ISDN_MPP 1
+#undef  CONFIG_ISDN_PPP_BSDCOMP
+#define CONFIG_ISDN_PPP_BSDCOMP_MODULE 1
+#define CONFIG_ISDN_AUDIO 1
+#define CONFIG_ISDN_TTY_FAX 1
+#endif
+
+/*
+ * Old CD-ROM drivers (not SCSI, not IDE)
+ */
+#undef  CONFIG_CD_NO_IDESCSI
+
+/*
+ * Input core support
+ */
+#if  defined(__module__BOOT)
+#define CONFIG_INPUT 1
+#define CONFIG_INPUT_KEYBDEV 1
+#define CONFIG_INPUT_MOUSEDEV 1
+#else
+#undef  CONFIG_INPUT
+#define CONFIG_INPUT_MODULE 1
+#undef  CONFIG_INPUT_KEYBDEV
+#define CONFIG_INPUT_KEYBDEV_MODULE 1
+#undef  CONFIG_INPUT_MOUSEDEV
+#define CONFIG_INPUT_MOUSEDEV_MODULE 1
+#endif
+#define CONFIG_INPUT_MOUSEDEV_SCREEN_X (1024)
+#define CONFIG_INPUT_MOUSEDEV_SCREEN_Y (768)
+#undef  CONFIG_INPUT_JOYDEV
+#if  !defined(__module__BOOT)
+#define CONFIG_INPUT_JOYDEV_MODULE 1
+#endif
+#undef  CONFIG_INPUT_EVDEV
+#define CONFIG_INPUT_EVDEV_MODULE 1
+
+/*
+ * Character devices
+ */
+#define CONFIG_VT 1
+#undef  CONFIG_ECC
+#define CONFIG_ECC_MODULE 1
+#define CONFIG_VT_CONSOLE 1
+#define CONFIG_SERIAL 1
+#define CONFIG_SERIAL_CONSOLE 1
+#if  defined(__module__BOOT)
+#undef  CONFIG_SERIAL_EXTENDED
+#undef  CONFIG_SERIAL_NONSTANDARD
+#else
+#define CONFIG_SERIAL_EXTENDED 1
+#define CONFIG_SERIAL_MANY_PORTS 1
+#define CONFIG_SERIAL_SHARE_IRQ 1
+#undef  CONFIG_SERIAL_DETECT_IRQ
+#define CONFIG_SERIAL_MULTIPORT 1
+#undef  CONFIG_HUB6
+#define CONFIG_SERIAL_NONSTANDARD 1
+#undef  CONFIG_COMPUTONE
+#define CONFIG_COMPUTONE_MODULE 1
+#undef  CONFIG_ROCKETPORT
+#define CONFIG_ROCKETPORT_MODULE 1
+#undef  CONFIG_CYCLADES
+#define CONFIG_CYCLADES_MODULE 1
+#undef  CONFIG_CYZ_INTR
+#undef  CONFIG_DIGIEPCA
+#define CONFIG_DIGIEPCA_MODULE 1
+#undef  CONFIG_ESPSERIAL
+#define CONFIG_ESPSERIAL_MODULE 1
+#undef  CONFIG_MOXA_INTELLIO
+#define CONFIG_MOXA_INTELLIO_MODULE 1
+#undef  CONFIG_MOXA_SMARTIO
+#define CONFIG_MOXA_SMARTIO_MODULE 1
+#undef  CONFIG_ISI
+#define CONFIG_ISI_MODULE 1
+#undef  CONFIG_SYNCLINK
+#define CONFIG_SYNCLINK_MODULE 1
+#undef  CONFIG_N_HDLC
+#define CONFIG_N_HDLC_MODULE 1
+#undef  CONFIG_RISCOM8
+#define CONFIG_RISCOM8_MODULE 1
+#undef  CONFIG_SPECIALIX
+#define CONFIG_SPECIALIX_MODULE 1
+#define CONFIG_SPECIALIX_RTSCTS 1
+#undef  CONFIG_SX
+#define CONFIG_SX_MODULE 1
+#undef  CONFIG_RIO
+#define CONFIG_STALDRV 1
+#undef  CONFIG_STALLION
+#define CONFIG_STALLION_MODULE 1
+#undef  CONFIG_ISTALLION
+#define CONFIG_ISTALLION_MODULE 1
+#endif
+#define CONFIG_UNIX98_PTYS 1
+#if  defined(__module__i586)
+#define CONFIG_UNIX98_PTY_COUNT (512)
+#elif  defined(__module__BOOT)
+#define CONFIG_UNIX98_PTY_COUNT (256)
+#else
+#define CONFIG_UNIX98_PTY_COUNT (2048)
+#endif
+#undef  CONFIG_PRINTER
+#define CONFIG_PRINTER_MODULE 1
+#if  defined(__module__BOOT)
+#undef  CONFIG_LP_CONSOLE
+#else
+#define CONFIG_LP_CONSOLE 1
+#endif
+#undef  CONFIG_PPDEV
+#if  !defined(__module__BOOT)
+#define CONFIG_PPDEV_MODULE 1
+#endif
+
+/*
+ * I2C support
+ */
+#undef  CONFIG_I2C
+#if  !defined(__module__BOOT)
+#define CONFIG_I2C_MODULE 1
+#undef  CONFIG_I2C_ALGOBIT
+#define CONFIG_I2C_ALGOBIT_MODULE 1
+#undef  CONFIG_I2C_PHILIPSPAR
+#define CONFIG_I2C_PHILIPSPAR_MODULE 1
+#undef  CONFIG_I2C_ELV
+#define CONFIG_I2C_ELV_MODULE 1
+#undef  CONFIG_I2C_VELLEMAN
+#define CONFIG_I2C_VELLEMAN_MODULE 1
+#undef  CONFIG_I2C_ALGOPCF
+#define CONFIG_I2C_ALGOPCF_MODULE 1
+#undef  CONFIG_I2C_ELEKTOR
+#define CONFIG_I2C_ELEKTOR_MODULE 1
+#define CONFIG_I2C_MAINBOARD 1
+#undef  CONFIG_I2C_ALI1535
+#define CONFIG_I2C_ALI1535_MODULE 1
+#undef  CONFIG_I2C_ALI15X3
+#define CONFIG_I2C_ALI15X3_MODULE 1
+#undef  CONFIG_I2C_HYDRA
+#define CONFIG_I2C_HYDRA_MODULE 1
+#undef  CONFIG_I2C_AMD756
+#define CONFIG_I2C_AMD756_MODULE 1
+#undef  CONFIG_I2C_TSUNAMI
+#undef  CONFIG_I2C_I801
+#define CONFIG_I2C_I801_MODULE 1
+#undef  CONFIG_I2C_I810
+#define CONFIG_I2C_I810_MODULE 1
+#undef  CONFIG_I2C_PIIX4
+#define CONFIG_I2C_PIIX4_MODULE 1
+#undef  CONFIG_I2C_SIS5595
+#define CONFIG_I2C_SIS5595_MODULE 1
+#undef  CONFIG_I2C_VIA
+#define CONFIG_I2C_VIA_MODULE 1
+#undef  CONFIG_I2C_VIAPRO
+#define CONFIG_I2C_VIAPRO_MODULE 1
+#undef  CONFIG_I2C_VOODOO3
+#define CONFIG_I2C_VOODOO3_MODULE 1
+#undef  CONFIG_I2C_ISA
+#define CONFIG_I2C_ISA_MODULE 1
+#undef  CONFIG_I2C_CHARDEV
+#define CONFIG_I2C_CHARDEV_MODULE 1
+#undef  CONFIG_I2C_PROC
+#define CONFIG_I2C_PROC_MODULE 1
+#endif
+
+/*
+ * Mice
+ */
+#undef  CONFIG_BUSMOUSE
+#define CONFIG_BUSMOUSE_MODULE 1
+#undef  CONFIG_ATIXL_BUSMOUSE
+#define CONFIG_ATIXL_BUSMOUSE_MODULE 1
+#undef  CONFIG_LOGIBUSMOUSE
+#define CONFIG_LOGIBUSMOUSE_MODULE 1
+#undef  CONFIG_MS_BUSMOUSE
+#define CONFIG_MS_BUSMOUSE_MODULE 1
+#define CONFIG_MOUSE 1
+#define CONFIG_PSMOUSE 1
+#undef  CONFIG_82C710_MOUSE
+#define CONFIG_82C710_MOUSE_MODULE 1
+#undef  CONFIG_PC110_PAD
+#define CONFIG_PC110_PAD_MODULE 1
+#undef  CONFIG_MK712_MOUSE
+#define CONFIG_MK712_MOUSE_MODULE 1
+
+/*
+ * Joysticks
+ */
+#undef  CONFIG_INPUT_GAMEPORT
+#define CONFIG_INPUT_GAMEPORT_MODULE 1
+#undef  CONFIG_INPUT_NS558
+#define CONFIG_INPUT_NS558_MODULE 1
+#undef  CONFIG_INPUT_LIGHTNING
+#define CONFIG_INPUT_LIGHTNING_MODULE 1
+#undef  CONFIG_INPUT_PCIGAME
+#define CONFIG_INPUT_PCIGAME_MODULE 1
+#undef  CONFIG_INPUT_CS461X
+#if  !defined(__module__BOOT)
+#define CONFIG_INPUT_CS461X_MODULE 1
+#endif
+#undef  CONFIG_INPUT_EMU10K1
+#define CONFIG_INPUT_EMU10K1_MODULE 1
+#undef  CONFIG_INPUT_SERIO
+#define CONFIG_INPUT_SERIO_MODULE 1
+#undef  CONFIG_INPUT_SERPORT
+#define CONFIG_INPUT_SERPORT_MODULE 1
+#undef  CONFIG_INPUT_ANALOG
+#define CONFIG_INPUT_ANALOG_MODULE 1
+#undef  CONFIG_INPUT_A3D
+#define CONFIG_INPUT_A3D_MODULE 1
+#undef  CONFIG_INPUT_ADI
+#define CONFIG_INPUT_ADI_MODULE 1
+#undef  CONFIG_INPUT_COBRA
+#define CONFIG_INPUT_COBRA_MODULE 1
+#undef  CONFIG_INPUT_GF2K
+#define CONFIG_INPUT_GF2K_MODULE 1
+#undef  CONFIG_INPUT_GRIP
+#define CONFIG_INPUT_GRIP_MODULE 1
+#undef  CONFIG_INPUT_INTERACT
+#define CONFIG_INPUT_INTERACT_MODULE 1
+#undef  CONFIG_INPUT_TMDC
+#define CONFIG_INPUT_TMDC_MODULE 1
+#undef  CONFIG_INPUT_SIDEWINDER
+#define CONFIG_INPUT_SIDEWINDER_MODULE 1
+#undef  CONFIG_INPUT_IFORCE_USB
+#define CONFIG_INPUT_IFORCE_USB_MODULE 1
+#undef  CONFIG_INPUT_IFORCE_232
+#define CONFIG_INPUT_IFORCE_232_MODULE 1
+#undef  CONFIG_INPUT_WARRIOR
+#define CONFIG_INPUT_WARRIOR_MODULE 1
+#undef  CONFIG_INPUT_MAGELLAN
+#define CONFIG_INPUT_MAGELLAN_MODULE 1
+#undef  CONFIG_INPUT_SPACEORB
+#define CONFIG_INPUT_SPACEORB_MODULE 1
+#undef  CONFIG_INPUT_SPACEBALL
+#define CONFIG_INPUT_SPACEBALL_MODULE 1
+#undef  CONFIG_INPUT_STINGER
+#if  !defined(__module__BOOT)
+#define CONFIG_INPUT_STINGER_MODULE 1
+#endif
+#undef  CONFIG_INPUT_DB9
+#define CONFIG_INPUT_DB9_MODULE 1
+#undef  CONFIG_INPUT_GAMECON
+#define CONFIG_INPUT_GAMECON_MODULE 1
+#undef  CONFIG_INPUT_TURBOGRAFX
+#define CONFIG_INPUT_TURBOGRAFX_MODULE 1
+#undef  CONFIG_QIC02_TAPE
+
+/*
+ * Watchdog Cards
+ */
+#if  defined(__module__BOOT)
+#undef  CONFIG_WATCHDOG
+#else
+#define CONFIG_WATCHDOG 1
+#undef  CONFIG_WATCHDOG_NOWAYOUT
+#undef  CONFIG_ACQUIRE_WDT
+#define CONFIG_ACQUIRE_WDT_MODULE 1
+#undef  CONFIG_ADVANTECH_WDT
+#define CONFIG_ADVANTECH_WDT_MODULE 1
+#undef  CONFIG_ALIM7101_WDT
+#define CONFIG_ALIM7101_WDT_MODULE 1
+#undef  CONFIG_SC520_WDT
+#define CONFIG_SC520_WDT_MODULE 1
+#undef  CONFIG_PCWATCHDOG
+#define CONFIG_PCWATCHDOG_MODULE 1
+#undef  CONFIG_EUROTECH_WDT
+#define CONFIG_EUROTECH_WDT_MODULE 1
+#undef  CONFIG_IB700_WDT
+#define CONFIG_IB700_WDT_MODULE 1
+#undef  CONFIG_WAFER_WDT
+#define CONFIG_WAFER_WDT_MODULE 1
+#undef  CONFIG_I810_TCO
+#define CONFIG_I810_TCO_MODULE 1
+#undef  CONFIG_MIXCOMWD
+#undef  CONFIG_60XX_WDT
+#undef  CONFIG_SC1200_WDT
+#define CONFIG_SC1200_WDT_MODULE 1
+#undef  CONFIG_SOFT_WATCHDOG
+#define CONFIG_SOFT_WATCHDOG_MODULE 1
+#undef  CONFIG_W83877F_WDT
+#define CONFIG_W83877F_WDT_MODULE 1
+#undef  CONFIG_WDT
+#define CONFIG_WDT_MODULE 1
+#undef  CONFIG_WDTPCI
+#define CONFIG_WDTPCI_MODULE 1
+#undef  CONFIG_WDT_501
+#undef  CONFIG_MACHZ_WDT
+#define CONFIG_MACHZ_WDT_MODULE 1
+#undef  CONFIG_AMD7XX_TCO
+#define CONFIG_AMD7XX_TCO_MODULE 1
+#endif
+#undef  CONFIG_AMD_RNG
+#define CONFIG_AMD_RNG_MODULE 1
+#undef  CONFIG_INTEL_RNG
+#define CONFIG_INTEL_RNG_MODULE 1
+#undef  CONFIG_AMD_PM768
+#define CONFIG_AMD_PM768_MODULE 1
+#undef  CONFIG_NVRAM
+#if  !defined(__module__BOOT)
+#define CONFIG_NVRAM_MODULE 1
+#endif
+#if  defined(__module__BOOT)
+#undef  CONFIG_RTC
+#else
+#define CONFIG_RTC 1
+#endif
+#undef  CONFIG_DTLK
+#if  !defined(__module__BOOT)
+#define CONFIG_DTLK_MODULE 1
+#endif
+#undef  CONFIG_R3964
+#define CONFIG_R3964_MODULE 1
+#undef  CONFIG_APPLICOM
+#undef  CONFIG_SONYPI
+#define CONFIG_SONYPI_MODULE 1
+
+/*
+ * Ftape, the floppy tape device driver
+ */
+#undef  CONFIG_FTAPE
+#undef  CONFIG_AGP
+#define CONFIG_AGP_MODULE 1
+#if  defined(__module__BOOT)
+#undef  CONFIG_AGP_INTEL
+#else
+#define CONFIG_AGP_INTEL 1
+#endif
+#define CONFIG_AGP_I810 1
+#if  defined(__module__BOOT)
+#undef  CONFIG_AGP_VIA
+#undef  CONFIG_AGP_AMD
+#undef  CONFIG_AGP_SIS
+#undef  CONFIG_AGP_ALI
+#undef  CONFIG_AGP_SWORKS
+#undef  CONFIG_DRM
+#else
+#define CONFIG_AGP_VIA 1
+#define CONFIG_AGP_AMD 1
+#define CONFIG_AGP_SIS 1
+#define CONFIG_AGP_ALI 1
+#define CONFIG_AGP_SWORKS 1
+#define CONFIG_DRM 1
+#define CONFIG_FTAPE_MODULE 1
+#undef  CONFIG_ZFTAPE
+#define CONFIG_ZFTAPE_MODULE 1
+#define CONFIG_ZFT_DFLT_BLK_SZ (10240)
+#endif
+
+/*
+ * PCMCIA character devices
+ */
+#undef  CONFIG_PCMCIA_SERIAL_CS
+#define CONFIG_PCMCIA_SERIAL_CS_MODULE 1
+#undef  CONFIG_SYNCLINK_CS
+#define CONFIG_SYNCLINK_CS_MODULE 1
+#undef  CONFIG_MWAVE
+#define CONFIG_MWAVE_MODULE 1
+#undef  CONFIG_BATTERY_GERICOM
+#if  !defined(__module__BOOT)
+#define CONFIG_BATTERY_GERICOM_MODULE 1
+#endif
+
+/*
+ * Multimedia devices
+ */
+#undef  CONFIG_VIDEO_DEV
+#if  !defined(__module__BOOT)
+#define CONFIG_VIDEO_DEV_MODULE 1
+#endif
+
+/*
+ * Crypto Hardware support
+ */
+#undef  CONFIG_CRYPTO_BROADCOM
+#define CONFIG_CRYPTO_BROADCOM_MODULE 1
+
+/*
+ * File systems
+ */
+#if  defined(__module__BOOT)
+#undef  CONFIG_QUOTA
+#else
+#define CONFIG_QUOTA 1
+#endif
+#undef  CONFIG_AUTOFS_FS
+#if  !defined(__module__BOOT)
+#define CONFIG_AUTOFS_FS_MODULE 1
+#endif
+#undef  CONFIG_AUTOFS4_FS
+#if  !defined(__module__BOOT)
+#define CONFIG_AUTOFS4_FS_MODULE 1
+#endif
+#undef  CONFIG_REISERFS_FS
+#define CONFIG_REISERFS_FS_MODULE 1
+#if  defined(__module__debug)
+#define CONFIG_REISERFS_CHECK 1
+#else
+#undef  CONFIG_REISERFS_CHECK
+#endif
+#if  defined(__module__BOOT)
+#undef  CONFIG_REISERFS_PROC_INFO
+#else
+#define CONFIG_REISERFS_PROC_INFO 1
+#endif
+#undef  CONFIG_ADFS_FS
+#undef  CONFIG_AFS_FS
+#if  !defined(__module__BOOT)
+#define CONFIG_AFS_FS_MODULE 1
+#endif
+#undef  CONFIG_ADFS_FS_RW
+#undef  CONFIG_AFFS_FS
+#undef  CONFIG_HFS_FS
+#if  !defined(__module__BOOT)
+#define CONFIG_HFS_FS_MODULE 1
+#endif
+#undef  CONFIG_BEFS_FS
+#define CONFIG_BEFS_FS_MODULE 1
+#undef  CONFIG_BEFS_DEBUG
+#undef  CONFIG_BFS_FS
+#if  !defined(__module__BOOT)
+#define CONFIG_BFS_FS_MODULE 1
+#endif
+#undef  CONFIG_EXT3_FS
+#define CONFIG_EXT3_FS_MODULE 1
+#undef  CONFIG_JBD
+#define CONFIG_JBD_MODULE 1
+#undef  CONFIG_JBD_DEBUG
+#if  defined(__module__BOOT)
+#define CONFIG_FAT_FS 1
+#else
+#undef  CONFIG_FAT_FS
+#define CONFIG_FAT_FS_MODULE 1
+#endif
+#undef  CONFIG_MSDOS_FS
+#define CONFIG_MSDOS_FS_MODULE 1
+#undef  CONFIG_UMSDOS_FS
+#if  !defined(__module__BOOT)
+#define CONFIG_UMSDOS_FS_MODULE 1
+#endif
+#if  defined(__module__BOOT)
+#define CONFIG_VFAT_FS 1
+#else
+#undef  CONFIG_VFAT_FS
+#define CONFIG_VFAT_FS_MODULE 1
+#endif
+#undef  CONFIG_EFS_FS
+#undef  CONFIG_JFFS_FS
+#undef  CONFIG_JFFS2_FS
+#if  defined(__module__BOOT)
+#define CONFIG_CRAMFS 1
+#undef  CONFIG_TMPFS
+#else
+#undef  CONFIG_CRAMFS
+#define CONFIG_CRAMFS_MODULE 1
+#define CONFIG_TMPFS 1
+#endif
+#define CONFIG_RAMFS 1
+#define CONFIG_ISO9660_FS 1
+#if  defined(__module__BOOT)
+#undef  CONFIG_JOLIET
+#undef  CONFIG_ZISOFS
+#else
+#define CONFIG_JOLIET 1
+#define CONFIG_ZISOFS 1
+#endif
+#undef  CONFIG_JFS_FS
+#define CONFIG_JFS_FS_MODULE 1
+#define CONFIG_JFS_DEBUG 1
+#undef  CONFIG_JFS_STATISTICS
+#undef  CONFIG_MINIX_FS
+#if  !defined(__module__BOOT)
+#define CONFIG_MINIX_FS_MODULE 1
+#endif
+#undef  CONFIG_VXFS_FS
+#define CONFIG_VXFS_FS_MODULE 1
+#undef  CONFIG_NTFS_FS
+#undef  CONFIG_NTFS_RW
+#undef  CONFIG_HPFS_FS
+#define CONFIG_PROC_FS 1
+#undef  CONFIG_DEVFS_FS
+#undef  CONFIG_DEVFS_MOUNT
+#undef  CONFIG_DEVFS_DEBUG
+#define CONFIG_DEVPTS_FS 1
+#undef  CONFIG_QNX4FS_FS
+#undef  CONFIG_QNX4FS_RW
+#undef  CONFIG_ROMFS_FS
+#if  !defined(__module__BOOT)
+#define CONFIG_ROMFS_FS_MODULE 1
+#endif
+#define CONFIG_EXT2_FS 1
+#undef  CONFIG_SYSV_FS
+#if  !defined(__module__BOOT)
+#define CONFIG_SYSV_FS_MODULE 1
+#endif
+#undef  CONFIG_UDF_FS
+#if  !defined(__module__BOOT)
+#define CONFIG_UDF_FS_MODULE 1
+#endif
+#if  defined(__module__BOOT)
+#undef  CONFIG_UDF_RW
+#else
+#define CONFIG_UDF_RW 1
+#endif
+#undef  CONFIG_UFS_FS
+#if  !defined(__module__BOOT)
+#define CONFIG_UFS_FS_MODULE 1
+#endif
+#undef  CONFIG_UFS_FS_WRITE
+
+/*
+ * Network File Systems
+ */
+#undef  CONFIG_CODA_FS
+#if  !defined(__module__BOOT)
+#define CONFIG_CODA_FS_MODULE 1
+#endif
+#undef  CONFIG_INTERMEZZO_FS
+#define CONFIG_INTERMEZZO_FS_MODULE 1
+#undef  CONFIG_NFS_FS
+#define CONFIG_NFS_FS_MODULE 1
+#define CONFIG_NFS_V3 1
+#undef  CONFIG_ROOT_NFS
+#undef  CONFIG_NFSD
+#if  !defined(__module__BOOT)
+#define CONFIG_NFSD_MODULE 1
+#endif
+#if  defined(__module__BOOT)
+#undef  CONFIG_NFSD_V3
+#else
+#define CONFIG_NFSD_V3 1
+#endif
+#undef  CONFIG_NFSD_TCP
+#undef  CONFIG_SUNRPC
+#define CONFIG_SUNRPC_MODULE 1
+#undef  CONFIG_LOCKD
+#define CONFIG_LOCKD_MODULE 1
+#define CONFIG_LOCKD_V4 1
+#undef  CONFIG_SMB_FS
+#if  !defined(__module__BOOT)
+#define CONFIG_SMB_FS_MODULE 1
+#undef  CONFIG_SMB_NLS_DEFAULT
+#endif
+#undef  CONFIG_NCP_FS
+#if  !defined(__module__BOOT)
+#define CONFIG_NCP_FS_MODULE 1
+#endif
+#if  defined(__module__BOOT)
+#undef  CONFIG_NCPFS_PACKET_SIGNING
+#undef  CONFIG_NCPFS_IOCTL_LOCKING
+#undef  CONFIG_NCPFS_STRONG
+#undef  CONFIG_NCPFS_NFS_NS
+#undef  CONFIG_NCPFS_OS2_NS
+#undef  CONFIG_NCPFS_SMALLDOS
+#undef  CONFIG_NCPFS_NLS
+#undef  CONFIG_NCPFS_EXTRAS
+#undef  CONFIG_ZISOFS_FS
+#else
+#define CONFIG_NCPFS_PACKET_SIGNING 1
+#define CONFIG_NCPFS_IOCTL_LOCKING 1
+#define CONFIG_NCPFS_STRONG 1
+#define CONFIG_NCPFS_NFS_NS 1
+#define CONFIG_NCPFS_OS2_NS 1
+#define CONFIG_NCPFS_SMALLDOS 1
+#define CONFIG_NCPFS_NLS 1
+#define CONFIG_NCPFS_EXTRAS 1
+#define CONFIG_ZISOFS_FS 1
+#endif
+
+/*
+ * Partition Types
+ */
+#define CONFIG_PARTITION_ADVANCED 1
+#undef  CONFIG_ACORN_PARTITION
+#if  defined(__module__BOOT)
+#undef  CONFIG_OSF_PARTITION
+#else
+#define CONFIG_OSF_PARTITION 1
+#endif
+#undef  CONFIG_AMIGA_PARTITION
+#undef  CONFIG_ATARI_PARTITION
+#define CONFIG_MAC_PARTITION 1
+#define CONFIG_MSDOS_PARTITION 1
+#define CONFIG_BSD_DISKLABEL 1
+#if  defined(__module__BOOT)
+#undef  CONFIG_MINIX_SUBPARTITION
+#undef  CONFIG_SOLARIS_X86_PARTITION
+#undef  CONFIG_UNIXWARE_DISKLABEL
+#else
+#define CONFIG_MINIX_SUBPARTITION 1
+#define CONFIG_SOLARIS_X86_PARTITION 1
+#define CONFIG_UNIXWARE_DISKLABEL 1
+#endif
+#undef  CONFIG_LDM_PARTITION
+#if  defined(__module__BOOT)
+#undef  CONFIG_SGI_PARTITION
+#else
+#define CONFIG_SGI_PARTITION 1
+#endif
+#undef  CONFIG_ULTRIX_PARTITION
+#if  defined(__module__BOOT)
+#undef  CONFIG_SUN_PARTITION
+#undef  CONFIG_SMB_NLS
+#else
+#define CONFIG_SUN_PARTITION 1
+#define CONFIG_SMB_NLS 1
+#endif
+#define CONFIG_NLS 1
+
+/*
+ * Native Language Support
+ */
+#define CONFIG_NLS_DEFAULT "iso8859-1"
+#undef  CONFIG_NLS_CODEPAGE_437
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_437_MODULE 1
+#endif
+#undef  CONFIG_NLS_CODEPAGE_737
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_737_MODULE 1
+#endif
+#undef  CONFIG_NLS_CODEPAGE_775
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_775_MODULE 1
+#endif
+#undef  CONFIG_NLS_CODEPAGE_850
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_850_MODULE 1
+#endif
+#undef  CONFIG_NLS_CODEPAGE_852
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_852_MODULE 1
+#endif
+#undef  CONFIG_NLS_CODEPAGE_855
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_855_MODULE 1
+#endif
+#undef  CONFIG_NLS_CODEPAGE_857
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_857_MODULE 1
+#endif
+#undef  CONFIG_NLS_CODEPAGE_860
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_860_MODULE 1
+#endif
+#undef  CONFIG_NLS_CODEPAGE_861
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_861_MODULE 1
+#endif
+#undef  CONFIG_NLS_CODEPAGE_862
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_862_MODULE 1
+#endif
+#undef  CONFIG_NLS_CODEPAGE_863
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_863_MODULE 1
+#endif
+#undef  CONFIG_NLS_CODEPAGE_864
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_864_MODULE 1
+#endif
+#undef  CONFIG_NLS_CODEPAGE_865
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_865_MODULE 1
+#endif
+#undef  CONFIG_NLS_CODEPAGE_866
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_866_MODULE 1
+#endif
+#undef  CONFIG_NLS_CODEPAGE_869
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_869_MODULE 1
+#endif
+#undef  CONFIG_NLS_CODEPAGE_936
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_936_MODULE 1
+#endif
+#undef  CONFIG_NLS_CODEPAGE_950
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_950_MODULE 1
+#endif
+#undef  CONFIG_NLS_CODEPAGE_932
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_932_MODULE 1
+#endif
+#undef  CONFIG_NLS_CODEPAGE_949
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_949_MODULE 1
+#endif
+#undef  CONFIG_NLS_CODEPAGE_874
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_874_MODULE 1
+#endif
+#undef  CONFIG_NLS_ISO8859_8
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_ISO8859_8_MODULE 1
+#endif
+#undef  CONFIG_NLS_CODEPAGE_1250
+#define CONFIG_NLS_CODEPAGE_1250_MODULE 1
+#undef  CONFIG_NLS_CODEPAGE_1251
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_CODEPAGE_1251_MODULE 1
+#endif
+#undef  CONFIG_NLS_ISO8859_1
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_ISO8859_1_MODULE 1
+#endif
+#undef  CONFIG_NLS_ISO8859_2
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_ISO8859_2_MODULE 1
+#endif
+#undef  CONFIG_NLS_ISO8859_3
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_ISO8859_3_MODULE 1
+#endif
+#undef  CONFIG_NLS_ISO8859_4
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_ISO8859_4_MODULE 1
+#endif
+#undef  CONFIG_NLS_ISO8859_5
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_ISO8859_5_MODULE 1
+#endif
+#undef  CONFIG_NLS_ISO8859_6
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_ISO8859_6_MODULE 1
+#endif
+#undef  CONFIG_NLS_ISO8859_7
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_ISO8859_7_MODULE 1
+#endif
+#undef  CONFIG_NLS_ISO8859_9
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_ISO8859_9_MODULE 1
+#endif
+#undef  CONFIG_NLS_ISO8859_13
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_ISO8859_13_MODULE 1
+#endif
+#undef  CONFIG_NLS_ISO8859_14
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_ISO8859_14_MODULE 1
+#endif
+#undef  CONFIG_NLS_ISO8859_15
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_ISO8859_15_MODULE 1
+#endif
+#undef  CONFIG_NLS_KOI8_R
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_KOI8_R_MODULE 1
+#endif
+#undef  CONFIG_NLS_KOI8_U
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_KOI8_U_MODULE 1
+#endif
+#undef  CONFIG_NLS_UTF8
+#if  !defined(__module__BOOT)
+#define CONFIG_NLS_UTF8_MODULE 1
+#endif
+
+/*
+ * Console drivers
+ */
+#define CONFIG_VGA_CONSOLE 1
+#define CONFIG_VIDEO_SELECT 1
+#if  defined(__module__BOOT)
+#define CONFIG_VIDEO_IGNORE_BAD_MODE 1
+#else
+#undef  CONFIG_VIDEO_IGNORE_BAD_MODE
+#endif
+#undef  CONFIG_MDA_CONSOLE
+#if  !defined(__module__BOOT)
+#define CONFIG_MDA_CONSOLE_MODULE 1
+#endif
+
+/*
+ * Frame-buffer support
+ */
+#define CONFIG_FB 1
+#define CONFIG_DUMMY_CONSOLE 1
+#undef  CONFIG_FB_RIVA
+#if  !defined(__module__BOOT)
+#define CONFIG_FB_RIVA_MODULE 1
+#endif
+#undef  CONFIG_FB_CLGEN
+#if  !defined(__module__BOOT)
+#define CONFIG_FB_CLGEN_MODULE 1
+#endif
+#undef  CONFIG_FB_PM2
+#if  !defined(__module__BOOT)
+#define CONFIG_FB_PM2_MODULE 1
+#undef  CONFIG_FB_PM2_FIFO_DISCONNECT
+#define CONFIG_FB_PM2_PCI 1
+#endif
+#undef  CONFIG_FB_PM3
+#define CONFIG_FB_PM3_MODULE 1
+#undef  CONFIG_FB_CYBER2000
+#define CONFIG_FB_VESA 1
+#undef  CONFIG_FB_VGA16
+#if  defined(__module__BOOT)
+#define CONFIG_FB_VGA16_MODULE 1
+#endif
+#undef  CONFIG_FB_HGA
+#if  !defined(__module__BOOT)
+#define CONFIG_FB_HGA_MODULE 1
+#endif
+#undef  CONFIG_FB_MATROX
+#if  !defined(__module__BOOT)
+#define CONFIG_FB_MATROX_MODULE 1
+#define CONFIG_FB_MATROX_MILLENIUM 1
+#define CONFIG_FB_MATROX_MYSTIQUE 1
+#define CONFIG_FB_MATROX_G100 1
+#undef  CONFIG_FB_MATROX_I2C
+#define CONFIG_FB_MATROX_I2C_MODULE 1
+#undef  CONFIG_FB_MATROX_MAVEN
+#define CONFIG_FB_MATROX_MAVEN_MODULE 1
+#undef  CONFIG_FB_MATROX_G450
+#undef  CONFIG_FB_MATROX_PROC
+#define CONFIG_FB_MATROX_MULTIHEAD 1
+#endif
+#undef  CONFIG_FB_ATY
+#if  !defined(__module__BOOT)
+#define CONFIG_FB_ATY_MODULE 1
+#define CONFIG_FB_ATY_GX 1
+#define CONFIG_FB_ATY_CT 1
+#endif
+#undef  CONFIG_FB_RADEON
+#if  !defined(__module__BOOT)
+#define CONFIG_FB_RADEON_MODULE 1
+#endif
+#undef  CONFIG_FB_ATY128
+#if  !defined(__module__BOOT)
+#define CONFIG_FB_ATY128_MODULE 1
+#endif
+#undef  CONFIG_FB_SIS
+#define CONFIG_FB_SIS_MODULE 1
+#define CONFIG_FB_SIS_300 1
+#define CONFIG_FB_SIS_315 1
+#undef  CONFIG_FB_NEOMAGIC
+#define CONFIG_FB_NEOMAGIC_MODULE 1
+#undef  CONFIG_FB_3DFX
+#if  !defined(__module__BOOT)
+#define CONFIG_FB_3DFX_MODULE 1
+#endif
+#undef  CONFIG_FB_VOODOO1
+#define CONFIG_FB_VOODOO1_MODULE 1
+#undef  CONFIG_FB_TRIDENT
+#undef  CONFIG_FB_VIRTUAL
+#undef  CONFIG_FBCON_ADVANCED
+#if  !defined(__module__BOOT)
+#undef  CONFIG_FBCON_MFB
+#define CONFIG_FBCON_MFB_MODULE 1
+#endif
+#define CONFIG_FBCON_CFB8 1
+#define CONFIG_FBCON_CFB16 1
+#define CONFIG_FBCON_CFB24 1
+#define CONFIG_FBCON_CFB32 1
+#if  defined(__module__BOOT)
+#undef  CONFIG_FBCON_VGA_PLANES
+#define CONFIG_FBCON_VGA_PLANES_MODULE 1
+#endif
+#if  !defined(__module__BOOT)
+#undef  CONFIG_FBCON_HGA
+#define CONFIG_FBCON_HGA_MODULE 1
+#endif
+#undef  CONFIG_FBCON_FONTWIDTH8_ONLY
+#undef  CONFIG_FBCON_FONTS
+#define CONFIG_FONT_8x8 1
+#define CONFIG_FONT_8x16 1
+#define CONFIG_SPEAKUP 1
+
+/*
+ * Type "y" for each synthesizer you want built into the kernel.
+ */
+#define CONFIG_SPEAKUP_ACNTSA 1
+#define CONFIG_SPEAKUP_ACNTPC 1
+#define CONFIG_SPEAKUP_APOLO 1
+#define CONFIG_SPEAKUP_AUDPTR 1
+#define CONFIG_SPEAKUP_BNS 1
+#define CONFIG_SPEAKUP_DECTLK 1
+#define CONFIG_SPEAKUP_DECEXT 1
+#define CONFIG_SPEAKUP_DTLK 1
+#define CONFIG_SPEAKUP_LTLK 1
+#define CONFIG_SPEAKUP_SPKOUT 1
+#define CONFIG_SPEAKUP_TXPRT 1
+
+/*
+ * Enter the four to six character synth string from above or none.
+ */
+#define CONFIG_SPEAKUP_DEFAULT "none"
+#undef  CONFIG_SPEAKUP_KEYMAP
+
+/*
+ * Sound
+ */
+#undef  CONFIG_SOUND
+#if  !defined(__module__BOOT)
+#define CONFIG_SOUND_MODULE 1
+#undef  CONFIG_SOUND_BT878
+#define CONFIG_SOUND_BT878_MODULE 1
+#undef  CONFIG_SOUND_CMPCI
+#define CONFIG_SOUND_CMPCI_MODULE 1
+#define CONFIG_SOUND_CMPCI_FM 1
+#define CONFIG_SOUND_CMPCI_FMIO 0x388
+#define CONFIG_SOUND_CMPCI_MIDI 1
+#define CONFIG_SOUND_CMPCI_MPUIO 0x330
+#define CONFIG_SOUND_CMPCI_JOYSTICK 1
+#define CONFIG_SOUND_CMPCI_CM8738 1
+#undef  CONFIG_SOUND_CMPCI_SPDIFINVERSE
+#define CONFIG_SOUND_CMPCI_SPDIFLOOP 1
+#define CONFIG_SOUND_CMPCI_SPEAKERS (2)
+#undef  CONFIG_SOUND_EMU10K1
+#define CONFIG_SOUND_EMU10K1_MODULE 1
+#define CONFIG_MIDI_EMU10K1 1
+#undef  CONFIG_SOUND_AUDIGY
+#define CONFIG_SOUND_AUDIGY_MODULE 1
+#undef  CONFIG_SOUND_FUSION
+#define CONFIG_SOUND_FUSION_MODULE 1
+#undef  CONFIG_SOUND_CS4281
+#define CONFIG_SOUND_CS4281_MODULE 1
+#undef  CONFIG_SOUND_ES1370
+#define CONFIG_SOUND_ES1370_MODULE 1
+#undef  CONFIG_SOUND_ES1371
+#define CONFIG_SOUND_ES1371_MODULE 1
+#undef  CONFIG_SOUND_ESSSOLO1
+#define CONFIG_SOUND_ESSSOLO1_MODULE 1
+#undef  CONFIG_SOUND_MAESTRO
+#define CONFIG_SOUND_MAESTRO_MODULE 1
+#undef  CONFIG_SOUND_MAESTRO3
+#define CONFIG_SOUND_MAESTRO3_MODULE 1
+#undef  CONFIG_SOUND_ICH
+#define CONFIG_SOUND_ICH_MODULE 1
+#undef  CONFIG_SOUND_RME96XX
+#define CONFIG_SOUND_RME96XX_MODULE 1
+#undef  CONFIG_SOUND_SONICVIBES
+#define CONFIG_SOUND_SONICVIBES_MODULE 1
+#undef  CONFIG_SOUND_TRIDENT
+#define CONFIG_SOUND_TRIDENT_MODULE 1
+#undef  CONFIG_SOUND_MSNDCLAS
+#define CONFIG_SOUND_MSNDCLAS_MODULE 1
+#undef  CONFIG_MSNDCLAS_HAVE_BOOT
+#define CONFIG_MSNDCLAS_INIT_FILE "/etc/sound/msndinit.bin"
+#define CONFIG_MSNDCLAS_PERM_FILE "/etc/sound/msndperm.bin"
+#undef  CONFIG_SOUND_MSNDPIN
+#define CONFIG_SOUND_MSNDPIN_MODULE 1
+#undef  CONFIG_MSNDPIN_HAVE_BOOT
+#define CONFIG_MSNDPIN_INIT_FILE "/etc/sound/pndspini.bin"
+#define CONFIG_MSNDPIN_PERM_FILE "/etc/sound/pndsperm.bin"
+#undef  CONFIG_SOUND_VIA82CXXX
+#define CONFIG_SOUND_VIA82CXXX_MODULE 1
+#define CONFIG_MIDI_VIA82CXXX 1
+#undef  CONFIG_SOUND_OSS
+#define CONFIG_SOUND_OSS_MODULE 1
+#undef  CONFIG_SOUND_TRACEINIT
+#define CONFIG_SOUND_DMAP 1
+#undef  CONFIG_SOUND_AD1816
+#define CONFIG_SOUND_AD1816_MODULE 1
+#undef  CONFIG_SOUND_SGALAXY
+#define CONFIG_SOUND_SGALAXY_MODULE 1
+#undef  CONFIG_SOUND_ADLIB
+#define CONFIG_SOUND_ADLIB_MODULE 1
+#undef  CONFIG_SOUND_ACI_MIXER
+#define CONFIG_SOUND_ACI_MIXER_MODULE 1
+#undef  CONFIG_SOUND_CS4232
+#define CONFIG_SOUND_CS4232_MODULE 1
+#undef  CONFIG_SOUND_SSCAPE
+#define CONFIG_SOUND_SSCAPE_MODULE 1
+#undef  CONFIG_SOUND_GUS
+#define CONFIG_SOUND_GUS_MODULE 1
+#define CONFIG_SOUND_GUS16 1
+#define CONFIG_SOUND_GUSMAX 1
+#undef  CONFIG_SOUND_VMIDI
+#define CONFIG_SOUND_VMIDI_MODULE 1
+#undef  CONFIG_SOUND_TRIX
+#define CONFIG_SOUND_TRIX_MODULE 1
+#undef  CONFIG_SOUND_MSS
+#define CONFIG_SOUND_MSS_MODULE 1
+#undef  CONFIG_SOUND_MPU401
+#define CONFIG_SOUND_MPU401_MODULE 1
+#undef  CONFIG_SOUND_NM256
+#define CONFIG_SOUND_NM256_MODULE 1
+#undef  CONFIG_SOUND_MAD16
+#define CONFIG_SOUND_MAD16_MODULE 1
+#define CONFIG_MAD16_OLDCARD 1
+#undef  CONFIG_SOUND_PAS
+#define CONFIG_SOUND_PAS_MODULE 1
+#undef  CONFIG_PAS_JOYSTICK
+#undef  CONFIG_SOUND_PSS
+#define CONFIG_SOUND_PSS_MODULE 1
+#undef  CONFIG_PSS_MIXER
+#undef  CONFIG_PSS_HAVE_BOOT
+#undef  CONFIG_SOUND_SB
+#define CONFIG_SOUND_SB_MODULE 1
+#undef  CONFIG_SOUND_AWE32_SYNTH
+#define CONFIG_SOUND_AWE32_SYNTH_MODULE 1
+#undef  CONFIG_SOUND_WAVEFRONT
+#define CONFIG_SOUND_WAVEFRONT_MODULE 1
+#undef  CONFIG_SOUND_MAUI
+#define CONFIG_SOUND_MAUI_MODULE 1
+#undef  CONFIG_SOUND_YM3812
+#define CONFIG_SOUND_YM3812_MODULE 1
+#undef  CONFIG_SOUND_OPL3SA1
+#define CONFIG_SOUND_OPL3SA1_MODULE 1
+#undef  CONFIG_SOUND_OPL3SA2
+#define CONFIG_SOUND_OPL3SA2_MODULE 1
+#undef  CONFIG_SOUND_YMFPCI
+#define CONFIG_SOUND_YMFPCI_MODULE 1
+#define CONFIG_SOUND_YMFPCI_LEGACY 1
+#undef  CONFIG_SOUND_UART6850
+#define CONFIG_SOUND_UART6850_MODULE 1
+#undef  CONFIG_SOUND_AEDSP16
+#define CONFIG_SOUND_AEDSP16_MODULE 1
+#define CONFIG_SC6600 1
+#define CONFIG_SC6600_JOY 1
+#define CONFIG_SC6600_CDROM (4)
+#define CONFIG_SC6600_CDROMBASE 0x0
+#define CONFIG_AEDSP16_SBPRO 1
+#define CONFIG_AEDSP16_MPU401 1
+#undef  CONFIG_SOUND_TVMIXER
+#define CONFIG_SOUND_TVMIXER_MODULE 1
+#endif
+
+/*
+ * USB support
+ */
+#if  defined(__module__BOOT)
+#define CONFIG_USB 1
+#else
+#undef  CONFIG_USB
+#define CONFIG_USB_MODULE 1
+#endif
+#undef  CONFIG_USB_DEBUG
+
+/*
+ * Miscellaneous USB options
+ */
+#define CONFIG_USB_DEVICEFS 1
+#undef  CONFIG_USB_BANDWIDTH
+#define CONFIG_USB_LONG_TIMEOUT 1
+
+/*
+ * USB Host Controller Drivers
+ */
+#undef  CONFIG_USB_EHCI_HCD
+#define CONFIG_USB_EHCI_HCD_MODULE 1
+#if  defined(__module__BOOT)
+#define CONFIG_USB_UHCI 1
+#else
+#undef  CONFIG_USB_UHCI
+#define CONFIG_USB_UHCI_MODULE 1
+#endif
+#undef  CONFIG_USB_UHCI_ALT
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_UHCI_ALT_MODULE 1
+#endif
+#if  defined(__module__BOOT)
+#define CONFIG_USB_OHCI 1
+#else
+#undef  CONFIG_USB_OHCI
+#define CONFIG_USB_OHCI_MODULE 1
+#endif
+
+/*
+ * USB Device Class drivers
+ */
+#undef  CONFIG_USB_AUDIO
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_AUDIO_MODULE 1
+#endif
+#undef  CONFIG_USB_EMI26
+#undef  CONFIG_USB_BLUETOOTH
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_BLUETOOTH_MODULE 1
+#endif
+#undef  CONFIG_USB_STORAGE
+#define CONFIG_USB_STORAGE_MODULE 1
+#undef  CONFIG_USB_STORAGE_DEBUG
+#if  defined(__module__BOOT)
+#undef  CONFIG_USB_STORAGE_DATAFAB
+#else
+#define CONFIG_USB_STORAGE_DATAFAB 1
+#endif
+#define CONFIG_USB_STORAGE_FREECOM 1
+#define CONFIG_USB_STORAGE_ISD200 1
+#if  defined(__module__BOOT)
+#undef  CONFIG_USB_STORAGE_DPCM
+#else
+#define CONFIG_USB_STORAGE_DPCM 1
+#endif
+#define CONFIG_USB_STORAGE_HP8200e 1
+#if  defined(__module__BOOT)
+#undef  CONFIG_USB_STORAGE_SDDR09
+#undef  CONFIG_USB_STORAGE_JUMPSHOT
+#else
+#define CONFIG_USB_STORAGE_SDDR09 1
+#define CONFIG_USB_STORAGE_JUMPSHOT 1
+#endif
+#undef  CONFIG_USB_ACM
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_ACM_MODULE 1
+#endif
+#undef  CONFIG_USB_PRINTER
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_PRINTER_MODULE 1
+#endif
+
+/*
+ * USB Human Interface Devices (HID)
+ */
+#if  defined(__module__BOOT)
+#define CONFIG_USB_HID 1
+#else
+#undef  CONFIG_USB_HID
+#define CONFIG_USB_HID_MODULE 1
+#endif
+#define CONFIG_USB_HIDINPUT 1
+#define CONFIG_USB_HIDDEV 1
+#if  !defined(__module__BOOT)
+#undef  CONFIG_USB_KBD
+#undef  CONFIG_USB_MOUSE
+#endif
+#undef  CONFIG_USB_WACOM
+#define CONFIG_USB_WACOM_MODULE 1
+
+/*
+ * USB Imaging devices
+ */
+#undef  CONFIG_USB_DC2XX
+#undef  CONFIG_USB_MDC800
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_MDC800_MODULE 1
+#endif
+#undef  CONFIG_USB_SCANNER
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_SCANNER_MODULE 1
+#endif
+#undef  CONFIG_USB_MICROTEK
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_MICROTEK_MODULE 1
+#endif
+#undef  CONFIG_USB_HPUSBSCSI
+#define CONFIG_USB_HPUSBSCSI_MODULE 1
+
+/*
+ * USB Multimedia devices
+ */
+#if  !defined(__module__BOOT)
+#undef  CONFIG_USB_IBMCAM
+#define CONFIG_USB_IBMCAM_MODULE 1
+#undef  CONFIG_USB_OV511
+#define CONFIG_USB_OV511_MODULE 1
+#undef  CONFIG_USB_PWC
+#define CONFIG_USB_PWC_MODULE 1
+#undef  CONFIG_USB_SE401
+#define CONFIG_USB_SE401_MODULE 1
+#undef  CONFIG_USB_STV680
+#define CONFIG_USB_STV680_MODULE 1
+#undef  CONFIG_USB_VICAM
+#define CONFIG_USB_VICAM_MODULE 1
+#undef  CONFIG_USB_DSBR
+#define CONFIG_USB_DSBR_MODULE 1
+#undef  CONFIG_USB_DABUSB
+#define CONFIG_USB_DABUSB_MODULE 1
+#endif
+
+/*
+ *   Video4Linux support is needed for USB Multimedia device support
+ */
+
+/*
+ * USB Network adaptors
+ */
+#undef  CONFIG_USB_PEGASUS
+#define CONFIG_USB_PEGASUS_MODULE 1
+#undef  CONFIG_USB_RTL8150
+#define CONFIG_USB_RTL8150_MODULE 1
+#undef  CONFIG_USB_KAWETH
+#define CONFIG_USB_KAWETH_MODULE 1
+#undef  CONFIG_USB_CATC
+#define CONFIG_USB_CATC_MODULE 1
+#undef  CONFIG_USB_CDCETHER
+#define CONFIG_USB_CDCETHER_MODULE 1
+#undef  CONFIG_USB_USBNET
+#define CONFIG_USB_USBNET_MODULE 1
+
+/*
+ * USB port drivers
+ */
+#undef  CONFIG_USB_USS720
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_USS720_MODULE 1
+#endif
+
+/*
+ * USB Serial Converter support
+ */
+#undef  CONFIG_USB_SERIAL
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_SERIAL_MODULE 1
+#endif
+#if  defined(__module__BOOT)
+#undef  CONFIG_USB_SERIAL_GENERIC
+#else
+#define CONFIG_USB_SERIAL_GENERIC 1
+#endif
+#undef  CONFIG_USB_SERIAL_BELKIN
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_SERIAL_BELKIN_MODULE 1
+#endif
+#undef  CONFIG_USB_SERIAL_WHITEHEAT
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_SERIAL_WHITEHEAT_MODULE 1
+#endif
+#undef  CONFIG_USB_SERIAL_DIGI_ACCELEPORT
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_SERIAL_DIGI_ACCELEPORT_MODULE 1
+#endif
+#undef  CONFIG_USB_SERIAL_EMPEG
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_SERIAL_EMPEG_MODULE 1
+#endif
+#undef  CONFIG_USB_SERIAL_FTDI_SIO
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_SERIAL_FTDI_SIO_MODULE 1
+#endif
+#undef  CONFIG_USB_SERIAL_VISOR
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_SERIAL_VISOR_MODULE 1
+#endif
+#undef  CONFIG_USB_SERIAL_IPAQ
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_SERIAL_IPAQ_MODULE 1
+#endif
+#undef  CONFIG_USB_SERIAL_IR
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_SERIAL_IR_MODULE 1
+#endif
+#undef  CONFIG_USB_SERIAL_EDGEPORT
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_SERIAL_EDGEPORT_MODULE 1
+#endif
+#undef  CONFIG_USB_SERIAL_KEYSPAN_PDA
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_SERIAL_KEYSPAN_PDA_MODULE 1
+#endif
+#undef  CONFIG_USB_SERIAL_KEYSPAN
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_SERIAL_KEYSPAN_MODULE 1
+#endif
+#undef  CONFIG_USB_SERIAL_KEYSPAN_USA28
+#undef  CONFIG_USB_SERIAL_KEYSPAN_USA28X
+#if  defined(__module__BOOT)
+#undef  CONFIG_USB_SERIAL_KEYSPAN_USA28XA
+#undef  CONFIG_USB_SERIAL_KEYSPAN_USA28XB
+#else
+#define CONFIG_USB_SERIAL_KEYSPAN_USA28XA 1
+#define CONFIG_USB_SERIAL_KEYSPAN_USA28XB 1
+#endif
+#undef  CONFIG_USB_SERIAL_KEYSPAN_USA19
+#undef  CONFIG_USB_SERIAL_KEYSPAN_USA18X
+#undef  CONFIG_USB_SERIAL_KEYSPAN_USA19W
+#undef  CONFIG_USB_SERIAL_KEYSPAN_USA49W
+#undef  CONFIG_USB_SERIAL_MCT_U232
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_SERIAL_MCT_U232_MODULE 1
+#endif
+#undef  CONFIG_USB_SERIAL_KLSI
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_SERIAL_KLSI_MODULE 1
+#endif
+#undef  CONFIG_USB_SERIAL_PL2303
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_SERIAL_PL2303_MODULE 1
+#endif
+#undef  CONFIG_USB_SERIAL_CYBERJACK
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_SERIAL_CYBERJACK_MODULE 1
+#endif
+#undef  CONFIG_USB_SERIAL_XIRCOM
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_SERIAL_XIRCOM_MODULE 1
+#endif
+#undef  CONFIG_USB_SERIAL_OMNINET
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_SERIAL_OMNINET_MODULE 1
+#endif
+
+/*
+ * USB Miscellaneous drivers
+ */
+#undef  CONFIG_USB_RIO500
+#if  !defined(__module__BOOT)
+#define CONFIG_USB_RIO500_MODULE 1
+#endif
+#undef  CONFIG_USB_AUERSWALD
+#define CONFIG_USB_AUERSWALD_MODULE 1
+#undef  CONFIG_USB_BRLVGER
+#define CONFIG_USB_BRLVGER_MODULE 1
+#undef  CONFIG_USB_USBLCD
+#define CONFIG_USB_USBLCD_MODULE 1
+
+/*
+ * Bluetooth support
+ */
+#undef  CONFIG_BLUEZ
+#define CONFIG_BLUEZ_MODULE 1
+#undef  CONFIG_BLUEZ_L2CAP
+#define CONFIG_BLUEZ_L2CAP_MODULE 1
+#undef  CONFIG_BLUEZ_SCO
+#define CONFIG_BLUEZ_SCO_MODULE 1
+
+/*
+ * Bluetooth device drivers
+ */
+#undef  CONFIG_BLUEZ_HCIUSB
+#define CONFIG_BLUEZ_HCIUSB_MODULE 1
+#define CONFIG_BLUEZ_USB_FW_LOAD 1
+#define CONFIG_BLUEZ_USB_ZERO_PACKET 1
+#undef  CONFIG_BLUEZ_HCIUART
+#define CONFIG_BLUEZ_HCIUART_MODULE 1
+#define CONFIG_BLUEZ_HCIUART_H4 1
+#undef  CONFIG_BLUEZ_HCIDTL1
+#define CONFIG_BLUEZ_HCIDTL1_MODULE 1
+#undef  CONFIG_BLUEZ_HCIVHCI
+#define CONFIG_BLUEZ_HCIVHCI_MODULE 1
+
+/*
+ * Kernel hacking
+ */
+#undef  CONFIG_SOFTWARE_SUSPEND
+#define CONFIG_DEBUG_KERNEL 1
+#undef  CONFIG_FRAME_POINTER
+#undef  CONFIG_DEBUG_HIGHMEM
+#if  defined(__module__debug)
+#define CONFIG_DEBUG_SLAB 1
+#define CONFIG_DEBUG_IOVIRT 1
+#else
+#undef  CONFIG_DEBUG_SLAB
+#undef  CONFIG_DEBUG_IOVIRT
+#endif
+#define CONFIG_MAGIC_SYSRQ 1
+#if  defined(__module__debug)
+#define CONFIG_DEBUG_SPINLOCK 1
+#else
+#undef  CONFIG_DEBUG_SPINLOCK
+#endif
+#if  !defined(__module__i686) || defined(__module__bigmem)
+#undef  CONFIG_OPROFILE
+#else
+#define CONFIG_OPROFILE 1
+#endif
+
+/*
+ * Library routines
+ */
+#define CONFIG_ZLIB_INFLATE 1
+#undef  CONFIG_ZLIB_DEFLATE
+#define CONFIG_ZLIB_DEFLATE_MODULE 1
+
+/*
+ * You have to select at least one of the following emulations:
+ */
+#if  !defined(__module__BOOT)
+#undef  CONFIG_ABI_UW7
+#define CONFIG_ABI_UW7_MODULE 1
+#undef  CONFIG_ABI_SOLARIS
+#undef  CONFIG_ABI_IBCS
+#define CONFIG_ABI_IBCS_MODULE 1
+#undef  CONFIG_ABI_ISC
+#define CONFIG_ABI_ISC_MODULE 1
+#undef  CONFIG_ABI_SCO
+#define CONFIG_ABI_SCO_MODULE 1
+#undef  CONFIG_ABI_WYSE
+#endif
+
+/*
+ *   IP: Netfilter Configuration
+ */
+#if  !defined(__module__BOOT)
+#undef  CONFIG_IP_NF_CONNTRACK
+#define CONFIG_IP_NF_CONNTRACK_MODULE 1
+#undef  CONFIG_IP_NF_FTP
+#define CONFIG_IP_NF_FTP_MODULE 1
+#undef  CONFIG_IP_NF_IRC
+#define CONFIG_IP_NF_IRC_MODULE 1
+#undef  CONFIG_IP_NF_QUEUE
+#define CONFIG_IP_NF_QUEUE_MODULE 1
+#undef  CONFIG_IP_NF_IPTABLES
+#define CONFIG_IP_NF_IPTABLES_MODULE 1
+#undef  CONFIG_IP_NF_MATCH_LIMIT
+#define CONFIG_IP_NF_MATCH_LIMIT_MODULE 1
+#undef  CONFIG_IP_NF_MATCH_MAC
+#define CONFIG_IP_NF_MATCH_MAC_MODULE 1
+#undef  CONFIG_IP_NF_MATCH_MARK
+#define CONFIG_IP_NF_MATCH_MARK_MODULE 1
+#undef  CONFIG_IP_NF_MATCH_MULTIPORT
+#define CONFIG_IP_NF_MATCH_MULTIPORT_MODULE 1
+#undef  CONFIG_IP_NF_MATCH_TOS
+#define CONFIG_IP_NF_MATCH_TOS_MODULE 1
+#undef  CONFIG_IP_NF_MATCH_AH_ESP
+#define CONFIG_IP_NF_MATCH_AH_ESP_MODULE 1
+#undef  CONFIG_IP_NF_MATCH_LENGTH
+#define CONFIG_IP_NF_MATCH_LENGTH_MODULE 1
+#undef  CONFIG_IP_NF_MATCH_TTL
+#define CONFIG_IP_NF_MATCH_TTL_MODULE 1
+#undef  CONFIG_IP_NF_MATCH_TCPMSS
+#define CONFIG_IP_NF_MATCH_TCPMSS_MODULE 1
+#undef  CONFIG_IP_NF_MATCH_STATE
+#define CONFIG_IP_NF_MATCH_STATE_MODULE 1
+#undef  CONFIG_IP_NF_MATCH_UNCLEAN
+#define CONFIG_IP_NF_MATCH_UNCLEAN_MODULE 1
+#undef  CONFIG_IP_NF_MATCH_OWNER
+#define CONFIG_IP_NF_MATCH_OWNER_MODULE 1
+#undef  CONFIG_IP_NF_FILTER
+#define CONFIG_IP_NF_FILTER_MODULE 1
+#undef  CONFIG_IP_NF_TARGET_REJECT
+#define CONFIG_IP_NF_TARGET_REJECT_MODULE 1
+#undef  CONFIG_IP_NF_TARGET_MIRROR
+#define CONFIG_IP_NF_TARGET_MIRROR_MODULE 1
+#undef  CONFIG_IP_NF_NAT
+#define CONFIG_IP_NF_NAT_MODULE 1
+#define CONFIG_IP_NF_NAT_NEEDED 1
+#undef  CONFIG_IP_NF_TARGET_MASQUERADE
+#define CONFIG_IP_NF_TARGET_MASQUERADE_MODULE 1
+#undef  CONFIG_IP_NF_TARGET_REDIRECT
+#define CONFIG_IP_NF_TARGET_REDIRECT_MODULE 1
+#define CONFIG_IP_NF_NAT_LOCAL 1
+#undef  CONFIG_IP_NF_NAT_SNMP_BASIC
+#define CONFIG_IP_NF_NAT_SNMP_BASIC_MODULE 1
+#undef  CONFIG_IP_NF_NAT_IRC
+#define CONFIG_IP_NF_NAT_IRC_MODULE 1
+#undef  CONFIG_IP_NF_NAT_FTP
+#define CONFIG_IP_NF_NAT_FTP_MODULE 1
+#undef  CONFIG_IP_NF_MANGLE
+#define CONFIG_IP_NF_MANGLE_MODULE 1
+#undef  CONFIG_IP_NF_TARGET_TOS
+#define CONFIG_IP_NF_TARGET_TOS_MODULE 1
+#undef  CONFIG_IP_NF_TARGET_MARK
+#define CONFIG_IP_NF_TARGET_MARK_MODULE 1
+#undef  CONFIG_IP_NF_TARGET_LOG
+#define CONFIG_IP_NF_TARGET_LOG_MODULE 1
+#undef  CONFIG_IP_NF_TARGET_ULOG
+#define CONFIG_IP_NF_TARGET_ULOG_MODULE 1
+#undef  CONFIG_IP_NF_TARGET_TCPMSS
+#define CONFIG_IP_NF_TARGET_TCPMSS_MODULE 1
+#undef  CONFIG_IP_NF_ARPTABLES
+#define CONFIG_IP_NF_ARPTABLES_MODULE 1
+#undef  CONFIG_IP_NF_ARPFILTER
+#define CONFIG_IP_NF_ARPFILTER_MODULE 1
+#undef  CONFIG_IP_NF_COMPAT_IPCHAINS
+#define CONFIG_IP_NF_COMPAT_IPCHAINS_MODULE 1
+#undef  CONFIG_IP_NF_COMPAT_IPFWADM
+#define CONFIG_IP_NF_COMPAT_IPFWADM_MODULE 1
+#endif
+
+/*
+ *   IP: Virtual Server Configuration
+ */
+#if  !defined(__module__BOOT)
+#undef  CONFIG_IP_VS
+#define CONFIG_IP_VS_MODULE 1
+#undef  CONFIG_IP_VS_DEBUG
+#define CONFIG_IP_VS_TAB_BITS (16)
+#endif
+
+/*
+ * IPVS scheduler
+ */
+#if  !defined(__module__BOOT)
+#undef  CONFIG_IP_VS_RR
+#define CONFIG_IP_VS_RR_MODULE 1
+#undef  CONFIG_IP_VS_WRR
+#define CONFIG_IP_VS_WRR_MODULE 1
+#undef  CONFIG_IP_VS_LC
+#define CONFIG_IP_VS_LC_MODULE 1
+#undef  CONFIG_IP_VS_WLC
+#define CONFIG_IP_VS_WLC_MODULE 1
+#undef  CONFIG_IP_VS_LBLC
+#define CONFIG_IP_VS_LBLC_MODULE 1
+#undef  CONFIG_IP_VS_LBLCR
+#define CONFIG_IP_VS_LBLCR_MODULE 1
+#undef  CONFIG_IP_VS_DH
+#define CONFIG_IP_VS_DH_MODULE 1
+#undef  CONFIG_IP_VS_SH
+#define CONFIG_IP_VS_SH_MODULE 1
+#endif
+
+/*
+ * IPVS application helper
+ */
+#if  !defined(__module__BOOT)
+#undef  CONFIG_IP_VS_FTP
+#define CONFIG_IP_VS_FTP_MODULE 1
+#define CONFIG_IPV6_MODULE 1
+#endif
+
+/*
+ *   IPv6: Netfilter Configuration
+ */
+#if  !defined(__module__BOOT)
+#undef  CONFIG_IP6_NF_QUEUE
+#undef  CONFIG_IP6_NF_IPTABLES
+#define CONFIG_IP6_NF_IPTABLES_MODULE 1
+#undef  CONFIG_IP6_NF_MATCH_LIMIT
+#define CONFIG_IP6_NF_MATCH_LIMIT_MODULE 1
+#undef  CONFIG_IP6_NF_MATCH_MAC
+#define CONFIG_IP6_NF_MATCH_MAC_MODULE 1
+#undef  CONFIG_IP6_NF_MATCH_MULTIPORT
+#define CONFIG_IP6_NF_MATCH_MULTIPORT_MODULE 1
+#undef  CONFIG_IP6_NF_MATCH_OWNER
+#define CONFIG_IP6_NF_MATCH_OWNER_MODULE 1
+#undef  CONFIG_IP6_NF_MATCH_MARK
+#define CONFIG_IP6_NF_MATCH_MARK_MODULE 1
+#undef  CONFIG_IP6_NF_FILTER
+#define CONFIG_IP6_NF_FILTER_MODULE 1
+#undef  CONFIG_IP6_NF_TARGET_LOG
+#define CONFIG_IP6_NF_TARGET_LOG_MODULE 1
+#undef  CONFIG_IP6_NF_MANGLE
+#define CONFIG_IP6_NF_MANGLE_MODULE 1
+#undef  CONFIG_IP6_NF_TARGET_MARK
+#define CONFIG_IP6_NF_TARGET_MARK_MODULE 1
+#define CONFIG_ATM_CLIP 1
+#undef  CONFIG_ATM_CLIP_NO_ICMP
+#undef  CONFIG_ATM_LANE
+#define CONFIG_ATM_LANE_MODULE 1
+#undef  CONFIG_ATM_MPOA
+#define CONFIG_ATM_MPOA_MODULE 1
+#undef  CONFIG_ATM_BR2684
+#define CONFIG_ATM_BR2684_MODULE 1
+#define CONFIG_ATM_BR2684_IPFILTER 1
+#endif
+
+/*
+ * ATM drivers
+ */
+#if  !defined(__module__BOOT)
+#undef  CONFIG_ATM_TCP
+#define CONFIG_ATM_TCP_MODULE 1
+#undef  CONFIG_ATM_LANAI
+#define CONFIG_ATM_LANAI_MODULE 1
+#undef  CONFIG_ATM_ENI
+#define CONFIG_ATM_ENI_MODULE 1
+#undef  CONFIG_ATM_ENI_DEBUG
+#undef  CONFIG_ATM_ENI_TUNE_BURST
+#undef  CONFIG_ATM_FIRESTREAM
+#define CONFIG_ATM_FIRESTREAM_MODULE 1
+#undef  CONFIG_ATM_ZATM
+#define CONFIG_ATM_ZATM_MODULE 1
+#undef  CONFIG_ATM_ZATM_DEBUG
+#define CONFIG_ATM_ZATM_EXACT_TS 1
+#undef  CONFIG_ATM_NICSTAR
+#define CONFIG_ATM_NICSTAR_MODULE 1
+#define CONFIG_ATM_NICSTAR_USE_SUNI 1
+#define CONFIG_ATM_NICSTAR_USE_IDT77105 1
+#undef  CONFIG_ATM_IDT77252
+#define CONFIG_ATM_IDT77252_MODULE 1
+#undef  CONFIG_ATM_IDT77252_DEBUG
+#undef  CONFIG_ATM_IDT77252_RCV_ALL
+#define CONFIG_ATM_IDT77252_USE_SUNI 1
+#undef  CONFIG_ATM_AMBASSADOR
+#define CONFIG_ATM_AMBASSADOR_MODULE 1
+#undef  CONFIG_ATM_AMBASSADOR_DEBUG
+#undef  CONFIG_ATM_HORIZON
+#define CONFIG_ATM_HORIZON_MODULE 1
+#undef  CONFIG_ATM_HORIZON_DEBUG
+#undef  CONFIG_ATM_IA
+#define CONFIG_ATM_IA_MODULE 1
+#undef  CONFIG_ATM_IA_DEBUG
+#undef  CONFIG_ATM_FORE200E_MAYBE
+#define CONFIG_ATM_FORE200E_MAYBE_MODULE 1
+#define CONFIG_ATM_FORE200E_PCA 1
+#define CONFIG_ATM_FORE200E_PCA_DEFAULT_FW 1
+#define CONFIG_ATM_FORE200E_TX_RETRY (16)
+#define CONFIG_ATM_FORE200E_DEBUG (0)
+#undef  CONFIG_ATM_FORE200E
+#define CONFIG_ATM_FORE200E_MODULE 1
+#endif
+
+/*
+ * IrDA protocols
+ */
+#if  !defined(__module__BOOT)
+#undef  CONFIG_IRLAN
+#define CONFIG_IRLAN_MODULE 1
+#undef  CONFIG_IRNET
+#define CONFIG_IRNET_MODULE 1
+#undef  CONFIG_IRCOMM
+#define CONFIG_IRCOMM_MODULE 1
+#define CONFIG_IRDA_ULTRA 1
+#endif
+
+/*
+ * IrDA options
+ */
+#if  !defined(__module__BOOT)
+#define CONFIG_IRDA_CACHE_LAST_LSAP 1
+#define CONFIG_IRDA_FAST_RR 1
+#undef  CONFIG_IRDA_DEBUG
+#endif
+
+/*
+ * Infrared-port device drivers
+ */
+
+/*
+ * SIR device drivers
+ */
+#if  !defined(__module__BOOT)
+#undef  CONFIG_IRTTY_SIR
+#define CONFIG_IRTTY_SIR_MODULE 1
+#undef  CONFIG_IRPORT_SIR
+#define CONFIG_IRPORT_SIR_MODULE 1
+#endif
+
+/*
+ * Dongle support
+ */
+#if  !defined(__module__BOOT)
+#define CONFIG_DONGLE 1
+#undef  CONFIG_ESI_DONGLE
+#define CONFIG_ESI_DONGLE_MODULE 1
+#undef  CONFIG_ACTISYS_DONGLE
+#define CONFIG_ACTISYS_DONGLE_MODULE 1
+#undef  CONFIG_TEKRAM_DONGLE
+#define CONFIG_TEKRAM_DONGLE_MODULE 1
+#undef  CONFIG_GIRBIL_DONGLE
+#define CONFIG_GIRBIL_DONGLE_MODULE 1
+#undef  CONFIG_LITELINK_DONGLE
+#define CONFIG_LITELINK_DONGLE_MODULE 1
+#undef  CONFIG_OLD_BELKIN_DONGLE
+#define CONFIG_OLD_BELKIN_DONGLE_MODULE 1
+#endif
+
+/*
+ * FIR device drivers
+ */
+#if  !defined(__module__BOOT)
+#undef  CONFIG_USB_IRDA
+#define CONFIG_USB_IRDA_MODULE 1
+#undef  CONFIG_NSC_FIR
+#define CONFIG_NSC_FIR_MODULE 1
+#undef  CONFIG_WINBOND_FIR
+#define CONFIG_WINBOND_FIR_MODULE 1
+#undef  CONFIG_TOSHIBA_FIR
+#define CONFIG_TOSHIBA_FIR_MODULE 1
+#undef  CONFIG_SMC_IRCC_FIR
+#define CONFIG_SMC_IRCC_FIR_MODULE 1
+#undef  CONFIG_ALI_FIR
+#define CONFIG_ALI_FIR_MODULE 1
+#undef  CONFIG_VLSI_FIR
+#define CONFIG_VLSI_FIR_MODULE 1
+#endif
+
+/*
+ * ISDN feature submodules
+ */
+#if  !defined(__module__BOOT)
+#undef  CONFIG_ISDN_DRV_LOOP
+#define CONFIG_ISDN_DRV_LOOP_MODULE 1
+#undef  CONFIG_ISDN_DIVERSION
+#endif
+
+/*
+ * low-level hardware drivers
+ */
+
+/*
+ * Passive ISDN cards
+ */
+#if  !defined(__module__BOOT)
+#undef  CONFIG_ISDN_DRV_HISAX
+#define CONFIG_ISDN_DRV_HISAX_MODULE 1
+#define CONFIG_ISDN_HISAX 1
+#endif
+
+/*
+ *   D-channel protocol features
+ */
+#if  !defined(__module__BOOT)
+#define CONFIG_HISAX_EURO 1
+#define CONFIG_DE_AOC 1
+#undef  CONFIG_HISAX_NO_SENDCOMPLETE
+#undef  CONFIG_HISAX_NO_LLC
+#undef  CONFIG_HISAX_NO_KEYPAD
+#define CONFIG_HISAX_1TR6 1
+#define CONFIG_HISAX_NI1 1
+#define CONFIG_HISAX_MAX_CARDS (8)
+#endif
+
+/*
+ *   HiSax supported cards
+ */
+#if  !defined(__module__BOOT)
+#define CONFIG_HISAX_16_0 1
+#define CONFIG_HISAX_16_3 1
+#define CONFIG_HISAX_TELESPCI 1
+#define CONFIG_HISAX_S0BOX 1
+#define CONFIG_HISAX_AVM_A1 1
+#define CONFIG_HISAX_FRITZPCI 1
+#define CONFIG_HISAX_AVM_A1_PCMCIA 1
+#define CONFIG_HISAX_ELSA 1
+#define CONFIG_HISAX_IX1MICROR2 1
+#define CONFIG_HISAX_DIEHLDIVA 1
+#define CONFIG_HISAX_ASUSCOM 1
+#define CONFIG_HISAX_TELEINT 1
+#define CONFIG_HISAX_HFCS 1
+#define CONFIG_HISAX_SEDLBAUER 1
+#define CONFIG_HISAX_SPORTSTER 1
+#define CONFIG_HISAX_MIC 1
+#define CONFIG_HISAX_NETJET 1
+#define CONFIG_HISAX_NETJET_U 1
+#define CONFIG_HISAX_NICCY 1
+#define CONFIG_HISAX_ISURF 1
+#define CONFIG_HISAX_HSTSAPHIR 1
+#define CONFIG_HISAX_BKM_A4T 1
+#define CONFIG_HISAX_SCT_QUADRO 1
+#define CONFIG_HISAX_GAZEL 1
+#define CONFIG_HISAX_HFC_PCI 1
+#define CONFIG_HISAX_W6692 1
+#define CONFIG_HISAX_HFC_SX 1
+#define CONFIG_HISAX_DEBUG 1
+#undef  CONFIG_HISAX_SEDLBAUER_CS
+#define CONFIG_HISAX_SEDLBAUER_CS_MODULE 1
+#undef  CONFIG_HISAX_ELSA_CS
+#define CONFIG_HISAX_ELSA_CS_MODULE 1
+#undef  CONFIG_HISAX_AVM_A1_CS
+#define CONFIG_HISAX_AVM_A1_CS_MODULE 1
+#undef  CONFIG_HISAX_ST5481
+#define CONFIG_HISAX_ST5481_MODULE 1
+#undef  CONFIG_HISAX_FRITZ_PCIPNP
+#define CONFIG_HISAX_FRITZ_PCIPNP_MODULE 1
+#endif
+
+/*
+ * Active ISDN cards
+ */
+#if  !defined(__module__BOOT)
+#undef  CONFIG_ISDN_DRV_ICN
+#define CONFIG_ISDN_DRV_ICN_MODULE 1
+#undef  CONFIG_ISDN_DRV_PCBIT
+#define CONFIG_ISDN_DRV_PCBIT_MODULE 1
+#undef  CONFIG_ISDN_DRV_SC
+#undef  CONFIG_ISDN_DRV_ACT2000
+#define CONFIG_ISDN_DRV_EICON 1
+#undef  CONFIG_ISDN_DRV_EICON_DIVAS
+#define CONFIG_ISDN_DRV_EICON_DIVAS_MODULE 1
+#undef  CONFIG_ISDN_DRV_EICON_OLD
+#undef  CONFIG_ISDN_DRV_TPAM
+#define CONFIG_ISDN_DRV_TPAM_MODULE 1
+#undef  CONFIG_ISDN_CAPI
+#define CONFIG_ISDN_CAPI_MODULE 1
+#define CONFIG_ISDN_DRV_AVMB1_VERBOSE_REASON 1
+#define CONFIG_ISDN_CAPI_MIDDLEWARE 1
+#undef  CONFIG_ISDN_CAPI_CAPI20
+#define CONFIG_ISDN_CAPI_CAPI20_MODULE 1
+#define CONFIG_ISDN_CAPI_CAPIFS_BOOL 1
+#undef  CONFIG_ISDN_CAPI_CAPIFS
+#define CONFIG_ISDN_CAPI_CAPIFS_MODULE 1
+#undef  CONFIG_ISDN_CAPI_CAPIDRV
+#define CONFIG_ISDN_CAPI_CAPIDRV_MODULE 1
+#undef  CONFIG_ISDN_DRV_AVMB1_B1ISA
+#define CONFIG_ISDN_DRV_AVMB1_B1ISA_MODULE 1
+#undef  CONFIG_ISDN_DRV_AVMB1_B1PCI
+#define CONFIG_ISDN_DRV_AVMB1_B1PCI_MODULE 1
+#define CONFIG_ISDN_DRV_AVMB1_B1PCIV4 1
+#undef  CONFIG_ISDN_DRV_AVMB1_T1ISA
+#define CONFIG_ISDN_DRV_AVMB1_T1ISA_MODULE 1
+#undef  CONFIG_ISDN_DRV_AVMB1_B1PCMCIA
+#define CONFIG_ISDN_DRV_AVMB1_B1PCMCIA_MODULE 1
+#undef  CONFIG_ISDN_DRV_AVMB1_AVM_CS
+#define CONFIG_ISDN_DRV_AVMB1_AVM_CS_MODULE 1
+#undef  CONFIG_ISDN_DRV_AVMB1_T1PCI
+#define CONFIG_ISDN_DRV_AVMB1_T1PCI_MODULE 1
+#undef  CONFIG_ISDN_DRV_AVMB1_C4
+#define CONFIG_ISDN_DRV_AVMB1_C4_MODULE 1
+#undef  CONFIG_HYSDN
+#define CONFIG_HYSDN_MODULE 1
+#define CONFIG_HYSDN_CAPI 1
+#endif
+
+/*
+ * Hardware sensors support
+ */
+#if  !defined(__module__BOOT)
+#define CONFIG_SENSORS 1
+#undef  CONFIG_SENSORS_ADM1021
+#define CONFIG_SENSORS_ADM1021_MODULE 1
+#undef  CONFIG_SENSORS_ADM1024
+#define CONFIG_SENSORS_ADM1024_MODULE 1
+#undef  CONFIG_SENSORS_ADM1025
+#define CONFIG_SENSORS_ADM1025_MODULE 1
+#undef  CONFIG_SENSORS_ADM9240
+#define CONFIG_SENSORS_ADM9240_MODULE 1
+#undef  CONFIG_SENSORS_DS1621
+#define CONFIG_SENSORS_DS1621_MODULE 1
+#undef  CONFIG_SENSORS_FSCPOS
+#define CONFIG_SENSORS_FSCPOS_MODULE 1
+#undef  CONFIG_SENSORS_FSCSCY
+#define CONFIG_SENSORS_FSCSCY_MODULE 1
+#undef  CONFIG_SENSORS_GL518SM
+#define CONFIG_SENSORS_GL518SM_MODULE 1
+#undef  CONFIG_SENSORS_GL520SM
+#define CONFIG_SENSORS_GL520SM_MODULE 1
+#undef  CONFIG_SENSORS_MAXILIFE
+#define CONFIG_SENSORS_MAXILIFE_MODULE 1
+#undef  CONFIG_SENSORS_IT87
+#define CONFIG_SENSORS_IT87_MODULE 1
+#undef  CONFIG_SENSORS_MTP008
+#define CONFIG_SENSORS_MTP008_MODULE 1
+#undef  CONFIG_SENSORS_LM75
+#define CONFIG_SENSORS_LM75_MODULE 1
+#undef  CONFIG_SENSORS_LM78
+#define CONFIG_SENSORS_LM78_MODULE 1
+#undef  CONFIG_SENSORS_LM80
+#define CONFIG_SENSORS_LM80_MODULE 1
+#undef  CONFIG_SENSORS_LM87
+#define CONFIG_SENSORS_LM87_MODULE 1
+#undef  CONFIG_SENSORS_SIS5595
+#define CONFIG_SENSORS_SIS5595_MODULE 1
+#undef  CONFIG_SENSORS_THMC50
+#define CONFIG_SENSORS_THMC50_MODULE 1
+#undef  CONFIG_SENSORS_VIA686A
+#define CONFIG_SENSORS_VIA686A_MODULE 1
+#undef  CONFIG_SENSORS_W83781D
+#define CONFIG_SENSORS_W83781D_MODULE 1
+#define CONFIG_SENSORS_OTHER 1
+#undef  CONFIG_SENSORS_BT869
+#define CONFIG_SENSORS_BT869_MODULE 1
+#undef  CONFIG_SENSORS_DDCMON
+#define CONFIG_SENSORS_DDCMON_MODULE 1
+#undef  CONFIG_SENSORS_EEPROM
+#define CONFIG_SENSORS_EEPROM_MODULE 1
+#undef  CONFIG_SENSORS_MATORB
+#define CONFIG_SENSORS_MATORB_MODULE 1
+#endif
+
+/*
+ *   The compressor will be built as a module only!
+ */
+#if  !defined(__module__BOOT)
+#undef  CONFIG_ZFT_COMPRESSOR
+#define CONFIG_ZFT_COMPRESSOR_MODULE 1
+#define CONFIG_FT_NR_BUFFERS (3)
+#undef  CONFIG_FT_PROC_FS
+#define CONFIG_FT_NORMAL_DEBUG 1
+#undef  CONFIG_FT_FULL_DEBUG
+#undef  CONFIG_FT_NO_TRACE
+#undef  CONFIG_FT_NO_TRACE_AT_ALL
+#endif
+
+/*
+ * Hardware configuration
+ */
+#if  !defined(__module__BOOT)
+#define CONFIG_FT_STD_FDC 1
+#undef  CONFIG_FT_MACH2
+#undef  CONFIG_FT_PROBE_FC10
+#undef  CONFIG_FT_ALT_FDC
+#define CONFIG_FT_FDC_THR (8)
+#define CONFIG_FT_FDC_MAX_RATE (2000)
+#define CONFIG_FT_ALPHA_CLOCK (0)
+#undef  CONFIG_DRM_OLD
+#endif
+
+/*
+ * DRM 4.1 drivers
+ */
+#if  !defined(__module__BOOT)
+#define CONFIG_DRM_NEW 1
+#undef  CONFIG_DRM_TDFX
+#define CONFIG_DRM_TDFX_MODULE 1
+#undef  CONFIG_DRM_R128
+#define CONFIG_DRM_R128_MODULE 1
+#undef  CONFIG_DRM_RADEON
+#define CONFIG_DRM_RADEON_MODULE 1
+#undef  CONFIG_DRM_I810
+#define CONFIG_DRM_I810_MODULE 1
+#undef  CONFIG_DRM_I830
+#define CONFIG_DRM_I830_MODULE 1
+#undef  CONFIG_DRM_MGA
+#define CONFIG_DRM_MGA_MODULE 1
+#undef  CONFIG_DRM_SIS
+#define CONFIG_DRM_SIS_MODULE 1
+#endif
+
+/*
+ * Video For Linux
+ */
+#if  !defined(__module__BOOT)
+#define CONFIG_VIDEO_PROC_FS 1
+#undef  CONFIG_I2C_PARPORT
+#define CONFIG_I2C_PARPORT_MODULE 1
+#endif
+
+/*
+ * Video Adapters
+ */
+#if  !defined(__module__BOOT)
+#undef  CONFIG_VIDEO_BT848
+#define CONFIG_VIDEO_BT848_MODULE 1
+#undef  CONFIG_VIDEO_LS220
+#undef  CONFIG_VIDEO_MARGI
+#undef  CONFIG_VIDEO_PMS
+#define CONFIG_VIDEO_PMS_MODULE 1
+#undef  CONFIG_VIDEO_BWQCAM
+#define CONFIG_VIDEO_BWQCAM_MODULE 1
+#undef  CONFIG_VIDEO_CQCAM
+#define CONFIG_VIDEO_CQCAM_MODULE 1
+#undef  CONFIG_VIDEO_W9966
+#define CONFIG_VIDEO_W9966_MODULE 1
+#undef  CONFIG_VIDEO_CPIA
+#define CONFIG_VIDEO_CPIA_MODULE 1
+#undef  CONFIG_VIDEO_CPIA_PP
+#define CONFIG_VIDEO_CPIA_PP_MODULE 1
+#undef  CONFIG_VIDEO_CPIA_USB
+#define CONFIG_VIDEO_CPIA_USB_MODULE 1
+#undef  CONFIG_VIDEO_SAA5249
+#define CONFIG_VIDEO_SAA5249_MODULE 1
+#undef  CONFIG_TUNER_3036
+#define CONFIG_TUNER_3036_MODULE 1
+#undef  CONFIG_VIDEO_STRADIS
+#define CONFIG_VIDEO_STRADIS_MODULE 1
+#undef  CONFIG_VIDEO_ZORAN
+#define CONFIG_VIDEO_ZORAN_MODULE 1
+#undef  CONFIG_VIDEO_ZORAN_BUZ
+#define CONFIG_VIDEO_ZORAN_BUZ_MODULE 1
+#undef  CONFIG_VIDEO_ZORAN_DC10
+#define CONFIG_VIDEO_ZORAN_DC10_MODULE 1
+#undef  CONFIG_VIDEO_ZORAN_LML33
+#define CONFIG_VIDEO_ZORAN_LML33_MODULE 1
+#undef  CONFIG_VIDEO_ZR36120
+#define CONFIG_VIDEO_ZR36120_MODULE 1
+#undef  CONFIG_VIDEO_MEYE
+#define CONFIG_VIDEO_MEYE_MODULE 1
+#endif
+
+/*
+ * Radio Adapters
+ */
+#if  !defined(__module__BOOT)
+#undef  CONFIG_RADIO_CADET
+#define CONFIG_RADIO_CADET_MODULE 1
+#undef  CONFIG_RADIO_RTRACK
+#define CONFIG_RADIO_RTRACK_MODULE 1
+#undef  CONFIG_RADIO_RTRACK2
+#define CONFIG_RADIO_RTRACK2_MODULE 1
+#undef  CONFIG_RADIO_AZTECH
+#define CONFIG_RADIO_AZTECH_MODULE 1
+#undef  CONFIG_RADIO_GEMTEK
+#define CONFIG_RADIO_GEMTEK_MODULE 1
+#undef  CONFIG_RADIO_GEMTEK_PCI
+#define CONFIG_RADIO_GEMTEK_PCI_MODULE 1
+#undef  CONFIG_RADIO_MAXIRADIO
+#define CONFIG_RADIO_MAXIRADIO_MODULE 1
+#undef  CONFIG_RADIO_MAESTRO
+#define CONFIG_RADIO_MAESTRO_MODULE 1
+#undef  CONFIG_RADIO_MIROPCM20
+#define CONFIG_RADIO_MIROPCM20_MODULE 1
+#undef  CONFIG_RADIO_MIROPCM20_RDS
+#define CONFIG_RADIO_MIROPCM20_RDS_MODULE 1
+#undef  CONFIG_RADIO_SF16FMI
+#define CONFIG_RADIO_SF16FMI_MODULE 1
+#undef  CONFIG_RADIO_TERRATEC
+#define CONFIG_RADIO_TERRATEC_MODULE 1
+#undef  CONFIG_RADIO_TRUST
+#define CONFIG_RADIO_TRUST_MODULE 1
+#undef  CONFIG_RADIO_TYPHOON
+#define CONFIG_RADIO_TYPHOON_MODULE 1
+#define CONFIG_RADIO_TYPHOON_PROC_FS 1
+#undef  CONFIG_RADIO_ZOLTRIX
+#define CONFIG_RADIO_ZOLTRIX_MODULE 1
+#endif

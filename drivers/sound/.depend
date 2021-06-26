@@ -1,0 +1,1043 @@
+ac97.o: ac97.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/ac97.h
+ac97.h: \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_calls.h
+	@touch ac97.h
+ac97_codec.o: ac97_codec.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/bitops.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/ac97_codec.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h
+aci.o: aci.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/asm/semaphore.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/aci.h
+ad1816.o: ad1816.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/isapnp.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isapnp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isapnp/module.h)
+ad1848.o: ad1848.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/pm.h \
+   /usr/src/linux-2.4.18-14/include/linux/isapnp.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/ad1848.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/ad1848_mixer.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isapnp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isapnp/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)
+adlib_card.o: adlib_card.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/opl3.h
+aedsp16.o: aedsp16.c \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/aedsp16/sbpro.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/aedsp16/mss.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sc6600.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sc6600/joy.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sc6600/cdrom.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sc6600/cdrombase.h)
+au1000.o: au1000.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/linux/malloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/bitops.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/ac97_codec.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/hardirq.h
+audio.o: audio.c \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/ulaw.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/coproc.h
+audio_syms.o: audio_syms.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_calls.h
+awe_wave.o: awe_wave.c \
+   /usr/src/linux-2.4.18-14/include/linux/awe_voice.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isapnp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isapnp/module.h) \
+   /usr/src/linux-2.4.18-14/include/linux/isapnp.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/awe_wave.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/awe_hw.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/tuning.h \
+   /usr/src/linux-2.4.18-14/include/linux/ultrasound.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/awe32/mixer.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/awe32/midiemu.h)
+btaudio.o: btaudio.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/kdev_t.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h
+cmpci.o: cmpci.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/hardirq.h \
+   /usr/src/linux-2.4.18-14/include/linux/bitops.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/dm.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/cmpci/midi.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/cmpci.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/cmpci/fm.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/cmpci/mpuio.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/cmpci/fmio.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/cmpci/spdifinverse.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/cmpci/spdifloop.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/cmpci/speakers.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/cmpci/line/rear.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/cmpci/line/bass.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/cmpci/joystick.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pci.h)
+cs4232.o: cs4232.c \
+   /usr/src/linux-2.4.18-14/include/linux/isapnp.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/cs4232.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/ad1848.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/mpu401.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/wavefront/module.h)
+cs46xx.o: cs46xx.c \
+   /usr/src/linux-2.4.18-14/include/linux/list.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/bitops.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/hardirq.h \
+   /usr/src/linux-2.4.18-14/include/linux/ac97_codec.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/cs46xxpm-24.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/cs46xx_wrapper-24.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/cs461x.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/cs461x_image.h
+cs46xx_wrapper-24.h: \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h
+	@touch cs46xx_wrapper-24.h
+cs46xxpm-24.h: \
+   /usr/src/linux-2.4.18-14/include/linux/pm.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/cs46xxpm.h
+	@touch cs46xxpm-24.h
+dev_table.o: dev_table.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h
+dmabuf.o: dmabuf.c \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h
+es1370.o: es1370.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/hardirq.h \
+   /usr/src/linux-2.4.18-14/include/linux/gameport.h
+es1371.o: es1371.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/bitops.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/ac97_codec.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/hardirq.h \
+   /usr/src/linux-2.4.18-14/include/linux/gameport.h
+esssolo1.o: esssolo1.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/bitops.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/hardirq.h \
+   /usr/src/linux-2.4.18-14/include/linux/gameport.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/dm.h
+gus.h: \
+   /usr/src/linux-2.4.18-14/drivers/sound/ad1848.h
+	@touch gus.h
+gus_card.o: gus_card.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/gus.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/gus_hw.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/gus16.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/gusmax.h)
+gus_midi.o: gus_midi.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/gus.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/gus_hw.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/midi_synth.h
+gus_vol.o: gus_vol.c \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/gus.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/gus_linearvol.h
+gus_wave.o: gus_wave.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/include/linux/ultrasound.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/gus.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/gus_hw.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/iwmem.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/gusmax.h)
+hal2.o: hal2.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/hal2.h
+hal2.h: \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h
+	@touch hal2.h
+i810_audio.o: i810_audio.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/ac97_codec.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/hardirq.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pm.h)
+ics2101.o: ics2101.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/include/linux/ultrasound.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/gus.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/gus_hw.h
+ite8172.o: ite8172.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/linux/malloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/bitops.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/ac97_codec.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/hardirq.h
+mad16.o: mad16.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/gameport.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/ad1848.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sb.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/mpu401.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mad16/oldcard.h)
+maestro.o: maestro.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/reboot.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/hardirq.h \
+   /usr/src/linux-2.4.18-14/include/linux/bitops.h \
+   /usr/src/linux-2.4.18-14/include/linux/pm.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/maestro.h
+maestro3.o: maestro3.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/reboot.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/hardirq.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/ac97_codec.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/maestro3.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pm.h)
+maui.o: maui.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_firmware.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/mpu401.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)
+midi_syms.o: midi_syms.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/midi_synth.h
+midi_synth.o: midi_synth.c \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/midi_synth.h
+midibuf.o: midibuf.c \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h
+mpu401.o: mpu401.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/coproc.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/mpu401.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/midi_synth.h
+msnd.o: msnd.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/major.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/msnd.h
+msnd_classic.o: msnd_classic.c \
+   /usr/src/linux-2.4.18-14/drivers/sound/msnd_pinnacle.c
+msnd_classic.h: \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndclas/init/file.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndclas/perm/file.h)
+	@touch msnd_classic.h
+msnd_pinnacle.o: msnd_pinnacle.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_firmware.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/msnd.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndclas/have/boot.h) \
+   /usr/src/linux-2.4.18-14/drivers/sound/msnd_classic.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndpin/have/boot.h) \
+   /usr/src/linux-2.4.18-14/drivers/sound/msnd_pinnacle.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msnd/write/ndelay.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndclas/io.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndclas/irq.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndclas/mem.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndpin/io.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndpin/irq.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndpin/mem.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndpin/nonpnp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndpin/cfg.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndpin/mpu/io.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndpin/mpu/irq.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndpin/ide/io0.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndpin/ide/io1.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndpin/ide/irq.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndpin/joystick/io.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndpin/digital.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msnd/fifosize.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msnd/calsignal.h)
+msnd_pinnacle.h: \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndpin/init/file.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/msndpin/perm/file.h)
+	@touch msnd_pinnacle.h
+nec_vrc5477.o: nec_vrc5477.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/bitops.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/ac97_codec.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/hardirq.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h
+nm256.h: \
+   /usr/src/linux-2.4.18-14/drivers/sound/ac97.h
+	@touch nm256.h
+nm256_audio.o: nm256_audio.c \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/pm.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/nm256.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/nm256_coeff.h
+opl3.o: opl3.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/opl3.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/opl3_hw.h
+opl3sa.o: opl3sa.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/ad1848.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/mpu401.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sb.h
+opl3sa2.o: opl3sa2.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/isapnp.h \
+   /usr/src/linux-2.4.18-14/include/linux/pm.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/ad1848.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/mpu401.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isapnp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isapnp/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pm.h)
+os.h: \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/utsname.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/param.h \
+   /usr/src/linux-2.4.18-14/include/linux/ptrace.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/asm/page.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h
+	@touch os.h
+pas2_card.o: pas2_card.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/pas2.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sb.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pas/joystick.h)
+pas2_midi.o: pas2_midi.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/pas2.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/midi_synth.h
+pas2_mixer.o: pas2_mixer.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/pas2.h
+pas2_pcm.o: pas2_pcm.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/pas2.h
+pss.o: pss.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_firmware.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/ad1848.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/mpu401.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/coproc.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pss/mixer.h)
+rme96xx.o: rme96xx.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/rme96xx.h
+sb_audio.o: sb_audio.c \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sb_mixer.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sb.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sb_ess.h
+sb_card.o: sb_card.c \
+   /usr/src/linux-2.4.18-14/include/linux/mca.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/isapnp.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sb_mixer.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sb.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isapnp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isapnp/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mca.h)
+sb_common.o: sb_common.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_firmware.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/mpu401.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sb_mixer.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sb.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sb_ess.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/mpu401.h)
+sb_ess.o: sb_ess.c \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sb_mixer.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sb.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sb_ess.h
+sb_midi.o: sb_midi.c \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sb.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/midi_synth.h
+sb_mixer.o: sb_mixer.c \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sb.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sb_mixer.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sb_ess.h
+sequencer.o: sequencer.c \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/midi_ctrl.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/tuning.h
+sequencer_syms.o: sequencer_syms.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_calls.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/tuning.h
+sgalaxy.o: sgalaxy.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/ad1848.h
+skeleton.o: skeleton.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h
+sonicvibes.o: sonicvibes.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/hardirq.h \
+   /usr/src/linux-2.4.18-14/include/linux/gameport.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/dm.h
+sound_config.h: \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/os.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/soundvers.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pas/base.h) \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_calls.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/dev_table.h
+	@touch sound_config.h
+sound_core.o: sound_core.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/linux/major.h \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   /usr/src/linux-2.4.18-14/include/linux/devfs_fs_kernel.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/msndclas.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/msndpin.h)
+sound_firmware.o: sound_firmware.c \
+   /usr/src/linux-2.4.18-14/drivers/sound/os.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h
+sound_syms.o: sound_syms.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_calls.h
+sound_timer.o: sound_timer.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h
+soundcard.o: soundcard.c \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/major.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/dmap.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pci.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/traceinit.h)
+sscape.o: sscape.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_firmware.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/coproc.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/ad1848.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/mpu401.h
+swarm_cs4297a.o: swarm_cs4297a.c \
+   /usr/src/linux-2.4.18-14/include/linux/list.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/linux/malloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h \
+   /usr/src/linux-2.4.18-14/include/linux/ac97_codec.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/bitops.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/hardirq.h
+sys_timer.o: sys_timer.c \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h
+trident.o: trident.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/ac97_codec.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/hardirq.h \
+   /usr/src/linux-2.4.18-14/include/linux/bitops.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/alpha/nautilus.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/alpha/generic.h) \
+   /usr/src/linux-2.4.18-14/drivers/sound/trident.h \
+   /usr/src/linux-2.4.18-14/include/linux/pm.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h)
+trix.o: trix.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sb.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_firmware.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/ad1848.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/mpu401.h
+uart401.o: uart401.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/mpu401.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/midi_synth.h
+uart6850.o: uart6850.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/midi_synth.h
+v_midi.o: v_midi.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/v_midi.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/midi_synth.h
+via82cxxx_audio.o: via82cxxx_audio.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h \
+   /usr/src/linux-2.4.18-14/include/linux/ac97_codec.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/hardirq.h \
+   /usr/src/linux-2.4.18-14/include/asm/semaphore.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/dev_table.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/mpu401.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/via82cxxx/procfs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/midi/via82cxxx.h)
+vidc.o: vidc.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/vidc.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/softoss.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/softoss/module.h)
+vidc_fill.o: vidc_fill.S \
+   /usr/src/linux-2.4.18-14/include/linux/linkage.h
+vwsnd.o: vwsnd.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/asm/fixmap.h \
+   /usr/src/linux-2.4.18-14/include/asm/cobalt.h \
+   /usr/src/linux-2.4.18-14/include/asm/semaphore.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h
+waveartist.o: waveartist.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/bitops.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/waveartist.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/arm.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/arch/netwinder.h)
+wavfront.o: wavfront.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/ptrace.h \
+   /usr/src/linux-2.4.18-14/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/include/linux/wavefront.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/midi_synth.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/os.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/yss225.h
+wf_midi.o: wf_midi.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/include/linux/wavefront.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/midi_synth.h
+ymfpci.o: ymfpci.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h \
+   /usr/src/linux-2.4.18-14/include/linux/ac97_codec.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/ymfpci/legacy.h) \
+   /usr/src/linux-2.4.18-14/drivers/sound/sound_config.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/mpu401.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/ymfpci.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/ymfpci_image.h
+ymfpci.h: \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sound/ymfpci/legacy.h)
+	@touch ymfpci.h
+yss225.o: yss225.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+.PRECIOUS:	ac97.h \
+	cs46xx_wrapper-24.h \
+	cs46xxpm-24.h \
+	gus.h \
+	hal2.h \
+	msnd_classic.h \
+	msnd_pinnacle.h \
+	nm256.h \
+	os.h \
+	sound_config.h \
+	ymfpci.h \
+

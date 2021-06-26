@@ -1,0 +1,14 @@
+#if  defined(__module__debug) || defined(__module__up) || defined(__module__BOOT)
+#define __ver_i2c_pcf_add_bus	_ver_str(dc246a55)
+#define i2c_pcf_add_bus _set_ver(i2c_pcf_add_bus)
+#elif  defined(__module__bigmem) || defined(__module__smp)
+#define __ver_i2c_pcf_add_bus	_ver_str(1b45bd64)
+#define i2c_pcf_add_bus _set_ver(i2c_pcf_add_bus)
+#endif
+#if  defined(__module__debug) || defined(__module__up) || defined(__module__BOOT)
+#define __ver_i2c_pcf_del_bus	_ver_str(c7e5e121)
+#define i2c_pcf_del_bus _set_ver(i2c_pcf_del_bus)
+#elif  defined(__module__bigmem) || defined(__module__smp)
+#define __ver_i2c_pcf_del_bus	_ver_str(e0086a60)
+#define i2c_pcf_del_bus _set_ver(i2c_pcf_del_bus)
+#endif

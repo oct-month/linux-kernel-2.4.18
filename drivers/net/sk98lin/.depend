@@ -1,0 +1,71 @@
+skaddr.o: skaddr.c \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv1st.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv2nd.h
+skcsum.o: skcsum.c \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv1st.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skcsum.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv2nd.h
+skge.o: skge.c \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skversion.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv1st.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv2nd.h
+skgehwt.o: skgehwt.c \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv1st.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv2nd.h
+skgeinit.o: skgeinit.c \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv1st.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/xmac_ii.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv2nd.h
+skgepnmi.o: skgepnmi.c \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv1st.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/sktypes.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/xmac_ii.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdebug.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skqueue.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skgepnmi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skgesirq.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skcsum.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skvpd.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skgehw.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skgeinit.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv2nd.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skgepnm2.h
+skgesirq.o: skgesirq.c \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv1st.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skgepnmi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skrlmt.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv2nd.h
+ski2c.o: ski2c.c \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv1st.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/lm80.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv2nd.h
+sklm80.o: sklm80.c \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv1st.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/lm80.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv2nd.h
+skproc.o: skproc.c \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv1st.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv2nd.h
+skqueue.o: skqueue.c \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv1st.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skqueue.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv2nd.h
+skrlmt.o: skrlmt.c \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv1st.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv2nd.h
+sktimer.o: sktimer.c \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv1st.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv2nd.h
+skvpd.o: skvpd.c \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv1st.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/sktypes.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdebug.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv2nd.h
+skxmac2.o: skxmac2.c \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv1st.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/xmac_ii.h \
+   /usr/src/linux-2.4.18-14/drivers/net/sk98lin/h/skdrv2nd.h

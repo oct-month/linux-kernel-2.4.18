@@ -1,0 +1,4 @@
+#define __ver_nand_correct_data	_ver_str(e756919d)
+#define nand_correct_data _set_ver(nand_correct_data)
+#define __ver_nand_calculate_ecc	_ver_str(1f975137)
+#define nand_calculate_ecc _set_ver(nand_calculate_ecc)

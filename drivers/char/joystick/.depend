@@ -1,0 +1,219 @@
+a3d.o: a3d.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/gameport.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h
+adi.o: adi.c \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h \
+   /usr/src/linux-2.4.18-14/include/linux/gameport.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+amijoy.o: amijoy.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h
+analog.o: analog.c \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/bitops.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h \
+   /usr/src/linux-2.4.18-14/include/linux/gameport.h \
+   /usr/src/linux-2.4.18-14/include/asm/timex.h
+cobra.o: cobra.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/gameport.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h
+cs461x.o: cs461x.c \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/gameport.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h
+db9.o: db9.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h
+emu10k1-gp.o: emu10k1-gp.c \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/gameport.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h
+gamecon.o: gamecon.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h
+gameport.o: gameport.c \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/gameport.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/isapnp.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h
+gf2k.o: gf2k.c \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h \
+   /usr/src/linux-2.4.18-14/include/linux/gameport.h
+grip.o: grip.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/gameport.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h
+iforce.o: iforce.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/usb.h \
+   /usr/src/linux-2.4.18-14/include/linux/serio.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/input/iforce/232.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/input/iforce/232/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/input/iforce/usb.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/input/iforce/usb/module.h)
+interact.o: interact.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/gameport.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h
+lightning.o: lightning.c \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/gameport.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h
+magellan.o: magellan.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h \
+   /usr/src/linux-2.4.18-14/include/linux/serio.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+ns558.o: ns558.c \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/gameport.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/isapnp.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isapnp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isapnp/module.h)
+pcigame.o: pcigame.c \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/gameport.h
+serio.o: serio.c \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/serio.h
+serport.o: serport.c \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/serio.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/devfs/fs.h)
+sidewinder.o: sidewinder.c \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h \
+   /usr/src/linux-2.4.18-14/include/linux/gameport.h
+spaceball.o: spaceball.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h \
+   /usr/src/linux-2.4.18-14/include/linux/serio.h
+spaceorb.o: spaceorb.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h \
+   /usr/src/linux-2.4.18-14/include/linux/serio.h
+stinger.o: stinger.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h \
+   /usr/src/linux-2.4.18-14/include/linux/serio.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+tmdc.o: tmdc.c \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/gameport.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h
+turbografx.o: turbografx.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+warrior.o: warrior.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h \
+   /usr/src/linux-2.4.18-14/include/linux/serio.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h

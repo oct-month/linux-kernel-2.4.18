@@ -1,0 +1,83 @@
+sm.o: sm.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/net/hamradio/soundmodem/sm.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/soundmodem/afsk1200.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/soundmodem/afsk2400/7.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/soundmodem/afsk2400/8.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/soundmodem/afsk2666.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/soundmodem/psk4800.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/soundmodem/hapn4800.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/soundmodem/fsk9600.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/soundmodem/sbc.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/soundmodem/wss.h)
+sm.h: \
+   /usr/src/linux-2.4.18-14/include/linux/hdlcdrv.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundmodem.h \
+   /usr/src/linux-2.4.18-14/include/asm/processor.h \
+   /usr/src/linux-2.4.18-14/include/linux/bitops.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/include/asm/msr.h
+	@touch sm.h
+sm_afsk1200.o: sm_afsk1200.c \
+   /usr/src/linux-2.4.18-14/drivers/net/hamradio/soundmodem/sm.h \
+   /usr/src/linux-2.4.18-14/drivers/net/hamradio/soundmodem/sm_tbl_afsk1200.h
+sm_afsk2400_7.o: sm_afsk2400_7.c \
+   /usr/src/linux-2.4.18-14/drivers/net/hamradio/soundmodem/sm.h \
+   /usr/src/linux-2.4.18-14/drivers/net/hamradio/soundmodem/sm_tbl_afsk2400_7.h
+sm_afsk2400_8.o: sm_afsk2400_8.c \
+   /usr/src/linux-2.4.18-14/drivers/net/hamradio/soundmodem/sm.h \
+   /usr/src/linux-2.4.18-14/drivers/net/hamradio/soundmodem/sm_tbl_afsk2400_8.h
+sm_afsk2666.o: sm_afsk2666.c \
+   /usr/src/linux-2.4.18-14/drivers/net/hamradio/soundmodem/sm.h \
+   /usr/src/linux-2.4.18-14/drivers/net/hamradio/soundmodem/sm_tbl_afsk2666.h
+sm_fsk9600.o: sm_fsk9600.c \
+   /usr/src/linux-2.4.18-14/drivers/net/hamradio/soundmodem/sm.h \
+   /usr/src/linux-2.4.18-14/drivers/net/hamradio/soundmodem/sm_tbl_fsk9600.h
+sm_hapn4800.o: sm_hapn4800.c \
+   /usr/src/linux-2.4.18-14/drivers/net/hamradio/soundmodem/sm.h \
+   /usr/src/linux-2.4.18-14/drivers/net/hamradio/soundmodem/sm_tbl_hapn4800.h
+sm_psk4800.o: sm_psk4800.c \
+   /usr/src/linux-2.4.18-14/drivers/net/hamradio/soundmodem/sm.h \
+   /usr/src/linux-2.4.18-14/drivers/net/hamradio/soundmodem/sm_tbl_psk4800.h
+sm_sbc.o: sm_sbc.c \
+   /usr/src/linux-2.4.18-14/include/linux/ptrace.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundmodem.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/drivers/net/hamradio/soundmodem/sm.h \
+   /usr/src/linux-2.4.18-14/drivers/net/hamradio/soundmodem/smdma.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h
+sm_wss.o: sm_wss.c \
+   /usr/src/linux-2.4.18-14/include/linux/ptrace.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundmodem.h \
+   /usr/src/linux-2.4.18-14/drivers/net/hamradio/soundmodem/sm.h \
+   /usr/src/linux-2.4.18-14/drivers/net/hamradio/soundmodem/smdma.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h
+smdma.h: \
+   /usr/src/linux-2.4.18-14/drivers/net/hamradio/soundmodem/sm.h
+	@touch smdma.h
+.PRECIOUS:	sm.h \
+	smdma.h \
+

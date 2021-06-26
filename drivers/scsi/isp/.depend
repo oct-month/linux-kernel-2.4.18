@@ -1,0 +1,94 @@
+isp.o: isp.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/isp_linux.h
+isp_inline.h: \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/isp_target.h
+	@touch isp_inline.h
+isp_linux.o: isp_linux.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/isp_linux.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+isp_linux.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/autoconf.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h) \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/blkdev.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/ispreg.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/ispvar.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/ispmbox.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/isp_inline.h
+	@touch isp_linux.h
+isp_pci.o: isp_pci.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/isp_linux.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/asm_1040.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/asm_1080.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/asm_12160.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/asm_2100.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/asm_2200.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/asm_2300.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/highmem.h)
+isp_target.o: isp_target.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/isp_linux.h
+ispvar.h: \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/ispmbox.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/isp_target.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/isp_tpublic.h
+	@touch ispvar.h
+scsi_target.o: scsi_target.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/autoconf.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h) \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/blkdev.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/malloc.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/scatterlist.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/miscdevice.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/scsi_target.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/isp_tpublic.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h
+scsi_target_ctl.o: scsi_target_ctl.c \
+   /usr/src/linux-2.4.18-14/include/linux/major.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/isp/scsi_target.h
+.PRECIOUS:	isp_inline.h \
+	isp_linux.h \
+	ispvar.h \
+

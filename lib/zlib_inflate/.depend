@@ -1,0 +1,51 @@
+infblock.o: infblock.c \
+   /usr/src/linux-2.4.18-14/include/linux/zutil.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/infblock.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/inftrees.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/infcodes.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/infutil.h
+infcodes.o: infcodes.c \
+   /usr/src/linux-2.4.18-14/include/linux/zutil.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/inftrees.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/infblock.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/infcodes.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/infutil.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/inffast.h
+infcodes.h: \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/infblock.h
+	@touch infcodes.h
+inffast.o: inffast.c \
+   /usr/src/linux-2.4.18-14/include/linux/zutil.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/inftrees.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/infblock.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/infcodes.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/infutil.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/inffast.h
+inflate.o: inflate.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/zutil.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/infblock.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/infutil.h
+inflate_syms.o: inflate_syms.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/zlib.h
+inftrees.o: inftrees.c \
+   /usr/src/linux-2.4.18-14/include/linux/zutil.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/inftrees.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/infutil.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/inffixed.h
+infutil.o: infutil.c \
+   /usr/src/linux-2.4.18-14/include/linux/zutil.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/infblock.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/inftrees.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/infcodes.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/infutil.h
+infutil.h: \
+   /usr/src/linux-2.4.18-14/include/linux/zconf.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/inftrees.h \
+   /usr/src/linux-2.4.18-14/lib/zlib_inflate/infcodes.h
+	@touch infutil.h
+.PRECIOUS:	infcodes.h \
+	infutil.h \
+

@@ -1,0 +1,238 @@
+Divas_mod.o: Divas_mod.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/adapter.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/uxio.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/idi.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pci.h)
+adapter.h: \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/sys.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/idi.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/divas.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/pc.h
+	@touch adapter.h
+bri.o: bri.c \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/eicon.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/sys.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/idi.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/divas.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/pc.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/pr_pc.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/dsp_defs.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/adapter.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/uxio.h
+common.o: common.c \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/eicon.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/sys.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/idi.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/constant.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/divas.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/pc.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/pr_pc.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/uxio.h
+divas.h: \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/sys.h
+	@touch divas.h
+dsp_defs.h: \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/dspdids.h
+	@touch dsp_defs.h
+eicon.h: \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/major.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/mman.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/isdn.h \
+   /usr/src/linux-2.4.18-14/include/linux/isdnif.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/eicon_isa.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/idi.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/tty/fax.h) \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/eicon_pci.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mca.h) \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/eicon_idi.h
+	@touch eicon.h
+eicon_dsp.h: \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/dsp_defs.h
+	@touch eicon_dsp.h
+eicon_idi.o: eicon_idi.c \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/eicon.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/eicon_idi.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/eicon_dsp.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/uxio.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/tty/fax.h)
+eicon_idi.h: \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/pc.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/tty/fax.h)
+	@touch eicon_idi.h
+eicon_io.o: eicon_io.c \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/eicon.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/uxio.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/drv/eicon/pci.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/drv/eicon/isa.h)
+eicon_isa.o: eicon_isa.c \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/eicon.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/eicon_isa.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/drv/eicon/isa.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mca.h)
+eicon_isa.h: \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mca.h)
+	@touch eicon_isa.h
+eicon_mod.o: eicon_mod.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mca.h) \
+   /usr/src/linux-2.4.18-14/include/linux/mca.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/eicon.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/avmb1/capicmd.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/adapter.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/uxio.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/drv/eicon/isa.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pci.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/drv/eicon/pci.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/tty/fax.h)
+eicon_pci.o: eicon_pci.c \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/eicon.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/eicon_pci.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/adapter.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/uxio.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pci.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/drv/eicon/pci.h)
+fourbri.o: fourbri.c \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/sys.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/idi.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/divas.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/pc.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/pr_pc.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/dsp_defs.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/constant.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/adapter.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/uxio.h
+fpga.o: fpga.c \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/sys.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/idi.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/uxio.h
+idi.o: idi.c \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/idi.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/adapter.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/pc.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/pr_pc.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/sys.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/uxio.h
+idi.h: \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/sys.h
+	@touch idi.h
+kprintf.o: kprintf.c \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/eicon.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/sys.h \
+   /usr/lib/gcc-lib/i386-redhat-linux/3.2/include/stdarg.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/divas.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/divalog.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/uxio.h
+lincfg.o: lincfg.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/sys.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/idi.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/constant.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/divas.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/pc.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/pr_pc.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/adapter.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/uxio.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h
+linchr.o: linchr.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/adapter.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/divas.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/divalog.h
+linio.o: linio.c \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/uxio.h
+linsys.o: linsys.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/sys.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/divas.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/adapter.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/divalog.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/uxio.h
+log.o: log.c \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/sys.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/idi.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/divas.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/adapter.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/divalog.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/uxio.h
+pri.o: pri.c \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/sys.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/idi.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/divas.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/pc.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/pr_pc.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/dsp_defs.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/adapter.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/uxio.h
+sys.h: \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h
+	@touch sys.h
+uxio.h: \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/sys.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/adapter.h
+	@touch uxio.h
+xlog.o: xlog.c \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/sys.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/idi.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/pc.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/pc_maint.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/divalog.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/adapter.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/eicon/uxio.h
+.PRECIOUS:	adapter.h \
+	divas.h \
+	dsp_defs.h \
+	eicon.h \
+	eicon_dsp.h \
+	eicon_idi.h \
+	eicon_isa.h \
+	idi.h \
+	sys.h \
+	uxio.h \
+

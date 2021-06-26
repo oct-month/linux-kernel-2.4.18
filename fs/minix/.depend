@@ -1,0 +1,38 @@
+bitmap.o: bitmap.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/minix_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h
+dir.o: dir.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/minix_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/pagemap.h
+file.o: file.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/minix_fs.h
+inode.o: inode.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/minix_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/highuid.h \
+   /usr/src/linux-2.4.18-14/include/linux/blkdev.h
+itree_v1.o: itree_v1.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/minix_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/fs/minix/itree_common.c
+itree_v2.o: itree_v2.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/minix_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/fs/minix/itree_common.c
+namei.o: namei.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/minix_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/pagemap.h

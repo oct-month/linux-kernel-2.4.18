@@ -1,0 +1,2 @@
+#define __ver_bh_cachep	_ver_str(dcc0bb37)
+#define bh_cachep _set_ver(bh_cachep)

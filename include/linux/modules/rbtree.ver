@@ -1,0 +1,4 @@
+#define __ver_rb_insert_color	_ver_str(aa2b5a22)
+#define rb_insert_color _set_ver(rb_insert_color)
+#define __ver_rb_erase	_ver_str(da226a80)
+#define rb_erase _set_ver(rb_erase)

@@ -1,0 +1,34 @@
+.\" Copyright (c) 1997,1998,1999 Koji OKAMURA <oka@ec.kyushu-u.ac.jp>
+.\"
+.TH ISCC_CS 4 "1997/09/28" ""
+.SH NAME
+iscc_cs \- IBM Smart Capture Card device driver
+.SH SYNOPSIS
+.B insmod iscc_cs.o
+.RB [ pc_debug=n ]
+.RB [ mem_speed=n ]
+.SH DESCRIPTION
+.B Iscc_cs
+is the low-level Card Services driver for the IBM Smart Capture Card
+PCMCIA Video Capture adapter.  When this driver is attached to a card, it
+allocates the next available Video Capture Card device
+.RB ( iscc0 .. iscc# ).
+This
+device name will be reported in the kernel log file, and passed on to
+.BR cardmgr (8).
+.SH PARAMETERS
+.TP
+.B pc_debug=n
+Selects the PCMCIA debugging level.  This parameter is only available
+if the module is compiled with debugging enabled.  A non-zero value
+enables debugging.
+.TP
+.B mem_speed=n
+Sets the access speed of the shared memory window, in nanoseconds.
+The default is 0 (i.e., no extra wait states).  Values of up to 1000
+are legal.
+.SH AUTHOR
+Koji OKAMURA \- Kyushu University
+<oka@ec.kyushu-u.ac.jp>
+.SH "SEE ALSO"
+cardmgr(8), pcmcia(5).

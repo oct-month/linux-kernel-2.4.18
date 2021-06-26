@@ -1,0 +1,2 @@
+#define __ver_sa1100fb_blank_helper	_ver_str(571f9314)
+#define sa1100fb_blank_helper _set_ver(sa1100fb_blank_helper)

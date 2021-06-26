@@ -1,0 +1,2 @@
+#define __ver_su_num_ports	_ver_str(8531804f)
+#define su_num_ports _set_ver(su_num_ports)

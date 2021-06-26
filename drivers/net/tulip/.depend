@@ -1,0 +1,60 @@
+21142.o: 21142.c \
+   /usr/src/linux-2.4.18-14/drivers/net/tulip/tulip.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h
+eeprom.o: eeprom.c \
+   /usr/src/linux-2.4.18-14/drivers/net/tulip/tulip.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/asm/unaligned.h
+interrupt.o: interrupt.c \
+   /usr/src/linux-2.4.18-14/drivers/net/tulip/tulip.h \
+   /usr/src/linux-2.4.18-14/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net/hw/flowcontrol.h)
+media.o: media.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/mii.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/drivers/net/tulip/tulip.h
+pnic.o: pnic.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/drivers/net/tulip/tulip.h
+pnic2.o: pnic2.c \
+   /usr/src/linux-2.4.18-14/drivers/net/tulip/tulip.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h
+timer.o: timer.c \
+   /usr/src/linux-2.4.18-14/drivers/net/tulip/tulip.h
+tulip.h: \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tulip/mmio.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net/hw/flowcontrol.h)
+	@touch tulip.h
+tulip_core.o: tulip_core.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/net/tulip/tulip.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/mii.h \
+   /usr/src/linux-2.4.18-14/include/linux/ethtool.h \
+   /usr/src/linux-2.4.18-14/include/linux/crc32.h \
+   /usr/src/linux-2.4.18-14/include/asm/unaligned.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net/hw/flowcontrol.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tulip/mwi.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ddb5476.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ddb5477.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mips/cobalt.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pm.h)
+.PRECIOUS:	tulip.h \
+

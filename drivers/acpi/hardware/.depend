@@ -1,0 +1,19 @@
+hwacpi.o: hwacpi.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h
+hwgpe.o: hwgpe.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h
+hwregs.o: hwregs.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h
+hwsleep.o: hwsleep.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h
+hwtimer.o: hwtimer.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h

@@ -1,0 +1,10 @@
+#if  defined(__module__debug) || defined(__module__up)
+#define __ver_fbmon_valid_timings	_ver_str(e6e6b05b)
+#define fbmon_valid_timings _set_ver(fbmon_valid_timings)
+#elif  defined(__module__BOOT)
+#define __ver_fbmon_valid_timings	_ver_str(1a8c57bc)
+#define fbmon_valid_timings _set_ver(fbmon_valid_timings)
+#elif  defined(__module__bigmem) || defined(__module__smp)
+#define __ver_fbmon_valid_timings	_ver_str(82578bbc)
+#define fbmon_valid_timings _set_ver(fbmon_valid_timings)
+#endif

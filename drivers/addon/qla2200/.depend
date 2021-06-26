@@ -1,0 +1,131 @@
+exioct.h: \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/exioctln.h
+	@touch exioct.h
+exioctln.h: \
+   /usr/src/linux-2.4.18-14/include/linux/ioctl.h
+	@touch exioctln.h
+flash.o: flash.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/settings.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/debug.h
+ioctl.o: ioctl.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/settings.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/debug.h
+multipath.o: multipath.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/settings.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/inioct.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla_gbl.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla_dbg.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla_fo.cfg \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qlfo.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla_fo.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qlfolimits.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/debug.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla_gbl.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla_dbg.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qlfo.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla_fo.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qlfolimits.h
+qla2200.o: qla2200.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/settings.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla2x00.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/listops.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla2x00.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/multipath.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/flash.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/ioctl.c
+qla2300.o: qla2300.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/settings.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla2x00.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/listops.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla2x00.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/multipath.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/flash.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/ioctl.c
+qla2x00.o: qla2x00.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/settings.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/ql2200_fw.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/ql2100_fw.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/ql2300_fw.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioctl.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsi_ioctl.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/debug.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioctl.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsi_ioctl.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla_def.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qlfo.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla_cfg.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla_dbg.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla_gbl.h
+qla2x00.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/list.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp.h
+	@touch qla2x00.h
+qla_cfg.h: \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla_def.h
+	@touch qla_cfg.h
+qla_fo.h: \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qlfo.h
+	@touch qla_fo.h
+qla_gbl.h: \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/exioct.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla_fo.h
+	@touch qla_gbl.h
+qlfo.h: \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qlfoln.h
+	@touch qlfo.h
+settings.h: \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/compiler.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/exioct.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla2x00.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla_cfg.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla_gbl.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla_dbg.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/inioct.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla_gbl.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla_dbg.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qlfo.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qla_fo.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/qla2200/qlfolimits.h
+	@touch settings.h
+.PRECIOUS:	exioct.h \
+	exioctln.h \
+	qla2x00.h \
+	qla_cfg.h \
+	qla_fo.h \
+	qla_gbl.h \
+	qlfo.h \
+	settings.h \
+

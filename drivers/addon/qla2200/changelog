@@ -1,0 +1,30 @@
+* Removed serial console code
+* Removed support for kernels < 2.4 (2.2.18+ to be added back later)
+* resolve some operating system abstractions
+* fix macros (like DEBUG() etc) to be statement-like
+* put all .c files into 1 file for better searchability, and later split
+  them again (I'm not happy with the resulting split yet though, I might go
+  back to the original split)
+* use 64 bit addresses for DMA everywhere, even on x86
+* get rid of virt_to_bus for physical addresses
+* consistent use of struct scsi_qla_host instead of several aliases
+* use proper PCI API of the 2.4 kernel
+* remove caddr_t in most places as that's illegal in the kernel
+* fix bufferoverflow from the /proc file
+* attempt to add 2100 support back
+* check return codes of put_user() and get_user()
+* fix bug in dpc thread wrt io_request_lock use
+* add PCI device ID for use by installer tools
+* fix missed wakups by the dpc thread
+* inform the kernel that the device is capable of large (512
+  sectors) requests
+* clean up handling of the done_queue, retry_queue, failover_queue
+  and lun queue to use linux lists and to have a consistent, per ha, 
+  spinlock for protecting the list (needed for later removal of
+  io_request_lock usage)
+* don't disable/reenable interrupts on the device in the hard irq handler
+* fix stack overflow that caused oopses and/or memory corruption
+* fix using stack variables to register IO ports and other resources
+  (and bufferoverflow in the same code)
+* fix sleeping with spinlock held
+

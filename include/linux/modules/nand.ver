@@ -1,0 +1,2 @@
+#define __ver_nand_scan	_ver_str(be20cc44)
+#define nand_scan _set_ver(nand_scan)

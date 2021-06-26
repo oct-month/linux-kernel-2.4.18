@@ -1,0 +1,2 @@
+#define __ver_usema_init	_ver_str(5c45aa2f)
+#define usema_init _set_ver(usema_init)

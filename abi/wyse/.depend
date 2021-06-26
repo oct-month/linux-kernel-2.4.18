@@ -1,0 +1,39 @@
+ptrace.o: ptrace.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/personality.h \
+   /usr/src/linux-2.4.18-14/include/linux/user.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/abi/signal.h \
+   /usr/src/linux-2.4.18-14/include/abi/util/trace.h
+socket.o: socket.c \
+   /usr/src/linux-2.4.18-14/include/linux/net.h \
+   /usr/src/linux-2.4.18-14/include/linux/personality.h \
+   /usr/src/linux-2.4.18-14/include/linux/syscall.h \
+   /usr/src/linux-2.4.18-14/include/linux/utsname.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/abi/util/map.h \
+   /usr/src/linux-2.4.18-14/include/abi/util/socket.h
+sysent.o: sysent.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/personality.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/syscall.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/abi/svr4/sysent.h \
+   /usr/src/linux-2.4.18-14/include/abi/wyse/sysent.h \
+   /usr/src/linux-2.4.18-14/include/abi/signal.h \
+   /usr/src/linux-2.4.18-14/include/abi/util/errno.h \
+   /usr/src/linux-2.4.18-14/include/abi/util/sysent.h \
+   /usr/src/linux-2.4.18-14/include/abi/util/socket.h
+syslocal.o: syslocal.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/abi/util/trace.h

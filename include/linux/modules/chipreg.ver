@@ -1,0 +1,6 @@
+#define __ver_register_mtd_chip_driver	_ver_str(da141d23)
+#define register_mtd_chip_driver _set_ver(register_mtd_chip_driver)
+#define __ver_unregister_mtd_chip_driver	_ver_str(946bd12b)
+#define unregister_mtd_chip_driver _set_ver(unregister_mtd_chip_driver)
+#define __ver_do_map_probe	_ver_str(0d6dda23)
+#define do_map_probe _set_ver(do_map_probe)

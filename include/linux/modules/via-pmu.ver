@@ -1,0 +1,6 @@
+#define __ver_pmu_suspend	_ver_str(ca825895)
+#define pmu_suspend _set_ver(pmu_suspend)
+#define __ver_pmu_poll	_ver_str(646cc6ab)
+#define pmu_poll _set_ver(pmu_poll)
+#define __ver_pmu_resume	_ver_str(dcefb9a5)
+#define pmu_resume _set_ver(pmu_resume)

@@ -1,0 +1,160 @@
+g450_pll.o: g450_pll.c \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/g450_pll.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_DAC1064.h
+g450_pll.h: \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_base.h
+	@touch g450_pll.h
+i2c-matroxfb.o: i2c-matroxfb.c \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_base.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_maven.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c-algo-bit.h
+matroxfb_DAC1064.o: matroxfb_DAC1064.c \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_DAC1064.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_misc.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_accel.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/g450_pll.h \
+   /usr/src/linux-2.4.18-14/include/linux/matroxfb.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/matrox/g450.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/matrox/mystique.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/matrox/g100.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/matrox/32mb.h)
+matroxfb_DAC1064.h: \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_base.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/matrox/mystique.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/matrox/g100.h)
+	@touch matroxfb_DAC1064.h
+matroxfb_Ti3026.o: matroxfb_Ti3026.c \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_Ti3026.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_misc.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_accel.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/matrox/millenium.h)
+matroxfb_Ti3026.h: \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_base.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/matrox/millenium.h)
+	@touch matroxfb_Ti3026.h
+matroxfb_accel.o: matroxfb_accel.c \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_accel.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_DAC1064.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_Ti3026.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_misc.h
+matroxfb_accel.h: \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_base.h
+	@touch matroxfb_accel.h
+matroxfb_base.o: matroxfb_base.c \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_base.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_misc.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_accel.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_DAC1064.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_Ti3026.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_maven.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_crtc2.h \
+   /usr/src/linux-2.4.18-14/include/linux/matroxfb.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ppc.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/matrox/32mb.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtrr.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/matrox/multihead.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/compat/xpmac.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/matrox/millenium.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/matrox/mystique.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/matrox/g100.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/matrox/g450.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/all/ppc.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/nvram.h)
+matroxfb_base.h: \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/fb.h \
+   /usr/src/linux-2.4.18-14/include/linux/console.h \
+   /usr/src/linux-2.4.18-14/include/linux/selection.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/unaligned.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtrr.h) \
+   /usr/src/linux-2.4.18-14/include/asm/mtrr.h \
+   /usr/src/linux-2.4.18-14/include/video/fbcon.h \
+   /usr/src/linux-2.4.18-14/include/video/fbcon-cfb4.h \
+   /usr/src/linux-2.4.18-14/include/video/fbcon-cfb8.h \
+   /usr/src/linux-2.4.18-14/include/video/fbcon-cfb16.h \
+   /usr/src/linux-2.4.18-14/include/video/fbcon-cfb24.h \
+   /usr/src/linux-2.4.18-14/include/video/fbcon-cfb32.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/compat/xpmac.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ppc.h) \
+   /usr/src/linux-2.4.18-14/include/video/macmodes.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/matrox/mystique.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/matrox/g100.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/matrox/millenium.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/matrox/32mb.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/matrox/multihead.h)
+	@touch matroxfb_base.h
+matroxfb_crtc2.o: matroxfb_crtc2.c \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_maven.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_crtc2.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_misc.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_DAC1064.h \
+   /usr/src/linux-2.4.18-14/include/linux/matroxfb.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h
+matroxfb_crtc2.h: \
+   /usr/src/linux-2.4.18-14/include/linux/ioctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c-algo-bit.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_base.h
+	@touch matroxfb_crtc2.h
+matroxfb_g450.o: matroxfb_g450.c \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_g450.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_misc.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_DAC1064.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/g450_pll.h \
+   /usr/src/linux-2.4.18-14/include/linux/matroxfb.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h
+matroxfb_g450.h: \
+   /usr/src/linux-2.4.18-14/include/linux/ioctl.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_base.h
+	@touch matroxfb_g450.h
+matroxfb_maven.o: matroxfb_maven.c \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_maven.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_misc.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_DAC1064.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/matroxfb.h \
+   /usr/src/linux-2.4.18-14/include/asm/div64.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h
+matroxfb_maven.h: \
+   /usr/src/linux-2.4.18-14/include/linux/ioctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c-algo-bit.h \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_base.h
+	@touch matroxfb_maven.h
+matroxfb_misc.o: matroxfb_misc.c \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_misc.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/matroxfb.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/matrox/multihead.h)
+matroxfb_misc.h: \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_base.h
+	@touch matroxfb_misc.h
+matroxfb_proc.o: matroxfb_proc.c \
+   /usr/src/linux-2.4.18-14/drivers/video/matrox/matroxfb_base.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h)
+.PRECIOUS:	g450_pll.h \
+	matroxfb_DAC1064.h \
+	matroxfb_Ti3026.h \
+	matroxfb_accel.h \
+	matroxfb_base.h \
+	matroxfb_crtc2.h \
+	matroxfb_g450.h \
+	matroxfb_maven.h \
+	matroxfb_misc.h \
+

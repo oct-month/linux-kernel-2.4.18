@@ -1,0 +1,71 @@
+inode-v23.o: inode-v23.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/jffs.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/blkdev.h \
+   /usr/src/linux-2.4.18-14/include/linux/quotaops.h \
+   /usr/src/linux-2.4.18-14/include/asm/semaphore.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/fs/jffs/jffs_fm.h \
+   /usr/src/linux-2.4.18-14/fs/jffs/intrep.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/jffs/proc/fs.h) \
+   /usr/src/linux-2.4.18-14/fs/jffs/jffs_proc.h
+intrep.o: intrep.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/jffs.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/include/asm/semaphore.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/fs/jffs/intrep.h \
+   /usr/src/linux-2.4.18-14/fs/jffs/jffs_fm.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/jffs/fs/verbose.h)
+intrep.h: \
+   /usr/src/linux-2.4.18-14/fs/jffs/jffs_fm.h
+	@touch intrep.h
+jffs_fm.o: jffs_fm.c \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/blkdev.h \
+   /usr/src/linux-2.4.18-14/include/linux/jffs.h \
+   /usr/src/linux-2.4.18-14/fs/jffs/jffs_fm.h
+jffs_fm.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/jffs.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/jffs/fs/verbose.h)
+	@touch jffs_fm.h
+jffs_proc.o: jffs_proc.c \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/jffs.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/fs/jffs/jffs_fm.h \
+   /usr/src/linux-2.4.18-14/fs/jffs/jffs_proc.h
+jffs_proc.h: \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h
+	@touch jffs_proc.h
+.PRECIOUS:	intrep.h \
+	jffs_fm.h \
+	jffs_proc.h \
+

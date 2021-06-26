@@ -1,0 +1,280 @@
+adm1021.o: adm1021.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+adm1024.o: adm1024.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+adm1025.o: adm1025.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+adm9240.o: adm9240.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+bt869.o: bt869.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+ddcmon.o: ddcmon.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+ds1621.o: ds1621.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+eeprom.o: eeprom.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+fscpos.o: fscpos.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+fscscy.o: fscscy.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+gl518sm.o: gl518sm.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h
+gl520sm.o: gl520sm.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+it87.o: it87.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+lm75.o: lm75.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+lm78.o: lm78.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+lm80.o: lm80.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+lm87.o: lm87.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+matorb.o: matorb.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+maxilife.o: maxilife.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h
+mtp008.o: mtp008.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+sensors.o: sensors.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sensors/adm1021.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sensors/adm1025.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sensors/adm9240.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sensors/bt869.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sensors/ddcmon.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sensors/ds1621.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sensors/gl518sm.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sensors/gl520sm.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sensors/lm75.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sensors/lm78.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sensors/lm80.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sensors/lm87.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sensors/mtp008.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sensors/sis5595.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sensors/thmc50.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sensors/via686a.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sensors/w83781d.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sensors/eeprom.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sensors/ltc1710.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sensors/it87.h)
+sis5595.o: sis5595.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+thmc50.o: thmc50.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+via686a.o: via686a.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+w83781d.o: w83781d.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/i2c.h \
+   /usr/src/linux-2.4.18-14/include/linux/sensors.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h

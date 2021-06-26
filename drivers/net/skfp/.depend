@@ -1,0 +1,118 @@
+cfm.o: cfm.c \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/types.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/fddi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smc.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smtstate.h
+drvfbi.o: drvfbi.c \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/types.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/fddi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smc.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/supern_2.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/skfbiinc.h
+ecm.o: ecm.c \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/types.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/fddi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smc.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smtstate.h
+ess.o: ess.c \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/types.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/fddi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smc.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smt_p.h
+fplustm.o: fplustm.c \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/types.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/fddi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smc.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/supern_2.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/can.c
+hwmtm.o: hwmtm.c \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/types.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/fddi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smc.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/supern_2.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/skfbiinc.h
+hwt.o: hwt.c \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/types.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/fddi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smc.h
+lnkstat.o: lnkstat.c \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/types.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/fddi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smc.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/lnkstat.h
+pcmplc.o: pcmplc.c \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/types.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/fddi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smc.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/supern_2.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smtstate.h
+pmf.o: pmf.c \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/types.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/fddi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smc.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smt_p.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smtstate.h
+queue.o: queue.c \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/types.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/fddi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smc.h
+rmt.o: rmt.c \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/types.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/fddi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smc.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smtstate.h
+skfddi.o: skfddi.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ptrace.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/fddidevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/types.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/skfbi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/fddi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smc.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smtstate.h
+smt.o: smt.c \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/types.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/fddi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smc.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smt_p.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smtstate.h
+smtdef.o: smtdef.c \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/types.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/fddi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smc.h
+smtinit.o: smtinit.c \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/types.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/fddi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smc.h
+smtparse.o: smtparse.c \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/types.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/fddi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smc.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smt_p.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smtstate.h
+smttimer.o: smttimer.c \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/types.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/fddi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smc.h
+srf.o: srf.c \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/types.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/fddi.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smc.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smt_p.h \
+   /usr/src/linux-2.4.18-14/drivers/net/skfp/h/smtstate.h

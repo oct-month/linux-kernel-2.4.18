@@ -1,0 +1,96 @@
+balloc.o: balloc.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/jbd.h \
+   /usr/src/linux-2.4.18-14/include/linux/ext3_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ext3_jbd.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/include/linux/quotaops.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/jbd/debug.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ext3/check.h)
+bitmap.o: bitmap.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h
+dir.o: dir.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/jbd.h \
+   /usr/src/linux-2.4.18-14/include/linux/ext3_fs.h
+file.o: file.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/include/linux/jbd.h \
+   /usr/src/linux-2.4.18-14/include/linux/ext3_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ext3_jbd.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h
+fsync.o: fsync.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/jbd.h \
+   /usr/src/linux-2.4.18-14/include/linux/ext3_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ext3_jbd.h \
+   /usr/src/linux-2.4.18-14/include/linux/jbd.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h
+ialloc.o: ialloc.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/jbd.h \
+   /usr/src/linux-2.4.18-14/include/linux/ext3_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ext3_jbd.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/include/linux/quotaops.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ext3/check.h)
+inode.o: inode.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/ext3_jbd.h \
+   /usr/src/linux-2.4.18-14/include/linux/jbd.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/highuid.h \
+   /usr/src/linux-2.4.18-14/include/linux/quotaops.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/quota.h)
+ioctl.o: ioctl.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/jbd.h \
+   /usr/src/linux-2.4.18-14/include/linux/ext3_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ext3_jbd.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/jbd/debug.h)
+namei.o: namei.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/jbd.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/ext3_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ext3_jbd.h \
+   /usr/src/linux-2.4.18-14/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/include/linux/quotaops.h
+super.o: super.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/jbd.h \
+   /usr/src/linux-2.4.18-14/include/linux/ext3_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ext3_jbd.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/include/linux/blkdev.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/random.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/jbd/debug.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ext3/check.h)
+symlink.o: symlink.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/jbd.h \
+   /usr/src/linux-2.4.18-14/include/linux/ext3_fs.h

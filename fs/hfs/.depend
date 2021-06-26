@@ -1,0 +1,100 @@
+balloc.o: balloc.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs_btree.h
+bdelete.o: bdelete.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs_btree.h
+bfind.o: bfind.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs_btree.h
+bins_del.o: bins_del.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs_btree.h
+binsert.o: binsert.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs_btree.h
+bitmap.o: bitmap.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs.h
+bitops.o: bitops.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs.h
+bnode.o: bnode.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs_btree.h
+brec.o: brec.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs_btree.h
+btree.o: btree.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs_btree.h
+catalog.o: catalog.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs.h
+dir.o: dir.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_sb.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_i.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs.h
+dir_cap.o: dir_cap.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_sb.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_i.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs.h
+dir_dbl.o: dir_dbl.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_sb.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_i.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs.h
+dir_nat.o: dir_nat.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_sb.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_i.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs.h
+extent.o: extent.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs.h
+file.o: file.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_sb.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_i.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs.h
+file_cap.o: file_cap.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_sb.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_i.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs.h
+file_hdr.o: file_hdr.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_sb.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_i.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs.h
+hfs.h: \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_sysdep.h
+	@touch hfs.h
+hfs_btree.h: \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs.h
+	@touch hfs_btree.h
+inode.o: inode.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_sb.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_i.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h
+mdb.o: mdb.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs.h
+part_tbl.o: part_tbl.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs.h
+string.o: string.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs.h
+super.o: super.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_sb.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_i.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/blkdev.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mac/partition.h)
+sysdep.o: sysdep.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_sb.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_i.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h
+trans.o: trans.c \
+   /usr/src/linux-2.4.18-14/fs/hfs/hfs.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_sb.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs_i.h \
+   /usr/src/linux-2.4.18-14/include/linux/hfs_fs.h
+.PRECIOUS:	hfs.h \
+	hfs_btree.h \
+

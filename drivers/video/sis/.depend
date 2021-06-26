@@ -1,0 +1,73 @@
+init.o: init.c \
+   /usr/src/linux-2.4.18-14/drivers/video/sis/init.h \
+   /usr/src/linux-2.4.18-14/drivers/video/sis/300vtbl.h \
+   /usr/src/linux-2.4.18-14/drivers/video/sis/310vtbl.h
+init.h: \
+   /usr/src/linux-2.4.18-14/drivers/video/sis/osdef.h \
+   /usr/src/linux-2.4.18-14/drivers/video/sis/initdef.h \
+   /usr/src/linux-2.4.18-14/drivers/video/sis/vgatypes.h \
+   /usr/src/linux-2.4.18-14/drivers/video/sis/vstruct.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/sisfb.h
+	@touch init.h
+init301.o: init301.c \
+   /usr/src/linux-2.4.18-14/drivers/video/sis/init301.h \
+   /usr/src/linux-2.4.18-14/drivers/video/sis/oem300.h \
+   /usr/src/linux-2.4.18-14/drivers/video/sis/oem310.h
+init301.h: \
+   /usr/src/linux-2.4.18-14/drivers/video/sis/osdef.h \
+   /usr/src/linux-2.4.18-14/drivers/video/sis/initdef.h \
+   /usr/src/linux-2.4.18-14/drivers/video/sis/vgatypes.h \
+   /usr/src/linux-2.4.18-14/drivers/video/sis/vstruct.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/sisfb.h
+	@touch init301.h
+osdef.h: \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/sis/300.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/sis/315.h)
+	@touch osdef.h
+sis_main.o: sis_main.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/fb.h \
+   /usr/src/linux-2.4.18-14/include/linux/console.h \
+   /usr/src/linux-2.4.18-14/include/linux/selection.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/vt_kern.h \
+   /usr/src/linux-2.4.18-14/include/linux/capability.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/agp_backend.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/sisfb.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/mtrr.h \
+   /usr/src/linux-2.4.18-14/include/video/fbcon.h \
+   /usr/src/linux-2.4.18-14/include/video/fbcon-cfb8.h \
+   /usr/src/linux-2.4.18-14/include/video/fbcon-cfb16.h \
+   /usr/src/linux-2.4.18-14/include/video/fbcon-cfb24.h \
+   /usr/src/linux-2.4.18-14/include/video/fbcon-cfb32.h \
+   /usr/src/linux-2.4.18-14/drivers/video/sis/osdef.h \
+   /usr/src/linux-2.4.18-14/drivers/video/sis/vgatypes.h \
+   /usr/src/linux-2.4.18-14/drivers/video/sis/sis_main.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/sis/300.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/sis/315.h)
+sis_main.h: \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/sis/300.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fb/sis/315.h)
+	@touch sis_main.h
+.PRECIOUS:	init.h \
+	init301.h \
+	osdef.h \
+	sis_main.h \
+

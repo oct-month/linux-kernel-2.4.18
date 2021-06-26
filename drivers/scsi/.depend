@@ -1,0 +1,2816 @@
+3w-xxxx.o: 3w-xxxx.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/time.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/hdreg.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp.h \
+   /usr/src/linux-2.4.18-14/include/linux/reboot.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/3w-xxxx.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+3w-xxxx.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kdev_t.h
+	@touch 3w-xxxx.h
+53c7,8xx.o: 53c7,8xx.c \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c7xx/sync.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c7xx/disconnect.h) \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/time.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/53c7,8xx.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c7xx/fast.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/53c8xx_d.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/53c8xx_u.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+53c7,8xx.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h
+	@touch 53c7,8xx.h
+53c700.o: 53c700.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/mca.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/53c700.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/53c700/use/consistent.h)
+53c700.h: \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/53c700/io/mapped.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/53c700/mem/mapped.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/53c700/use/consistent.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/53c700/le/on/be.h)
+	@touch 53c700.h
+53c7xx.o: 53c7xx.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/asm/setup.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/time.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/amiga.h) \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mvme16x.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/bvme6000.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/53c7xx.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c7xx/fast.h)
+AM53C974.o: AM53C974.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/AM53C974.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+AM53C974.h: \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h
+	@touch AM53C974.h
+BusLogic.o: BusLogic.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/blkdev.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/BusLogic.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/FlashPoint.c \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pci.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/omit/flashpoint.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+BusLogic.h: \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pci.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/omit/flashpoint.h)
+	@touch BusLogic.h
+FlashPoint.o: FlashPoint.c \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/omit/flashpoint.h)
+NCR5380.o: NCR5380.c \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h
+NCR53C9x.o: NCR53C9x.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/ptrace.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/mac/esp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)
+NCR53C9x.h: \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mac.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/oktagon/scsi.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/oktagon/scsi/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/blz1230/scsi.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/blz1230/scsi/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/blz2060/scsi.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/blz2060/scsi/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/cyberstorm/scsi.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/cyberstorm/scsi/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/cyberstormii/scsi.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/cyberstormii/scsi/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fastlane/scsi.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fastlane/scsi/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/jazz/esp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/cpu/has/wb.h)
+	@touch NCR53C9x.h
+NCR53c406a.o: NCR53c406a.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53c406a.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+NCR_D700.o: NCR_D700.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/mca.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/53c700.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR_D700.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mca.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+a2091.o: a2091.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/asm/setup.h \
+   /usr/src/linux-2.4.18-14/include/asm/page.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/linux/zorro.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/wd33c93.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/a2091.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+a2091.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h
+	@touch a2091.h
+a3000.o: a3000.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/setup.h \
+   /usr/src/linux-2.4.18-14/include/asm/page.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/wd33c93.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/a3000.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+a3000.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h
+	@touch a3000.h
+advansys.o: advansys.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/x86.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isa.h) \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/spinlock.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/advansys.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pci.h) \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+advansys.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h)
+	@touch advansys.h
+aha152x.o: aha152x.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/isapnp.h \
+   /usr/src/linux-2.4.18-14/include/asm/semaphore.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/aha152x.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+aha152x.h: \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h
+	@touch aha152x.h
+aha1542.o: aha1542.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/isapnp.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/mca.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/aha1542.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mca.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+aha1542.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kdev_t.h
+	@touch aha1542.h
+aha1740.o: aha1740.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/aha1740.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+aha1740.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kdev_t.h
+	@touch aha1740.h
+aic7xxx_old.o: aic7xxx_old.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/lib/gcc-lib/i386-redhat-linux/3.2/include/stdarg.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/aic7xxx_old/aic7xxx.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/aic7xxx_old/sequencer.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/aic7xxx_old/scsi_message.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/aic7xxx_old/aic7xxx_reg.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/aic7xxx/old/cmds/per/device.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/aic7xxx/old/proc/stats.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/aic7xxx/old/tcq/on/by/default.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/aic7xxx_old/aic7xxx_seq.c \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pci.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/aic7xxx_old/aic7xxx_proc.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+amiga7xx.o: amiga7xx.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/zorro.h \
+   /usr/src/linux-2.4.18-14/include/asm/setup.h \
+   /usr/src/linux-2.4.18-14/include/asm/page.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/53c7xx.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/amiga7xx.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/a4000t/scsi.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/blz603eplus/scsi.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/warpengine/scsi.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/a4091/scsi.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/gvp/turbo/scsi.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+amiga7xx.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h
+	@touch amiga7xx.h
+atari_NCR5380.o: atari_NCR5380.c \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/atari/scsi/toshiba/delay.h)
+atari_dma_emul.o: atari_dma_emul.c \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h
+atari_scsi.o: atari_scsi.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/nvram.h \
+   /usr/src/linux-2.4.18-14/include/asm/setup.h \
+   /usr/src/linux-2.4.18-14/include/asm/page.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/atari_scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR5380.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/atari/scsi/toshiba/delay.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/atari/scsi/reset/boot.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tt/dma/emul.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/atari_dma_emul.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/atari_NCR5380.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+atp870u.o: atp870u.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/atp870u.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+atp870u.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kdev_t.h
+	@touch atp870u.h
+blz1230.o: blz1230.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/blz1230.h \
+   /usr/src/linux-2.4.18-14/include/linux/zorro.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/blz1230.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+blz1230.h: \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h
+	@touch blz1230.h
+blz2060.o: blz2060.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/blz2060.h \
+   /usr/src/linux-2.4.18-14/include/linux/zorro.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/blz2060.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+blz2060.h: \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h
+	@touch blz2060.h
+bvme6000.o: bvme6000.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/zorro.h \
+   /usr/src/linux-2.4.18-14/include/asm/setup.h \
+   /usr/src/linux-2.4.18-14/include/asm/page.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/53c7xx.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/bvme6000.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+bvme6000.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h
+	@touch bvme6000.h
+constants.o: constants.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/constants.h)
+cpqfcTS.h: \
+   /usr/src/linux-2.4.18-14/drivers/scsi/cpqfcTSstructs.h
+	@touch cpqfcTS.h
+cpqfcTScontrol.o: cpqfcTScontrol.c \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/cpqfcTSchip.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/cpqfcTSstructs.h
+cpqfcTSi2c.o: cpqfcTSi2c.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/cpqfcTSchip.h
+cpqfcTSinit.o: cpqfcTSinit.c \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14/include/asm/unistd.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsi_ioctl.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/cpqfcTSchip.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/cpqfcTSstructs.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/cpqfcTStrigger.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/cpqfcTS.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+cpqfcTSstructs.h: \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/asm/atomic.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/cpqfcTSioctl.h
+	@touch cpqfcTSstructs.h
+cpqfcTStrigger.o: cpqfcTStrigger.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/cpqfcTStrigger.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h
+cpqfcTSworker.o: cpqfcTSworker.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/cpqfcTSchip.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/cpqfcTSstructs.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/cpqfcTStrigger.h
+cpqioctl.o: cpqioctl.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/cpqfcTSioctl.h
+cyberstorm.o: cyberstorm.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/cyberstorm.h \
+   /usr/src/linux-2.4.18-14/include/linux/zorro.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/cyberstorm.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+cyberstorm.h: \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h
+	@touch cyberstorm.h
+cyberstormII.o: cyberstormII.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/cyberstormII.h \
+   /usr/src/linux-2.4.18-14/include/linux/zorro.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/cyberstormII.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+cyberstormII.h: \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h
+	@touch cyberstormII.h
+dc390.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h
+	@touch dc390.h
+dec_esp.o: dec_esp.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/dec_esp.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+dec_esp.h: \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h
+	@touch dec_esp.h
+dmx3191d.o: dmx3191d.c \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/dmx3191d.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR5380.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR5380.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+dpt_i2o.o: dpt_i2o.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioctl.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/reboot.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/asm/processor.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/dpt/dptsig.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/dpti.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+dpti.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/dpt/sys_info.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/dpt/dpti_i2o.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/dpt/dpti_ioctl.h
+	@touch dpti.h
+dtc.o: dtc.c \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/dtc.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR5380.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR5380.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+eata.o: eata.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/eata.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/eata/tagged/queue.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/eata/linked/commands.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/eata/max/tags.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pci.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+eata.h: \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h
+	@touch eata.h
+eata_dma.o: eata_dma.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/asm/types.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/eata_dma.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/eata_dma_proc.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/eata_dma_proc.c \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pci.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+eata_dma.h: \
+   /usr/src/linux-2.4.18-14/drivers/scsi/eata_generic.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h
+	@touch eata_dma.h
+eata_pio.o: eata_pio.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/eata_pio.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/eata_dma_proc.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/eata_pio_proc.c \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pci.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+eata_pio.h: \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/eata_generic.h
+	@touch eata_pio.h
+esp.o: esp.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/esp.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/ptrace.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sun4.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pci.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+esp.h: \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h
+	@touch esp.h
+fastlane.o: fastlane.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/fastlane.h \
+   /usr/src/linux-2.4.18-14/include/linux/zorro.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/fastlane.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+fastlane.h: \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h
+	@touch fastlane.h
+fcal.o: fcal.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/kmod.h) \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/fc4/fcp_impl.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/fcal.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fc4/socal/module.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+fcal.h: \
+   /usr/src/linux-2.4.18-14/drivers/fc4/fcp_impl.h
+	@touch fcal.h
+fd_mcs.o: fd_mcs.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/mca.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/fd_mcs.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsi_ioctl.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+fdomain.o: fdomain.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/fdomain.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pci.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsi_ioctl.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+g_NCR5380.o: g_NCR5380.c \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/generic/ncr53c400.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/g/ncr5380/port.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/g/ncr5380/mem.h) \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/g_NCR5380.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR5380.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/isapnp.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR5380.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+g_NCR5380.h: \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/g/ncr5380/port.h)
+	@touch g_NCR5380.h
+gdth.o: gdth.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/time.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/mc146818rtc.h \
+   /usr/src/linux-2.4.18-14/include/linux/reboot.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/gdth.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/gdth_proc.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/gdth_proc.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+gdth.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h
+	@touch gdth.h
+gdth_proc.o: gdth_proc.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/gdth_ioctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h
+gvp11.o: gvp11.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/asm/setup.h \
+   /usr/src/linux-2.4.18-14/include/asm/page.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/linux/zorro.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/wd33c93.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/gvp11.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/gvp11.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+gvp11.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h
+	@touch gvp11.h
+hosts.o: hosts.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h
+hosts.h: \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sd/extra/devs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sr/extra/devs.h)
+	@touch hosts.h
+i60uscsi.o: i60uscsi.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/i60uscsi.h
+i60uscsi.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/adr.h)
+	@touch i60uscsi.h
+i91uscsi.o: i91uscsi.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/i91uscsi.h
+i91uscsi.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/adr.h)
+	@touch i91uscsi.h
+ibmmca.o: ibmmca.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/mca.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/ibmmca.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ibmmca/scsi/order/standard.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ibmmca/scsi/dev/reset.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/multi/lun.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+ide-scsi.o: ide-scsi.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/blkdev.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/hdreg.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/ide.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/ide-scsi.h \
+   /usr/src/linux-2.4.18-14/include/scsi/sg.h
+imm.o: imm.c \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/imm.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/izip/epp16.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/parport.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/parport/module.h)
+imm.h: \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/izip/epp16.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/izip/slow/ctr.h)
+	@touch imm.h
+in2000.o: in2000.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/blkdev.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/in2000.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+in2000.h: \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h
+	@touch in2000.h
+ini9100u.o: ini9100u.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/lib/gcc-lib/i386-redhat-linux/3.2/include/stdarg.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/ini9100u.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pci.h)
+ini9100u.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h
+	@touch ini9100u.h
+inia100.o: inia100.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/lib/gcc-lib/i386-redhat-linux/3.2/include/stdarg.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/inia100.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+inia100.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h
+	@touch inia100.h
+ips.o: ips.c \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/asm/page.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/reboot.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/scsi/sg.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/ips.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/asm/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pci.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+ips.h: \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h
+	@touch ips.h
+jazz_esp.o: jazz_esp.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/jazz_esp.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h
+jazz_esp.h: \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h
+	@touch jazz_esp.h
+lasi700.o: lasi700.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/asm/page.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/lasi700.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/53c700.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+mac53c94.o: mac53c94.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/mac53c94.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+mac_NCR5380.o: mac_NCR5380.c \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/atari/scsi/toshiba/delay.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+mac_esp.o: mac_esp.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/mac_esp.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/setup.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+mac_esp.h: \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h
+	@touch mac_esp.h
+mac_scsi.o: mac_scsi.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/mac_scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR5380.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR5380.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+mac_scsi.h: \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h
+	@touch mac_scsi.h
+mca_53c9x.o: mca_53c9x.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/mca_53c9x.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/linux/mca.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/mca_dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+mca_53c9x.h: \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h
+	@touch mca_53c9x.h
+megaraid.o: megaraid.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/asm/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/notifier.h \
+   /usr/src/linux-2.4.18-14/include/linux/reboot.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/megaraid.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+megaraid.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h
+	@touch megaraid.h
+mesh.o: mesh.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/reboot.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/processor.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pmac/pbook.h) \
+   /usr/src/linux-2.4.18-14/include/linux/adb.h \
+   /usr/src/linux-2.4.18-14/include/linux/pmu.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/mesh.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/mesh/sync/rate.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/mesh/reset/delay/ms.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+mvme147.o: mvme147.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/asm/page.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/wd33c93.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/mvme147.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/mvme147.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+mvme147.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h
+	@touch mvme147.h
+mvme16x.o: mvme16x.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/asm/page.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/53c7xx.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/mvme16x.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+mvme16x.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h
+	@touch mvme16x.h
+ncr53c8xx.o: ncr53c8xx.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/time.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/ncr53c8xx.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sym53c8xx_comm.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+ncr53c8xx.h: \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sym53c8xx_defs.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h
+	@touch ncr53c8xx.h
+oktagon_esp.o: oktagon_esp.c \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/amiga.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/apus.h) \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/reboot.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/ptrace.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/oktagon_esp.h \
+   /usr/src/linux-2.4.18-14/include/linux/zorro.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/oktagon_esp.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+oktagon_esp.h: \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h
+	@touch oktagon_esp.h
+oktagon_io.o: oktagon_io.S \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/apus.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/amiga.h)
+osst.o: osst.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtio.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsi_ioctl.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/st.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/osst.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/osst_options.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/osst_detect.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/devfs/fs.h)
+osst.h: \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/devfs/fs.h) \
+   /usr/src/linux-2.4.18-14/include/linux/devfs_fs_kernel.h
+	@touch osst.h
+pas16.o: pas16.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/pas16.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR5380.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR5380.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+pci2000.o: pci2000.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/pci2000.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/psi_roy.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+pci2000.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kdev_t.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h
+	@touch pci2000.h
+pci2220i.o: pci2220i.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/kdev_t.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/pci2220i.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/psi_dale.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+pci2220i.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h
+	@touch pci2220i.h
+pluto.o: pluto.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/kmod.h) \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/fc4/fcp_impl.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/pluto.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fc4/soc/module.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+pluto.h: \
+   /usr/src/linux-2.4.18-14/drivers/fc4/fcp_impl.h
+	@touch pluto.h
+ppa.o: ppa.c \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/ppa.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/izip/epp16.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/parport.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/parport/module.h)
+ppa.h: \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/izip/epp16.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/izip/slow/ctr.h)
+	@touch ppa.h
+psi240i.o: psi240i.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/psi240i.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/psi_chip.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+psi240i.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kdev_t.h
+	@touch psi240i.h
+qla1280.o: qla1280.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/lib/gcc-lib/i386-redhat-linux/3.2/include/stdarg.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/qla1280.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/ql12160_fw.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/ql1280_fw.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+qla1280.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp.h
+	@touch qla1280.h
+qlogicfas.o: qlogicfas.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/qlogicfas.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+qlogicfc.o: qlogicfc.c \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/qlogicfc.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/qlogic/fc/firmware.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/qlogicfc_asm.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+qlogicisp.o: qlogicisp.c \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/qlogicisp.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ql/isp/a64.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/qlogicisp_asm.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+qlogicpti.o: qlogicpti.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/qlogicpti.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/ptrace.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/qlogicpti_asm.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+scsi.o: scsi.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/kmod.h) \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/logging.h)
+scsi.h: \
+   /usr/src/linux-2.4.18-14/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/include/linux/random.h \
+   /usr/src/linux-2.4.18-14/include/asm/hardirq.h \
+   /usr/src/linux-2.4.18-14/include/asm/scatterlist.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pci.h) \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sbus.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sun3.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sun3x.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/user/debug.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/logging.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_obsolete.h
+	@touch scsi.h
+scsi_debug.o: scsi_debug.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_debug.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+scsi_debug.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kdev_t.h
+	@touch scsi_debug.h
+scsi_dma.o: scsi_dma.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/kmod.h) \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h
+scsi_error.o: scsi_error.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h
+scsi_ioctl.o: scsi_ioctl.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/page.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsi_ioctl.h
+scsi_lib.o: scsi_lib.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsi_ioctl.h
+scsi_merge.o: scsi_merge.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsi_ioctl.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/debug/queues.h)
+scsi_module.o: scsi_module.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+scsi_obsolete.o: scsi_obsolete.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h
+scsi_proc.o: scsi_proc.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h)
+scsi_queue.o: scsi_queue.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h
+scsi_scan.o: scsi_scan.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/kmod.h) \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/multi/lun.h)
+scsi_syms.o: scsi_syms.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsi_ioctl.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/logging.h)
+scsicam.o: scsicam.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/asm/unaligned.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h
+sd.o: sd.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/hdreg.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/blkpg.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsi_ioctl.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h \
+   /usr/src/linux-2.4.18-14/include/linux/genhd.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ppc.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/logging.h)
+sd.h: \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/include/linux/genhd.h
+	@touch sd.h
+seagate.o: seagate.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/seagate.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsi_ioctl.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+sg.o: sg.c \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtio.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsi_ioctl.h \
+   /usr/src/linux-2.4.18-14/include/scsi/sg.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/iobuf.h
+sgiwd93.o: sgiwd93.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/page.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/wd33c93.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sgiwd93.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sgiwd93.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+sim710.o: sim710.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/mca.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mca.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sim710.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sim710_d.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/eisa.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+sim710.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h
+	@touch sim710.h
+sr.o: sr.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/cdrom.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sr.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsi_ioctl.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h
+sr.h: \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h
+	@touch sr.h
+sr_ioctl.o: sr_ioctl.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/blkpg.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsi_ioctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/cdrom.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sr.h
+sr_vendor.o: sr_vendor.c \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsi_ioctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/cdrom.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sr.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/blk/dev/sr/vendor.h)
+st.o: st.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtio.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsi_ioctl.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/st_options.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/st.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/osst_detect.h
+st.h: \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h
+	@touch st.h
+sun3_NCR5380.o: sun3_NCR5380.c \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/atari/scsi/toshiba/delay.h)
+sun3_scsi.o: sun3_scsi.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sun3_scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR5380.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sun3_NCR5380.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+sun3_scsi.h: \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h
+	@touch sun3_scsi.h
+sun3x_esp.o: sun3x_esp.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR53C9x.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sun3x_esp.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+sym53c416.o: sym53c416.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/isapnp.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sym53c416.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+sym53c416.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kdev_t.h
+	@touch sym53c416.h
+sym53c8xx.o: sym53c8xx.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/time.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sym53c8xx.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+sym53c8xx.h: \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sym53c8xx_defs.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h
+	@touch sym53c8xx.h
+sym53c8xx_comm.h: \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h
+	@touch sym53c8xx_comm.h
+sym53c8xx_defs.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c8xx/pqs/pds.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c8xx/nvram/detect.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c8xx/integrity/check.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c8xx/max/tags.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c8xx/default/tags.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c8xx/tagged/queue.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c8xx/iomapped.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c8xx/iarb.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c8xx/sync.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c8xx/no/disconnect.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c8xx/force/sync/nego.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c8xx/disable/mparity/check.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c8xx/disable/parity/check.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c8xx/symbios/compat.h)
+	@touch sym53c8xx_defs.h
+t128.o: t128.c \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/t128.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR5380.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/NCR5380.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+tmscsim.o: tmscsim.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/dc390.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/spinlock.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/tmscsim.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/dc390t/nogensupp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/multi/lun.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/dc390t/tradmap.h) \
+   /usr/src/linux-2.4.18-14/include/asm/unaligned.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsiiom.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+tmscsim.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)
+	@touch tmscsim.h
+u14-34f.o: u14-34f.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/u14-34f.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/u14/34f/linked/commands.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/u14/34f/max/tags.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+u14-34f.h: \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h
+	@touch u14-34f.h
+ultrastor.o: ultrastor.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/ultrastor.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+ultrastor.h: \
+   /usr/src/linux-2.4.18-14/include/linux/kdev_t.h
+	@touch ultrastor.h
+wd33c93.o: wd33c93.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/wd33c93.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sgi/ip22.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mvme147/scsi.h)
+wd7000.o: wd7000.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/lib/gcc-lib/i386-redhat-linux/3.2/include/stdarg.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/wd7000.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+wd7000.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kdev_t.h
+	@touch wd7000.h
+.PRECIOUS:	3w-xxxx.h \
+	53c7,8xx.h \
+	53c700.h \
+	AM53C974.h \
+	BusLogic.h \
+	NCR53C9x.h \
+	a2091.h \
+	a3000.h \
+	advansys.h \
+	aha152x.h \
+	aha1542.h \
+	aha1740.h \
+	amiga7xx.h \
+	atp870u.h \
+	blz1230.h \
+	blz2060.h \
+	bvme6000.h \
+	cpqfcTS.h \
+	cpqfcTSstructs.h \
+	cyberstorm.h \
+	cyberstormII.h \
+	dc390.h \
+	dec_esp.h \
+	dpti.h \
+	eata.h \
+	eata_dma.h \
+	eata_pio.h \
+	esp.h \
+	fastlane.h \
+	fcal.h \
+	g_NCR5380.h \
+	gdth.h \
+	gvp11.h \
+	hosts.h \
+	i60uscsi.h \
+	i91uscsi.h \
+	imm.h \
+	in2000.h \
+	ini9100u.h \
+	inia100.h \
+	ips.h \
+	jazz_esp.h \
+	mac_esp.h \
+	mac_scsi.h \
+	mca_53c9x.h \
+	megaraid.h \
+	mvme147.h \
+	mvme16x.h \
+	ncr53c8xx.h \
+	oktagon_esp.h \
+	osst.h \
+	pci2000.h \
+	pci2220i.h \
+	pluto.h \
+	ppa.h \
+	psi240i.h \
+	qla1280.h \
+	scsi.h \
+	scsi_debug.h \
+	sd.h \
+	sim710.h \
+	sr.h \
+	st.h \
+	sun3_scsi.h \
+	sym53c416.h \
+	sym53c8xx.h \
+	sym53c8xx_comm.h \
+	sym53c8xx_defs.h \
+	tmscsim.h \
+	u14-34f.h \
+	ultrastor.h \
+	wd7000.h \
+

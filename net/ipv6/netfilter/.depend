@@ -1,0 +1,97 @@
+ip6_queue.o: ip6_queue.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/ipv6.h \
+   /usr/src/linux-2.4.18-14/include/linux/notifier.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter.h \
+   /usr/src/linux-2.4.18-14/include/linux/netlink.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/rtnetlink.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/ipv6.h \
+   /usr/src/linux-2.4.18-14/include/net/ip6_route.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv4/ip_queue.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv4/ip_tables.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv6/ip6_tables.h
+ip6_tables.o: ip6_tables.c \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/tcp.h \
+   /usr/src/linux-2.4.18-14/include/linux/udp.h \
+   /usr/src/linux-2.4.18-14/include/linux/icmpv6.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/semaphore.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv6/ip6_tables.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/netfilter/debug.h) \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv4/lockhelp.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv4/listhelp.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/kmod.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h)
+ip6t_LOG.o: ip6t_LOG.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/ip.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/icmpv6.h \
+   /usr/src/linux-2.4.18-14/include/net/udp.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/net/ipv6.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv6/ip6_tables.h \
+   /usr/src/linux-2.4.18-14/include/net/route.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv6/ip6t_LOG.h
+ip6t_MARK.o: ip6t_MARK.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/checksum.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv6/ip6_tables.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv6/ip6t_MARK.h
+ip6t_limit.o: ip6t_limit.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv6/ip6_tables.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv6/ip6t_limit.h
+ip6t_mac.o: ip6t_mac.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_ether.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv6/ip6t_mac.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv6/ip6_tables.h
+ip6t_mark.o: ip6t_mark.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv6/ip6t_mark.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv6/ip6_tables.h
+ip6t_multiport.o: ip6t_multiport.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/udp.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv6/ip6t_multiport.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv6/ip6_tables.h
+ip6t_owner.o: ip6t_owner.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/file.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv6/ip6t_owner.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv6/ip6_tables.h
+ip6table_filter.o: ip6table_filter.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv6/ip6_tables.h
+ip6table_mangle.o: ip6table_mangle.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv6/ip6_tables.h

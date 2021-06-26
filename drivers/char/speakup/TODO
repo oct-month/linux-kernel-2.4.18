@@ -1,0 +1,57 @@
+The format of this file is getting organized to help me keep track of
+where we are going.  I am organizing it into three sections.
+Immediate things which need to be done I.E. code re-organization.  New
+features we are currently working on or at least in the near future.
+Long term features which will move to the new features list as the new
+features list empties.
+
+Immediate:
+
+Screen cursoring needs to become more reliable and consistant.
+
+New-Features:
+
+convert the individual synth drivers into modules (involves moving buffering
+	into speakup proper).
+
+synth_file fops need to be filled in and expanded such as some type of
+ioctl function and a real synth_file_read() function.
+
+
+Long-Term-Features:
+
+keyboard macros (ala ASAP/qedit)
+
+finding calling process, so per-program configurations can be loaded
+
+Check park status and store it before doing a console switch. (non-trivial)
+
+user defined scroll-back ala shift-pgup.
+
+insert as 'capslock-style'/'next-style' key -- have internalized speakup
+	variable, which tracks state of the insert key; each speakup bare-key
+	function checks the variable, and possibly calls the alternate
+	function and returns
+
+Expand phonetic spelling to toggle on and off and work with previous
+	and next and spell_word functions.  Also shift pitch on phonetic words
+	for capitalized letters. [partially complete]
+
+Frank would like a fast way to go to the end of the word in addition
+to moving to the beginning.
+
+I'd like a function to move the reading cursor to the last char on a
+line in addition to the right edge of the screen.
+
+Gene thinks we should have a /proc function to store and show the rom
+version of any synth currently operating.
+
+The items in each list have no connection with the order of
+implementation.  I just jotted them down as I thought of them.
+
+Bill Acker WB2FLW: When the final result is "none", then, no trace of
+Speakup. and use default keymap otherwise business as usual plus use
+"built-in" speakupmap.map
+
+Look at lilo routines which init the serial device and compare to speakup drivers.
+

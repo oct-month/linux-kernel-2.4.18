@@ -1,0 +1,9 @@
+#if  defined(__module__debug) || defined(__module__up) || defined(__module__BOOT)
+#define __ver_register_pccard_driver	_ver_str(1c442d6c)
+#define register_pccard_driver _set_ver(register_pccard_driver)
+#elif  defined(__module__bigmem) || defined(__module__smp)
+#define __ver_register_pccard_driver	_ver_str(702b8953)
+#define register_pccard_driver _set_ver(register_pccard_driver)
+#endif
+#define __ver_unregister_pccard_driver	_ver_str(db348cd2)
+#define unregister_pccard_driver _set_ver(unregister_pccard_driver)

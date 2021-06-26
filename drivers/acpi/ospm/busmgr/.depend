@@ -1,0 +1,40 @@
+bm.o: bm.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/ospm/include/bm.h
+bm_osl.o: bm_osl.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/ospm/include/bm.h
+bmdriver.o: bmdriver.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/ospm/include/bm.h
+bmnotify.o: bmnotify.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/ospm/include/bm.h
+bmpm.o: bmpm.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/ospm/include/bm.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/ospm/include/bmpower.h
+bmpower.o: bmpower.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/ospm/include/bm.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/ospm/include/bmpower.h
+bmrequest.o: bmrequest.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/ospm/include/bm.h
+bmsearch.o: bmsearch.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/ospm/include/bm.h
+bmutils.o: bmutils.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/ospm/include/bm.h

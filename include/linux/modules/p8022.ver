@@ -1,0 +1,12 @@
+#if  defined(__module__debug) || defined(__module__up)
+#define __ver_register_8022_client	_ver_str(6859320b)
+#define register_8022_client _set_ver(register_8022_client)
+#elif  defined(__module__bigmem) || defined(__module__smp)
+#define __ver_register_8022_client	_ver_str(40e243e4)
+#define register_8022_client _set_ver(register_8022_client)
+#elif  defined(__module__BOOT)
+#define __ver_register_8022_client	_ver_str(76e94823)
+#define register_8022_client _set_ver(register_8022_client)
+#endif
+#define __ver_unregister_8022_client	_ver_str(7acef15d)
+#define unregister_8022_client _set_ver(unregister_8022_client)

@@ -1,0 +1,2 @@
+#define __ver_blk_ioctl	_ver_str(e7800428)
+#define blk_ioctl _set_ver(blk_ioctl)

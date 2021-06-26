@@ -1,0 +1,43 @@
+#
+# Makefile for margi_cs
+# Marcus Metzler <mocm@metzlerbros.de> 
+#
+
+VER = 0.5.0
+
+FILES = margi_cs.mk margi2/margi_cs.mk \
+	margi2/margi margi2/margi.opts margi2/margi.conf margi2/margi_cs.4\
+	margi2/audio.c margi2/audio.h margi2/cardbase.c margi2/cardbase.h\
+	margi2/crc.c margi2/crc.h margi2/cvdv.c\
+	margi2/cvdv.h margi2/cvdvtypes.h margi2/decoder.c margi2/decoder.h\
+	margi2/dram.c margi2/dram.h margi2/i2c.c margi2/i2c.h margi2/l64014.h\
+	margi2/l64021.h margi2/margi.c margi2/margi.h margi2/video.c \
+	margi2/video.h \
+	margi2/osd.c margi2/osd.h margi2/spu.c margi2/spu.h margi2/streams.c\
+	margi2/streams.h margi2/ringbuffy.c margi2/ringbuffy.h	\
+	margi2/README margi2/COPYING margi2/AUTHORS margi2/CHANGES\
+	margi2/cvdvext.h\
+	margi2/testsuite/Makefile margi2/testsuite/cvdvutil.c \
+	margi2/testsuite/cvdvutil.h margi2/testsuite/osdtest.c \
+	margi2/testsuite/osdwrap.c margi2/testsuite/osdwrap.h \
+        margi2/testsuite/showpic.c margi2/testsuite/showpicmovie.c\
+        margi2/testsuite/showstill.c margi2/testsuite/testpattern.c\
+        margi2/testsuite/showstill.c margi2/testsuite/playfile.c\
+	margi2/include/ost/audio.h margi2/include/ost/video.h \
+	margi2/include/ost/ca.h margi2/include/ost/demux.h\
+	margi2/include/ost/dmx.h margi2/include/ost/frontend.h\
+	margi2/dvb_demux.h margi2/dvb_demux.c margi2/dvbdev.h margi2/dvbdev.c\
+	margi2/include/ost/sec.h margi2/dmxdev.h margi2/dmxdev.c \
+	margi2/include/ost/osd.h margi2/dvb_formats.h margi2/dvb_formats.c   
+
+all:	 
+	$(MAKE) -C margi2 -f margi_cs.mk
+
+install:
+	$(MAKE) -C margi2 install-modules MODULES="margi_cs.o" -f margi_cs.mk
+	$(MAKE) -C margi2 install-clients CLIENTS=margi -f margi_cs.mk
+	$(MAKE) -C margi2 install-man4 MAN4=margi_cs.4 -f margi_cs.mk
+
+dist:
+	tar czvf margi_cs-$(VER).tar.gz $(FILES)
+

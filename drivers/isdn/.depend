@@ -1,0 +1,137 @@
+isdn_audio.o: isdn_audio.c \
+   /usr/src/linux-2.4.18-14/include/linux/isdn.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_audio.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_common.h
+isdn_bsdcomp.o: isdn_bsdcomp.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/ptrace.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/asm/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/if.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_ether.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/ppp_defs.h \
+   /usr/src/linux-2.4.18-14/include/linux/isdn.h \
+   /usr/src/linux-2.4.18-14/include/linux/isdn_ppp.h \
+   /usr/src/linux-2.4.18-14/include/linux/ip.h \
+   /usr/src/linux-2.4.18-14/include/linux/tcp.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14/include/linux/ppp-comp.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_ppp.h
+isdn_common.o: isdn_common.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/isdn.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_common.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_tty.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_net.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_ppp.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/audio.h) \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_audio.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/diversion/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/diversion.h) \
+   /usr/src/linux-2.4.18-14/include/linux/isdn_divertif.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_v110.h \
+   /usr/src/linux-2.4.18-14/include/linux/devfs_fs_kernel.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/ppp.h) \
+   /usr/src/linux-2.4.18-14/drivers/isdn/avmb1/capicmd.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/x25.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/tty/fax.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/netdevices.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/devfs/fs.h)
+isdn_concap.o: isdn_concap.c \
+   /usr/src/linux-2.4.18-14/include/linux/isdn.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_x25iface.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_net.h \
+   /usr/src/linux-2.4.18-14/include/linux/concap.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_concap.h
+isdn_net.o: isdn_net.c \
+   /usr/src/linux-2.4.18-14/include/linux/isdn.h \
+   /usr/src/linux-2.4.18-14/include/net/arp.h \
+   /usr/src/linux-2.4.18-14/include/net/dst.h \
+   /usr/src/linux-2.4.18-14/include/net/pkt_sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/inetdevice.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_common.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_net.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/ppp.h) \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_ppp.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/x25.h) \
+   /usr/src/linux-2.4.18-14/include/linux/concap.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_concap.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/inet.h)
+isdn_ppp.o: isdn_ppp.c \
+   /usr/src/linux-2.4.18-14/include/linux/isdn.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/ppp-comp.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_common.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_ppp.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_net.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/mpp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/ppp/vj.h)
+isdn_ppp.h: \
+   /usr/src/linux-2.4.18-14/include/linux/ppp_defs.h \
+   /usr/src/linux-2.4.18-14/include/linux/isdn_ppp.h
+	@touch isdn_ppp.h
+isdn_tty.o: isdn_tty.c \
+   /usr/src/linux-2.4.18-14/include/linux/isdn.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_common.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_tty.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/audio.h) \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_audio.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/devfs/fs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/tty/fax.h) \
+   /usr/src/linux-2.4.18-14/drivers/isdn/avmb1/capicmd.h
+isdn_tty.h: \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/isdn/tty/fax.h)
+	@touch isdn_tty.h
+isdn_ttyfax.o: isdn_ttyfax.c \
+   /usr/src/linux-2.4.18-14/include/linux/isdn.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_common.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_tty.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_ttyfax.h
+isdn_v110.o: isdn_v110.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/isdn.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_v110.h
+isdn_x25iface.o: isdn_x25iface.c \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/concap.h \
+   /usr/src/linux-2.4.18-14/include/linux/wanrouter.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/isdn_x25iface.h
+isdn_x25iface.h: \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/wanrouter.h \
+   /usr/src/linux-2.4.18-14/include/linux/isdn.h \
+   /usr/src/linux-2.4.18-14/include/linux/concap.h
+	@touch isdn_x25iface.h
+.PRECIOUS:	isdn_ppp.h \
+	isdn_tty.h \
+	isdn_x25iface.h \
+

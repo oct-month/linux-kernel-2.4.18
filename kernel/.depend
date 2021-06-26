@@ -1,0 +1,388 @@
+acct.o: acct.c \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/bsd/process/acct.h) \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/acct.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/file.h \
+   /usr/src/linux-2.4.18-14/include/linux/highuid.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h
+capability.o: capability.c \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h
+context.o: context.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h
+cpufreq.o: cpufreq.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/notifier.h \
+   /usr/src/linux-2.4.18-14/include/linux/cpufreq.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/asm/semaphore.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pm.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sysctl.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)
+dma.o: dma.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h
+exec_domain.o: exec_domain.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/personality.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/kmod.h)
+exit.o: exit.c \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14/include/linux/personality.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14/include/linux/namespace.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/bsd/process/acct.h) \
+   /usr/src/linux-2.4.18-14/include/linux/acct.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/mmu_context.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tux/debug.h)
+fork.o: fork.c \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14/include/linux/namespace.h \
+   /usr/src/linux-2.4.18-14/include/linux/personality.h \
+   /usr/src/linux-2.4.18-14/include/linux/compiler.h \
+   /usr/src/linux-2.4.18-14/include/linux/mman.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgalloc.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/mmu_context.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)
+info.o: info.c \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/linux/swap.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h
+itimer.o: itimer.c \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h
+kallsyms.o: kallsyms.c \
+   /usr/src/linux-2.4.18-14/include/linux/elf.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/kallsyms.h
+kksymoops.o: kksymoops.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/kallsyms.h) \
+   /usr/src/linux-2.4.18-14/include/linux/kallsyms.h
+kmod.o: kmod.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/namespace.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/kmod.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/hotplug.h)
+ksyms.o: ksyms.c \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/blkdev.h \
+   /usr/src/linux-2.4.18-14/include/linux/cdrom.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel_stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/sys.h \
+   /usr/src/linux-2.4.18-14/include/linux/utsname.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/random.h \
+   /usr/src/linux-2.4.18-14/include/linux/reboot.h \
+   /usr/src/linux-2.4.18-14/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/hdreg.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14/include/linux/blkpg.h \
+   /usr/src/linux-2.4.18-14/include/linux/swap.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/file.h \
+   /usr/src/linux-2.4.18-14/include/linux/iobuf.h \
+   /usr/src/linux-2.4.18-14/include/linux/console.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/mmzone.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/capability.h \
+   /usr/src/linux-2.4.18-14/include/linux/highuid.h \
+   /usr/src/linux-2.4.18-14/include/linux/brlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14/include/linux/in6.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14/include/linux/seq_file.h \
+   /usr/src/linux-2.4.18-14/include/asm/checksum.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/kmod.h) \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/kallsyms.h) \
+   /usr/src/linux-2.4.18-14/include/linux/kallsyms.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/modversions.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/highmem.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ia64.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/arch/s390.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/lolat/sysctl.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/uid16.h)
+module.o: module.c \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/asm/module.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   /usr/src/linux-2.4.18-14/include/linux/seq_file.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/modules.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/kallsyms.h)
+panic.o: panic.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/reboot.h \
+   /usr/src/linux-2.4.18-14/include/linux/notifier.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysrq.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/arch/s390.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/vt.h)
+pm.o: pm.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/pm.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h
+printk.o: printk.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty_driver.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/console.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/multiquad.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ia64.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/arch/s390.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)
+ptrace.o: ptrace.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/highmem.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)
+resource.o: resource.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h
+sched.o: sched.c \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/nmi.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/highmem.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/asm/mmu_context.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel_stat.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/lolat/sysctl.h)
+signal.o: signal.c \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/asm/param.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)
+softirq.o: softirq.c \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel_stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h
+suspend.o: suspend.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/swapctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/suspend.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/file.h \
+   /usr/src/linux-2.4.18-14/include/linux/utsname.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/reboot.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/include/linux/vt_kern.h \
+   /usr/src/linux-2.4.18-14/include/linux/bitops.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/kbd_kern.h \
+   /usr/src/linux-2.4.18-14/include/linux/keyboard.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/genhd.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/major.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/swap.h \
+   /usr/src/linux-2.4.18-14/include/linux/pm.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/mmu_context.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/vt.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/blk/dev/ide.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/blk/dev/hd.h) \
+   /usr/src/linux-2.4.18-14/include/asm/suspend.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)
+sys.o: sys.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/utsname.h \
+   /usr/src/linux-2.4.18-14/include/linux/mman.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/notifier.h \
+   /usr/src/linux-2.4.18-14/include/linux/reboot.h \
+   /usr/src/linux-2.4.18-14/include/linux/prctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/highuid.h \
+   /usr/src/linux-2.4.18-14/include/asm/param.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/software/suspend.h)
+syscall_ksyms.o: syscall_ksyms.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/syscall.h \
+   /usr/src/linux-2.4.18-14/include/linux/msg.h \
+   /usr/src/linux-2.4.18-14/include/linux/sem.h \
+   /usr/src/linux-2.4.18-14/include/linux/shm.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/uid16.h)
+sysctl.o: sysctl.c \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/swapctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/utsname.h \
+   /usr/src/linux-2.4.18-14/include/linux/capability.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysrq.h \
+   /usr/src/linux-2.4.18-14/include/linux/highuid.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/root/nfs.h) \
+   /usr/src/linux-2.4.18-14/include/linux/nfs_fs.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sysctl.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/kmod.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/hotplug.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/chr/dev/sg.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sysvipc.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/arch/s390.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mathemu.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ppc32.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/bsd/process/acct.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/blk/dev/initrd.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/magic/sysrq.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/lolat/sysctl.h)
+time.o: time.c \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/timex.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h
+timer.o: timer.c \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/timex.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel_stat.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)
+uid16.o: uid16.c \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/utsname.h \
+   /usr/src/linux-2.4.18-14/include/linux/mman.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/notifier.h \
+   /usr/src/linux-2.4.18-14/include/linux/reboot.h \
+   /usr/src/linux-2.4.18-14/include/linux/prctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/highuid.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h
+user.o: user.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h

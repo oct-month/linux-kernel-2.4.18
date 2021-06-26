@@ -1,0 +1,32 @@
+cs4281m.o: cs4281m.c \
+   /usr/src/linux-2.4.18-14/include/linux/list.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sound.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/soundcard.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/bitops.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/hardirq.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/cs4281/cs4281_hwdefs.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/cs4281/cs4281_wrapper.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/cs4281/cs4281pm-24.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/cs4281/cs4281pm-24.c
+cs4281pm-24.h: \
+   /usr/src/linux-2.4.18-14/include/linux/pm.h \
+   /usr/src/linux-2.4.18-14/drivers/sound/cs4281/cs4281pm.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pm.h)
+	@touch cs4281pm-24.h
+.PRECIOUS:	cs4281pm-24.h \
+

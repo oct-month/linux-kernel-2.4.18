@@ -1,0 +1,14 @@
+#if  defined(__module__debug) || defined(__module__up) || defined(__module__BOOT)
+#define __ver_i2c_iic_del_bus	_ver_str(7ba1f837)
+#define i2c_iic_del_bus _set_ver(i2c_iic_del_bus)
+#elif  defined(__module__bigmem) || defined(__module__smp)
+#define __ver_i2c_iic_del_bus	_ver_str(2bf9ab25)
+#define i2c_iic_del_bus _set_ver(i2c_iic_del_bus)
+#endif
+#if  defined(__module__debug) || defined(__module__up) || defined(__module__BOOT)
+#define __ver_i2c_iic_add_bus	_ver_str(60607343)
+#define i2c_iic_add_bus _set_ver(i2c_iic_add_bus)
+#elif  defined(__module__bigmem) || defined(__module__smp)
+#define __ver_i2c_iic_add_bus	_ver_str(d0b47c21)
+#define i2c_iic_add_bus _set_ver(i2c_iic_add_bus)
+#endif

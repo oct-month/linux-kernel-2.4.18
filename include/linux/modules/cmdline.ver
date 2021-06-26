@@ -1,0 +1,6 @@
+#define __ver_get_options	_ver_str(0fbff9b9)
+#define get_options _set_ver(get_options)
+#define __ver_get_option	_ver_str(b0e10781)
+#define get_option _set_ver(get_option)
+#define __ver_memparse	_ver_str(23f2d36f)
+#define memparse _set_ver(memparse)

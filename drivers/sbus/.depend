@@ -1,0 +1,20 @@
+dvma.o: dvma.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sun4.h)
+sbus.o: sbus.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sun/auxio.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sun4.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pci.h)

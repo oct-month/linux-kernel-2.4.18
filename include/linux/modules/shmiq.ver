@@ -1,0 +1,2 @@
+#define __ver_shmiq_init	_ver_str(e3ad2081)
+#define shmiq_init _set_ver(shmiq_init)

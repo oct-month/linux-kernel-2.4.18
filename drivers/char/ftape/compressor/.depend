@@ -1,0 +1,30 @@
+lzrw3.o: lzrw3.c \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/compressor/lzrw3.h
+lzrw3.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h
+	@touch lzrw3.h
+zftape-compress.o: zftape-compress.c \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/zftape.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/zftape/zftape-init.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/zftape/zftape-eof.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/zftape/zftape-ctl.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/zftape/zftape-write.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/zftape/zftape-read.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/zftape/zftape-rw.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/compressor/zftape-compress.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/zftape/zftape-vtbl.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/compressor/lzrw3.h
+zftape-compress.h: \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/zftape/zftape-buffers.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/zftape/zftape-vtbl.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/compressor/lzrw3.h
+	@touch zftape-compress.h
+.PRECIOUS:	lzrw3.h \
+	zftape-compress.h \
+

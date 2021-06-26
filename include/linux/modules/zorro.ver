@@ -1,0 +1,4 @@
+#define __ver_zorro_find_device	_ver_str(c7a57b87)
+#define zorro_find_device _set_ver(zorro_find_device)
+#define __ver_zorro_unused_z2ram	_ver_str(dc18c167)
+#define zorro_unused_z2ram _set_ver(zorro_unused_z2ram)

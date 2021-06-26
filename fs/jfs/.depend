@@ -1,0 +1,234 @@
+file.o: file.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_incore.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_txnmgr.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_debug.h
+inode.o: inode.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_incore.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_filsys.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_imap.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_extent.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_unicode.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_debug.h
+jfs_debug.o: jfs_debug.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_incore.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_filsys.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_debug.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/jfs/debug.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/jfs/statistics.h)
+jfs_debug.h: \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/jfs/debug.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/jfs/statistics.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/kernel/asserts.h)
+	@touch jfs_debug.h
+jfs_dmap.o: jfs_dmap.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_incore.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_dmap.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_imap.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_lock.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_metapage.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_debug.h
+jfs_dmap.h: \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_txnmgr.h
+	@touch jfs_dmap.h
+jfs_dtree.o: jfs_dtree.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_incore.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_superblock.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_filsys.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_metapage.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_dmap.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_unicode.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_debug.h
+jfs_dtree.h: \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_btree.h
+	@touch jfs_dtree.h
+jfs_extent.o: jfs_extent.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_incore.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_dmap.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_extent.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_debug.h
+jfs_imap.o: jfs_imap.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_incore.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_filsys.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_dinode.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_dmap.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_imap.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_metapage.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_superblock.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_debug.h
+jfs_imap.h: \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_txnmgr.h
+	@touch jfs_imap.h
+jfs_incore.h: \
+   /usr/src/linux-2.4.18-14/include/linux/rwsem.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_types.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_xtree.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_dtree.h
+	@touch jfs_incore.h
+jfs_inode.o: jfs_inode.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_incore.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_filsys.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_imap.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_dinode.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_debug.h
+jfs_lock.h: \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h
+	@touch jfs_lock.h
+jfs_logmgr.o: jfs_logmgr.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/include/linux/blkdev.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_incore.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_filsys.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_metapage.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_txnmgr.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_debug.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/jfs/statistics.h)
+jfs_logmgr.h: \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_filsys.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_lock.h
+	@touch jfs_logmgr.h
+jfs_metapage.o: jfs_metapage.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_incore.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_filsys.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_metapage.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_txnmgr.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_debug.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/jfs/statistics.h)
+jfs_metapage.h: \
+   /usr/src/linux-2.4.18-14/include/linux/pagemap.h
+	@touch jfs_metapage.h
+jfs_mount.o: jfs_mount.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_incore.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_filsys.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_superblock.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_dmap.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_imap.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_metapage.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_debug.h
+jfs_txnmgr.o: jfs_txnmgr.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_incore.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_filsys.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_metapage.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_dinode.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_imap.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_dmap.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_superblock.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_debug.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/jfs/debug.h)
+jfs_txnmgr.h: \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_logmgr.h
+	@touch jfs_txnmgr.h
+jfs_types.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/nls.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/endian24.h
+	@touch jfs_types.h
+jfs_umount.o: jfs_umount.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_incore.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_filsys.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_superblock.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_dmap.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_imap.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_metapage.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_debug.h
+jfs_unicode.o: jfs_unicode.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_types.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_filsys.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_unicode.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_debug.h
+jfs_unicode.h: \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_types.h
+	@touch jfs_unicode.h
+jfs_uniupr.o: jfs_uniupr.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_unicode.h
+jfs_xtree.o: jfs_xtree.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_incore.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_filsys.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_metapage.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_dmap.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_dinode.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_superblock.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_debug.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/jfs/statistics.h)
+jfs_xtree.h: \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_btree.h
+	@touch jfs_xtree.h
+namei.o: namei.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_incore.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_inode.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_dinode.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_dmap.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_unicode.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_metapage.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_debug.h
+super.o: super.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_incore.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_filsys.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_metapage.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_superblock.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_dmap.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_imap.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_debug.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/jfs/debug.h)
+symlink.o: symlink.c \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/fs/jfs/jfs_incore.h
+.PRECIOUS:	jfs_debug.h \
+	jfs_dmap.h \
+	jfs_dtree.h \
+	jfs_imap.h \
+	jfs_incore.h \
+	jfs_lock.h \
+	jfs_logmgr.h \
+	jfs_metapage.h \
+	jfs_txnmgr.h \
+	jfs_types.h \
+	jfs_unicode.h \
+	jfs_xtree.h \
+

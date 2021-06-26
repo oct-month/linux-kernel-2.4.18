@@ -1,0 +1,2 @@
+#define __ver_DAC960_KernelIOCTL	_ver_str(53011449)
+#define DAC960_KernelIOCTL _set_ver(DAC960_KernelIOCTL)

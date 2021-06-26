@@ -1,0 +1,302 @@
+fc-10.o: fc-10.c \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/ftape.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-tracing.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/fdc-io.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/fc-10.h
+fdc-io.o: fdc-io.c \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/linux/ftape.h \
+   /usr/src/linux-2.4.18-14/include/linux/qic117.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-tracing.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/fdc-io.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/fdc-isr.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-io.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-rw.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-ctl.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-calibr.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/fc-10.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/fdc/base.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/fdc/irq.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/fdc/dma.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/fdc/thr.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/fdc/max/rate.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/probe/fc10.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/mach2.h)
+fdc-io.h: \
+   /usr/src/linux-2.4.18-14/include/linux/fdreg.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-bsm.h
+	@touch fdc-io.h
+fdc-isr.o: fdc-isr.c \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/linux/ftape.h \
+   /usr/src/linux-2.4.18-14/include/linux/qic117.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-tracing.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/fdc-isr.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/fdc-io.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-ctl.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-rw.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-io.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-calibr.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-bsm.h
+ftape-bsm.o: ftape-bsm.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ftape.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-tracing.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-bsm.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-ctl.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-rw.h
+ftape-bsm.h: \
+   /usr/src/linux-2.4.18-14/include/linux/ftape.h \
+   /usr/src/linux-2.4.18-14/include/linux/ftape-header-segment.h
+	@touch ftape-bsm.h
+ftape-buffer.o: ftape-buffer.c \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/mman.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/linux/ftape.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-rw.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-read.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-tracing.h
+ftape-calibr.o: ftape-calibr.c \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/timex.h \
+   /usr/src/linux-2.4.18-14/include/linux/ftape.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-tracing.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-calibr.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/fdc-io.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/alpha/clock.h)
+ftape-ctl.o: ftape-ctl.c \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/mman.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/linux/ftape.h \
+   /usr/src/linux-2.4.18-14/include/linux/qic117.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-tracing.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-io.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-ctl.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-write.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-read.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-rw.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-bsm.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/two/drives.h)
+ftape-ctl.h: \
+   /usr/src/linux-2.4.18-14/include/linux/ioctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtio.h \
+   /usr/src/linux-2.4.18-14/include/linux/ftape-vendors.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-rw.h \
+   /usr/src/linux-2.4.18-14/include/linux/ftape-header-segment.h
+	@touch ftape-ctl.h
+ftape-ecc.o: ftape-ecc.c \
+   /usr/src/linux-2.4.18-14/include/linux/ftape.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-tracing.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-ecc.h
+ftape-ecc.h: \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-bsm.h
+	@touch ftape-ecc.h
+ftape-format.o: ftape-format.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ftape.h \
+   /usr/src/linux-2.4.18-14/include/linux/qic117.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-tracing.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-io.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-ctl.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-rw.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-ecc.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-bsm.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-format.h
+ftape-init.o: ftape-init.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/major.h \
+   /usr/src/linux-2.4.18-14/include/linux/ftape.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/qic117.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/zftape.h) \
+   /usr/src/linux-2.4.18-14/include/linux/zftape.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-init.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape_syms.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-io.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-read.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-write.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-ctl.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-rw.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/fdc-io.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-buffer.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-proc.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-tracing.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/nr/buffers.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/proc/fs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/no/trace/at/all.h)
+ftape-init.h: \
+   /usr/src/linux-2.4.18-14/include/linux/linkage.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h
+	@touch ftape-init.h
+ftape-io.o: ftape-io.c \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtio.h \
+   /usr/src/linux-2.4.18-14/include/linux/ftape.h \
+   /usr/src/linux-2.4.18-14/include/linux/qic117.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-tracing.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/fdc-io.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-io.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-ctl.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-rw.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-write.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-read.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-init.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-calibr.h
+ftape-io.h: \
+   /usr/src/linux-2.4.18-14/include/linux/qic117.h \
+   /usr/src/linux-2.4.18-14/include/linux/ftape-vendors.h
+	@touch ftape-io.h
+ftape-proc.o: ftape-proc.c \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/proc/fs.h) \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ftape.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/qic117.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-io.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-ctl.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-proc.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-tracing.h
+ftape-proc.h: \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h
+	@touch ftape-proc.h
+ftape-read.o: ftape-read.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/linux/ftape.h \
+   /usr/src/linux-2.4.18-14/include/linux/qic117.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-tracing.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-read.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-io.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-ctl.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-rw.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-write.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-ecc.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-bsm.h
+ftape-rw.o: ftape-rw.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ftape.h \
+   /usr/src/linux-2.4.18-14/include/linux/qic117.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-tracing.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-rw.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/fdc-io.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-init.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-io.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-ctl.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-read.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-ecc.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-bsm.h
+ftape-rw.h: \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/fdc-io.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-init.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-bsm.h \
+   /usr/src/linux-2.4.18-14/include/asm/unaligned.h
+	@touch ftape-rw.h
+ftape-setup.o: ftape-setup.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/linux/ftape.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-tracing.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/fdc-io.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/no/trace/at/all.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/fdc/base.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/fdc/irq.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/fdc/dma.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/fdc/thr.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/fdc/max/rate.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/probe/fc10.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/mach2.h)
+ftape-tracing.o: ftape-tracing.c \
+   /usr/src/linux-2.4.18-14/include/linux/ftape.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-tracing.h
+ftape-tracing.h: \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/no/trace/at/all.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/no/trace.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/full/debug.h)
+	@touch ftape-tracing.h
+ftape-write.o: ftape-write.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/linux/ftape.h \
+   /usr/src/linux-2.4.18-14/include/linux/qic117.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-tracing.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-write.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-read.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-io.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-ctl.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-rw.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-ecc.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-bsm.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/fdc-isr.h
+ftape_syms.o: ftape_syms.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/ftape.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-tracing.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-init.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/fdc-io.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-read.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-write.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-io.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-ctl.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-rw.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-bsm.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-buffer.h \
+   /usr/src/linux-2.4.18-14/drivers/char/ftape/lowlevel/ftape-format.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ft/no/trace/at/all.h)
+ftape_syms.h: \
+   /usr/src/linux-2.4.18-14/include/linux/module.h
+	@touch ftape_syms.h
+.PRECIOUS:	fdc-io.h \
+	ftape-bsm.h \
+	ftape-ctl.h \
+	ftape-ecc.h \
+	ftape-init.h \
+	ftape-io.h \
+	ftape-proc.h \
+	ftape-rw.h \
+	ftape-tracing.h \
+	ftape_syms.h \
+

@@ -1,0 +1,67 @@
+5701rls.o: 5701rls.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/bcm5700/mm.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/bcm5700/5701rls.h
+autoneg.o: autoneg.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/bcm5700/autoneg.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/bcm5700/mm.h
+b57proc.o: b57proc.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/bcm5700/mm.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h)
+b57um.o: b57um.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/bcm5700/mm.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/highmem64g.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/x86.h) \
+   /usr/src/linux-2.4.18-14/drivers/addon/bcm5700/nicext.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h)
+lm.h: \
+   /usr/src/linux-2.4.18-14/drivers/addon/bcm5700/debug.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/bcm5700/queue.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/bcm5700/bits.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/bcm5700/lmcfg.h
+	@touch lm.h
+mm.h: \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/modversions.h) \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/asm/processor.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/unaligned.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/linux/time.h \
+   /usr/src/linux-2.4.18-14/include/linux/ethtool.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_vlan.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/bcm5700/lm.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/bcm5700/queue.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/bcm5700/tigon3.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/x86.h)
+	@touch mm.h
+tigon3.o: tigon3.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/bcm5700/mm.h
+tigon3.h: \
+   /usr/src/linux-2.4.18-14/drivers/addon/bcm5700/lm.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/bcm5700/autoneg.h
+	@touch tigon3.h
+.PRECIOUS:	lm.h \
+	mm.h \
+	tigon3.h \
+

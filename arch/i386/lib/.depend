@@ -1,0 +1,32 @@
+checksum.o: checksum.S \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/x86/use/ppro/checksum.h)
+dec_and_lock.o: dec_and_lock.c \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/atomic.h
+delay.o: delay.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/processor.h \
+   /usr/src/linux-2.4.18-14/include/asm/delay.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h) \
+   /usr/src/linux-2.4.18-14/include/asm/smp.h
+iodebug.o: iodebug.c \
+   /usr/src/linux-2.4.18-14/include/asm/io.h
+memcpy.o: memcpy.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h
+mmx.o: mmx.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/asm/i387.h \
+   /usr/src/linux-2.4.18-14/include/asm/hardirq.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mk7.h)
+old-checksum.o: old-checksum.c \
+   /usr/src/linux-2.4.18-14/include/net/checksum.h
+strstr.o: strstr.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h
+usercopy.o: usercopy.c \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/mmx.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/x86/use/3dnow/and/works.h)

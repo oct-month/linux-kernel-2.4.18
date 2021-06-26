@@ -1,0 +1,4 @@
+#define __ver_opl3_detect	_ver_str(67481767)
+#define opl3_detect _set_ver(opl3_detect)
+#define __ver_opl3_init	_ver_str(1afd20ac)
+#define opl3_init _set_ver(opl3_init)

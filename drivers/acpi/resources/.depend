@@ -1,0 +1,40 @@
+rsaddr.o: rsaddr.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acresrc.h
+rscalc.o: rscalc.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acresrc.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h
+rscreate.o: rscreate.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acresrc.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h
+rsdump.o: rsdump.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acresrc.h
+rsio.o: rsio.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acresrc.h
+rsirq.o: rsirq.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acresrc.h
+rslist.o: rslist.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acresrc.h
+rsmemory.o: rsmemory.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acresrc.h
+rsmisc.o: rsmisc.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acresrc.h
+rsutils.o: rsutils.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acresrc.h
+rsxface.o: rsxface.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acresrc.h

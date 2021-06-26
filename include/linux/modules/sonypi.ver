@@ -1,0 +1,2 @@
+#define __ver_sonypi_camera_command	_ver_str(0e8d4a6e)
+#define sonypi_camera_command _set_ver(sonypi_camera_command)

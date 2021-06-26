@@ -1,0 +1,4 @@
+#define __ver_autoirq_report	_ver_str(84530c53)
+#define autoirq_report _set_ver(autoirq_report)
+#define __ver_autoirq_setup	_ver_str(5a5a2280)
+#define autoirq_setup _set_ver(autoirq_setup)

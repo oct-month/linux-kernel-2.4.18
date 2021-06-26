@@ -1,0 +1,6 @@
+#define __ver_unload_uart401	_ver_str(ecfdd9c9)
+#define unload_uart401 _set_ver(unload_uart401)
+#define __ver_uart401intr	_ver_str(6391d066)
+#define uart401intr _set_ver(uart401intr)
+#define __ver_probe_uart401	_ver_str(63d781ea)
+#define probe_uart401 _set_ver(probe_uart401)

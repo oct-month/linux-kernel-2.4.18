@@ -1,0 +1,26 @@
+tbconvrt.o: tbconvrt.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/actables.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/actbl.h
+tbget.o: tbget.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/actables.h
+tbinstal.o: tbinstal.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/actables.h
+tbutils.o: tbutils.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/actables.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h
+tbxface.o: tbxface.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/actables.h
+tbxfroot.o: tbxfroot.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/actables.h

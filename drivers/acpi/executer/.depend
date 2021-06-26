@@ -1,0 +1,168 @@
+exconfig.o: exconfig.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/actables.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h
+exconvrt.o: exconvrt.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h
+excreate.o: excreate.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h
+exdump.o: exdump.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/actables.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h
+exfield.o: exfield.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h
+exfldio.o: exfldio.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h
+exmisc.o: exmisc.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h
+exmutex.o: exmutex.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h
+exnames.o: exnames.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h
+exoparg1.o: exoparg1.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h
+exoparg2.o: exoparg2.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h
+exoparg3.o: exoparg3.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h
+exoparg6.o: exoparg6.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h
+exprep.o: exprep.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h
+exregion.o: exregion.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h
+exresnte.o: exresnte.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/actables.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h
+exresolv.o: exresolv.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/actables.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h
+exresop.o: exresop.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/actables.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h
+exstore.o: exstore.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/actables.h
+exstoren.o: exstoren.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/actables.h
+exstorob.o: exstorob.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/actables.h
+exsystem.o: exsystem.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/achware.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h
+exutils.o: exutils.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h

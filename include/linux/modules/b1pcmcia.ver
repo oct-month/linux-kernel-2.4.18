@@ -1,0 +1,8 @@
+#define __ver_b1pcmcia_addcard_m2	_ver_str(ea620116)
+#define b1pcmcia_addcard_m2 _set_ver(b1pcmcia_addcard_m2)
+#define __ver_b1pcmcia_addcard_m1	_ver_str(aec3240e)
+#define b1pcmcia_addcard_m1 _set_ver(b1pcmcia_addcard_m1)
+#define __ver_b1pcmcia_delcard	_ver_str(29562993)
+#define b1pcmcia_delcard _set_ver(b1pcmcia_delcard)
+#define __ver_b1pcmcia_addcard_b1	_ver_str(f14bf8b1)
+#define b1pcmcia_addcard_b1 _set_ver(b1pcmcia_addcard_b1)

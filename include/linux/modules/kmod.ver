@@ -1,0 +1,10 @@
+#if  defined(__module__debug) || defined(__module__bigmem) || defined(__module__smp) || defined(__module__up)
+#define __ver_request_module	_ver_str(27e4dc04)
+#define request_module _set_ver(request_module)
+#endif
+#define __ver_exec_usermodehelper	_ver_str(c47bf6ad)
+#define exec_usermodehelper _set_ver(exec_usermodehelper)
+#define __ver_call_usermodehelper	_ver_str(84a291c8)
+#define call_usermodehelper _set_ver(call_usermodehelper)
+#define __ver_hotplug_path	_ver_str(12dcd5a6)
+#define hotplug_path _set_ver(hotplug_path)

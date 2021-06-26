@@ -1,0 +1,8 @@
+#define __ver_aci_idcode	_ver_str(2f4dcdce)
+#define aci_idcode _set_ver(aci_idcode)
+#define __ver_aci_version	_ver_str(93350c87)
+#define aci_version _set_ver(aci_version)
+#define __ver_aci_rw_cmd	_ver_str(cc7c4cd8)
+#define aci_rw_cmd _set_ver(aci_rw_cmd)
+#define __ver_aci_port	_ver_str(0d82adb6)
+#define aci_port _set_ver(aci_port)

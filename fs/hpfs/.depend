@@ -1,0 +1,59 @@
+alloc.o: alloc.c \
+   /usr/src/linux-2.4.18-14/fs/hpfs/hpfs_fn.h
+anode.o: anode.c \
+   /usr/src/linux-2.4.18-14/fs/hpfs/hpfs_fn.h
+buffer.o: buffer.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/fs/hpfs/hpfs_fn.h
+dentry.o: dentry.c \
+   /usr/src/linux-2.4.18-14/fs/hpfs/hpfs_fn.h
+dir.o: dir.c \
+   /usr/src/linux-2.4.18-14/fs/hpfs/hpfs_fn.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h
+dnode.o: dnode.c \
+   /usr/src/linux-2.4.18-14/fs/hpfs/hpfs_fn.h
+ea.o: ea.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/fs/hpfs/hpfs_fn.h
+file.o: file.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/fs/hpfs/hpfs_fn.h
+hpfs_fn.h: \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/hpfs_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/lib/gcc-lib/i386-redhat-linux/3.2/include/stdarg.h \
+   /usr/src/linux-2.4.18-14/fs/hpfs/hpfs.h
+	@touch hpfs_fn.h
+inode.o: inode.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/fs/hpfs/hpfs_fn.h
+map.o: map.c \
+   /usr/src/linux-2.4.18-14/fs/hpfs/hpfs_fn.h
+name.o: name.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/fs/hpfs/hpfs_fn.h
+namei.o: namei.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/fs/hpfs/hpfs_fn.h
+super.o: super.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/fs/hpfs/hpfs_fn.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+.PRECIOUS:	hpfs_fn.h \
+

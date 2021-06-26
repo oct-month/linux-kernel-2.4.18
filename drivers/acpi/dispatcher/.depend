@@ -1,0 +1,74 @@
+dsfield.o: dsfield.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h
+dsmethod.o: dsmethod.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/actables.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdebug.h
+dsmthdat.o: dsmthdat.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h
+dsobject.o: dsobject.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h
+dsopcode.o: dsopcode.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/actables.h
+dsutils.o: dsutils.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdebug.h
+dswexec.o: dswexec.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdebug.h
+dswload.o: dswload.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acevents.h
+dswscope.o: dswscope.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h
+dswstate.o: dswstate.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/amlcode.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acparser.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acdispat.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acnamesp.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acinterp.h

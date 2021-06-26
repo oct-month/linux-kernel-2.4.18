@@ -1,0 +1,47 @@
+tpam.h: \
+   /usr/src/linux-2.4.18-14/include/linux/isdnif.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h
+	@touch tpam.h
+tpam_commands.o: tpam_commands.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/isdn/tpam.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/tpam/tpam.h
+tpam_crcpc.o: tpam_crcpc.c \
+   /usr/src/linux-2.4.18-14/drivers/isdn/tpam/tpam.h
+tpam_hdlc.o: tpam_hdlc.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/tpam/tpam.h
+tpam_main.o: tpam_main.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/tpam/tpam.h
+tpam_memory.o: tpam_memory.c \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/tpam/tpam.h
+tpam_nco.o: tpam_nco.c \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/tpam/tpam.h
+tpam_queues.o: tpam_queues.c \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/tpam/tpam.h
+.PRECIOUS:	tpam.h \
+

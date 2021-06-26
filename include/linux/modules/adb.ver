@@ -1,0 +1,4 @@
+#define __ver_adb_controller	_ver_str(b21bd6ef)
+#define adb_controller _set_ver(adb_controller)
+#define __ver_adb_client_list	_ver_str(7fbb3ff8)
+#define adb_client_list _set_ver(adb_client_list)

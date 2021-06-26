@@ -1,0 +1,266 @@
+speakup.o: speakup.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/vt.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/vt_kern.h \
+   /usr/src/linux-2.4.18-14/include/linux/selection.h \
+   /usr/src/linux-2.4.18-14/include/linux/console_struct.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/miscdevice.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/bootmem.h \
+   /usr/src/linux-2.4.18-14/drivers/char/console_macros.h \
+   /usr/src/linux-2.4.18-14/include/linux/keyboard.h \
+   /usr/src/linux-2.4.18-14/include/linux/kbd_kern.h \
+   /usr/src/linux-2.4.18-14/include/linux/kbd_diacr.h \
+   /usr/src/linux-2.4.18-14/include/linux/kbd_ll.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/keyboard.h \
+   /usr/src/linux-2.4.18-14/include/linux/speakup.h \
+   /usr/src/linux-2.4.18-14/drivers/char/speakup/symbols.h \
+   /usr/src/linux-2.4.18-14/drivers/char/speakup/cvsversion.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/speakup/acntpc.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/speakup/acntsa.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/speakup/apolo.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/speakup/audptr.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/speakup/bns.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/speakup/decext.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/speakup/dectlk.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/speakup/dtlk.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/speakup/ltlk.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/speakup/spkout.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/speakup/txprt.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/speakup/default.h)
+speakup_acntpc.o: speakup_acntpc.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/vt_kern.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/speakup.h \
+   /usr/src/linux-2.4.18-14/drivers/char/speakup/speakup_acnt.h
+speakup_acntsa.o: speakup_acntsa.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/vt_kern.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial_reg.h \
+   /usr/src/linux-2.4.18-14/include/linux/serialP.h \
+   /usr/src/linux-2.4.18-14/include/asm/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/speakup.h \
+   /usr/src/linux-2.4.18-14/drivers/char/speakup/speakup_acnt.h
+speakup_apolo.o: speakup_apolo.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/vt_kern.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial_reg.h \
+   /usr/src/linux-2.4.18-14/include/linux/serialP.h \
+   /usr/src/linux-2.4.18-14/include/asm/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/speakup.h
+speakup_audptr.o: speakup_audptr.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/vt_kern.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial_reg.h \
+   /usr/src/linux-2.4.18-14/include/linux/serialP.h \
+   /usr/src/linux-2.4.18-14/include/asm/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/speakup.h
+speakup_bns.o: speakup_bns.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/vt_kern.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial_reg.h \
+   /usr/src/linux-2.4.18-14/include/linux/serialP.h \
+   /usr/src/linux-2.4.18-14/include/asm/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/speakup.h
+speakup_decext.o: speakup_decext.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/vt_kern.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial_reg.h \
+   /usr/src/linux-2.4.18-14/include/linux/serialP.h \
+   /usr/src/linux-2.4.18-14/include/asm/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/speakup.h
+speakup_dectlk.o: speakup_dectlk.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/vt_kern.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial_reg.h \
+   /usr/src/linux-2.4.18-14/include/linux/serialP.h \
+   /usr/src/linux-2.4.18-14/include/asm/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/speakup.h
+speakup_drvcommon.o: speakup_drvcommon.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/vt_kern.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial_reg.h \
+   /usr/src/linux-2.4.18-14/include/linux/serialP.h \
+   /usr/src/linux-2.4.18-14/include/asm/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/speakup.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h
+speakup_dtlk.o: speakup_dtlk.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/vt_kern.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/speakup.h \
+   /usr/src/linux-2.4.18-14/drivers/char/speakup/speakup_dtlk.h
+speakup_ltlk.o: speakup_ltlk.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/vt_kern.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial_reg.h \
+   /usr/src/linux-2.4.18-14/include/linux/serialP.h \
+   /usr/src/linux-2.4.18-14/include/asm/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/speakup.h \
+   /usr/src/linux-2.4.18-14/drivers/char/speakup/speakup_dtlk.h
+speakup_spkout.o: speakup_spkout.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/vt_kern.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial_reg.h \
+   /usr/src/linux-2.4.18-14/include/linux/serialP.h \
+   /usr/src/linux-2.4.18-14/include/asm/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/speakup.h
+speakup_txprt.o: speakup_txprt.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/vt_kern.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial_reg.h \
+   /usr/src/linux-2.4.18-14/include/linux/serialP.h \
+   /usr/src/linux-2.4.18-14/include/asm/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/speakup.h
+speakupmap.o: speakupmap.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/keyboard.h \
+   /usr/src/linux-2.4.18-14/include/linux/kd.h
+symbols.h: \
+   /usr/src/linux-2.4.18-14/include/linux/speakup.h
+	@touch symbols.h
+.PRECIOUS:	symbols.h \
+

@@ -1,0 +1,12 @@
+#define __ver_unregister_snap_client	_ver_str(9abefc50)
+#define unregister_snap_client _set_ver(unregister_snap_client)
+#if  defined(__module__BOOT)
+#define __ver_register_snap_client	_ver_str(d1527f7f)
+#define register_snap_client _set_ver(register_snap_client)
+#elif  defined(__module__debug) || defined(__module__up)
+#define __ver_register_snap_client	_ver_str(3cdf5747)
+#define register_snap_client _set_ver(register_snap_client)
+#elif  defined(__module__bigmem) || defined(__module__smp)
+#define __ver_register_snap_client	_ver_str(c23bd175)
+#define register_snap_client _set_ver(register_snap_client)
+#endif

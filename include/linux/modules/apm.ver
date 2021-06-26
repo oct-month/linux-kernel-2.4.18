@@ -1,0 +1,9 @@
+#if  defined(__module__bigmem) || defined(__module__smp)
+#define __ver_apm_battery_hook_sem	_ver_str(e04e9a09)
+#define apm_battery_hook_sem _set_ver(apm_battery_hook_sem)
+#elif  defined(__module__debug) || defined(__module__up) || defined(__module__BOOT)
+#define __ver_apm_battery_hook_sem	_ver_str(0a67dd77)
+#define apm_battery_hook_sem _set_ver(apm_battery_hook_sem)
+#endif
+#define __ver_apm_battery_hook	_ver_str(d8e8130c)
+#define apm_battery_hook _set_ver(apm_battery_hook)

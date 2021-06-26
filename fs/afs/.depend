@@ -1,0 +1,343 @@
+cache-layout.h: \
+   /usr/src/linux-2.4.18-14/fs/afs/types.h
+	@touch cache-layout.h
+cache.o: cache.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cell.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cmservice.h \
+   /usr/src/linux-2.4.18-14/fs/afs/fsclient.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cache.h \
+   /usr/src/linux-2.4.18-14/fs/afs/volume.h \
+   /usr/src/linux-2.4.18-14/fs/afs/vnode.h \
+   /usr/src/linux-2.4.18-14/fs/afs/internal.h
+cache.h: \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cache-layout.h
+	@touch cache.h
+callback.o: callback.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/fs/afs/server.h \
+   /usr/src/linux-2.4.18-14/fs/afs/vnode.h \
+   /usr/src/linux-2.4.18-14/fs/afs/internal.h
+cell.o: cell.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/peer.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/connection.h \
+   /usr/src/linux-2.4.18-14/fs/afs/volume.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cell.h \
+   /usr/src/linux-2.4.18-14/fs/afs/server.h \
+   /usr/src/linux-2.4.18-14/fs/afs/transport.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cache.h \
+   /usr/src/linux-2.4.18-14/fs/afs/vlclient.h \
+   /usr/src/linux-2.4.18-14/fs/afs/kafstimod.h \
+   /usr/src/linux-2.4.18-14/fs/afs/super.h \
+   /usr/src/linux-2.4.18-14/fs/afs/internal.h
+cell.h: \
+   /usr/src/linux-2.4.18-14/fs/afs/types.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cache-layout.h
+	@touch cell.h
+cmservice.o: cmservice.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14/fs/afs/server.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cell.h \
+   /usr/src/linux-2.4.18-14/fs/afs/transport.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/rxrpc.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/transport.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/connection.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/call.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cmservice.h \
+   /usr/src/linux-2.4.18-14/fs/afs/internal.h
+cmservice.h: \
+   /usr/src/linux-2.4.18-14/include/rxrpc/transport.h \
+   /usr/src/linux-2.4.18-14/fs/afs/types.h
+	@touch cmservice.h
+dir.o: dir.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/fs/afs/vnode.h \
+   /usr/src/linux-2.4.18-14/fs/afs/volume.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/call.h \
+   /usr/src/linux-2.4.18-14/fs/afs/super.h \
+   /usr/src/linux-2.4.18-14/fs/afs/internal.h
+errors.h: \
+   /usr/src/linux-2.4.18-14/fs/afs/types.h
+	@touch errors.h
+file.o: file.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14/fs/afs/volume.h \
+   /usr/src/linux-2.4.18-14/fs/afs/vnode.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/call.h \
+   /usr/src/linux-2.4.18-14/fs/afs/internal.h
+fsclient.o: fsclient.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/rxrpc.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/transport.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/connection.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/call.h \
+   /usr/src/linux-2.4.18-14/fs/afs/fsclient.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cmservice.h \
+   /usr/src/linux-2.4.18-14/fs/afs/vnode.h \
+   /usr/src/linux-2.4.18-14/fs/afs/server.h \
+   /usr/src/linux-2.4.18-14/fs/afs/errors.h \
+   /usr/src/linux-2.4.18-14/fs/afs/internal.h
+fsclient.h: \
+   /usr/src/linux-2.4.18-14/fs/afs/server.h
+	@touch fsclient.h
+inode.o: inode.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14/fs/afs/volume.h \
+   /usr/src/linux-2.4.18-14/fs/afs/vnode.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cache.h \
+   /usr/src/linux-2.4.18-14/fs/afs/super.h \
+   /usr/src/linux-2.4.18-14/fs/afs/internal.h
+internal.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/compiler.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h
+	@touch internal.h
+kafsasyncd.o: kafsasyncd.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cell.h \
+   /usr/src/linux-2.4.18-14/fs/afs/server.h \
+   /usr/src/linux-2.4.18-14/fs/afs/volume.h \
+   /usr/src/linux-2.4.18-14/fs/afs/kafsasyncd.h \
+   /usr/src/linux-2.4.18-14/fs/afs/kafstimod.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/call.h \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14/fs/afs/internal.h
+kafsasyncd.h: \
+   /usr/src/linux-2.4.18-14/fs/afs/types.h
+	@touch kafsasyncd.h
+kafstimod.o: kafstimod.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cell.h \
+   /usr/src/linux-2.4.18-14/fs/afs/volume.h \
+   /usr/src/linux-2.4.18-14/fs/afs/kafstimod.h \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14/fs/afs/internal.h
+kafstimod.h: \
+   /usr/src/linux-2.4.18-14/fs/afs/types.h
+	@touch kafstimod.h
+main.o: main.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/rxrpc.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/transport.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/call.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/peer.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cell.h \
+   /usr/src/linux-2.4.18-14/fs/afs/server.h \
+   /usr/src/linux-2.4.18-14/fs/afs/fsclient.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cmservice.h \
+   /usr/src/linux-2.4.18-14/fs/afs/kafstimod.h \
+   /usr/src/linux-2.4.18-14/fs/afs/kafsasyncd.h \
+   /usr/src/linux-2.4.18-14/fs/afs/internal.h
+misc.o: misc.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/fs/afs/errors.h \
+   /usr/src/linux-2.4.18-14/fs/afs/internal.h
+mntpt.o: mntpt.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14/fs/afs/volume.h \
+   /usr/src/linux-2.4.18-14/fs/afs/vnode.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cache.h \
+   /usr/src/linux-2.4.18-14/fs/afs/internal.h
+proc.o: proc.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/seq_file.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cell.h \
+   /usr/src/linux-2.4.18-14/fs/afs/volume.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/fs/afs/internal.h
+server.o: server.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/peer.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/connection.h \
+   /usr/src/linux-2.4.18-14/fs/afs/volume.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cell.h \
+   /usr/src/linux-2.4.18-14/fs/afs/server.h \
+   /usr/src/linux-2.4.18-14/fs/afs/transport.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cache.h \
+   /usr/src/linux-2.4.18-14/fs/afs/vlclient.h \
+   /usr/src/linux-2.4.18-14/fs/afs/kafstimod.h \
+   /usr/src/linux-2.4.18-14/fs/afs/internal.h
+server.h: \
+   /usr/src/linux-2.4.18-14/fs/afs/types.h \
+   /usr/src/linux-2.4.18-14/fs/afs/kafstimod.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/peer.h \
+   /usr/src/linux-2.4.18-14/include/linux/rwsem.h
+	@touch server.h
+super.o: super.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14/fs/afs/vnode.h \
+   /usr/src/linux-2.4.18-14/fs/afs/volume.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cell.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cmservice.h \
+   /usr/src/linux-2.4.18-14/fs/afs/fsclient.h \
+   /usr/src/linux-2.4.18-14/fs/afs/super.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cache.h \
+   /usr/src/linux-2.4.18-14/fs/afs/internal.h
+super.h: \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/fs/afs/server.h
+	@touch super.h
+transport.h: \
+   /usr/src/linux-2.4.18-14/fs/afs/types.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/transport.h
+	@touch transport.h
+types.h: \
+   /usr/src/linux-2.4.18-14/include/rxrpc/types.h
+	@touch types.h
+vlclient.o: vlclient.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/rxrpc.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/transport.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/connection.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/call.h \
+   /usr/src/linux-2.4.18-14/fs/afs/server.h \
+   /usr/src/linux-2.4.18-14/fs/afs/vlclient.h \
+   /usr/src/linux-2.4.18-14/fs/afs/kafsasyncd.h \
+   /usr/src/linux-2.4.18-14/fs/afs/kafstimod.h \
+   /usr/src/linux-2.4.18-14/fs/afs/errors.h \
+   /usr/src/linux-2.4.18-14/fs/afs/internal.h
+vlclient.h: \
+   /usr/src/linux-2.4.18-14/fs/afs/types.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cache-layout.h
+	@touch vlclient.h
+vlocation.o: vlocation.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14/fs/afs/volume.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cell.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cmservice.h \
+   /usr/src/linux-2.4.18-14/fs/afs/fsclient.h \
+   /usr/src/linux-2.4.18-14/fs/afs/vlclient.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cache.h \
+   /usr/src/linux-2.4.18-14/fs/afs/kafstimod.h \
+   /usr/src/linux-2.4.18-14/include/rxrpc/connection.h \
+   /usr/src/linux-2.4.18-14/fs/afs/internal.h
+vnode.o: vnode.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14/fs/afs/volume.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cell.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cmservice.h \
+   /usr/src/linux-2.4.18-14/fs/afs/fsclient.h \
+   /usr/src/linux-2.4.18-14/fs/afs/vlclient.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cache.h \
+   /usr/src/linux-2.4.18-14/fs/afs/vnode.h \
+   /usr/src/linux-2.4.18-14/fs/afs/internal.h
+vnode.h: \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/fs/afs/server.h \
+   /usr/src/linux-2.4.18-14/fs/afs/kafstimod.h
+	@touch vnode.h
+volume.o: volume.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14/fs/afs/volume.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cell.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cmservice.h \
+   /usr/src/linux-2.4.18-14/fs/afs/fsclient.h \
+   /usr/src/linux-2.4.18-14/fs/afs/vlclient.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cache.h \
+   /usr/src/linux-2.4.18-14/fs/afs/internal.h
+volume.h: \
+   /usr/src/linux-2.4.18-14/fs/afs/types.h \
+   /usr/src/linux-2.4.18-14/fs/afs/cache-layout.h \
+   /usr/src/linux-2.4.18-14/fs/afs/fsclient.h \
+   /usr/src/linux-2.4.18-14/fs/afs/kafstimod.h \
+   /usr/src/linux-2.4.18-14/fs/afs/kafsasyncd.h
+	@touch volume.h
+.PRECIOUS:	cache-layout.h \
+	cache.h \
+	cell.h \
+	cmservice.h \
+	errors.h \
+	fsclient.h \
+	internal.h \
+	kafsasyncd.h \
+	kafstimod.h \
+	server.h \
+	super.h \
+	transport.h \
+	types.h \
+	vlclient.h \
+	vnode.h \
+	volume.h \
+

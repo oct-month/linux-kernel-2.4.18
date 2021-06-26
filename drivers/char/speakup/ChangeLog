@@ -1,0 +1,1214 @@
+2001-10-18 Thursday 08:53  jim
+
+	Removed the cut and paste bug description from the BUGS file.  (Jim)
+	
+2001-10-14 Sunday 15:28  jim
+
+	Part two of the selection.c patch for 2.2.  This process sure was fun!  (Jim)
+	
+2001-10-14 Sunday 15:21  jim
+
+	Just adding the new patch file for selection.c in the diff-v22 patch
+	directory. (Jim)
+	
+2001-10-14 Sunday 14:45  kirk
+
+	Just adding the new patch file for selection.c in the diff-v24 patch
+	directory. (kirk)
+	
+2001-10-14 Sunday 14:42  kirk
+
+	Changed selection.c to test if call is coming from userspace or kernel
+	space and using GFP_ATOMIC if it is being called from kernel-space.
+	This works around kmalloc not returning and hanging the system in
+	set_selection for the block and paste function of speakup. (Jim)
+	
+2001-10-12 Friday 12:10  jim
+
+	speakup.c:
+	    Removed statements which were appending 0x00 to buffers to be spoken
+	    from functions say_curr_line and say_line_from_to.
+	
+	    Inspected and modified all spkup_write() calls to be consistent,
+	    that is, end in \n and count is correct.
+	(Jim Danley)
+	
+2001-10-09 Tuesday 08:34  kirk
+
+	Updated the BUGS and Todo list to reflect current speakup
+	states. (kirk)
+	
+2001-10-07 Sunday 21:19  jim
+
+	speakup.c:
+	    Moved following variable declarations to top of function speakup_cut().
+		int ret;
+		unsigned char args[6*sizeof(short)];
+		unsigned short *arg;
+		static char *buf = "speakup_cut: set_selection failed: ";
+	(Jim Danley)
+	
+2001-10-07 Sunday 17:11  jim
+
+	Put speakup_dectlk.c back to its original state.  Sorry about that!
+	
+	Also added a clear_selection() call to speakup.c when hitting the "mark"
+	    key to remove (if any) hi-lighting of a previous mark/cut from the screen.
+	(Jim Danley)
+	
+2001-10-05 Friday 09:14  kirk
+
+	Checking in a slight change to speakupmap.map to uncomment alt-keypad
+	five to allow ascii five for extended character sets. (kirk)
+	
+2001-10-02 Tuesday 12:34  kirk
+
+	Modified installation and readme files for the version 1.0 release in
+	linux/Documentation/speakup. (kirk)
+	
+2001-10-02 Tuesday 11:00  kirk
+
+	Start of the check-ins for the official speakup v-1.00 release.
+	Modified checkin to change cvsversion format.  Modified install to
+	remove reference to touching speakupmap.map.  Modified speakup.c to
+	reflect version now moved to v-1.00. (kirk)
+	
+2001-10-02 Tuesday 01:18  jim
+
+	Modified the way that cut/paste variables are stored.  No longer in spk_t
+	structure but stand-alone (one per speakup rather than one per console).
+	
+	speakup.c:
+	    eliminated unsigned short mode = 0; /* char-by-char selection */
+	    by assigning it directly.
+	
+	    Added globals
+		char mark_cut_flag;
+		unsigned short mark_x, mark_y;
+	
+	/usr/include/linux/include/linux/speakup.h:
+	    removed mark_x and mark_y from the spk_t structure and the associated
+	    defines.
+	(Jim Danley)
+	
+2001-09-17 Monday 19:58  jim
+
+	speakup.c:
+	    Added:
+		#define Mark_Cut_Bit 0x04
+		#define Mark_Cut_Bit_Mask 0xFB
+	
+	    Changed from using bit 2 of spk_shut_up to bit 2 of spk_sound to
+	    indicate mark/cut state.
+	
+	    Removed statement that was assigning 2 to second byte of first short
+	    in args array.
+	(Jim Danley)
+	
+2001-09-14 Friday 15:43  kirk
+
+	Removed the blank line at the bottom of drivers/char/Makefile which I
+	must have dreamed I removed in the last log.  (kirk)
+	
+2001-09-14 Friday 15:28  kirk
+
+	Added a couple of missing key definitions in DefaultKeyAssignments.
+	Removed the blank line at the bottom of drivers/char/Makefile.
+	Rewrote spell_word() to use say_curr_char() and super stream line
+	it. (kirk)
+	
+2001-09-14 Friday 14:11  jim
+
+	speakup_dectlk.c:
+	    Changed the valid pitch range from 0-99 to 50-350.
+	(Jim Danley)
+	
+2001-09-14 Friday 01:28  jim
+
+	Made similar changes to add cut and paste feature to 2.2 kernels.  (Jim Danley
+	
+2001-09-13 Thursday 23:13  jim
+
+	diff-v2[24]/^usr^src^linux^Documentation^speakup^DefaultKeyAssignments.copy:
+	    Added:
+		KeyPad-/		Mark and Cut screen region.
+		InsKeyPad-/		Paste screen region into any console.
+	(Jim Danley)
+	
+2001-09-13 Thursday 21:41  jim
+
+	Wrote mark/cut/paste feature.
+	
+	    Usage:
+		1.  Move reading cursor to one end of the block of text you wish to cut
+		2.  Press the mark/cut key.  You should hear "mark".
+		3.  Move reading cursor to other end of block of text to be cut.
+		4.  Press the mark/cut key.  You should hear "cut".
+		5.  The cut buffer is now saved.
+		6.  Move to a program in any console where you wish to copy the cut buffer.
+		7.  Press the paste key.  You should hear "paste" and text from
+		    the cut buffer will be output just as if you had entered it
+		    at the keyboard.
+	
+	    Note:  Trailing whitespace is stripped and newlines added where appropriate.
+	
+	speakup.c:
+	    Added two new functions; speakup_cut() and speakup_paste()
+	
+	speakupmap.map:
+	    Modified default keymap so that keypad divide toggles mark/cut and
+	    insert-keypad divide is paste.
+	
+	/usr/src/linux/include/linux/speakup.h:
+	    Added two new variables to the spk_t structure; unsigned long mark_x, mark_y
+		to store the coordinates of the beginning of the mark area to be cut.
+	    Added:
+		#define spk_mx speakup_console[currcons]->mark_x
+		#define spk_my speakup_console[currcons]->mark_y
+		#define SPEAKUP_CUT 0x27
+		#define SPEAKUP_PASTE 0x28
+	    Added two new prototypes:
+		extern void speakup_cut(unsigned int, struct tty_struct *);
+		extern void speakup_paste(struct tty_struct *);
+	
+	/usr/src/linux/drivers/char/keyboard.c:
+	    In function do_spkup():
+		Added case blocks for SPEAKUP_CUT and SPEAKUP_PASTE.
+	
+	/usr/src/linux/include/linux/keyboard.h:
+	    Added:
+		#define K_SPEAKUP_CUT K(KT_SPKUP,SPEAKUP_CUT)
+		#define K_SPEAKUP_PASTE K(KT_SPKUP,SPEAKUP_PASTE)
+	    and modified: (was 27)
+		#define NR_SPKUP	0x29
+	
+	Also modified patch/copy files below in both diff-v22 and diff-v24 directories.
+	^usr^src^linux^include^linux^keyboard.h.patch
+	^usr^src^linux^drivers^char^keyboard.c.patch
+	^usr^src^linux^include^linux^speakup.h.copy
+	
+2001-09-08 Saturday 22:22  kirk
+
+	Re-implementing the alpha patch for kernels 2.4.x which somehow keeps
+	getting lost.  I also removed the bottom three lines of the checkout
+	script which are not needed anymore because we include a
+	speakupmap.c. (Kirk)
+	
+2001-08-30 Thursday 17:25  kirk
+
+	Modified drivers/char/Makefile to work with the new speakupmap.c
+	changes to 2.4.x.  These changes include a portion of Shane's patch as
+	well as other rewrites by me. (kirk)
+	
+2001-08-30 Thursday 16:17  kirk
+
+	Modified drivers/char/Makefile and speakup/Makefile to accomodate the
+	new 2.4.9ac3 Makefile changes.  This will also include a new
+	speakupmap.c moving towards Shane's Makefile patches for the 2.2.x
+	kernels, not included yet. (kirk)
+	
+2001-08-29 Wednesday 21:26  kirk
+
+	Just adding new patch against linux/init/main.c to cvs. (kirk)
+	
+2001-08-29 Wednesday 21:23  kirk
+
+	Rewrote speakup_init() to call a function speakup_register_devsynth()
+	which gets called from do_basic_setup in init/main.c.  We need to do
+	this so that miscdevice will get called after the mm has been set up.
+	This should allow devfs to work with speakup.  (kirk)
+	
+2001-08-26 Sunday 13:54  kirk
+
+	Removed an old comment line from console.c which prevent clean
+	patching against 2.4.8ac11. (kirk)
+	
+2001-08-25 Saturday 18:46  kirk
+
+	Modified keyboard.c, keyboard.h, speakup.c and speakup.h to conform with the standard kernel source tree under 2.4.x kernels. (Kirk)
+	
+2001-08-25 Saturday 18:30  kirk
+
+	Removing lxdialog patch files and removing their entries from
+	patchlist-22. These are now part of the standard 2.2.19+ kernel
+	tree. (Kirk)
+	----------------------------------------------------------------------
+	patchlist-v22 speakupmap.map symbols.h CVS:
+	diff-v22/^usr^src^linux^Documentation^speakup^DefaultKeyAssignments.copy
+	diff-v22/^usr^src^linux^Documentation^speakup^keymap-tutorial.copy
+	Removed Files: CVS:
+	diff-v22/^usr^src^linux^scripts^lxdialog^menubox.c.patch CVS:
+	----------------------------------------------------------------------
+	
+2001-08-25 Saturday 18:15  kirk
+
+	Changed keyboard.c, keyboard.h, speakup.c and speakup.h to conform to
+	the standard linux kernel tree code style for the 2.2.x
+	kernels. (Kirk)
+	
+2001-08-18 Saturday 03:31  jim
+
+	diff-v22/^usr^src^linux^drivers^char^keyboard.c.patch:  Modified patch
+	to allow raw keyboard for version 2.2 kernels.  (Jim Danley)
+	
+2001-08-02 Thursday 13:47  kirk
+
+	Adding \x20 to the flush string for the Audapter synths.  (Kirk)
+	
+2001-07-31 Tuesday 19:07  jim
+
+	speakup_ltlk.c: appended \x20 to flush string of \x18 for litetalk driver.
+	This seems to fix the bug that was causing first chars to be dropped by
+	the double lt and litetalk synths for some users.  (Jim Danley)
+	
+2001-07-26 Thursday 20:12  kirk
+
+	A few small clean ups trying to get 2.4.7 to work. (Kirk)
+	
+2001-07-16 Monday 11:30  kirk
+
+	Added KT_SPKUP to allowed_in_raw_mode macro so speakup's review
+	functions are available in raw mode for v-2.4.x kernels. (Kirk)
+	
+2001-03-17 Saturday 15:40  jim
+
+	speakup.c:
+	Added silent feature.
+	The print screen key kills and revives speakup.  Sending specific values to
+	/proc/speakup/silent now allows the same control without having to press a key.
+	Valid settings are 0 through 3.
+	0 and 2 turn on speakup if not already alive.
+	1 and 3 turn off speakup if not already killed.
+	0 and 1 announce the changes as the print screen key does,
+	2 and 3 act silently.
+	(Jim Danley)
+	
+2001-03-17 Saturday 08:45  jim
+
+	speakup.c and symbols.h:
+	Added bell position feature.
+	When a letter is typed in column bell_pos, console beeps.
+	Valid settings are 0 through video_num_columns.  Zero disables.
+	Get/set via /proc/speakup/bell_pos.
+	(Brian Borowski)
+	
+2001-03-13 Tuesday 14:50  jim
+
+	speakup.c:
+	Added code in say_screen() to insert a space at the end of full lines.
+	(Gene Collins)
+	
+2001-03-13 Tuesday 14:40  jim
+
+	speakup.c:
+	Found and fixed a couple of places where synth_write() was writing len of
+	string plus 1 which caused a NULL to be sent to the synth which causes
+	problems for the Doubletalk LT.
+	
+	speakup.c and keyboard.c for 2.2 and 2.4
+	Corrected the length parameter on several spkup_write() statements which
+	were also sending unnecessary NULLs.
+	
+	Corrected spelling of /proc/speakup/transport directory.  (Jim Danley)
+	
+2001-02-28 Wednesday 10:55  kirk
+
+	Removing the make menuconfig patches for checklist.c and menubox.c
+	because they have been included in linux 2.4.2. (Kirk)
+	
+2001-02-11 Sunday 14:05  kirk
+
+	Checking support for alpha support in 2.4.x kernels. (Kirk)
+	
+2001-01-30 Tuesday 20:55  kirk
+
+	Fixed arch/ppc/config.in to source drivers/char/Config.in which had
+	gotten broken in the post 2.4.0 ac patches. (Kirk)
+	
+2001-01-28 Sunday 23:53  jim
+
+	Reduced duplicate code in proc_speakup_synth_init() by creating two arrays
+	of strings, read_only[] and root_writable[] and using these arrays in
+	for loops.
+	Bumped version numbers on remaining serial synth drivers.  (Jim Danley)
+	
+2001-01-28 Sunday 20:26  kirk
+
+	Made modifications to speakup.h for v2.2 and the remainder of the
+	serial synth drivers to use the initialize_uart() function in
+	speakup_drvcommon.c.  (Kirk)
+	
+2001-01-28 Sunday 19:15  kirk
+
+	Made changes to 2.4.0 to move uart initialization code into
+	speakup_drvcommon.c and modified speakup_dectlk.c to use that
+	change. (Kirk)
+	
+2001-01-28 Sunday 00:26  jim
+
+	Modified the serprobe() function in the Accent SA driver.
+	This should allow the Accent SA to start talking from a cold boot with
+	no help from the lilo serial= or speakup_ser= options.
+	Ran speakup_acntsa.c through Lindent.
+	Bumped speakup_acntsa.c version number.  (Jim Danley)
+	
+2001-01-27 Saturday 23:26  jim
+
+	Modified the serprobe() function in the Dectalk Express driver.
+	My Dectalk Express now starts talking just fine from a cold boot with
+	no help from the lilo serial= or speakup_ser= options.
+	Ran speakup_dectlk.c through Lindent and cleaned up some comments.
+	Bumped Dectalk Express driver version number.  (Jim Danley)
+	
+2001-01-25 Thursday 17:58  jim
+
+	Worked on the write handler for /proc/speakup/synth.
+	It error-checks new_synth_name, prints out msg if synth selected is
+	already in use, looks for new_synth_name in list of synths compiled into
+	kernel, and prepares to switch to new synth.
+	Ran speakup.c through Lindent and cleaned up some comments.  (Jim Danley)
+	
+2001-01-24 Wednesday 22:59  jim
+
+	
+	Modified speakup_drvcommon.c so that those synth-specific /proc file
+	entries which are writable will now accept "" to trigger resetting of
+	the default value.
+	Ran speakup_drvcommon.c through Lindent and cleaned up some comments.
+	(Jim Danley)
+	
+2001-01-24 Wednesday 12:33  kirk
+
+	Made changes for Maintaners to v-24. (Kirk)
+	
+2001-01-24 Wednesday 12:31  kirk
+
+	Another typo fix in Configure.help and an update to the URL in Maintaners. (Kirk)
+	
+2001-01-24 Wednesday 11:57  kirk
+
+	Fixed clarification in Configure.help in v-24. (Kirk)
+	
+2001-01-24 Wednesday 11:56  kirk
+
+	Fixed spelling error in Config.in and modified Configure.help yet again. (Kirk)
+	
+2001-01-24 Wednesday 11:47  kirk
+
+	Fixed formatting in v-24 configure.help. (Kirk)
+	
+2001-01-24 Wednesday 11:46  kirk
+
+	Fixed indentation and spelling errors in configure.help. (Kirk)
+	
+2001-01-24 Wednesday 10:49  kirk
+
+	Fixing the v-2.4 version of the Configure.help file. (Kirk)
+	
+2001-01-24 Wednesday 10:47  kirk
+
+	Updated the Configure.help documentation and re-arranged the speakup
+	Config.in file.  (Kirk)
+	
+2001-01-23 Tuesday 15:45  jim
+
+	
+	Modified speakup.c to handle input in either upper or lower case written
+	to the /proc file entries for those settings that accept a range of
+	values that includes alpha chars.
+	The value is forced to lower case before any comparisons.
+	Modified the synth driver range parameters to accept only lower case as follows:
+	rate in both speakup_acntpc.c and speakup_acntsa.c,
+	pitch and volume in speakup_apolo.c,
+	tone in speakup_txprt.c.
+	Bumped synth driver version numbers.
+	(Jim Danley)
+	
+2001-01-23 Tuesday 11:58  jim
+
+	
+	Fixed typo in speakup_dectlk.c.
+	(Jim Danley)
+	
+2001-01-23 Tuesday 11:39  jim
+
+	
+	Moved full_time into the spk_synth structure for all synths and created
+	/proc/speakup/synth-specific/full_time entry.
+	Modified /usr/include/linux/speakup.h and associated files in diff-v22 and diff-v24.
+	(Jim Danley)
+	
+2001-01-23 Tuesday 01:14  jim
+
+	
+	Added to the TODO list.
+	(Jim Danley)
+	
+2001-01-23 Tuesday 00:42  jim
+
+	
+	Moved delay_time, trigger_time, and jiffy_delta into the spk_synth
+		structure for all synths.
+	Modified /usr/include/linux/speakup.h and associated files in diff-v22 and diff-v24.
+	Assigned following default values for Accent SA and Audapter drivers:
+	delay_time = 400, trigger_time = 5, jiffy_delta = 3.
+	Bumped synth driver version numbers.
+	(Jim Danley)
+	
+2001-01-22 Monday 21:32  jim
+
+	
+	Moved INIT_STRING and REINIT_STRING into the spk_synth structure for all synths.
+	Modified /usr/include/linux/speakup.h and associated files in diff-v22 and diff-v24.
+	Commented out some unused driver code that caused compile warnings.
+	(Jim Danley)
+	
+2001-01-22 Monday 17:44  jim
+
+	
+	Test number 2.
+	(Jim Danley)
+	
+2001-01-22 Monday 16:28  kirk
+
+	
+	Testing my new CVS login.
+	(Jim Danley)
+	
+2001-01-21 Sunday 19:48  kirk
+
+	Wrote char *strlwr(char *) and now use it to be certain that the
+	synth_name (provided by the user in config or at boot time) is forced
+	to lower case.
+	(Jim Danley)
+	
+2001-01-21 Sunday 13:53  kirk
+
+	Added /proc/speakup/synth entry -- read-only so far.
+	Removed old ioctl functions from speakup.c
+	Wrote xlate function to translate escape chars in user provided strings.
+	Added synth_name to "unknown synthesizer" message at boot up.
+	Check for length of synth_name.
+	Made certain that synth_name is NULL terminated.
+	(Jim Danley)
+	
+2001-01-21 Sunday 09:03  kirk
+
+	Changed synth_write("\n", 2);
+	to synth_write("\n", 1);
+	when sending user provided synth settings via /proc to the synth.
+	This *might* fix the problem reported by litetalk users.
+	Cleaned up some comments and indenting.
+	(Jim Danley)
+	
+2001-01-14 Sunday 21:05  matt
+
+	Checking in 2.2.x patches for the last modification. (Matt)
+	
+2001-01-14 Sunday 20:49  kirk
+
+	Checking in Matt Campbells driver rewrite to include all the synths in
+	the kernel at the same time.  (Kirk)
+	
+2001-01-10 Wednesday 12:16  kirk
+
+	Fixed bug when writing to /proc/speakup files caps_start, caps_stop,
+	    punc_some, and punc_most.
+	Defined PUNC_CHARS and PUNC_CHARS_SIZE in symbols.h.
+	Added MULTI_CHAR to list of possible spk_variable.flags, necessary to
+	    define a list of chars that must belong to another list of chars --
+	    used for punc_some and punc_most.
+	Set arbitrary limit of 33 chars on caps_*.
+	Set PUNC_CHARS_SIZE char limit on user supplied value to punc_some and punc_most.
+	Fixed erroneous error strings.
+	#define'd error conditions to make code more clear.
+	Added STRING_TOO_LONG and CHAR_NOT_ONE_OF.
+	Added missing volume setting to DEFAULT_STATIC for Dectalk Express.
+	(Jim Danley)
+	
+2001-01-08 Monday 19:08  kirk
+
+	Made more changes to the cursoring.  I got backspace working in and
+	out of cursoring.  (Kirk)
+	
+2001-01-08 Monday 16:25  kirk
+
+	I have rewritten the cursoring routine speakup_check() to hopefully
+	improve it.  We are not there yet! (Kirk)
+	
+2001-01-07 Sunday 16:05  kirk
+
+	Just fixing some indentation settings. (Kirk)
+	
+2001-01-07 Sunday 13:37  kirk
+
+	added a single line to the top of speakup.c for testing.
+	(Jim Danley)
+	
+2001-01-07 Sunday 12:58  kirk
+
+	Fixed char/Makefile to build depends which it wasn't doing for some
+	reason under 2.2.18. (Kirk)
+	
+2001-01-07 Sunday 12:16  kirk
+
+	Fixed char/Makefile to create the speakup/.depend correctly.  I don't
+	know why it wasn't working before.  Everything else did.  (Kirk)
+	
+2001-01-07 Sunday 12:05  kirk
+
+	modified range checking code in speakup.c to handle negative numbers in
+	user provided parameter to /proc/speakup/* and also in spk_variable.valid.
+	(Jim Danley)
+	
+2001-01-07 Sunday 09:02  kirk
+
+	cleaned up and commented symbols.h.
+	re-wrote some of the range logic in symbols.h and speakup.c.
+	changed char valid[33] to char *valid in spk_variable struct.
+	dropped 0xff as char string terminator for spk_variable.valid member.
+	removed NUMERIC from rate flags for accents.
+	made /proc/speakup/tone read-only for dectalk express.
+	(Jim Danley)
+	
+2001-01-06 Saturday 15:52  kirk
+
+	Reorganized the Todo list and placed bugs in the bugs file. (Kirk)
+	
+2001-01-05 Friday 21:19  kirk
+
+	Made modifications to fix the make menuconfig bug in 2.4.0. (Kirk)
+	
+2001-01-05 Friday 20:42  kirk
+
+	Modified menubox.c in lxdialog to fix bug with initial menus not being
+	shown completely. (Kirk)
+	
+2001-01-05 Friday 15:54  kirk
+
+	merged symbols_*.h into symbols.h and removed symbols_*.h from CVS.
+	cleaned up the format a bit along the way.
+	(Jim Danley)
+	
+2001-01-04 Thursday 18:33  kirk
+
+	Modified the console.c, speakup.h and speakup.c for the 2.4.0 kernels.
+	I have also removed vt.c in preparation for just using the
+	/proc/speakup configuration system. (Kirk)
+	
+2001-01-04 Thursday 12:11  kirk
+
+	Starting major changes for merging into the kernel source tree.  Files
+	updated are console.c speakup.c speakup.h and vt.c.  I have built a
+	new set of functions to interact with the kernel which will be speakup
+	functions if speakup is configured in and null stubs if speakup is not
+	configured in.  So far they include: speakup_allocate(), speakup_bs(),
+	speakup_con_update(), speakup_con_write() and speakup_init().  These
+	changes only affect the 2.2.18 tree currently. (Kirk)
+	
+2001-01-03 Wednesday 10:04  kirk
+
+	Fixed transport driver by giving the uart time to settle before
+	testing for the port. (Kirk)
+	
+2001-01-02 Tuesday 20:18  kirk
+
+	First attempt to change checkout to work with an installed tarball and
+	update it to cvs. (Kirk)
+	
+2001-01-02 Tuesday 14:09  kirk
+
+	Made tchanges to make v24 compatible with 2.4.0-prerelease.  (Kirk)
+	
+2001-01-02 Tuesday 09:50  kirk
+
+	Added code to correctly parse range string for /proc file speech
+	    parameters which use a range of chars.
+	Added a priority of KERN_ALERT to printk statements that need to be
+	    displayed on user's console regardless.
+	Enhanced warning output if user attempts to assign a value out of range
+	    to a /proc variable.
+	(Jim Danley)
+	
+2000-12-31 Sunday 13:20  kirk
+
+	Rewrote checkclean and changed semee to semi in the character
+	array. (Kirk)
+	
+2000-12-31 Sunday 12:12  kirk
+
+	Fixed syntax errors in speakup_txprt.c and modified the install
+	script. (Kirk)
+	
+2000-12-31 Sunday 11:43  kirk
+
+	Fixing typo's in the documentation files. (Kirk)
+	
+2000-12-30 Saturday 23:33  kirk
+
+	Rewrote install and INSTALLATION for a different installing
+	design. (Kirk)
+	
+2000-12-30 Saturday 17:03  kirk
+
+	We are officially version v-0.10. (Kirk)
+	
+2000-12-30 Saturday 16:58  kirk
+
+	Modified the installation file and created an install script. (Kirk)
+	
+2000-12-30 Saturday 15:13  kirk
+
+	Fixed a syntax problem with speakup_audptr.c. (Kirk)
+	
+2000-12-30 Saturday 14:58  kirk
+
+	Placed a length limit on reading of version number in
+	speakup_audptr.c. (Kirk)
+	
+2000-12-30 Saturday 13:12  kirk
+
+	Adding file changes for v22. (Kirk)
+	
+2000-12-30 Saturday 13:10  kirk
+
+	Removing files related to version changes. (Kirk)
+	
+2000-12-30 Saturday 13:00  kirk
+
+	Changed structure of Documentation/speakup and related files to remove
+	references to speakup version for ease in updating documentation.
+	(Kirk)
+	
+2000-12-29 Friday 14:00  kirk
+
+	echo "" > /proc/speakup/characters now resets to defaults for consistency.
+	wrote script to reset all speakup defaults
+	added key_echo toggle to speakup vars controllable by user
+	    via /proc/speakup/key_echo
+	    key_echo is not 100% -- keypad slash talks even if key_echo == 0
+	(Jim Danley)
+	
+2000-12-24 Sunday 16:46  kirk
+
+	finished ability to write to /proc files, changed some default char descs, added "direct" to /proc
+	
+2000-12-22 Friday 15:04  kirk
+
+	These are the cursoring fixes for the 2.4.0-testxx kernels.  They also
+	include the requested changes I was experimenting with by Alan Cox in
+	preparation for kernel source tree inclusion. (Kirk)
+	
+2000-12-22 Friday 13:54  kirk
+
+	Fixed up some of the cursoring issues and have started making the
+	changes requested by Alan Cox in preparation for kernel source tree
+	inclusion. (Kirk)
+	
+2000-12-21 Thursday 08:56  kirk
+
+	rewrite of speakup_characters_write_proc() to handle fragmented buffers when called by dd, cp, or cat in kernel 2.4 (Jim Danley)
+	
+2000-12-20 Wednesday 12:17  kirk
+
+	Cleaned up some warnings.  (Kirk)
+	
+2000-12-20 Wednesday 11:32  kirk
+
+	Fixed toggle for synth timeout to set it off when waking up the
+	synth. (Kirk)
+	
+2000-12-19 Tuesday 19:31  kirk
+
+	This is atest fix to see if I have helped eliminate the synth bleed
+	through problem with all of the synths. (Kirk)
+	
+2000-12-19 Tuesday 16:29  kirk
+
+	quick change to speakup_audptr.c to fix synth_ver typo for kernel 2.2.18 (Jim Danley)
+	
+2000-12-19 Tuesday 15:35  kirk
+
+	Checking in the 2.2.18 fixes for the synth hanging problems.  (Kirk)
+	
+2000-12-19 Tuesday 15:10  kirk
+
+	Finally fixed the synth hanging problem on synth turn off. (Kirk)
+	
+2000-12-18 Monday 14:44  kirk
+
+	Just updating BUGS to put the backspace problem to bed. (Kirk)
+	
+2000-12-18 Monday 14:40  kirk
+
+	Checking in the backspace fix for 2.4.0-test11. Yeah! Finally
+	fixed. (Kirk)
+	
+2000-12-18 Monday 14:14  kirk
+
+	Fixed the backspace bug at last! In 2.2.18 so far. (Kirk)
+	
+2000-12-18 Monday 10:03  kirk
+
+	Checking in Jim Danleys changes again.  When will I learn to checkout
+	before checking in?? (Kirk)
+	
+2000-12-15 Friday 13:50  kirk
+
+	Checking first draft of menubox.c and checklist.c for
+	v-2.4.0-testxx. (Kirk)
+	
+2000-12-15 Friday 13:48  kirk
+
+	Taking first diff of menubox.c and checklist.c for v2.4.0-test11 for
+	make menuconfig cursoring. (Kirk)
+	
+2000-12-15 Friday 13:17  kirk
+
+	Checking in the new diffs of menubox.c and checklist.c for the first
+	time. (Kirk)
+	
+2000-12-15 Friday 13:14  kirk
+
+	Taking first diff of the make menuconfig patches from checklist.c and
+	menubox.c. (Kirk)
+	
+2000-12-12 Tuesday 18:56  kirk
+
+	Fixed a spelling error added to Todo list and fix speakup.c to not
+	need the is_alive() function. (Kirk)
+	
+2000-12-12 Tuesday 15:21  kirk
+
+	Fixed speakup to patch correctly with 2.2.18.  Unfortunately it won't
+	work with kernels less than 2.2.18 anymore.  It was totally agreed
+	upon by the folks on the reflector.  It's not my fault mom! (Kirk)
+	
+2000-12-12 Tuesday 10:41  kirk
+
+	Fix a problem with a conflict in cvsversion.h. (Kirk)
+	
+2000-12-11 Monday 20:40  kirk
+
+	Attempt to fix the Audapter driver by limiting how long it can stay in
+	kernel space. (Kirk)
+	
+2000-12-11 Monday 17:37  kirk
+
+	Made a slight fix to spk_reset() and moved it's call up a bit in
+	handle_scancodes(); (Kirk)
+	
+2000-12-11 Monday 16:28  kirk
+
+	Just checking in the cvs adds for the new diff-v24 patch files.  (Kirk)
+	
+2000-12-11 Monday 16:25  kirk
+
+	Checking in the 2.4.0 kernel patches for Jim Danley's /proc file
+	system additions. (Kirk)
+	
+2000-12-11 Monday 14:34  kirk
+
+	Checking in added proc files. (Kirk)
+	
+2000-12-11 Monday 14:31  kirk
+
+	Added two new files to v22 kernel for /proc file system,
+	linux/include/linux/proc_fs.h and linux/fs/proc/root.c. (Kirk)
+	
+2000-12-11 Monday 12:59  kirk
+
+	Checking in Jim Danleys /proc file system additions to speakup. (Kirk)
+	
+2000-12-09 Saturday 19:14  kirk
+
+	Changed spk_control to test for zero specifically on say_control. (Kirk)
+	
+2000-12-09 Saturday 18:29  kirk
+
+	Changed spk_control to say capslock scroll_lock and num_lock even when
+	say_control isn't on. (Kirk)
+	
+2000-12-08 Friday 16:21  kirk
+
+	Removing the linux version 2.3.xx stuff again. (Kirk)
+	
+2000-12-08 Friday 15:40  kirk
+
+	patched Configure.help by hand from v2.4 and committing. (Kirk)
+	
+2000-12-08 Friday 14:47  kirk
+
+	Checked in diff-v22/^usr^src^linux^Documentation^Configure.help.patch
+	which seems to have been missed as well as the init/main.c stuff.
+	This is really weird (Kirk)
+	
+2000-12-08 Friday 14:40  kirk
+
+	Added the -d flag to updat in checkout to see if we get cleanup
+	improvement. (Kirk)
+	
+2000-12-08 Friday 13:13  kirk
+
+	Removing patchlist and the linux 2.3.xx support. (Kirk)
+	
+2000-12-08 Friday 13:07  kirk
+
+	Edited check.orig and fix.orig to use the new patchlist filename
+	convention. (Kirk)
+	
+2000-12-07 Thursday 22:17  kirk
+
+	Just checking in the new files, three to be exact. (kirk)
+	
+2000-12-07 Thursday 22:14  kirk
+
+	rewrote checkin, checkout and moved patchlist to patchlist-v22 and
+	patchlist-v24 because we were missing the linux/init/main.c patches
+	and we didn't have a way to handle different files for different
+	versions. (kirk)
+	
+2000-12-06 Wednesday 19:06  kirk
+
+	Added support for the codepage 437 extended character set.  (Jim and Kirk)
+	
+2000-11-29 Wednesday 11:30  kirk
+
+	Fixed the 2.2.xx kernels to have the almost correct backspace code.
+	Also move the new character output in do_con_write() to lf().  I've
+	experimentally put a 'space' in to see if that helps the wrapping
+	during console output. (Kirk)
+	
+2000-11-27 Monday 15:38  kirk
+
+	Fix or partial to the backspace problem at least on 2.4.0-test11.  I
+	probably broke cursoring.
+	
+2000-11-22 Wednesday 20:12  kirk
+
+	Fixed a stupid unused variable by deleting it.
+	Fixed speakup_file_write to send raw user data to the synth.  (Thanx Matt)
+	
+2000-11-21 Tuesday 15:10  kirk
+
+	Adjusted console.c patch for test11 of 2.4.0.
+	
+2000-11-16 Thursday 11:42  kirk
+
+	Modified all drivers to test for no port when clearing the holding
+	register.
+	
+2000-11-16 Thursday 07:56  kirk
+
+	Fixed console.c patch to compensate for the line movement. in Test10.
+	
+2000-10-24 Tuesday 11:10  kirk
+
+	Fix to the LiteTalk driver to get around the hanging when the synth isn't
+	on.
+	
+2000-10-23 Monday 12:15  kirk
+
+	Fixed dtlk driver so non-valid ports are released correctly in
+	dev_probe.  Also added externs for synth_request_region and
+	release. (Kirk)
+	
+2000-08-28 Monday 13:29  kirk
+
+	Fixed Makefile for 2.4.0-test7 in drivers/char.
+	
+2000-08-17 Thursday 16:21  kirk
+
+	Birth of cursoring for version 2.4.xx kernels.
+	
+2000-08-17 Thursday 12:06  kirk
+
+	Okay, I proclaim the birth of cursoring, at least in the 2.2.x kernels.  Next we'll try the 2.3/4.x kernels.
+	
+2000-08-17 Thursday 11:01  kirk
+
+	Fixed CFLAGS to EXTRA_CFLAGS in Makefile to get speakup to compile
+	again.  The break took place between 2.4.0-test4 and test5.
+	
+2000-07-20 Thursday 10:43  kirk
+
+	Changed krealloc to just use kfree instead of kfree_s. Kirk
+	
+2000-07-03 Monday 14:19  kirk
+
+	Fixed one line in keyboard.c and changes to cvs
+	
+2000-06-29 Thursday 16:32  andy
+
+	Fixed checkin / cvsversion.h
+	
+2000-06-29 Thursday 16:27  andy
+
+	v2.3 keyboard.c + speakup_kill() fix
+	
+2000-06-29 Thursday 16:26  andy
+
+	v2.2.x keyboard.c + speakup_kill() fix
+	
+2000-06-29 Thursday 16:03  andy
+
+	v2.3 addition of speakup_kill() function (bound to sysreq key)
+	
+2000-06-29 Thursday 16:00  andy
+
+	v2.2 addition of speakup_kill() function (bound to sysreq key)
+	
+2000-06-29 Thursday 15:56  andy
+
+	v2.4 addition of speakup_kill() function (bound to sysrq key)
+	
+2000-06-26 Monday 16:19  andy
+
+	Added (very minimal) read() and ioctl() functions for /dev/synth.
+	
+2000-06-23 Friday 11:16  andy
+
+	Fixed miscdevice.h bad patch
+	
+2000-06-22 Thursday 15:47  andy
+
+	Fixed defkeymap.c not being built properly.
+	
+2000-06-22 Thursday 15:17  andy
+
+	Fixed v2.2.x zero-byte patch bug
+	
+2000-06-22 Thursday 14:48  andy
+
+	Checkout prunes now.
+	
+2000-06-22 Thursday 12:48  andy
+
+	Forgot to kill the old patch files... cleaning up.
+	
+2000-06-22 Thursday 12:45  andy
+
+	Changed checkin/checkout philosophy...
+		v2.2.x, v2.3.x, v2.4.x trees are all in this release
+	
+2000-06-21 Wednesday 16:27  andy
+
+	More checkin/checkout fixes.
+	
+2000-06-21 Wednesday 16:19  andy
+
+	Changed checkin/checkout philosophy, so 0-byte files aren't such a headache
+	
+2000-06-21 Wednesday 14:13  andy
+
+	New checkout script, fixing non-updating of previously patched files.
+	
+2000-06-20 Tuesday 15:14  andy
+
+	/dev/synth (MAJOR 10, MINOR 25) fix for v2.2.x tree
+	
+2000-06-19 Monday 16:02  andy
+
+	checkin script that fixes busted/nonexstant .orig files
+	
+2000-06-19 Monday 13:08  andy
+
+	cvsversion.h fix
+	speakup_decext.c fix for v2.2.x  (no such member 'list' problem)
+	
+2000-06-14 Wednesday 16:00  andy
+
+	TODO update
+	
+2000-06-14 Wednesday 15:25  andy
+
+	Fixed:
+		checkin 'older than' bug
+		disabled <caps|num|scroll>-lock speech when spk_shut_up is set
+	
+2000-06-14 Wednesday 13:15  andy
+
+	Added a cvsversion.h and cvs date tracking into speakup.
+	
+2000-06-14 Wednesday 12:44  andy
+
+	Oops.  Forgot these.
+	
+2000-06-14 Wednesday 08:06  kirk
+
+	Put SYNTH_MINOR #ifdefs in miscdevices.h for v2.2.x kernels.
+	Updated Todo file and temporarily incremented version number of speakup. (Kirk)
+	
+2000-06-13 Tuesday 16:30  andy
+
+	v2.4.x spanky checkin
+	
+2000-06-13 Tuesday 15:36  andy
+
+	v2.4.x checkin for /dev/synth stuff.
+	
+2000-06-13 Tuesday 15:28  andy
+
+	typo fix.
+	
+2000-06-13 Tuesday 15:23  andy
+
+	v2.2.x checkin for the new /dev/synth stuff.
+	
+2000-06-13 Tuesday 15:17  andy
+
+	Added a /dev/synth fops to speakup (MAJOR 10, MINOR 25), so that users can
+	use the synth without speakup (but why?).  :)
+	
+	Also fixed a couple of issues with the check* scripts, and added a -p option
+	to checkin to just create patches.
+	
+2000-06-12 Monday 14:36  andy
+
+	Had a 0-byte defkeymap.c file...
+	
+2000-06-12 Monday 14:26  andy
+
+	Fixed the screwed up v2.2.x patch files, and added a fixorig script which
+		copies .orig files from /usr/src/linux.orig as stated in the
+		patchlist file
+	
+2000-06-09 Friday 16:03  andy
+
+	TODO change
+	
+2000-06-09 Friday 14:21  andy
+
+	added checkclean script
+	
+2000-06-09 Friday 12:46  andy
+
+	updates to the v2.2.x tree.
+	
+2000-06-08 Thursday 14:59  andy
+
+	Fixed v2.2.x diffs, and made a few changes to checkin/checkout/checkorig..
+	
+	Namely,
+		checkin:
+			fixed bailout on CVSROOT set
+			diffs only for new or files that have changed since last patch
+			cvs adds directories properly
+			checks exit values of cvs commands
+		checkout/checkorig:
+			zeroes out .orig files that should exist and should be zeroed
+		patchlist:
+			now specifies patchfiles in the form:
+			<0|1>,<file>
+			where the first number is a flag to copy the file to create
+			a <file>.orig, or create a zero-byte file (0) for <file>.orig
+	
+2000-06-07 Wednesday 15:52  kirk
+
+	[no log message]
+	
+2000-06-07 Wednesday 14:15  andy
+
+	checkin mod
+	
+2000-06-07 Wednesday 14:14  andy
+
+	date test added to ./checkin
+	
+2000-06-07 Wednesday 14:11  andy
+
+	test
+	
+2000-06-07 Wednesday 14:09  andy
+
+	test patch
+	
+2000-06-07 Wednesday 13:02  kirk
+
+	test of checkin on spanky
+	
+2000-06-07 Wednesday 12:32  andy
+
+	more checkin/checkout updates
+	
+2000-06-07 Wednesday 12:19  andy
+
+	quick print fix for checkin script
+	
+2000-06-07 Wednesday 12:17  andy
+
+	Fixed new tree commit/checkout/update bugs with checkin and checkout
+	
+2000-06-07 Wednesday 12:10  kirk
+
+	v24 tree added to cvs
+	
+2000-06-07 Wednesday 11:30  andy
+
+	logic error in ./checkin
+	
+	New diff-vXX directories are added now... just cp -a diff-vYY div-vXX, and
+	kill the CVS/ dir.
+	
+2000-06-05 Monday 15:54  andy
+
+	Fixed ./checkin to 'cvs add' created patch directories.
+	
+2000-06-05 Monday 15:39  andy
+
+	Added synth_release_region, and seperated out a speakup_drvcommon.c file,
+	which contains common driver stuff -- current just synth_release_region(),
+	and synth_request_region().
+	
+2000-06-02 Friday 15:32  andy
+
+	Final test??
+	
+2000-06-02 Friday 14:11  andy
+
+	bleah
+	
+2000-06-02 Friday 13:58  andy
+
+	another test.. *sigh*
+	
+2000-06-02 Friday 13:57  andy
+
+	foo
+	
+2000-06-02 Friday 13:56  andy
+
+	adding speakup.h.patch
+	
+2000-06-02 Friday 13:55  andy
+
+	bleah
+	
+2000-06-02 Friday 13:49  andy
+
+	test 342.7
+	
+2000-06-02 Friday 12:56  andy
+
+	wrong checkout script.
+	
+2000-06-02 Friday 12:51  andy
+
+	Yet another test.
+	
+2000-06-01 Thursday 15:45  andy
+
+	test #2
+	
+2000-06-01 Thursday 15:40  andy
+
+	./checkin script test
+	
+2000-06-01 Thursday 15:38  andy
+
+	Initial revision
+	
+2000-06-01 Thursday 15:38  andy
+
+	Initial version of speakup in CVS.
+	

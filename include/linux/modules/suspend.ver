@@ -1,0 +1,4 @@
+#define __ver_software_suspend_enabled	_ver_str(23dc2965)
+#define software_suspend_enabled _set_ver(software_suspend_enabled)
+#define __ver_software_suspend	_ver_str(d1e47e15)
+#define software_suspend _set_ver(software_suspend)

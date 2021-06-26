@@ -1,0 +1,231 @@
+8253x.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253xioc.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/ring.h
+	@touch 8253x.h
+8253xchr.o: 8253xchr.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/sockios.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/Reg9050.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253xctl.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/ring.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253x.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/crc32dcl.h
+8253xctl.h: \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/autoconf.h \
+   /usr/src/linux-2.4.18-14/include/asm/page.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/Reg9050.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253x.h
+	@touch 8253xctl.h
+8253xdbg.o: 8253xdbg.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/sockios.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253xctl.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/Reg9050.h
+8253xini.o: 8253xini.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/sockios.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/Reg9050.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253xctl.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/ring.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253x.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/crc32dcl.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253xmcs.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/sp502.h
+8253xint.o: 8253xint.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty_flip.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253xctl.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253xmcs.h
+8253xioc.h: \
+   /usr/src/linux-2.4.18-14/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14/include/asm/ioctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/sockios.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/ring.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/Reg9050.h
+	@touch 8253xioc.h
+8253xmcs.o: 8253xmcs.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/sockios.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/Reg9050.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253xctl.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/ring.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253x.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/crc32dcl.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253xmcs.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/sp502.h
+8253xmcs.h: \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253xctl.h
+	@touch 8253xmcs.h
+8253xnet.o: 8253xnet.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/sockios.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/Reg9050.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253xctl.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/ring.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253x.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/crc32dcl.h
+8253xplx.o: 8253xplx.c \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/Reg9050.h
+8253xsyn.o: 8253xsyn.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty_flip.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253xctl.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253x.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h
+8253xtty.o: 8253xtty.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty_flip.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253xctl.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/sp502.h
+8253xutl.o: 8253xutl.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty_flip.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253xctl.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253x.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/sp502.h
+PciRegs.h: \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h
+	@touch PciRegs.h
+Reg9050.h: \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/PciRegs.h
+	@touch Reg9050.h
+amcc5920.o: amcc5920.c \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253xmcs.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/8253xctl.h
+crc32.o: crc32.c \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/crc32dcl.h \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/endian.h
+crc32dcl.h: \
+   /usr/src/linux-2.4.18-14/drivers/net/wan/8253x/crc32.h
+	@touch crc32dcl.h
+ring.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h
+	@touch ring.h
+.PRECIOUS:	8253x.h \
+	8253xctl.h \
+	8253xioc.h \
+	8253xmcs.h \
+	PciRegs.h \
+	Reg9050.h \
+	crc32dcl.h \
+	ring.h \
+

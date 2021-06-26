@@ -1,0 +1,440 @@
+QLogic Fibre Channel Driver for RedHat 6.2, 7.0 and 7.1 
+
+Products supported: QLA2200, QLA2300                               
+
+08/28/2001
+
+
+
+Contents 
+--------
+
+1. OS Support
+
+2. Supported Features
+
+3. Release History
+
+4. Creating the Driver Diskette
+
+5. Installing the driver 
+
+   5.1  Building a Custom Kernel to Load the Driver 
+   5.2  Building the driver from the Source and Load the Driver manually
+   5.2.1. Building an Uni-Processor (UP) version of the driver
+   5.2.2. Building a Symmetric Multi-Processor(SMP) version of the driver
+
+6. Driver Parameters
+
+   6.1  System Parameters
+   6.2  NVRAM Parameters
+   6.3  Driver Command Line Parameters
+
+7. Limitations
+
+8. Additional Notes
+
+   8.1 Proc Filesystem Support
+
+9. Diskette Content
+
+10. Contacting QLogic
+
+
+**********************************************************************
+
+
+1. OS Support 
+-------------
+
+This driver works with Linux kernel 2.2.16 and Linux kernel 2.4.X.
+Earlier or later versions of Linux are not supported in this beta 
+release.
+
+
+**********************************************************************
+
+
+2. Supported Features
+---------------------
+
+* FCAL - direct attach loop
+* Point-to-point
+* Fabric support
+* Initiator mode only
+* Fault recovery on down loops
+* Persistent binding
+* Extended LUN support up to 255 LUNs
+* FC tape support
+
+
+**********************************************************************
+
+
+3. Release History 
+------------------
+
+Please refer to Release Notes.
+
+
+**********************************************************************
+
+
+4. Creating the Driver Disks
+----------------------------
+
+Download qla2x00src-v5.30.tgz file from QLogic's website. If prompted
+"What would you like to do with this file?" choose "Save this file
+to disk". Insert a blank diskette and download to the diskette 
+directly.
+
+
+**********************************************************************
+
+
+5. Installing the driver 
+------------------------
+
+
+5.1  Building a Custom Kernel to Load the Driver
+-------------------------------------------------
+
+1. Extract the kernel-headers and kernel-sources RPM files from the 
+   first RedHat CD:
+
+       # cd /mnt/cdrom/RedHat/RPMS
+       # rpm -iv kernel-headers*.rpm
+       # rpm -iv kernel-source*.rpm 
+
+2. Using the Diskette you created in Section 4. Copy the
+   qla2x00src-v5.30.tgz file to /qla2x00. Follow these steps:
+
+       # mkdir qla2x00
+       # cd qla2x00
+       # mcopy a:*.tgz .
+       # tar -xvzf *.tgz
+
+3. Copy the qla2x00 source files to /usr/src/linux/drivers/scsi:
+
+       # cp *.c /usr/src/linux/drivers/scsi
+       # cp *.h /usr/src/linux/drivers/scsi
+
+4. Build kernel (UP/SMP) by first changing to the source directory
+
+       # cd /usr/src/linux
+
+5. # make mrproper (This removes everything. You need to do this when
+                    you build a SMP kernel for the first time.)
+
+6. # make menuconfig 
+
+   - Select SCSI Support <Enter>
+
+   - Select SCSI Low Level Drivers <Enter>
+
+   - Scroll down and select "QLA2x00 QLC driver support <new>"
+
+   - Press <space bar> twice to mark "QLA2x00 QLC driver Support"
+
+   - Select Exit until you return to the Main Menu.
+
+   - select "Processor type and features" and press <space bar>
+
+   - select "Symmetric multiproccessor" or "Single proccessor" to 
+     match your system's Proccessor architecture.
+
+   - select Exit until you return to the Main Menu.
+
+   - To exit the Main Menu, select Exit.
+
+   The system prompts: "Do you wish to save your new kernel 
+   configuration?".  Select "Yes". The system saves a new config 
+   file called ".config" in the current directory.
+
+8. Create a bootable kernel image by typing the following:
+
+       # make dep
+       # make bzImage
+
+9. Copy the bzImage to the boot directory. In the following
+   example, "newsmp" is the label for the new kernel image
+
+       # cd arch/i386/boot
+       # cp bzImage  /boot/newsmp
+
+10. Modify the /etc/lilo.conf file to make the boot loader load 
+   the new image. For example:
+
+       image=/boot/newsmp
+       label=newsmp
+       root=/dev/hda5  (this is the location of the boot partition)
+       read-only
+
+   Above lines tell the Linux boot loader to load the new kernel 
+   image called "newsmp" in /boot and mount the root partiton using
+   device /dev/hda5.
+
+11. Change default=linux or default=linux-up to default=newsmp.
+
+12. Now load the new boot configuration by executing the following:
+
+       # lilo
+
+   The lilo command will echoes the name of loadable kernel to the 
+   screen:
+
+       newsmp *
+
+13. Reboot the system, the new kernel image "newsmp" with qla2x00 
+    driver built in will be the default boot image.
+
+
+======================================================================
+
+
+5.2  Building a Driver from the Sources Code 
+--------------------------------------------
+
+By using this Source code you can build a qla2200.o or qla2300.o for your UP
+or SMP systems, and load the driver manually by using command:
+
+       # insmod qla2200.o
+               or
+       # insmod qla2300.o        
+
+
+5.2.1 Building a Uni-Processor (UP) Version of the Driver
+---------------------------------------------------------
+
+1. Extract the kernel-headers and kernel-sources RPM files from the 
+   first RedHat CD:
+
+       # cd /mnt/cdrom/RedHat/RPMS
+       # rpm -iv kernel-headers*.rpm
+       # rpm -iv kernel-source*.rpm   
+
+2. Using Diskette you created in Section 4, copy the
+   qla2x00src-v5.30.tgz file to /qla2x00. Follow these steps:
+
+       # mkdir qla2x00
+       # cd qla2x00
+       # mcopy a:*.tgz .
+       # tar -xvzf *.tgz
+
+3. Build the driver qla2200.o and qla2300.o from the Source Code by typing:
+
+	   (For Redhat 7.0)
+
+       # make all
+
+	   (For Redhat 7.1)
+
+       # make all OSVER=linux-2.4    
+
+4. Load the driver by typing:
+
+       # insmod qla2200.o
+               or
+       # insmod qla2300.o
+
+
+======================================================================
+
+
+5.2.2. Building Symmetric Multi-Processor (SMP) Version of the Driver
+---------------------------------------------------------------------
+
+1. Extract the kernel-headers and kernel-source RPM files from the 
+   first RedHat CD:
+
+       # cd /mnt/cdrom/RedHat/RPMS
+       # rpm -iv kernel-headers*.rpm
+       # rpm -iv kernel-source*.rpm
+
+2. Using the diskette you created in Section 4. Copy the
+   qla2x00src-v5.30.tgz file to /qla2x00. Follow these steps:
+
+       # mkdir qla2x00
+       # cd qla2x00
+       # mcopy a:*.tgz .
+       # tar -xvzf *.tgz
+
+3. Prepare source headers for a SMP module build by first changing 
+   to the source directory
+
+       # cd /usr/src/linux
+
+4. # make menuconfig 
+
+       - select "Processor type and features" press <space bar>
+
+       - select "Symmetric multiproccessor" press <space bar>
+
+       - select Exit to exit the Main Menu.
+
+       The system prompts: "Do you wish to save your new kernel 
+       configuration?".  Select "Yes". The system saves a new config 
+       file called ".config" in the current directory.
+
+5. Under /usr/src/linux/ type the following:
+
+       # make dep
+
+6. Build the driver qla2200.o and qla2300.o from the Source Code by typing:
+
+		 (For Redhat 7.0)
+
+         # make all SMP=1 
+
+		 (For Redhat 7.1)
+
+         # make all SMP=1 OSVER=linux-2.4    
+
+7. Load the driver manually by typing:
+
+       # insmod qla2200.o
+               or
+       # insmod qla2300.o
+
+
+**********************************************************************
+
+
+6. Driver Parameters
+--------------------
+
+The driver parameters are divided into System Parameters and NVRAM 
+Parameters sections.
+
+
+6.1  System parameters
+----------------------
+
+1. Type in the following at the boot prompt to support 128 LUNs:
+
+      boot: linux max_scsi_luns=128
+
+2. The /etc/lilo.conf file can be changed to automatically make the 
+   kernel to enable more than 1 LUN. If you have multiple kernel 
+   images,the "append=" line must be added to each kernel image 
+   listed in the lilo.conf file.
+
+   For example, add the following line to support 128 LUNs:
+
+   append="max_scsi_luns=128"
+
+   Note: If you have multiple adapters, set max_scsi_luns to maximum
+         LUN supported between adapters.
+
+
+6.2  NVRAM Parameters
+---------------------
+
+The NVRAM features described below are hard-coded in the driver. The 
+changes made for the particular NVRAM feature in the Fast!Util do not
+take effect unless otherwise noted.
+
+None.
+
+
+6.3  Driver Command Line Parameters
+-----------------------------------
+
+'verbose' and 'quiet' are command line options available.
+
+ verbose - Verbose detail debug information
+
+ quiet   - Driver does not display:
+              Waiting for LIP to complete....
+              scsi%d: Topology - %s, Host Loop address 0x%x
+              scsi(%d): LIP occurred
+              scsi(%d): LIP reset occurred
+
+ Usage examples:
+
+           # insmod qla2200.o options = verbose
+           # insmod qla2300.o options = verbose
+           # insmod qla2200.o ql2xopts = quiet
+           # insmod qla2300.o ql2xopts = quiet
+
+
+**********************************************************************
+
+
+7. Limitations
+--------------
+
+	N/A
+ 
+
+**********************************************************************
+
+
+8. Additional Notes
+---------------------
+
+
+8.1  Proc Filesystem Support
+-----------------------------
+
+The /proc filesystem for the QLA2200 and QLA2300 driver can be found
+in the /proc/scsi/qla2200/ and /proc/scsi/qla2300/ directory. This
+directory contains a file for each QLogic Fibre Channel adapter in
+the system. Each file will present information about the adapter and
+transfer statistics for each discovered LUN.
+
+
+**********************************************************************
+
+
+9. Diskette Content 
+--------------------
+
+The qla2x00src-v5.30.tgz files can be extracted into the following
+files:
+
+       Makefile
+       README.qla2x00
+       ql2200_fw.h
+       ql2300_fw.h
+       qla2x00.c
+       qla2x00.h
+       qla2x00_ioctl.c
+       qlavendor.c
+       qla_cfg.c
+       qla_cfgln.c
+       qla_fo.c
+       qla_fo.cfg 
+       qla_inioct.c
+       exioctln.h
+       exioct.h
+       inioct.h
+       qla_cfg.h
+       qla_dbg.h
+       qla_def.h
+       qla_fo.h
+       qla_gbl.h
+       qlfo.h
+       qlfolimits.h
+       qlfoln.h
+       sdm_fw.h
+       revision.notes - revision history
+       release.txt - Release Notes
+
+
+**********************************************************************
+
+
+10. Contacting QLogic 
+---------------------
+
+Please visit QLogic's website (www.qlogic.com). On this site you will
+find product information, our latest drivers and links for technical
+assistance if needed.
+
+
+======================================================================
+
+
+    Copyright (c) 2001 QLogic Corporation. All rights reserved. 
+

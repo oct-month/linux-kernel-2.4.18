@@ -1,0 +1,161 @@
+cdevincl.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/time.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/ptrace.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/semaphore.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsec.h \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsdefs.h \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsio.h \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/keydefs.h \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/cdevextrn.h \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/snmp.h
+	@touch cdevincl.h
+chipinfo.o: chipinfo.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/cdevincl.h
+crypto.o: crypto.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/cdevincl.h
+device.o: device.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/cdevincl.h
+dispatch.o: dispatch.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/cdevincl.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h)
+hash.o: hash.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/cdevincl.h
+math.o: math.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/cdevincl.h
+memory.o: memory.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/cdevincl.h
+param.o: param.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/cdevincl.h
+pkey.o: pkey.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/cdevincl.h
+prototypes.h: \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/cdevincl.h
+	@touch prototypes.h
+rng.o: rng.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/cdevincl.h
+selftest.o: selftest.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/cdevincl.h
+snmp.o: snmp.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/cdevincl.h
+sslarc4.o: sslarc4.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/cdevincl.h
+sslcipher.o: sslcipher.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/cdevincl.h
+sslmac.o: sslmac.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/cdevincl.h
+tlsmac.o: tlsmac.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/cdevincl.h
+ubsciphr.o: ubsciphr.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsincl.h
+ubsdh.o: ubsdh.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsincl.h
+ubsdsa.o: ubsdsa.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsincl.h
+ubsec.h: \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubslinux.h \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubssys.h
+	@touch ubsec.h
+ubsincl.h: \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsdefs.h \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsdebug.h \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsec.h \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubskey.h \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubscrypt.h \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsctl.h \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsstruc.h \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubssha1.h \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsmd5.h \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsextrn.h \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubslinux.h
+	@touch ubsincl.h
+ubsinit.o: ubsinit.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsincl.h
+ubsint.o: ubsint.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsincl.h
+ubsio.h: \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsec.h
+	@touch ubsio.h
+ubskey.o: ubskey.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsincl.h
+ubskeytest.o: ubskeytest.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsincl.h
+ubslinux.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ptrace.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h
+	@touch ubslinux.h
+ubsmath.o: ubsmath.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsincl.h
+ubsmd5.o: ubsmd5.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsincl.h
+ubsnorm.o: ubsnorm.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsincl.h
+ubsrng.o: ubsrng.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsincl.h
+ubsrsa.o: ubsrsa.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsincl.h
+ubssha1.o: ubssha1.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsincl.h
+ubsssl.o: ubsssl.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsincl.h
+ubsstats.o: ubsstats.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsincl.h \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsincl.h
+ubsstruc.o: ubsstruc.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsincl.h
+ubssys.h: \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubslinux.h \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubssolaris.h
+	@touch ubssys.h
+ubstest.o: ubstest.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsincl.h
+ubsutils.o: ubsutils.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/ubsincl.h
+utils.o: utils.c \
+   /usr/src/linux-2.4.18-14/drivers/crypto/bcm/cdevincl.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h
+.PRECIOUS:	cdevincl.h \
+	prototypes.h \
+	ubsec.h \
+	ubsincl.h \
+	ubsio.h \
+	ubslinux.h \
+	ubssys.h \
+

@@ -1,0 +1,4 @@
+#if  defined(__module__bigmem) || defined(__module__smp)
+#define __ver_atomic_dec_and_lock	_ver_str(ad7738e3)
+#define atomic_dec_and_lock _set_ver(atomic_dec_and_lock)
+#endif

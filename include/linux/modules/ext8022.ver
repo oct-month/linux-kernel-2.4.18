@@ -1,0 +1,12 @@
+#if  defined(__module__bigmem) || defined(__module__smp)
+#define __ver_llc_register_sap	_ver_str(6980f5c7)
+#define llc_register_sap _set_ver(llc_register_sap)
+#elif  defined(__module__debug) || defined(__module__up)
+#define __ver_llc_register_sap	_ver_str(b6f8b86a)
+#define llc_register_sap _set_ver(llc_register_sap)
+#elif  defined(__module__BOOT)
+#define __ver_llc_register_sap	_ver_str(8277440c)
+#define llc_register_sap _set_ver(llc_register_sap)
+#endif
+#define __ver_llc_unregister_sap	_ver_str(d6a74e5e)
+#define llc_unregister_sap _set_ver(llc_unregister_sap)

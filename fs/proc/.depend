@@ -1,0 +1,146 @@
+array.o: array.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel_stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/mman.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14/include/linux/swap.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/highmem.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/processor.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/arch/s390.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)
+base.o: base.c \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/file.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/seq_file.h \
+   /usr/src/linux-2.4.18-14/include/linux/namespace.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)
+generic.o: generic.c \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h
+inode.o: inode.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/file.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/include/linux/limits.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h
+kcore.o: kcore.c \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/user.h \
+   /usr/src/linux-2.4.18-14/include/linux/a.out.h \
+   /usr/src/linux-2.4.18-14/include/linux/elf.h \
+   /usr/src/linux-2.4.18-14/include/linux/elfcore.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/highmem.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/kcore/aout.h)
+kmsg.o: kmsg.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h
+proc_devtree.o: proc_devtree.c \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h
+proc_misc.o: proc_misc.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel_stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/mman.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14/include/linux/swap.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/seq_file.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm_inline.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/modules.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sgi/ds1286.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/hardware.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/stram/proc.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/arch/s390.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ppc32.h)
+proc_tty.o: proc_tty.c \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h
+root.o: root.c \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sysctl.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sysvipc.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/binfmt/misc.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/binfmt/misc/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sun/openpromfs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sun/openpromfs/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/speakup.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/devicetree.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ppc/iseries.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ppc64.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ppc/rtas.h)

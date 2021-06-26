@@ -1,0 +1,4 @@
+#define __ver_enable_gconsole	_ver_str(1ac6778f)
+#define enable_gconsole _set_ver(enable_gconsole)
+#define __ver_disable_gconsole	_ver_str(e3789ed6)
+#define disable_gconsole _set_ver(disable_gconsole)

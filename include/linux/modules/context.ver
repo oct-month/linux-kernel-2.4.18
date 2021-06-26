@@ -1,0 +1,4 @@
+#define __ver_flush_scheduled_tasks	_ver_str(7c3242b4)
+#define flush_scheduled_tasks _set_ver(flush_scheduled_tasks)
+#define __ver_schedule_task	_ver_str(2d6c3d04)
+#define schedule_task _set_ver(schedule_task)

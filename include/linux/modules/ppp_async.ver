@@ -1,0 +1,2 @@
+#define __ver_ppp_crc16_table	_ver_str(58d54d4b)
+#define ppp_crc16_table _set_ver(ppp_crc16_table)

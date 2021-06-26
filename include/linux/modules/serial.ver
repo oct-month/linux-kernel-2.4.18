@@ -1,0 +1,8 @@
+#define __ver_pci_siig20x_fn	_ver_str(f777eba9)
+#define pci_siig20x_fn _set_ver(pci_siig20x_fn)
+#define __ver_register_serial	_ver_str(a18dc2b1)
+#define register_serial _set_ver(register_serial)
+#define __ver_unregister_serial	_ver_str(ce8a3e65)
+#define unregister_serial _set_ver(unregister_serial)
+#define __ver_pci_siig10x_fn	_ver_str(cbe97b7b)
+#define pci_siig10x_fn _set_ver(pci_siig10x_fn)

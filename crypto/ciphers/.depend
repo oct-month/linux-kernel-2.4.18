@@ -1,0 +1,50 @@
+cipher-aes.o: cipher-aes.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/wordops.h \
+   /usr/src/linux-2.4.18-14/include/linux/crypto.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/crypto/ciphers/gen-cipher.h
+cipher-identity.o: cipher-identity.c \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/linux/crypto.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/crypto/ciphers/gen-cipher.h
+gen-cbc.h: \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h
+	@touch gen-cbc.h
+gen-cfb.h: \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h
+	@touch gen-cfb.h
+gen-cipher.h: \
+   /usr/src/linux-2.4.18-14/crypto/ciphers/gen-ecb.h \
+   /usr/src/linux-2.4.18-14/crypto/ciphers/gen-cbc.h \
+   /usr/src/linux-2.4.18-14/crypto/ciphers/gen-cfb.h \
+   /usr/src/linux-2.4.18-14/crypto/ciphers/gen-ctr.h \
+   /usr/src/linux-2.4.18-14/crypto/ciphers/gen-rtc.h
+	@touch gen-cipher.h
+gen-ctr.h: \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h
+	@touch gen-ctr.h
+gen-ecb.h: \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h
+	@touch gen-ecb.h
+gen-rtc.h: \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h
+	@touch gen-rtc.h
+.PRECIOUS:	gen-cbc.h \
+	gen-cfb.h \
+	gen-cipher.h \
+	gen-ctr.h \
+	gen-ecb.h \
+	gen-rtc.h \
+

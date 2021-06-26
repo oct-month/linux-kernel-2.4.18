@@ -1,0 +1,97 @@
+This is the driver for the Margi/Billionton MPEG decoder PC-Card.
+It is still in a beta state and may cause problems with your system.
+
+INSTALLING 
+----------
+0) From now on you will need a 2.4.x kernel to make everything work
+
+1) Install David Hinds` PCMCIA Card Services package. The current 
+   version is at http://pcmcia.sourceforge.org/.
+   This driver is known to work under versions 3.1.25 and later. Earlier 
+   version may work too.
+ 
+   % tar zxvf pcmcia-cs-3.1.25.tar.gz
+
+2) Enter the pcmcia directory and unpack the margi driver.
+   
+   % cd pcmcia-cs-3.1.25
+   % tar zxvf margi_cs-0.5.tar.gz
+   
+3) In the pcmcia main directory:
+
+   % make config
+   % make all
+   # make install
+
+
+The files for the margi are in margi2. (The name has historical reasons.)
+
+ATTENTION You now need video4linux support in the kernel.
+You can now use /dev/video for playback.
+
+
+Using the driver
+----------------
+The driver registers a character device with major number 162. You can
+cat an MPEG2 program stream into that device. 
+If the device doesn`t exist (usually it`s /dev/raw) just 
+   % mknod -m 0666 /dev/margi char 200 0
+Than you 
+   % cat nicempg2.vob > /dev/margi
+or 
+   % cat nicempg.mpg > /dev/margi
+
+At the moment we do not recognize the audio format of the MPEG1/2, so
+MPEG audio is hard-coded as default. You can change that in cvdv.c in the
+Prepare() routine, or by using the ioctl Decoder_Set_Audiotype, e.g.:
+
+#include "cvdvext.h"
+
+main()
+{
+        struct decodercmd decmd;
+
+	decmd.param1=audio_AC3;
+	decmd.cmd=Decoder_Set_Audiotype;
+        DecoderCommand(device,decmd);
+...
+
+}
+
+In the directory testsuite are some example programs for using the driver.
+I hope they are more or less self explanatory. Just use the --help option.
+
+
+If you want the latest drivers apart from the release versions, use
+the public CVS at linuxtv.org : http://linuxtv.org/cgi-bin/cvsweb.cgi/
+
+
+ZV-support
+----------
+
+You will faind patches for ZV support in the zv-diffs directory. The
+ones with the version number for pcmcia-cs ar for the respective
+versions of this package. The rest is for graphics chips or sound
+chips, like the patches for the Neomagic graphics chip and YMF sound
+chip submitted by Shigehiro Nomura. 
+
+There now three module parameters that are all set to 1 (=on) but can
+be set to off in /etc/pcmcia/config.opts
+They are : "svhs" for switching the svhs output DAC on or off (0 or 1).
+           "composite" for switching the composite output DAC on or off.
+           "use_zv" for enabling zv output if you compiled with the
+           -DUSE_ZV setting in margi_cs.mk.
+
+E.g. 
+module "margi_cs" opts "use_zv=0" 
+turns off zv output.
+or 
+module "margi_cs" opts "composite=0 svhs=0"
+turns off the external outputs. 
+
+WHO DO I BLAME/FLAME?
+=== == = ============
+
+Send comments, patches, free pizza to <mocm@convergence.de>. 
+
+

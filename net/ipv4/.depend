@@ -1,0 +1,855 @@
+af_inet.o: af_inet.c \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/major.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/sockios.h \
+   /usr/src/linux-2.4.18-14/include/linux/net.h \
+   /usr/src/linux-2.4.18-14/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv4.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/brlock.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14/include/net/arp.h \
+   /usr/src/linux-2.4.18-14/include/net/route.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/net/udp.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/raw.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/net/ipip.h \
+   /usr/src/linux-2.4.18-14/include/net/inet_common.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/mroute.h) \
+   /usr/src/linux-2.4.18-14/include/linux/mroute.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_bridge.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/kmod.h) \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net/divert.h) \
+   /usr/src/linux-2.4.18-14/include/linux/divert.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net/radio.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net/pcmcia/radio.h) \
+   /usr/src/linux-2.4.18-14/include/linux/wireless.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/dlci.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/dlci/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/bridge.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/bridge/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/vlan/8021q.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/vlan/8021q/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net/ipip.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net/ipgre.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h)
+arp.o: arp.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/sockios.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/fddidevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14/include/linux/trdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sysctl.h) \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/net/route.h \
+   /usr/src/linux-2.4.18-14/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/arp.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ax25.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ax25/module.h) \
+   /usr/src/linux-2.4.18-14/include/net/ax25.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/netrom.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/netrom/module.h) \
+   /usr/src/linux-2.4.18-14/include/net/netrom.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/atm/clip.h) \
+   /usr/src/linux-2.4.18-14/include/net/atmclip.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_arp.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/arpd.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/fddi.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tr.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net/ethernet.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net/fc.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/accept/unsolicited/arp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h)
+devinet.o: devinet.c \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/sockios.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_ether.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/rtnetlink.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/notifier.h \
+   /usr/src/linux-2.4.18-14/include/linux/inetdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/igmp.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sysctl.h) \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/route.h \
+   /usr/src/linux-2.4.18-14/include/net/ip_fib.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/kmod.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/multiple/tables.h)
+fib_frontend.o: fib_frontend.c \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/sockios.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/netlink.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14/include/net/route.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/net/arp.h \
+   /usr/src/linux-2.4.18-14/include/net/ip_fib.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/multiple/tables.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/route/multipath.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/nosiocrt.h)
+fib_hash.o: fib_hash.c \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/sockios.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/netlink.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14/include/net/route.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/ip_fib.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/route/large/tables.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/route/tos.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/multiple/tables.h)
+fib_rules.o: fib_rules.c \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/sockios.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/netlink.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14/include/net/route.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/ip_fib.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/route/fwmark.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net/cls/route.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/route/tos.h)
+fib_semantics.o: fib_semantics.c \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/sockios.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/netlink.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14/include/net/route.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/ip_fib.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/route/multipath.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/route/nat.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net/cls/route.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/route/pervasive.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/nosiocrt.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h)
+icmp.o: icmp.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv4.h \
+   /usr/src/linux-2.4.18-14/include/net/snmp.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/route.h \
+   /usr/src/linux-2.4.18-14/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/net/udp.h \
+   /usr/src/linux-2.4.18-14/include/net/raw.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/net/checksum.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/route/nat.h)
+igmp.o: igmp.c \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/sockios.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/inetdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/igmp.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14/include/linux/rtnetlink.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14/include/net/route.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/checksum.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv4.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/mroute.h) \
+   /usr/src/linux-2.4.18-14/include/linux/mroute.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/multicast.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/pimsm/v1.h)
+inetpeer.o: inetpeer.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/random.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/time.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/net/inetpeer.h
+ip_forward.o: ip_forward.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/ip.h \
+   /usr/src/linux-2.4.18-14/include/linux/icmp.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/net/udp.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/linux/tcp.h \
+   /usr/src/linux-2.4.18-14/include/linux/udp.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv4.h \
+   /usr/src/linux-2.4.18-14/include/net/checksum.h \
+   /usr/src/linux-2.4.18-14/include/linux/route.h \
+   /usr/src/linux-2.4.18-14/include/net/route.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net/fastroute.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/route/nat.h)
+ip_fragment.o: ip_fragment.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/ip.h \
+   /usr/src/linux-2.4.18-14/include/linux/icmp.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/net/checksum.h \
+   /usr/src/linux-2.4.18-14/include/linux/tcp.h \
+   /usr/src/linux-2.4.18-14/include/linux/udp.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv4.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)
+ip_gre.o: ip_gre.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/tcp.h \
+   /usr/src/linux-2.4.18-14/include/linux/udp.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14/include/linux/mroute.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/in6.h \
+   /usr/src/linux-2.4.18-14/include/linux/inetdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/igmp.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv4.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14/include/net/ipip.h \
+   /usr/src/linux-2.4.18-14/include/net/arp.h \
+   /usr/src/linux-2.4.18-14/include/net/checksum.h \
+   /usr/src/linux-2.4.18-14/include/net/inet_ecn.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ipv6.h) \
+   /usr/src/linux-2.4.18-14/include/net/ipv6.h \
+   /usr/src/linux-2.4.18-14/include/net/ip6_fib.h \
+   /usr/src/linux-2.4.18-14/include/net/ip6_route.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net/ipgre/broadcast.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/netfilter.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/netfilter/debug.h)
+ip_input.o: ip_input.c \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/net.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/sockios.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14/include/net/snmp.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14/include/net/route.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/arp.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/net/raw.h \
+   /usr/src/linux-2.4.18-14/include/net/checksum.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv4.h \
+   /usr/src/linux-2.4.18-14/include/linux/mroute.h \
+   /usr/src/linux-2.4.18-14/include/linux/netlink.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/netfilter/debug.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/netfilter.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net/cls/route.h)
+ip_nat_dumb.o: ip_nat_dumb.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/ip.h \
+   /usr/src/linux-2.4.18-14/include/linux/icmp.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/linux/tcp.h \
+   /usr/src/linux-2.4.18-14/include/linux/udp.h \
+   /usr/src/linux-2.4.18-14/include/net/checksum.h \
+   /usr/src/linux-2.4.18-14/include/linux/route.h \
+   /usr/src/linux-2.4.18-14/include/net/route.h \
+   /usr/src/linux-2.4.18-14/include/net/ip_fib.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/route/tos.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/route/fwmark.h)
+ip_options.o: ip_options.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/ip.h \
+   /usr/src/linux-2.4.18-14/include/linux/icmp.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/rtnetlink.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h
+ip_output.o: ip_output.c \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/sockios.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/net/snmp.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14/include/net/route.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/net/udp.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/arp.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/net/raw.h \
+   /usr/src/linux-2.4.18-14/include/net/checksum.h \
+   /usr/src/linux-2.4.18-14/include/net/inetpeer.h \
+   /usr/src/linux-2.4.18-14/include/linux/igmp.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv4.h \
+   /usr/src/linux-2.4.18-14/include/linux/mroute.h \
+   /usr/src/linux-2.4.18-14/include/linux/netlink.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/netfilter/debug.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/route/nat.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/mroute.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net/sched.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/netfilter.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/multicast.h)
+ip_sockglue.o: ip_sockglue.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/ip.h \
+   /usr/src/linux-2.4.18-14/include/linux/icmp.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/linux/tcp.h \
+   /usr/src/linux-2.4.18-14/include/linux/udp.h \
+   /usr/src/linux-2.4.18-14/include/linux/igmp.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter.h \
+   /usr/src/linux-2.4.18-14/include/linux/route.h \
+   /usr/src/linux-2.4.18-14/include/linux/mroute.h \
+   /usr/src/linux-2.4.18-14/include/net/route.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ipv6.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ipv6/module.h) \
+   /usr/src/linux-2.4.18-14/include/net/transp_v6.h \
+   /usr/src/linux-2.4.18-14/include/linux/errqueue.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/mroute.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/netfilter.h)
+ipconfig.o: ipconfig.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/random.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/utsname.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/if.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/ip.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/route.h \
+   /usr/src/linux-2.4.18-14/include/linux/udp.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/major.h \
+   /usr/src/linux-2.4.18-14/include/net/arp.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/ipconfig.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/checksum.h \
+   /usr/src/linux-2.4.18-14/include/asm/processor.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/pnp/dhcp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/pnp/bootp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/pnp/rarp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/root/nfs.h)
+ipip.o: ipip.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/tcp.h \
+   /usr/src/linux-2.4.18-14/include/linux/udp.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14/include/linux/mroute.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv4.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14/include/net/ipip.h \
+   /usr/src/linux-2.4.18-14/include/net/inet_ecn.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/netfilter.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/netfilter/debug.h)
+ipmr.o: ipmr.c \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/inetdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/igmp.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/mroute.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/net/udp.h \
+   /usr/src/linux-2.4.18-14/include/net/raw.h \
+   /usr/src/linux-2.4.18-14/include/linux/notifier.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv4.h \
+   /usr/src/linux-2.4.18-14/include/net/ipip.h \
+   /usr/src/linux-2.4.18-14/include/net/checksum.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/pimsm/v1.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/pimsm/v2.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/pimsm.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/netfilter.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h)
+proc.o: proc.c \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/net.h \
+   /usr/src/linux-2.4.18-14/include/linux/un.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/param.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/net/udp.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/raw.h
+protocol.o: protocol.c \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/brlock.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/net/udp.h \
+   /usr/src/linux-2.4.18-14/include/net/ipip.h \
+   /usr/src/linux-2.4.18-14/include/linux/igmp.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/multicast.h)
+raw.o: raw.c \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/ioctls.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/mroute.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/net/udp.h \
+   /usr/src/linux-2.4.18-14/include/net/raw.h \
+   /usr/src/linux-2.4.18-14/include/net/inet_common.h \
+   /usr/src/linux-2.4.18-14/include/net/checksum.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/mroute.h)
+route.o: route.c \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/sockios.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/rtnetlink.h \
+   /usr/src/linux-2.4.18-14/include/linux/inetdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/igmp.h \
+   /usr/src/linux-2.4.18-14/include/linux/pkt_sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/mroute.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv4.h \
+   /usr/src/linux-2.4.18-14/include/linux/random.h \
+   /usr/src/linux-2.4.18-14/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/route.h \
+   /usr/src/linux-2.4.18-14/include/net/inetpeer.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/ip_fib.h \
+   /usr/src/linux-2.4.18-14/include/net/arp.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sysctl.h) \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/route/verbose.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/route/nat.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net/cls/route.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/multiple/tables.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/route/fwmark.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/mroute.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tux/loopback/physical.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/route/multipath.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/net/fastroute.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)
+syncookies.o: syncookies.c \
+   /usr/src/linux-2.4.18-14/include/linux/tcp.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/random.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h
+sysctl_net_ipv4.o: sysctl_net_ipv4.c \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/net/snmp.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/route.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sysctl.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/syn/cookies.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/multicast.h)
+tcp.o: tcp.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/ioctls.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ipv6.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ipv6/module.h)
+tcp_diag.o: tcp_diag.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14/include/linux/random.h \
+   /usr/src/linux-2.4.18-14/include/linux/cache.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/net/ipv6.h \
+   /usr/src/linux-2.4.18-14/include/net/inet_common.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/tcp_diag.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ipv6.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/inet/ecn.h)
+tcp_input.o: tcp_input.c \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/net/inet_common.h \
+   /usr/src/linux-2.4.18-14/include/linux/ipsec.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/inet/ecn.h)
+tcp_ipv4.o: tcp_ipv4.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14/include/linux/random.h \
+   /usr/src/linux-2.4.18-14/include/linux/cache.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/net/ipv6.h \
+   /usr/src/linux-2.4.18-14/include/net/inet_common.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/ipsec.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/syn/cookies.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/filter.h)
+tcp_minisocks.o: tcp_minisocks.c \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/net/inet_common.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sysctl.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ipv6.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ipv6/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/filter.h)
+tcp_output.o: tcp_output.c \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/linux/compiler.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h
+tcp_timer.o: tcp_timer.c \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h
+udp.o: udp.c \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/ioctls.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/fcntl.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/sockios.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/net/snmp.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/udp.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/net/route.h \
+   /usr/src/linux-2.4.18-14/include/net/inet_common.h \
+   /usr/src/linux-2.4.18-14/include/net/checksum.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ipv6.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ipv6/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/filter.h)
+utils.o: utils.c \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/lib/gcc-lib/i386-redhat-linux/3.2/include/stdarg.h \
+   /usr/src/linux-2.4.18-14/include/linux/inet.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/protocol.h \
+   /usr/src/linux-2.4.18-14/include/net/tcp.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h

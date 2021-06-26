@@ -1,0 +1,186 @@
+daisy.o: daisy.c \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h
+ieee1284.o: ieee1284.c \
+   /usr/src/linux-2.4.18-14/include/linux/threads.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/lp/console.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/parport/1284.h)
+ieee1284_ops.o: ieee1284_ops.c \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/lp/console.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/parport/1284.h)
+init.o: init.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/threads.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/parport/pc.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sysctl.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/parport/amiga.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/parport/mfc3.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/parport/atari.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/parport/arc.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/parport/sunbpp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/parport/1284.h)
+parport_amiga.o: parport_amiga.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/asm/setup.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h
+parport_arc.o: parport_arc.c \
+   /usr/src/linux-2.4.18-14/include/linux/threads.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/include/asm/ptrace.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h
+parport_atari.o: parport_atari.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/include/asm/setup.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h
+parport_cs.o: parport_cs.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/ptrace.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport_pc.h \
+   /usr/src/linux-2.4.18-14/include/pcmcia/version.h \
+   /usr/src/linux-2.4.18-14/include/pcmcia/cs_types.h \
+   /usr/src/linux-2.4.18-14/include/pcmcia/cs.h \
+   /usr/src/linux-2.4.18-14/include/pcmcia/cistpl.h \
+   /usr/src/linux-2.4.18-14/include/pcmcia/ds.h \
+   /usr/src/linux-2.4.18-14/include/pcmcia/cisreg.h \
+   /usr/src/linux-2.4.18-14/include/pcmcia/ciscode.h
+parport_gsc.o: parport_gsc.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h
+parport_mfc3.o: parport_mfc3.c \
+   /usr/src/linux-2.4.18-14/drivers/parport/multiface.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/mc6821.h \
+   /usr/src/linux-2.4.18-14/include/linux/zorro.h \
+   /usr/src/linux-2.4.18-14/include/asm/setup.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h
+parport_pc.o: parport_pc.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport_pc.h \
+   /usr/src/linux-2.4.18-14/include/asm/parport.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/parport/pc/fifo.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/parport/pc/superio.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/parport/1284.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pci.h)
+parport_serial.o: parport_serial.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport_pc.h \
+   /usr/src/linux-2.4.18-14/include/linux/serial.h \
+   /usr/src/linux-2.4.18-14/include/linux/serialP.h \
+   /usr/src/linux-2.4.18-14/include/linux/list.h \
+   /usr/src/linux-2.4.18-14/include/asm/serial.h
+parport_sunbpp.o: parport_sunbpp.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/include/asm/ptrace.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h
+probe.o: probe.c \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h
+procfs.o: procfs.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/sysctl.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sysctl.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/parport/1284.h)
+share.o: share.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/threads.h \
+   /usr/src/linux-2.4.18-14/include/linux/parport.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/parport/1284.h)

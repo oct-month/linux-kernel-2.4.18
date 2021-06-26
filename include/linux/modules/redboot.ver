@@ -1,0 +1,2 @@
+#define __ver_parse_redboot_partitions	_ver_str(08c24f4d)
+#define parse_redboot_partitions _set_ver(parse_redboot_partitions)

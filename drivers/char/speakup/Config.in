@@ -1,0 +1,18 @@
+bool 'Speakup console speech' CONFIG_SPEAKUP
+if [ "$CONFIG_SPEAKUP" != "n" ]; then
+	comment 'Type "y" for each synthesizer you want built into the kernel.'
+	bool "Accent SA, acntsa" CONFIG_SPEAKUP_ACNTSA
+	bool "Accent PC, acntpc" CONFIG_SPEAKUP_ACNTPC
+	bool "Apollo, apolo" CONFIG_SPEAKUP_APOLO
+	bool "Audapter, audptr" CONFIG_SPEAKUP_AUDPTR
+	bool "Braille 'n' Speak, bns" CONFIG_SPEAKUP_BNS
+	bool "DECtalk Express, dectlk" CONFIG_SPEAKUP_DECTLK
+	bool "DECtalk External (old), decext" CONFIG_SPEAKUP_DECEXT
+	bool "DoubleTalk PC, dtlk" CONFIG_SPEAKUP_DTLK
+	bool "DoubleTalk LT or LiteTalk, ltlk" CONFIG_SPEAKUP_LTLK
+	bool "Speak Out, spkout" CONFIG_SPEAKUP_SPKOUT
+	bool "Transport, txprt" CONFIG_SPEAKUP_TXPRT
+	comment 'Enter the four to six character synth string from above or none.'
+	string "Default synthesizer for Speakup" CONFIG_SPEAKUP_DEFAULT "none"
+	bool "Use Speakup keymap by default" CONFIG_SPEAKUP_KEYMAP
+fi

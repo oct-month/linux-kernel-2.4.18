@@ -1,0 +1,27 @@
+divert_init.o: divert_init.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/divert/isdn_divert.h
+divert_procfs.o: divert_procfs.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/isdnif.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/divert/isdn_divert.h
+isdn_divert.o: isdn_divert.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/divert/isdn_divert.h
+isdn_divert.h: \
+   /usr/src/linux-2.4.18-14/include/linux/ioctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/isdnif.h \
+   /usr/src/linux-2.4.18-14/include/linux/isdn_divertif.h
+	@touch isdn_divert.h
+.PRECIOUS:	isdn_divert.h \
+

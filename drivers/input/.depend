@@ -1,0 +1,58 @@
+evdev.o: evdev.c \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h
+input.o: input.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/random.h \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h
+joydev.o: joydev.c \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/joystick.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/major.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/miscdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h
+keybdev.o: keybdev.c \
+   /usr/src/linux-2.4.18-14/include/linux/kbd_ll.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kbd_kern.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/x86.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ia64.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sparc64.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/superh.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ppc.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mac/emumousebtn.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mac/adbkeycodes.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/adb/keyboard.h)
+mousedev.o: mousedev.c \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/input.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/random.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/input/mousedev/screen/x.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/input/mousedev/screen/y.h)

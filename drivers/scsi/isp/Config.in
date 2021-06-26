@@ -1,0 +1,46 @@
+#
+# Copyright (c) 2000 by Matthew Jacob
+#
+#       This software is free software; you can redistribute it and/or
+#       modify it under the terms of the GNU Library General Public
+#       License as published by the Free Software Foundation; version 2.
+#
+#       This software is distributed in the hope that it will be useful,
+#       but WITHOUT ANY WARRANTY; without even the implied warranty of
+#       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#       Library General Public License for more details.
+#
+#       You should have received a copy of the GNU Library General Public
+#       License along with this software; if not, write to the Free
+#       Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#
+#       The author may be reached via electronic communications at
+#
+#               mjacob@feral.com
+#
+#       or, via United States Postal Address
+#
+#               Matthew Jacob
+#               Feral Software
+#               PMB #825
+#               5214-F Diamond Hts. Blvd
+#               San Francisco, CA, 94131
+#
+#
+if [ "$CONFIG_PCI" = "y" ]; then
+    dep_tristate 'Single Driver Qlogic FC/SCSI support' CONFIG_SCSI_NEWISP $CONFIG_SCSI
+#   if [ "$CONFIG_SCSI_NEWISP" != "n" ]; then
+#
+# Eventually we'll put some more options in.
+#
+#	if [ "$CONFIG_SCSI_QLOGIC_ISP" = "y" ]; then
+#	    define_tristate CONFIG_SCSI_QLOGIC_ISP n
+#	fi
+#	if [ "$CONFIG_SCSI_QLOGIC_FC" = "y" ]; then
+#	    define_tristate CONFIG_SCSI_QLOGIC_FC n
+#	fi
+#	if [ "$CONFIG_SCSI_QLOGIC_1280" = "y" ]; then
+#	    define_tristate CONFIG_SCSI_QLOGIC_1280 n
+#	fi
+#   fi
+fi

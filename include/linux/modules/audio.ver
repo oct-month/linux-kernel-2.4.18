@@ -1,0 +1,8 @@
+#define __ver_unregister_sparcaudio_driver	_ver_str(e6388e62)
+#define unregister_sparcaudio_driver _set_ver(unregister_sparcaudio_driver)
+#define __ver_sparcaudio_input_done	_ver_str(440c070c)
+#define sparcaudio_input_done _set_ver(sparcaudio_input_done)
+#define __ver_sparcaudio_output_done	_ver_str(ddc03eb3)
+#define sparcaudio_output_done _set_ver(sparcaudio_output_done)
+#define __ver_register_sparcaudio_driver	_ver_str(e2621c55)
+#define register_sparcaudio_driver _set_ver(register_sparcaudio_driver)

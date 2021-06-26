@@ -1,0 +1,66 @@
+e100.h: \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/reboot.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/unaligned.h \
+   /usr/src/linux-2.4.18-14/include/asm/processor.h \
+   /usr/src/linux-2.4.18-14/include/linux/ethtool.h \
+   /usr/src/linux-2.4.18-14/include/linux/inetdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/if.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ip.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pm.h)
+	@touch e100.h
+e100_config.o: e100_config.c \
+   /usr/src/linux-2.4.18-14/drivers/net/e100/e100_config.h
+e100_config.h: \
+   /usr/src/linux-2.4.18-14/drivers/net/e100/e100.h
+	@touch e100_config.h
+e100_eeprom.o: e100_eeprom.c \
+   /usr/src/linux-2.4.18-14/drivers/net/e100/e100.h
+e100_main.o: e100_main.c \
+   /usr/src/linux-2.4.18-14/include/net/checksum.h \
+   /usr/src/linux-2.4.18-14/include/linux/tcp.h \
+   /usr/src/linux-2.4.18-14/include/linux/udp.h \
+   /usr/src/linux-2.4.18-14/drivers/net/e100/e100.h \
+   /usr/src/linux-2.4.18-14/drivers/net/e100/e100_ucode.h \
+   /usr/src/linux-2.4.18-14/drivers/net/e100/e100_config.h \
+   /usr/src/linux-2.4.18-14/drivers/net/e100/e100_phy.h \
+   /usr/src/linux-2.4.18-14/drivers/net/e100/e100_vendor.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   /usr/src/linux-2.4.18-14/include/linux/mii.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pm.h)
+e100_phy.o: e100_phy.c \
+   /usr/src/linux-2.4.18-14/drivers/net/e100/e100_phy.h
+e100_phy.h: \
+   /usr/src/linux-2.4.18-14/drivers/net/e100/e100.h \
+   /usr/src/linux-2.4.18-14/include/linux/mii.h
+	@touch e100_phy.h
+e100_proc.o: e100_proc.c \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   /usr/src/linux-2.4.18-14/drivers/net/e100/e100.h
+e100_test.o: e100_test.c \
+   /usr/src/linux-2.4.18-14/drivers/net/e100/e100.h \
+   /usr/src/linux-2.4.18-14/drivers/net/e100/e100_config.h
+.PRECIOUS:	e100.h \
+	e100_config.h \
+	e100_phy.h \
+

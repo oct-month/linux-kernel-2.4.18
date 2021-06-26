@@ -1,0 +1,2 @@
+#define __ver_nfsd_linkage	_ver_str(b7a059a8)
+#define nfsd_linkage _set_ver(nfsd_linkage)

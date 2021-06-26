@@ -1,0 +1,4 @@
+#define __ver_del_mtd_partitions	_ver_str(4b72ac50)
+#define del_mtd_partitions _set_ver(del_mtd_partitions)
+#define __ver_add_mtd_partitions	_ver_str(549726b7)
+#define add_mtd_partitions _set_ver(add_mtd_partitions)

@@ -1,0 +1,75 @@
+bf-i386.o: bf-i386.S \
+   /usr/src/linux-2.4.18-14/include/linux/linkage.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/x86/bswap.h)
+bf.o: bf.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/cipe/bf.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h
+bf.h: \
+   /usr/src/linux-2.4.18-14/include/asm/types.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h
+	@touch bf.h
+cipe.h: \
+   /usr/src/linux-2.4.18-14/drivers/addon/cipe/config.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/cipe/crypto.h \
+   /usr/src/linux-2.4.18-14/include/linux/if.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_cipe.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/sockios.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_ether.h \
+   /usr/src/linux-2.4.18-14/include/linux/net.h \
+   /usr/src/linux-2.4.18-14/include/linux/ip.h \
+   /usr/src/linux-2.4.18-14/include/linux/udp.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/asm/spinlock.h
+	@touch cipe.h
+crypto.h: \
+   /usr/src/linux-2.4.18-14/drivers/addon/cipe/bf.h
+	@touch crypto.h
+device.o: device.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/cipe/cipe.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/cipe/version.h \
+   /usr/lib/gcc-lib/i386-redhat-linux/3.2/include/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/rtnetlink.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)
+encaps.o: encaps.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/cipe/cipe.h \
+   /usr/src/linux-2.4.18-14/include/asm/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h
+module.o: module.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/cipe/cipe.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/utsname.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)
+output.o: output.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/cipe/cipe.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/icmp.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/netfilter_ipv4.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/firewall.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/netfilter.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/netfilter/debug.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ip/forward.h)
+sock.o: sock.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/cipe/cipe.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/net/ip.h \
+   /usr/src/linux-2.4.18-14/include/net/udp.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/file.h
+.PRECIOUS:	bf.h \
+	cipe.h \
+	crypto.h \
+

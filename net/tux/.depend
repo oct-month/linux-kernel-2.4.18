@@ -1,0 +1,73 @@
+abuf.o: abuf.c \
+   /usr/src/linux-2.4.18-14/include/net/tux.h
+accept.o: accept.c \
+   /usr/src/linux-2.4.18-14/include/net/tux.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tux/debug.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tux/numsockets.h)
+cachemiss.o: cachemiss.c \
+   /usr/src/linux-2.4.18-14/include/net/tux.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)
+cgi.o: cgi.c \
+   /usr/src/linux-2.4.18-14/include/net/tux.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/x86.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/alpha.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ppc.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)
+directory.o: directory.c \
+   /usr/src/linux-2.4.18-14/include/net/tux.h
+extcgi.o: extcgi.c \
+   /usr/src/linux-2.4.18-14/include/net/tux.h \
+   /usr/src/linux-2.4.18-14/net/tux/parser.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tux/debug.h)
+gzip.o: gzip.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/net/tux.h
+input.o: input.c \
+   /usr/src/linux-2.4.18-14/include/net/tux.h \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tux/debug.h)
+logger.o: logger.c \
+   /usr/src/linux-2.4.18-14/include/net/tux.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tux/debug.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tux/extended/log.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)
+main.o: main.c \
+   /usr/src/linux-2.4.18-14/include/net/tux.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tux/numthreads.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tux/numsockets.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tux/module.h)
+mod.o: mod.c \
+   /usr/src/linux-2.4.18-14/include/net/tux.h \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h
+output.o: output.c \
+   /usr/src/linux-2.4.18-14/include/net/tux.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tux/debug.h)
+postpone.o: postpone.c \
+   /usr/src/linux-2.4.18-14/include/net/tux.h
+proc.o: proc.c \
+   /usr/src/linux-2.4.18-14/include/net/tux.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tux/numthreads.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tux/numsockets.h)
+proto_ftp.o: proto_ftp.c \
+   /usr/src/linux-2.4.18-14/include/net/tux.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tux/debug.h)
+proto_http.o: proto_http.c \
+   /usr/src/linux-2.4.18-14/include/net/tux.h \
+   /usr/src/linux-2.4.18-14/net/tux/parser.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/arch/s390.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tux/debug.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/tux/extcgi.h)
+redirect.o: redirect.c \
+   /usr/src/linux-2.4.18-14/include/net/tux.h
+times.o: times.c \
+   /usr/src/linux-2.4.18-14/include/linux/time.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/net/tux/times.h
+userspace.o: userspace.c \
+   /usr/src/linux-2.4.18-14/include/net/tux.h

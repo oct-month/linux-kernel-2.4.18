@@ -1,0 +1,65 @@
+sym53c8xx.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/sym53c8xx/iomapped.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c8xx/iomapped.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/sym53c8xx/default/tags.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c8xx/default/tags.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/sym53c8xx/max/tags.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/ncr53c8xx/max/tags.h) \
+   /usr/src/linux-2.4.18-14/include/scsi/scsicam.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/sym53c8xx/dma/addressing/mode.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/sym53c8xx/default/sync.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/scsi/sym53c8xx/max/lun.h)
+	@touch sym53c8xx.h
+sym_fw.o: sym_fw.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sym53c8xx_2/sym_glue.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sym53c8xx_2/sym_fw1.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sym53c8xx_2/sym_fw2.h
+sym_glue.o: sym_glue.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sym53c8xx_2/sym_glue.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi_module.c
+sym_glue.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/asm/dma.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/time.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/constants.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sym53c8xx_2/sym53c8xx.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sym53c8xx_2/sym_misc.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sym53c8xx_2/sym_conf.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sym53c8xx_2/sym_defs.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sym53c8xx_2/sym_fw.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sym53c8xx_2/sym_hipd.h
+	@touch sym_glue.h
+sym_hipd.o: sym_hipd.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sym53c8xx_2/sym_glue.h
+sym_malloc.o: sym_malloc.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sym53c8xx_2/sym_glue.h
+sym_misc.o: sym_misc.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sym53c8xx_2/sym_glue.h
+sym_nvram.o: sym_nvram.c \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sym53c8xx_2/sym_glue.h
+.PRECIOUS:	sym53c8xx.h \
+	sym_glue.h \
+

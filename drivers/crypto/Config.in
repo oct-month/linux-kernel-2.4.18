@@ -1,0 +1,13 @@
+
+# $Id: linux-2.4.6-bcm5820.patch,v 1.5 2001/07/23 23:46:53 arjanv Exp $
+
+mainmenu_option next_comment
+comment 'Crypto Hardware support'
+
+tristate 'Crypto Hardware Accelerator Support' CONFIG_CRYPTO
+
+if [ "$CONFIG_CRYPTO" = "y" -o "$CONFIG_CRYPTO" = "m" ]; then
+   dep_tristate '  Broadcom 5820 SSL accelerator support' CONFIG_CRYPTO_BROADCOM $CONFIG_CRYPTO
+fi
+
+endmenu

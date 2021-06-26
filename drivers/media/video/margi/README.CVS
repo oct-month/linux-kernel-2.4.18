@@ -1,0 +1,13 @@
+1) unpack pcmcia_cs distribution
+   % tar zxvf pcmcia-cs-3.1.14.tar.gz
+
+2) cd pcmcia-cs-3.1.14
+   % cvs co margi2
+
+3) cp margi2/margi_cs.mk.MAIN margi_cs.mk
+
+4) For ZV support in pcmcia-cs use zv.diff. Remember, this is just the 
+   first step to get to watching the output on your notebook's screen.
+   If you have pcmcia-cs versio >= 3.1.25 you need to use zv.diff.3.1.25.
+   The patches currently only work for the Rigoch 5c478 controller.
+   Anybody with information about ZV regarding graphic chips, please tell me.

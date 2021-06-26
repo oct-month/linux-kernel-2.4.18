@@ -1,0 +1,24 @@
+/*
+ * QLogic ISP2200 and ISP2300 Linux Driver Revision List File.
+ *
+ ********************************************************************
+ *
+ * Revision History:
+ *
+ * Rev. 5.31      Sept 10, 2001
+ *      - Merge changes from version 5.27.
+ * Rev. 5.30      August 23, 2001
+ *      - Build from version 5.25.
+ *      - Update 2200 RISC to 2200tp version 2.01.35.
+ *      - Update 2300 RISC to 2300tp version 3.00.28.
+ *      - Support QLA2300, 2310 and 2312. Use compile switch to support
+ *        ISP2100, ISP2200 and ISP2300. Makefile needs to define either
+ *        ISP2100, ISP2200 or ISP2300.
+ *      - Support FC-Tape.
+ *      - Correct to use LOAD_RISC_RAM (0x9) mailbox cmd to load RISC
+ *        code for 64-bit addressing.
+ *      - Fix WRITE_VERIFY scsi command fails to complete.
+ *      - Return valid status for SS_RESERVE_CONFLICT.
+ *      - Correct handling of 4007 status for fabric port login mbx cmd.
+ *
+ */

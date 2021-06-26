@@ -1,0 +1,106 @@
+config.h: \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h
+	@touch config.h
+iscsi-ioctl.h: \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/iscsi-protocol.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/iscsiAuthClient.h
+	@touch iscsi-ioctl.h
+iscsi-login.o: iscsi-login.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/iscsi-protocol.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/iscsi-login.h
+iscsi-login.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/iscsi-protocol.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/iscsi.h
+	@touch iscsi-login.h
+iscsi-protocol.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/config.h
+	@touch iscsi-protocol.h
+iscsi.h: \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/iscsiAuthClient.h
+	@touch iscsi.h
+iscsiAuthClient.o: iscsiAuthClient.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/iscsiAuthClient.h
+iscsiAuthClient.h: \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/iscsiAuthClientGlue.h
+	@touch iscsiAuthClient.h
+iscsiAuthClientGlue.o: iscsiAuthClientGlue.c \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/iscsiAuthClient.h
+iscsiAuthClientGlue.h: \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/random.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/config.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/md5.h
+	@touch iscsiAuthClientGlue.h
+iscsi_main.o: iscsi_main.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/file.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/stat.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/net.h \
+   /usr/src/linux-2.4.18-14/include/net/sock.h \
+   /usr/src/linux-2.4.18-14/include/linux/socket.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/asm/semaphore.h \
+   /usr/src/linux-2.4.18-14/include/asm/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/scsi/sg.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/iscsi-common.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/iscsi-protocol.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/iscsi-login.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/iscsi-ioctl.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/iscsi-trace.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/iscsi.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/version.h
+md5.o: md5.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/config.h \
+   /usr/src/linux-2.4.18-14/drivers/addon/iscsi/md5.h
+.PRECIOUS:	config.h \
+	iscsi-ioctl.h \
+	iscsi-login.h \
+	iscsi-protocol.h \
+	iscsi.h \
+	iscsiAuthClient.h \
+	iscsiAuthClientGlue.h \
+

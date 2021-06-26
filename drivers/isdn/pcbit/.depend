@@ -1,0 +1,96 @@
+callbacks.o: callbacks.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/isdnif.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/pcbit/pcbit.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/pcbit/layer2.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/pcbit/edss1.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/pcbit/callbacks.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/pcbit/capi.h
+capi.o: capi.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/isdnif.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/pcbit/pcbit.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/pcbit/edss1.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/pcbit/capi.h
+drv.o: drv.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/isdnif.h \
+   /usr/src/linux-2.4.18-14/include/asm/string.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/pcbit/pcbit.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/pcbit/edss1.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/pcbit/layer2.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/pcbit/capi.h
+edss1.o: edss1.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/isdnif.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/pcbit/pcbit.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/pcbit/edss1.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/pcbit/layer2.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/pcbit/callbacks.h
+layer2.o: layer2.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/isdnif.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/pcbit/pcbit.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/pcbit/layer2.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/pcbit/edss1.h
+layer2.h: \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h
+	@touch layer2.h
+module.o: module.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/isdnif.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/pcbit/pcbit.h
+.PRECIOUS:	layer2.h \
+

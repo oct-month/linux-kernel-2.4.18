@@ -1,0 +1,26 @@
+pr.o: pr.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/ospm/include/bm.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/ospm/include/pr.h
+pr_osl.o: pr_osl.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/ospm/include/bm.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/ospm/include/pr.h
+prperf.o: prperf.c \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/ospm/include/bm.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/ospm/include/pr.h
+prpower.o: prpower.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/pm.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/include/acpi.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/ospm/include/bm.h \
+   /usr/src/linux-2.4.18-14/drivers/acpi/ospm/include/pr.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h)

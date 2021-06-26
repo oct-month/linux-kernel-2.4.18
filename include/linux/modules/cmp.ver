@@ -1,0 +1,14 @@
+#if  defined(__module__bigmem) || defined(__module__smp)
+#define __ver_cmp_unregister_opcr	_ver_str(276e9fd8)
+#define cmp_unregister_opcr _set_ver(cmp_unregister_opcr)
+#elif  defined(__module__debug) || defined(__module__up) || defined(__module__BOOT)
+#define __ver_cmp_unregister_opcr	_ver_str(d58eb934)
+#define cmp_unregister_opcr _set_ver(cmp_unregister_opcr)
+#endif
+#if  defined(__module__debug) || defined(__module__up) || defined(__module__BOOT)
+#define __ver_cmp_register_opcr	_ver_str(b0a9528c)
+#define cmp_register_opcr _set_ver(cmp_register_opcr)
+#elif  defined(__module__bigmem) || defined(__module__smp)
+#define __ver_cmp_register_opcr	_ver_str(9467cc81)
+#define cmp_register_opcr _set_ver(cmp_register_opcr)
+#endif

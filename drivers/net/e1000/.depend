@@ -1,0 +1,65 @@
+e1000.h: \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/irq.h \
+   /usr/src/linux-2.4.18-14/include/linux/capability.h \
+   /usr/src/linux-2.4.18-14/include/linux/in.h \
+   /usr/src/linux-2.4.18-14/include/linux/ip.h \
+   /usr/src/linux-2.4.18-14/include/linux/tcp.h \
+   /usr/src/linux-2.4.18-14/include/linux/udp.h \
+   /usr/src/linux-2.4.18-14/include/net/pkt_sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/list.h \
+   /usr/src/linux-2.4.18-14/include/linux/reboot.h \
+   /usr/src/linux-2.4.18-14/include/linux/ethtool.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_vlan.h \
+   /usr/src/linux-2.4.18-14/drivers/net/e1000/e1000_hw.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ppc.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h)
+	@touch e1000.h
+e1000_ethtool.o: e1000_ethtool.c \
+   /usr/src/linux-2.4.18-14/drivers/net/e1000/e1000.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h
+e1000_hw.o: e1000_hw.c \
+   /usr/src/linux-2.4.18-14/drivers/net/e1000/e1000_hw.h
+e1000_hw.h: \
+   /usr/src/linux-2.4.18-14/drivers/net/e1000/e1000_osdep.h
+	@touch e1000_hw.h
+e1000_main.o: e1000_main.c \
+   /usr/src/linux-2.4.18-14/drivers/net/e1000/e1000.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pm.h)
+e1000_osdep.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h
+	@touch e1000_osdep.h
+e1000_param.o: e1000_param.c \
+   /usr/src/linux-2.4.18-14/drivers/net/e1000/e1000.h
+e1000_proc.o: e1000_proc.c \
+   /usr/src/linux-2.4.18-14/drivers/net/e1000/e1000.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h
+.PRECIOUS:	e1000.h \
+	e1000_hw.h \
+	e1000_osdep.h \
+

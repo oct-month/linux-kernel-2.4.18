@@ -1,0 +1,51 @@
+# ipvs: IP Virtual Server Module for the NetFilter framework
+
+# uncomment the following line on an SMP system
+#SMPFLAGS = -D__SMP__
+
+# uncomment the following line for DEBUG
+DEBUGFLAGS = -DCONFIG_IP_VS_DEBUG -g
+
+KERNELRELEASE = $(shell uname -r)
+
+# As per the Linux Kernel's Makefile:
+# INSTALL_MOD_PATH specifies a prefix to MODLIB for module directory
+# relocations required by build roots.  This is not defined in the
+# makefile but the arguement can be passed to make if needed.
+
+MODLIB =	$(INSTALL_MOD_PATH)/lib/modules/$(KERNELRELEASE)/kernel/net/ipv4/ipvs/
+
+
+SCHEDULERS =	ip_vs_lc.o ip_vs_rr.o ip_vs_wlc.o ip_vs_wrr.o \
+		ip_vs_lblc.o ip_vs_lblcr.o ip_vs_dh.o ip_vs_sh.o ip_vs_ftp.o
+CORE =		ip_vs.o
+CORE_OBJS =	ip_vs_conn.o ip_vs_core.o ip_vs_ctl.o ip_vs_sched.o \
+		ip_vs_timer.o ip_vs_app.o ip_vs_sync.o ip_vs_est.o
+
+CC=gcc
+CFLAGS= -D__KERNEL__ -DMODULE -DEXPORT_SYMTAB -DMODVERSIONS \
+	$(SMPFLAGS) $(DEBUGFLAGS) -O2 -Wall \
+	-Wstrict-prototypes -I/usr/src/linux/include \
+	-include /usr/src/linux/include/linux/modversions.h
+
+all:	$(CORE) $(SCHEDULERS)
+
+ip_vs.o:	$(CORE_OBJS)
+	$(LD) -r $^ -o $@
+
+install:	ip_vs.o
+	-rmmod ip_vs
+	insmod ip_vs.o
+	lsmod
+
+modules_install:
+	if [ ! -d "$(MODLIB)" ]; then mkdir -p "$(MODLIB)"; fi
+	install -m 600 -c $(CORE) $(SCHEDULERS) "$(MODLIB)"
+	depmod -a
+
+modules_uninstall:
+	(cd "$(MODLIB)"; rm -f $(CORE) $(SCHEDULERS))
+	rmdir "$(MODLIB)"
+
+clean:
+	rm -f *.o *~ *.bak *.orig *.rej

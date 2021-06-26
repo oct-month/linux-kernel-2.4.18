@@ -1,0 +1,11 @@
+cryptoloop.o: cryptoloop.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/kmod.h) \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/crypto.h \
+   /usr/src/linux-2.4.18-14/include/linux/loop.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h

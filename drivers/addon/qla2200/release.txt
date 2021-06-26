@@ -1,0 +1,31 @@
+
+                 QLogic QLA2200 and QLA2300 Linux Driver 
+
+                           Release Notes
+			   =============
+
+Version 5.30               August 28, 2001
+
++**********************************************+
+* Features supported by this version of driver *
++**********************************************+
+o FCAL - direct attach
+o Point-to-point 
+o Fabric support 
+o Initiator mode only
+o Fault recovery on down loops
+o Persistent binding - HBA node name valid
+o Linux 2.2.x Kernel Support
+o Linux 2.4.x Kernel Support
+o Multipath failover support
+
++********************************+
+* Changes From Previous Releases *
++********************************+
+o  Support QLA2300, 2310 and 2312.
+o  Support FC-Tape.
+
++**************+
+* Known Issues *
++**************+
+o Lun masking is not functional in this release. 

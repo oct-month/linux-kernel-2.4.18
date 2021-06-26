@@ -1,0 +1,9 @@
+#define __ver_ip_conntrack_ftp	_ver_str(ed617569)
+#define ip_conntrack_ftp _set_ver(ip_conntrack_ftp)
+#if  defined(__module__debug) || defined(__module__up) || defined(__module__BOOT)
+#define __ver_ip_ftp_lock	_ver_str(f8a2ff02)
+#define ip_ftp_lock _set_ver(ip_ftp_lock)
+#elif  defined(__module__bigmem) || defined(__module__smp)
+#define __ver_ip_ftp_lock	_ver_str(7c27ef4c)
+#define ip_ftp_lock _set_ver(ip_ftp_lock)
+#endif

@@ -1,0 +1,2 @@
+#define __ver_aci_rds_cmd	_ver_str(de4156ce)
+#define aci_rds_cmd _set_ver(aci_rds_cmd)

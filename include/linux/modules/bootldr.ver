@@ -1,0 +1,2 @@
+#define __ver_parse_bootldr_partitions	_ver_str(5ec578a5)
+#define parse_bootldr_partitions _set_ver(parse_bootldr_partitions)

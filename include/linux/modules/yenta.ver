@@ -1,0 +1,7 @@
+#if  defined(__module__bigmem) || defined(__module__smp)
+#define __ver_yenta_operations	_ver_str(ea51b0b6)
+#define yenta_operations _set_ver(yenta_operations)
+#elif  defined(__module__debug) || defined(__module__up) || defined(__module__BOOT)
+#define __ver_yenta_operations	_ver_str(ca0ded98)
+#define yenta_operations _set_ver(yenta_operations)
+#endif

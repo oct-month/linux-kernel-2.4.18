@@ -1,0 +1,72 @@
+access.o: access.c \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/syscall.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/abi/util/revalidate.h
+context.o: context.c \
+   /usr/src/linux-2.4.18-14/include/linux/ptrace.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/syscall.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/abi_machdep.h \
+   /usr/src/linux-2.4.18-14/include/abi/uw7/context.h
+ioctl.o: ioctl.c \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/syscall.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/abi_machdep.h \
+   /usr/src/linux-2.4.18-14/include/abi/uw7/termbits.h \
+   /usr/src/linux-2.4.18-14/include/abi/uw7/termios.h
+lfs.o: lfs.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/file.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/unistd.h \
+   /usr/src/linux-2.4.18-14/include/linux/syscall.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/abi/uw7/resource.h \
+   /usr/src/linux-2.4.18-14/include/abi/uw7/statvfs.h
+mac.o: mac.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h
+misc.o: misc.c \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/file.h \
+   /usr/src/linux-2.4.18-14/include/linux/syscall.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h
+mmap.o: mmap.c \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/file.h \
+   /usr/src/linux-2.4.18-14/include/linux/mman.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h
+stat.o: stat.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/file.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/abi/uw7/types.h \
+   /usr/src/linux-2.4.18-14/include/abi/uw7/stat.h \
+   /usr/src/linux-2.4.18-14/include/abi/svr4/stat.h \
+   /usr/src/linux-2.4.18-14/include/abi/util/trace.h \
+   /usr/src/linux-2.4.18-14/include/abi/util/stat.h
+sysent.o: sysent.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/personality.h \
+   /usr/src/linux-2.4.18-14/include/linux/syscall.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/abi/signal.h \
+   /usr/src/linux-2.4.18-14/include/abi/svr4/sysent.h \
+   /usr/src/linux-2.4.18-14/include/abi/uw7/sysent.h \
+   /usr/src/linux-2.4.18-14/include/abi/util/errno.h \
+   /usr/src/linux-2.4.18-14/include/abi/util/sysent.h \
+   /usr/src/linux-2.4.18-14/include/abi/util/socket.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/abi/xti.h)

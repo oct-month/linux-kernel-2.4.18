@@ -1,0 +1,309 @@
+amd766rom.o: amd766rom.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci_ids.h
+autcpu12-nvram.o: autcpu12-nvram.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h
+cdb89712.o: cdb89712.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h
+cfi_flagadm.o: cfi_flagadm.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h
+cstm_mips_ixx.o: cstm_mips_ixx.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mips/ite8172.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mips/ivr.h) \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtd/cstm/mips/ixx/start.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtd/cstm/mips/ixx/len.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtd/cstm/mips/ixx/buswidth.h)
+dbox2-flash.o: dbox2-flash.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h
+dc21285.o: dc21285.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h
+dilnetpc.o: dilnetpc.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/concat.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtd/dilnetpc/bootsize.h)
+elan-104nc.o: elan-104nc.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h
+epxa10db-flash.o: epxa10db-flash.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtd/redboot/parts.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtd/afs/parts.h)
+ich2rom.o: ich2rom.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci_ids.h
+integrator-flash.o: integrator-flash.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/arch/integrator.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/arch/p720t.h)
+iq80310.o: iq80310.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtd/redboot/parts.h)
+l440gx.o: l440gx.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h
+mbx860.o: mbx860.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h
+netsc520.o: netsc520.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h
+nora.o: nora.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h
+ocelot.o: ocelot.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h
+octagon-5066.o: octagon-5066.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h
+pb1xxx-flash.o: pb1xxx-flash.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mips/pb1000.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mips/pb1500.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtd/pb1500/boot.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtd/pb1500/user.h)
+pci.o: pci.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h
+physmap.o: physmap.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtd/physmap/start.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtd/physmap/len.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtd/physmap/buswidth.h)
+pnc2000.o: pnc2000.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h
+rpxlite.o: rpxlite.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h
+sa1100-flash.o: sa1100-flash.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/arch/sa1100.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/adsbitsy.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/assabet.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/badge4.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/cerf.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/cerf/flash/32mb.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/cerf/flash/16mb.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/cerf/flash/8mb.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/consus.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/flexanet.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/freebird.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/freebird/new.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/frodo.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/graphicsclient.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/graphicsmaster.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/h3600.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/jffs2/fs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/huw/webpanel.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/jornada720.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/pangolin.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/pt/system3.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/shannon.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/sherman.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/simpad.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/stork.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/sa1100/yopy.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtd/redboot/parts.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtd/bootldr/parts.h)
+sbc_gxx.o: sbc_gxx.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h
+sc520cdp.o: sc520cdp.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/concat.h
+solutionengine.o: solutionengine.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtd/superh/reserve.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtd/redboot/parts.h)
+sun_uflash.o: sun_uflash.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h
+tqm8xxl.o: tqm8xxl.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/mtd.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/partitions.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtd/partitions.h)
+tsunami_flash.o: tsunami_flash.c \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h
+vmax301.o: vmax301.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/linux/mtd/map.h

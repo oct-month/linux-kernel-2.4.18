@@ -1,0 +1,174 @@
+datafab.o: datafab.c \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/transport.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/protocol.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/usb.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/debug.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/datafab.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h
+debug.o: debug.c \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/debug.h
+debug.h: \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/cdrom.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/debug.h)
+	@touch debug.h
+dpcm.o: dpcm.c \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/transport.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/protocol.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/usb.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/debug.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/dpcm.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/sddr09.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/sddr09.h)
+freecom.o: freecom.c \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/transport.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/protocol.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/usb.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/debug.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/freecom.h \
+   /usr/src/linux-2.4.18-14/include/linux/hdreg.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/debug.h)
+initializers.o: initializers.c \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/initializers.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/debug.h
+initializers.h: \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/usb.h
+	@touch initializers.h
+isd200.o: isd200.c \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/transport.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/protocol.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/usb.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/debug.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/scsiglue.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/isd200.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/hdreg.h \
+   /usr/src/linux-2.4.18-14/include/linux/ide.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/debug.h)
+jumpshot.o: jumpshot.c \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/transport.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/protocol.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/usb.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/debug.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/jumpshot.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h
+protocol.o: protocol.c \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/protocol.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/usb.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/debug.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/scsiglue.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/transport.h
+protocol.h: \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/usb.h
+	@touch protocol.h
+scsiglue.o: scsiglue.c \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/scsiglue.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/usb.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/debug.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/transport.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h
+scsiglue.h: \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h
+	@touch scsiglue.h
+sddr09.o: sddr09.c \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/transport.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/protocol.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/usb.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/debug.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/sddr09.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h
+shuttle_usbat.o: shuttle_usbat.c \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/transport.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/protocol.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/usb.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/debug.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/shuttle_usbat.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h
+transport.o: transport.c \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/transport.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/protocol.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/usb.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/debug.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/debug.h)
+transport.h: \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/usb.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/hp8200e.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/sddr09.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/freecom.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/datafab.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/jumpshot.h)
+	@touch transport.h
+unusual_devs.h: \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/hp8200e.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/dpcm.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/sddr09.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/isd200.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/jumpshot.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/freecom.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/datafab.h)
+	@touch unusual_devs.h
+usb.o: usb.c \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/usb.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/scsiglue.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/transport.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/protocol.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/debug.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/initializers.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/hp8200e.h) \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/shuttle_usbat.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/sddr09.h) \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/sddr09.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/dpcm.h) \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/dpcm.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/freecom.h) \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/freecom.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/isd200.h) \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/isd200.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/datafab.h) \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/datafab.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/usb/storage/jumpshot.h) \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/jumpshot.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/unusual_devs.h \
+   /usr/src/linux-2.4.18-14/drivers/usb/storage/unusual_devs.h
+usb.h: \
+   /usr/src/linux-2.4.18-14/include/linux/usb.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h
+	@touch usb.h
+.PRECIOUS:	debug.h \
+	initializers.h \
+	protocol.h \
+	scsiglue.h \
+	transport.h \
+	unusual_devs.h \
+	usb.h \
+

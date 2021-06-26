@@ -1,0 +1,23 @@
+dir.o: dir.c \
+   /usr/src/linux-2.4.18-14/include/linux/efs_fs.h
+file.o: file.c \
+   /usr/src/linux-2.4.18-14/include/linux/efs_fs.h
+inode.o: inode.c \
+   /usr/src/linux-2.4.18-14/include/linux/efs_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/efs_fs_sb.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h
+namei.o: namei.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/efs_fs.h
+super.o: super.c \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/locks.h \
+   /usr/src/linux-2.4.18-14/include/linux/efs_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/efs_vh.h \
+   /usr/src/linux-2.4.18-14/include/linux/efs_fs_sb.h
+symlink.o: symlink.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/efs_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/pagemap.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h

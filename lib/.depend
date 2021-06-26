@@ -1,0 +1,43 @@
+brlock.o: brlock.c \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/smp.h) \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/brlock.h
+bust_spinlocks.o: bust_spinlocks.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/vt_kern.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/vt.h)
+cmdline.o: cmdline.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h
+ctype.o: ctype.c \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h
+dec_and_lock.o: dec_and_lock.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/atomic.h
+rbtree.o: rbtree.c \
+   /usr/src/linux-2.4.18-14/include/linux/rbtree.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h
+rwsem-spinlock.o: rwsem-spinlock.c \
+   /usr/src/linux-2.4.18-14/include/linux/rwsem.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h
+rwsem.o: rwsem.c \
+   /usr/src/linux-2.4.18-14/include/linux/rwsem.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h
+string.o: string.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h
+vsprintf.o: vsprintf.c \
+   /usr/lib/gcc-lib/i386-redhat-linux/3.2/include/stdarg.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/ctype.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/div64.h

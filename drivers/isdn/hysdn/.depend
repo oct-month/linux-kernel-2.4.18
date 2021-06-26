@@ -1,0 +1,84 @@
+boardergo.o: boardergo.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/hysdn/hysdn_defs.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/hysdn/boardergo.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/hysdn/capi.h)
+hycapi.o: hycapi.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/hysdn/hysdn_defs.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernelcapi.h
+hysdn_boot.o: hysdn_boot.c \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/hysdn/hysdn_defs.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/hysdn/hysdn_pof.h
+hysdn_defs.h: \
+   /usr/src/linux-2.4.18-14/include/linux/hysdn_if.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/hysdn/ince1pc.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/hysdn/capi.h) \
+   /usr/src/linux-2.4.18-14/include/linux/capi.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/avmb1/capicmd.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/avmb1/capiutil.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/avmb1/capilli.h
+	@touch hysdn_defs.h
+hysdn_init.o: hysdn_init.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/hysdn/hysdn_defs.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/hysdn/capi.h)
+hysdn_net.o: hysdn_net.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/linux/inetdevice.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/hysdn/hysdn_defs.h
+hysdn_procconf.o: hysdn_procconf.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/hysdn/hysdn_defs.h
+hysdn_proclog.o: hysdn_proclog.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/hysdn/hysdn_defs.h
+hysdn_sched.o: hysdn_sched.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/signal.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioport.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/isdn/hysdn/hysdn_defs.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/hysdn/capi.h)
+.PRECIOUS:	hysdn_defs.h \
+

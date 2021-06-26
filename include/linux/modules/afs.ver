@@ -1,0 +1,2 @@
+#define __ver_parse_afs_partitions	_ver_str(cfbe718f)
+#define parse_afs_partitions _set_ver(parse_afs_partitions)

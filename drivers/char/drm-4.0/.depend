@@ -1,0 +1,191 @@
+agpsupport.o: agpsupport.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h
+auth.o: auth.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h
+bufs.o: bufs.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/include/linux/un.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtrr.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/agp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/agp/module.h)
+context.o: context.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h
+ctxbitmap.o: ctxbitmap.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h
+dma.o: dma.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h
+drawable.o: drawable.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h
+drm.h: \
+   /usr/src/linux-2.4.18-14/include/asm/ioctl.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/mga_drm.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/i810_drm.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/r128_drm.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/radeon_drm.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/drm40/sis.h)
+	@touch drm.h
+drmP.h: \
+   /usr/src/linux-2.4.18-14/include/asm/current.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/miscdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/major.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/file.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/mman.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtrr.h) \
+   /usr/src/linux-2.4.18-14/include/asm/mtrr.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/agp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/agp/module.h) \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/agp_backend.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drm.h
+	@touch drmP.h
+ffb_context.o: ffb_context.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/ffb_drv.h
+ffb_drv.o: ffb_drv.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/asm/shmparam.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/ffb_drv.h
+fops.o: fops.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h
+gamma_dma.o: gamma_dma.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/gamma_drv.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h
+gamma_drv.o: gamma_drv.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/gamma_drv.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtrr.h)
+i810_bufs.o: i810_bufs.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/i810_drv.h \
+   /usr/src/linux-2.4.18-14/include/linux/un.h
+i810_context.o: i810_context.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/i810_drv.h
+i810_dma.o: i810_dma.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/i810_drv.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h
+i810_drv.o: i810_drv.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/i810_drv.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtrr.h)
+init.o: init.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h
+ioctl.o: ioctl.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h
+lists.o: lists.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h
+lock.o: lock.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h
+memory.o: memory.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/agp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/agp/module.h)
+mga_bufs.o: mga_bufs.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/mga_drv.h \
+   /usr/src/linux-2.4.18-14/include/linux/un.h
+mga_context.o: mga_context.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/mga_drv.h
+mga_dma.o: mga_dma.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/mga_drv.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h
+mga_drv.o: mga_drv.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/mga_drv.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtrr.h)
+mga_state.o: mga_state.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/mga_drv.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drm.h
+proc.o: proc.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h
+r128_bufs.o: r128_bufs.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/r128_drv.h \
+   /usr/src/linux-2.4.18-14/include/linux/un.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/agp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/agp/module.h)
+r128_cce.o: r128_cce.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/r128_drv.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h
+r128_context.o: r128_context.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/r128_drv.h
+r128_drv.o: r128_drv.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/r128_drv.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/agp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/agp/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtrr.h)
+r128_state.o: r128_state.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/r128_drv.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drm.h
+radeon_bufs.o: radeon_bufs.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/radeon_drv.h \
+   /usr/src/linux-2.4.18-14/include/linux/un.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/agp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/agp/module.h)
+radeon_context.o: radeon_context.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/radeon_drv.h
+radeon_cp.o: radeon_cp.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/radeon_drv.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h
+radeon_drv.o: radeon_drv.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/radeon_drv.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/agp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/agp/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtrr.h)
+radeon_state.o: radeon_state.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/radeon_drv.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drm.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h
+tdfx_context.o: tdfx_context.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/tdfx_drv.h
+tdfx_drv.o: tdfx_drv.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/tdfx_drv.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/agp.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/agp/module.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtrr.h)
+vm.o: vm.c \
+   /usr/src/linux-2.4.18-14/drivers/char/drm-4.0/drmP.h
+.PRECIOUS:	drm.h \
+	drmP.h \
+

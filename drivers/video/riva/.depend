@@ -1,0 +1,36 @@
+accel.o: accel.c \
+   /usr/src/linux-2.4.18-14/drivers/video/riva/rivafb.h
+fbdev.o: fbdev.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/selection.h \
+   /usr/src/linux-2.4.18-14/include/linux/tty.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/fb.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/console.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtrr.h) \
+   /usr/src/linux-2.4.18-14/include/asm/mtrr.h \
+   /usr/src/linux-2.4.18-14/drivers/video/riva/rivafb.h \
+   /usr/src/linux-2.4.18-14/drivers/video/riva/nvreg.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/pci.h)
+riva_hw.o: riva_hw.c \
+   /usr/src/linux-2.4.18-14/drivers/video/riva/riva_hw.h \
+   /usr/src/linux-2.4.18-14/drivers/video/riva/riva_tbl.h
+rivafb.h: \
+   /usr/src/linux-2.4.18-14/include/linux/fb.h \
+   /usr/src/linux-2.4.18-14/include/video/fbcon.h \
+   /usr/src/linux-2.4.18-14/include/video/fbcon-cfb4.h \
+   /usr/src/linux-2.4.18-14/include/video/fbcon-cfb8.h \
+   /usr/src/linux-2.4.18-14/include/video/fbcon-cfb16.h \
+   /usr/src/linux-2.4.18-14/include/video/fbcon-cfb32.h \
+   /usr/src/linux-2.4.18-14/drivers/video/riva/riva_hw.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/mtrr.h)
+	@touch rivafb.h
+.PRECIOUS:	rivafb.h \
+

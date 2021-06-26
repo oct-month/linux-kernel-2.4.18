@@ -1,0 +1,411 @@
+amdtp.o: amdtp.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/list.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/ioctl.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/atomic.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/highlevel.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_core.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ohci1394.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/amdtp.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/cmp.h
+amdtp.h: \
+   /usr/src/linux-2.4.18-14/include/asm/ioctl.h \
+   /usr/src/linux-2.4.18-14/include/asm/types.h
+	@touch amdtp.h
+cmp.o: cmp.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/list.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/highlevel.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_core.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/cmp.h
+csr.o: csr.c \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_types.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/highlevel.h
+dv1394-private.h: \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/asm/scatterlist.h
+	@touch dv1394-private.h
+dv1394.o: dv1394.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/list.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/asm/atomic.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/page.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/asm/segment.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_types.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_core.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/highlevel.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/dv1394.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/dv1394-private.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ohci1394.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h)
+eth1394.o: eth1394.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/netdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/inetdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/etherdevice.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_arp.h \
+   /usr/src/linux-2.4.18-14/include/linux/if_ether.h \
+   /usr/src/linux-2.4.18-14/include/linux/ip.h \
+   /usr/src/linux-2.4.18-14/include/linux/tcp.h \
+   /usr/src/linux-2.4.18-14/include/linux/skbuff.h \
+   /usr/src/linux-2.4.18-14/include/asm/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/semaphore.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/net/arp.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_types.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_core.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_transactions.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/highlevel.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/eth1394.h
+eth1394.h: \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h
+	@touch eth1394.h
+highlevel.o: highlevel.c \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_types.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_core.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/highlevel.h
+hosts.o: hosts.c \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/list.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_types.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_core.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/highlevel.h
+hosts.h: \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/list.h \
+   /usr/src/linux-2.4.18-14/include/asm/semaphore.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_types.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/csr.h
+	@touch hosts.h
+ieee1394.h: \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h
+	@touch ieee1394.h
+ieee1394_core.o: ieee1394_core.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/list.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/asm/semaphore.h \
+   /usr/src/linux-2.4.18-14/include/asm/smplock.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_types.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_core.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/highlevel.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_transactions.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/csr.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/nodemgr.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_hotplug.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ieee1394/verbosedebug.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h)
+ieee1394_core.h: \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/asm/semaphore.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/hosts.h \
+   /usr/src/linux-2.4.18-14/include/asm/atomic.h
+	@touch ieee1394_core.h
+ieee1394_hotplug.h: \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_core.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/nodemgr.h
+	@touch ieee1394_hotplug.h
+ieee1394_transactions.o: ieee1394_transactions.c \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/asm/errno.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_types.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_core.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/highlevel.h
+ieee1394_transactions.h: \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_core.h
+	@touch ieee1394_transactions.h
+ieee1394_types.h: \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/list.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/linux/kdev_t.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h
+	@touch ieee1394_types.h
+nodemgr.o: nodemgr.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/list.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   /usr/src/linux-2.4.18-14/include/linux/completion.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/proc/fs.h) \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_types.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_transactions.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_hotplug.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/highlevel.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/csr.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/nodemgr.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/rom/key.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/rom/descriptor/leaf.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/rom/value.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/rom/leaf/length.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/rom/bus/info/length.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/rom/root/length.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/rom/vendor/id.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/rom/directory/length.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/rom/model/id.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/rom/specifier/id.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/rom/unit/sw/version.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/rom/descriptor/directory.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/rom/key/type/mask.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ieee1394/verbosedebug.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/rom/node/capabilites.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/rom/unit/directory.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/hotplug.h)
+ohci1394.o: ohci1394.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/list.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/asm/atomic.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/spinlock.h \
+   /usr/src/linux-2.4.18-14/include/asm/pgtable.h \
+   /usr/src/linux-2.4.18-14/include/asm/page.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/all/ppc.h) \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_types.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_core.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/highlevel.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ohci1394.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ieee1394/verbosedebug.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ieee1394/ohci/dma/debug.h)
+ohci1394.h: \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_types.h
+	@touch ohci1394.h
+pcilynx.o: pcilynx.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/asm/atomic.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_types.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_core.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/highlevel.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/pcilynx.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ieee1394/verbosedebug.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ieee1394/pcilynx/ports.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ieee1394/pcilynx/localram.h)
+pcilynx.h: \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ieee1394/pcilynx/ports.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ieee1394/pcilynx/localram.h) \
+   /usr/src/linux-2.4.18-14/include/linux/stddef.h
+	@touch pcilynx.h
+raw1394.o: raw1394.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/list.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/atomic.h \
+   /usr/src/linux-2.4.18-14/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_types.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_core.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/highlevel.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_transactions.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/raw1394.h
+raw1394.h: \
+   /usr/src/linux-2.4.18-14/include/asm/types.h
+	@touch raw1394.h
+sbp2.o: sbp2.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/list.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/blk.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/asm/current.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/scatterlist.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/kbuild/2/5.h) \
+   /usr/src/linux-2.4.18-14/drivers/scsi/scsi.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/scsi/sd.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_types.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_core.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/nodemgr.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/highlevel.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_transactions.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_hotplug.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/sbp2.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ieee1394/sbp2/debug/orbs.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ieee1394/sbp2/debug/dma.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ieee1394/sbp2/debug.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/rom/key.h) \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/rom/value.h)
+video1394.o: video1394.c \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/list.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/smp_lock.h \
+   /usr/src/linux-2.4.18-14/include/linux/proc_fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/tqueue.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/devfs_fs_kernel.h \
+   /usr/src/linux-2.4.18-14/include/asm/bitops.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/wrapper.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/timex.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_types.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/hosts.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ieee1394_core.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/highlevel.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/video1394.h \
+   /usr/src/linux-2.4.18-14/drivers/ieee1394/ohci1394.h \
+   $(wildcard /usr/src/linux-2.4.18-14/include/config/ieee1394/verbosedebug.h)
+.PRECIOUS:	amdtp.h \
+	dv1394-private.h \
+	eth1394.h \
+	hosts.h \
+	ieee1394.h \
+	ieee1394_core.h \
+	ieee1394_hotplug.h \
+	ieee1394_transactions.h \
+	ieee1394_types.h \
+	ohci1394.h \
+	pcilynx.h \
+	raw1394.h \
+

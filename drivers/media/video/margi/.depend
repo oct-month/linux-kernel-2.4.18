@@ -1,0 +1,236 @@
+audio.o: audio.c \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/audio.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/l64021.h
+audio.h: \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/cardbase.h
+	@touch audio.h
+cardbase.o: cardbase.c \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/cardbase.h
+cardbase.h: \
+   /usr/src/linux-2.4.18-14/include/pcmcia/version.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/ringbuffy.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/dvbdev.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/ost/video.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/ost/audio.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/ost/demux.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/ost/dmx.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/ost/sec.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/ost/frontend.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/ost/ca.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/ost/osd.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/dvb_demux.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/dmxdev.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/dvb_filter.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/cvdvtypes.h
+	@touch cardbase.h
+crc.o: crc.c \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/crc.h
+cvdv.o: cvdv.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/cvdv.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/ost/osd.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/i2c.h
+cvdv.h: \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/cardbase.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/dram.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/osd.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/crc.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/l64021.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/audio.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/video.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/streams.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/decoder.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/spu.h
+	@touch cvdv.h
+cvdvext.h: \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/cvdvtypes.h
+	@touch cvdvext.h
+decoder.o: decoder.c \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/decoder.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/l64021.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/video.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/audio.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/streams.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/osd.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/dram.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/cvdv.h
+decoder.h: \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/cardbase.h
+	@touch decoder.h
+dmxdev.o: dmxdev.c \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/cardbase.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/dmxdev.h
+dmxdev.h: \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/ost/demux.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/ost/dmx.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/wait.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h
+	@touch dmxdev.h
+dram.o: dram.c \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/dram.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/l64021.h
+dram.h: \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/cardbase.h
+	@touch dram.h
+dvb_demux.o: dvb_demux.c \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/dvb_demux.h
+dvb_demux.h: \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/ost/demux.h
+	@touch dvb_demux.h
+dvb_filter.o: dvb_filter.c \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/videodev.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/dvb_filter.h
+dvb_filter.h: \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/ost/demux.h
+	@touch dvb_filter.h
+dvb_formats.h: \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/vmalloc.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/fs.h \
+   /usr/src/linux-2.4.18-14/include/linux/interrupt.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/byteorder.h
+	@touch dvb_formats.h
+dvbdev.o: dvbdev.c \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/mm.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/errno.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/asm/uaccess.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h \
+   /usr/src/linux-2.4.18-14/include/linux/kmod.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/dvbdev.h
+dvbdev.h: \
+   /usr/src/linux-2.4.18-14/include/linux/types.h \
+   /usr/src/linux-2.4.18-14/include/linux/version.h \
+   /usr/src/linux-2.4.18-14/include/linux/poll.h \
+   /usr/src/linux-2.4.18-14/include/linux/devfs_fs_kernel.h
+	@touch dvbdev.h
+i2c.o: i2c.c \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/i2c.h
+i2c.h: \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/cardbase.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/l64014.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/margi.h
+	@touch i2c.h
+l64014.h: \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/pci.h
+	@touch l64014.h
+l64021.h: \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/margi.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/l64014.h
+	@touch l64021.h
+margi.o: margi.c \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/margi.h \
+   /usr/src/linux-2.4.18-14/include/linux/module.h \
+   /usr/src/linux-2.4.18-14/include/pcmcia/cs_types.h \
+   /usr/src/linux-2.4.18-14/include/pcmcia/cs.h \
+   /usr/src/linux-2.4.18-14/include/pcmcia/cistpl.h \
+   /usr/src/linux-2.4.18-14/include/pcmcia/cisreg.h \
+   /usr/src/linux-2.4.18-14/include/pcmcia/bus_ops.h \
+   /usr/src/linux-2.4.18-14/include/pcmcia/ds.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/l64014.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/l64021.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/i2c.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/decoder.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/dram.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/video.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/cvdv.h
+margi.h: \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/cardbase.h \
+   /usr/src/linux-2.4.18-14/include/linux/kernel.h \
+   /usr/src/linux-2.4.18-14/include/linux/init.h \
+   /usr/src/linux-2.4.18-14/include/linux/sched.h \
+   /usr/src/linux-2.4.18-14/include/linux/ptrace.h \
+   /usr/src/linux-2.4.18-14/include/linux/slab.h \
+   /usr/src/linux-2.4.18-14/include/linux/string.h \
+   /usr/src/linux-2.4.18-14/include/linux/timer.h \
+   /usr/src/linux-2.4.18-14/include/linux/delay.h \
+   /usr/src/linux-2.4.18-14/include/asm/io.h \
+   /usr/src/linux-2.4.18-14/include/asm/system.h
+	@touch margi.h
+osd.o: osd.c \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/osd.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/dram.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/l64021.h
+osd.h: \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/cardbase.h
+	@touch osd.h
+ringbuffy.o: ringbuffy.c \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/margi.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/ringbuffy.h
+spu.o: spu.c \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/spu.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/l64021.h
+spu.h: \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/cardbase.h
+	@touch spu.h
+streams.o: streams.c \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/streams.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/dram.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/l64021.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/video.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/audio.h
+streams.h: \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/cardbase.h
+	@touch streams.h
+video.o: video.c \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/video.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/l64021.h \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/dram.h
+video.h: \
+   /usr/src/linux-2.4.18-14/drivers/media/video/margi/cardbase.h
+	@touch video.h
+.PRECIOUS:	audio.h \
+	cardbase.h \
+	cvdv.h \
+	cvdvext.h \
+	decoder.h \
+	dmxdev.h \
+	dram.h \
+	dvb_demux.h \
+	dvb_filter.h \
+	dvb_formats.h \
+	dvbdev.h \
+	i2c.h \
+	l64014.h \
+	l64021.h \
+	margi.h \
+	osd.h \
+	spu.h \
+	streams.h \
+	video.h \
+
